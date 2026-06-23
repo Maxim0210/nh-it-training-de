@@ -3860,6 +3860,7 @@ textarea:focus {
     gap: 0.44rem;
     min-height: 0;
     padding-block: 0 0.52rem;
+    border-top: 0;
     overflow-x: visible;
     scrollbar-width: none;
     -ms-overflow-style: none;
