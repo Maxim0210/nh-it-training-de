@@ -1,4 +1,4 @@
-﻿# nh-it-training.de
+# nh-it-training.de
 
 Static GitHub Pages deployment for nh-it-training.de.
 

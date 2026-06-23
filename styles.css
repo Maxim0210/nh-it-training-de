@@ -991,6 +991,10 @@ h3 {
   object-fit: cover;
 }
 
+.hero-photo-mobile {
+  display: none;
+}
+
 .funding-badge {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
@@ -3369,9 +3373,23 @@ textarea:focus {
     padding-top: 1.25rem;
   }
 
-  .hero-facts,
-  .hero-photo {
+  .hero-facts {
     display: none;
+  }
+
+  .hero-side {
+    gap: 0.75rem;
+  }
+
+  .hero-photo {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .hero-photo img {
+    aspect-ratio: 4 / 3;
+    object-position: center;
   }
 
   .audience-tabs,
@@ -3529,7 +3547,11 @@ textarea:focus {
   .section,
   .content-wrap,
   .signal-strip {
-    width: min(calc(100% - 2rem), 360px);
+    width: min(calc(100% - 1.25rem), 350px);
+  }
+
+  .site-header {
+    padding-top: 6px;
   }
 
   .page-hero,
@@ -3545,20 +3567,23 @@ textarea:focus {
   }
 
   .utility-inner {
-    min-height: 48px;
+    min-height: 40px;
     align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.42rem;
+    padding-block: 0.3rem;
   }
 
   .utility-left {
     flex: 1 1 auto;
-    width: 100%;
+    width: auto;
+    min-width: 0;
   }
 
   .utility-right {
-    flex: 1 1 auto;
-    width: 100%;
+    flex: 0 0 auto;
+    width: auto;
   }
 
   .utility-right > a,
@@ -3571,18 +3596,20 @@ textarea:focus {
   }
 
   .utility-left .phone-link {
-    width: auto;
+    width: 100%;
+    min-width: 0;
     justify-content: center;
   }
 
   .utility-left {
     align-items: center;
     flex-direction: row;
+    justify-content: center;
   }
 
   .contact-pill {
-    min-height: 2rem;
-    padding: 0.28rem 0.62rem;
+    min-height: 1.9rem;
+    padding: 0.24rem 0.52rem;
   }
 
   .contact-pill::before {
@@ -3592,11 +3619,11 @@ textarea:focus {
   }
 
   .contact-pill span {
-    font-size: 0.62rem;
+    display: none;
   }
 
   .contact-pill strong {
-    font-size: 0.86rem;
+    font-size: 0.84rem;
   }
 
   .utility-left a,
@@ -3607,7 +3634,33 @@ textarea:focus {
   }
 
   .choice-sidebar {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  .choice-sidebar a {
+    min-height: 44px;
+    padding: 0.55rem 1.25rem 0.55rem 0.55rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .choice-sidebar a span {
+    font-size: 0.86rem;
+    line-height: 1.08;
+  }
+
+  .choice-sidebar a small {
+    display: none;
+  }
+
+  .choice-sidebar a::after {
+    right: 0.55rem;
+    font-size: 1rem;
+  }
+
+  .choice-sidebar a.accent {
+    grid-column: 1 / -1;
   }
 
   .utility-left .email-link {
@@ -3616,20 +3669,49 @@ textarea:focus {
 
   .utility-right {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   .brand-logo {
-    width: min(210px, 72vw);
+    width: min(188px, 68vw);
+  }
+
+  .brand {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-row {
+    gap: 0.46rem;
+    padding-block: 0.5rem 0.44rem;
   }
 
   .main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.62rem;
-    overflow-x: visible;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.44rem;
+    width: 100%;
+    overflow: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
+  }
+
+  .main-nav > a[href$="förderung.html"],
+  .main-nav > a[href$="unternehmen.html"],
+  .main-nav > a[href$="it-weiterbildung-online-dach.html"],
+  .main-nav > a[href$="lernwege.html"],
+  .main-nav > a[href$="blog.html"] {
+    display: none;
+  }
+
+  .main-nav > .mega-menu,
+  .main-nav > a {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .main-nav > a[href$="kontakt.html"] {
+    grid-column: auto;
   }
 
   .main-nav a,
@@ -3639,34 +3721,161 @@ textarea:focus {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 32px;
-    padding: 0.42rem 0.68rem;
+    min-height: 34px;
+    padding: 0.38rem 0.56rem;
     border: 1px solid var(--line);
     border-radius: 999px;
     background: #ffffff;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     white-space: nowrap;
+  }
+
+  .mega-menu summary {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .mega-panel {
+    top: 222px;
+    left: 0.625rem;
+    right: 0.625rem;
+    max-width: calc(100vw - 1.25rem);
+    max-height: calc(100vh - 234px);
+    padding: 0.7rem;
+  }
+
+  .mega-panel a {
+    display: block;
+    width: auto;
+    min-height: 0;
+    padding: 0.36rem 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    white-space: normal;
+    text-align: left;
+    line-height: 1.22;
+  }
+
+  .mega-selector .mega-trigger {
+    display: grid !important;
+    min-height: 42px;
+    padding: 0.5rem 1.9rem 0.5rem 0.72rem !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 18px;
+    background: var(--surface-blue);
+  }
+
+  .mega-selector {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  .mega-selector .mega-trigger.accent {
+    grid-column: 1 / -1;
+  }
+
+  .mega-selector .mega-trigger.accent {
+    color: #ffffff !important;
+    background: var(--gradient);
+  }
+
+  .mega-trigger span,
+  .mega-trigger small {
+    display: block;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.22;
+  }
+
+  .mega-trigger small {
+    display: none;
+  }
+
+  .mega-results {
+    gap: 0.65rem;
+  }
+
+  .mega-results > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.42rem;
+    align-items: flex-start;
+  }
+
+  .mega-results h3 {
+    flex: 0 0 100%;
+    margin: 0 0 0.1rem;
+  }
+
+  .mega-results a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 0.34rem 0.5rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: #ffffff;
+    font-size: 0.78rem;
+    text-align: center;
+    white-space: normal;
   }
 
   .main-nav a:last-child {
     display: inline-flex;
   }
 
+  .main-nav > a:not([href$="kontakt.html"]) {
+    display: none;
+  }
+
   .training-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.42rem;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.44rem;
+    min-height: 0;
+    padding-block: 0 0.52rem;
     overflow-x: visible;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
 
+  .training-nav > a {
+    display: none;
+  }
+
+  .training-nav > a[href$="trainings/arbeitsuchende.html"],
+  .training-nav > a[href$="trainings/arbeitnehmer.html"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 0.38rem 0.5rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--blue-900);
+    background: var(--surface-blue);
+    font-size: 0.78rem;
+    font-weight: 950;
+    text-decoration: none;
+  }
+
+  .training-nav a {
+    width: 100%;
+    min-width: 0;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.1;
+  }
+
   .search-box {
+    grid-column: 1 / -1;
     display: flex;
     flex: 1 1 100%;
-    width: 100%;
-    max-width: none;
+    width: min(100%, 320px);
+    max-width: 320px;
+    margin-inline: auto;
     overflow: hidden;
   }
 
@@ -3674,11 +3883,15 @@ textarea:focus {
     flex: 1 1 auto;
     min-width: 0;
     width: 0;
+    min-height: 40px;
+    padding-inline: 0.68rem;
   }
 
   .search-box button {
-    flex: 0 0 clamp(92px, 28vw, 108px);
+    flex: 0 0 clamp(70px, 21vw, 82px);
     min-width: 0;
+    padding-inline: 0.5rem;
+    font-size: 0.82rem;
   }
 
   h1 {
@@ -3690,6 +3903,155 @@ textarea:focus {
     hyphens: auto;
   }
 
+  .hero-inner {
+    width: min(calc(100% - 1.25rem), 350px);
+    gap: 0.58rem;
+    padding-block: 0.82rem 1.15rem;
+  }
+
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding-top: 0;
+  }
+
+  .hero .eyebrow {
+    display: none;
+  }
+
+  .hero h1 {
+    margin-bottom: 0.58rem;
+    font-size: clamp(1.55rem, 6.15vw, 1.92rem);
+    line-height: 1.06;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .hero h1 span {
+    display: inline;
+  }
+
+  .hero-text {
+    order: 2;
+    font-size: 0.93rem;
+    line-height: 1.4;
+  }
+
+  .hero-actions {
+    order: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.46rem;
+    margin: 0.56rem 0 0;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.66rem 0.68rem;
+    font-size: 0.82rem;
+    line-height: 1.14;
+  }
+
+  .hero-actions .button.primary {
+    grid-column: auto;
+  }
+
+  .hero-actions a[href$="weiterbildungs-kompass.html"] {
+    display: none;
+  }
+
+  .hero-actions .button.secondary {
+    display: none;
+  }
+
+  .hero-route-groups {
+    display: none;
+  }
+
+  .route-panel {
+    gap: 0.55rem;
+    padding: 0.82rem;
+    border-top: 1px solid var(--line);
+    border-left: 5px solid var(--blue-700);
+    border-radius: 10px;
+  }
+
+  .route-panel.business {
+    border-top-color: var(--line);
+    border-left-color: var(--purple);
+  }
+
+  .route-panel h3 {
+    font-size: 1rem;
+  }
+
+  .route-panel p,
+  .route-links em {
+    font-size: 0.82rem;
+  }
+
+  .route-links a {
+    min-height: 48px;
+    padding: 0.6rem 0.65rem;
+    background: var(--surface-blue);
+  }
+
+  .hero-checks {
+    display: none;
+  }
+
+  .hero-checks li {
+    padding-left: 1.55rem;
+    font-size: 0.9rem;
+    line-height: 1.28;
+  }
+
+  .hero-checks li::before {
+    left: 0.05rem;
+  }
+
+  .hero-photo {
+    margin-top: 0.1rem;
+  }
+
+  .hero-photo-mobile {
+    order: 1;
+    display: block;
+    margin: 0.5rem 0 0.62rem;
+  }
+
+  .hero-photo-mobile img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .hero-side .hero-photo {
+    display: none;
+  }
+
+  .funding-badge {
+    display: none;
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 0.04rem 0.65rem;
+    padding: 0.72rem 0.78rem;
+  }
+
+  .funding-badge span {
+    width: 40px;
+    height: 40px;
+    font-size: 0.86rem;
+  }
+
+  .funding-badge strong {
+    font-size: 0.96rem;
+  }
+
+  .funding-badge small {
+    font-size: 0.82rem;
+    line-height: 1.24;
+  }
+
   .training-hero h1 {
     font-size: clamp(1.58rem, 6.8vw, 1.92rem);
     line-height: 1.08;
@@ -3699,6 +4061,64 @@ textarea:focus {
   .training-choice-layout .section-heading.compact h2 {
     font-size: clamp(1.45rem, 6.2vw, 1.86rem);
     line-height: 1.1;
+  }
+
+  .course-picker-section {
+    padding-top: 1.1rem;
+  }
+
+  .course-picker-section .section-heading {
+    display: block;
+    margin-bottom: 0.85rem;
+  }
+
+  .course-picker-section .section-heading .eyebrow {
+    width: fit-content;
+    margin: 0 0 0.38rem;
+    padding: 0.22rem 0.55rem;
+    color: var(--blue-900);
+    background: var(--surface-blue);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    line-height: 1;
+  }
+
+  .course-picker-section .section-heading h2 {
+    max-width: 15rem;
+    margin-bottom: 0.38rem;
+    font-size: clamp(1.42rem, 5.9vw, 1.7rem);
+    line-height: 1.07;
+  }
+
+  .course-picker-section .section-heading p:last-child {
+    max-width: 20rem;
+    color: var(--text);
+    font-size: 0.92rem;
+    line-height: 1.38;
+  }
+
+  .choice-card,
+  .course-card,
+  .topic-card,
+  .provider-card {
+    min-height: 0;
+    padding: 0.85rem;
+  }
+
+  .choice-card strong,
+  .course-card h3,
+  .topic-card h3,
+  .provider-card h3 {
+    font-size: 1rem;
+    line-height: 1.16;
+  }
+
+  .choice-card p,
+  .course-card p,
+  .topic-card p,
+  .provider-card p {
+    font-size: 0.88rem;
+    line-height: 1.38;
   }
 
   h2,
