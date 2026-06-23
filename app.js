@@ -250,7 +250,7 @@ function initAiAssistant() {
   const assistantImage = new URL("assets/assistant-advisor.jpg", scriptSource).toString();
   const siteUrl = (path) => new URL(path, scriptSource).toString();
   const contactPhone = "089 997 409 352";
-  const contactEmail = "max.dilewski@newhorizons.de";
+  const contactEmail = "Max.Dilewski@NewHorizons-Muenchen.de";
 
   const assistant = document.createElement("aside");
   assistant.className = "ai-assistant";
