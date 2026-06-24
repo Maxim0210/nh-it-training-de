@@ -247,7 +247,8 @@ function initAiAssistant() {
   if (document.querySelector("[data-ai-assistant]")) return;
 
   const scriptSource = document.currentScript?.src || document.querySelector("script[src*='app.js']")?.src || window.location.href;
-  const assistantImage = new URL("assets/assistant-advisor.jpg", scriptSource).toString();
+  const scriptVersion = new URL(scriptSource, window.location.href).searchParams.get("v") || "20260624-2";
+  const assistantImage = new URL(`assets/assistant-advisor.jpg?v=${scriptVersion}`, scriptSource).toString();
   const siteUrl = (path) => new URL(path, scriptSource).toString();
   const contactPhone = "089 997 409 352";
   const contactEmail = "Max.Dilewski@NewHorizons-Muenchen.de";
