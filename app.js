@@ -271,7 +271,7 @@ function initAiAssistant() {
       <div class="ai-assistant-messages" aria-live="polite"></div>
       <div class="ai-assistant-chips" aria-label="Schnelle Fragen">
         <button type="button" data-question="Welcher Kurs passt zu mir?">Kurs finden</button>
-        <button type="button" data-question="Was kosten die Kurse?">Preise</button>
+        <button type="button" data-question="Wann kann ich starten?">Termine</button>
         <button type="button" data-question="Gibt es Förderung oder Bildungsgutschein?">Förderung</button>
         <button type="button" data-question="Bietet ihr Firmenseminare an?">Firmenseminare</button>
       </div>
@@ -313,8 +313,8 @@ function initAiAssistant() {
     addMessage(question, "user");
 
     let answer = "";
-    if (/(preis|kosten|kostet|termin|start|datum|gebuhr|gebuehr)/.test(normalized)) {
-      answer = `Viele Kurse hängen von Termin, Sprache, Durchführung, Teilnehmerzahl und Förderung ab. Deshalb werden Preise und Termine passend geprüft. ${contactAnswer}`;
+    if (/(preis|kosten|kostet|termin|start|datum|gebuhr|gebuehr|kondition)/.test(normalized)) {
+      answer = `Viele Kurse hängen von Termin, Sprache, Durchführung, Teilnehmerzahl und Förderung ab. Deshalb werden Starttermin und Konditionen persönlich geprüft. ${contactAnswer}`;
     } else if (/(forderung|foerderung|bildungsgutschein|jobcenter|agentur|qcg|qualifizierungschancengesetz)/.test(normalized)) {
       answer = `Ja. Bildungsgutschein, QCG und Firmenförderung können je nach Situation geprüft werden. Am schnellsten ist eine kurze Anfrage mit Kursziel, Status und gewünschtem Zeitraum. <a href="${siteUrl("förderung.html")}">Förderung ansehen</a>`;
     } else if (/(firma|unternehmen|team|workshop|firmenseminar|mitarbeiter|gruppe|inhouse)/.test(normalized)) {
@@ -329,7 +329,7 @@ function initAiAssistant() {
     } else if (/(katalog|alle kurse|kursliste|auswahl|finden|welcher kurs)/.test(normalized)) {
       answer = `Am schnellsten findest du passende Kurse über den Kurskatalog oder die erweiterte Suche. <a href="${siteUrl("kurskatalog.html")}">Kurskatalog öffnen</a> · <a href="${siteUrl("trainings/advanced-search.html")}">Advanced Search öffnen</a>`;
     } else {
-      answer = `Ich kann Fragen zu Kursen, Preisen, Terminen, Förderung, Online-Training und Firmenseminaren beantworten. Für diese konkrete Frage ist eine persönliche Einschätzung sinnvoll. ${contactAnswer}`;
+      answer = `Ich kann Fragen zu Kursen, Terminen, Förderung, Online-Training und Firmenseminaren beantworten. Für diese konkrete Frage ist eine persönliche Einschätzung sinnvoll. ${contactAnswer}`;
     }
 
     window.setTimeout(() => addMessage(answer, "bot"), 220);
@@ -339,7 +339,7 @@ function initAiAssistant() {
     panel.hidden = false;
     toggle.setAttribute("aria-expanded", "true");
     if (!messages.children.length) {
-      addMessage(`Hallo, ich helfe bei Kursauswahl, Förderung, Preisen, Terminen und Firmenseminaren. Wenn es konkret wird, verweise ich direkt an Max Dilewski.`);
+      addMessage(`Hallo, ich helfe bei Kursauswahl, Förderung, Terminen und Firmenseminaren. Wenn es konkret wird, verweise ich direkt an Max Dilewski.`);
     }
     window.setTimeout(() => input?.focus(), 60);
   };
