@@ -1586,6 +1586,78 @@ textarea:focus {
   line-height: 1.25;
 }
 
+.focus-region-grid a {
+  min-height: 132px;
+}
+
+.district-cloud,
+.provider-chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.district-cloud span,
+.provider-chip-grid a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0.42rem 0.72rem;
+  color: var(--blue-900);
+  font-size: 0.88rem;
+  font-weight: 850;
+  text-decoration: none;
+  background: #f3f8ff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.provider-chip-grid a:hover {
+  border-color: var(--blue-700);
+  background: #eaf4ff;
+}
+
+.regional-course-finder {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.regional-course-finder article {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--soft-shadow);
+}
+
+.regional-course-finder span,
+.subsection-title {
+  color: var(--blue-700);
+  font-size: 0.8rem;
+  font-weight: 950;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.regional-course-finder h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.regional-course-finder p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.subsection-title {
+  margin: 1.1rem 0 0.6rem;
+}
+
 .faq {
   width: 100%;
   max-width: none;
@@ -3302,6 +3374,10 @@ textarea:focus {
   .provider-grid,
   .topic-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .regional-course-finder {
+    grid-template-columns: 1fr;
   }
 
   .hero-side {
