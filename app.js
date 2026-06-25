@@ -1,4 +1,4 @@
-const filters = document.querySelectorAll(".filter");
+﻿const filters = document.querySelectorAll(".filter");
 const cards = document.querySelectorAll(".course-card");
 const searchForms = document.querySelectorAll(".search-box");
 const searchInputs = document.querySelectorAll(".search-box input[name='q']");
@@ -251,7 +251,7 @@ function initAiAssistant() {
   const assistantImage = new URL(`assets/assistant-advisor.jpg?v=${scriptVersion}`, scriptSource).toString();
   const siteUrl = (path) => new URL(path, scriptSource).toString();
   const contactPhone = "089 997 409 352";
-  const contactEmail = "Max.Dilewski@NewHorizons-Muenchen.de";
+  const contactEmail = "max.dilewski@newhorizons-muenchen.de";
 
   const assistant = document.createElement("aside");
   assistant.className = "ai-assistant";
