@@ -19,3 +19,8 @@ Forms are sent through FormSubmit to max.dilewski@newhorizons-muenchen.de. The f
   - `https://nh-it-training.de/it-weiterbildung-online-stuttgart.html`
 - Bing IndexNow submitted `338` sitemap URLs with status `200`.
 - Technical live checks passed for robots.txt, sitemap, canonical tags, structured data and noindex risks on the primary SEO landing pages.
+- Google Search Console live inspection on 2026-06-29:
+  - Homepage `https://nh-it-training.de/` is reported as indexed and available on Google.
+  - Stuttgart page `https://nh-it-training.de/it-weiterbildung-online-stuttgart.html` was initially reported as not known to Google, then passed the live URL test as indexable.
+  - Manual indexing request for the Stuttgart page was submitted after the successful live test.
+- Bing IndexNow resubmitted `338` sitemap URLs after the cookie banner update with status `200`.
