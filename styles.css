@@ -1729,6 +1729,231 @@ textarea:focus {
   font-weight: 850;
 }
 
+.footer-cookie-settings {
+  display: block;
+  margin: 0.1rem 0 0;
+  padding: 0;
+  border: 0;
+  color: #ffffff;
+  background: transparent;
+  font: inherit;
+  font-weight: 850;
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cookie-consent {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 95;
+  width: min(470px, calc(100vw - 2rem));
+  color: var(--ink);
+  font-size: 0.94rem;
+  pointer-events: none;
+}
+
+.cookie-consent.visible,
+.cookie-consent.settings-open {
+  pointer-events: auto;
+}
+
+.cookie-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(28, 79, 158, 0.18);
+  border-top: 5px solid var(--blue-700);
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(7, 17, 31, 0.2);
+}
+
+.cookie-card[hidden],
+.cookie-modal[hidden] {
+  display: none;
+}
+
+.cookie-card strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--blue-900);
+  font-size: 1.02rem;
+  font-weight: 950;
+}
+
+.cookie-card p,
+.cookie-option p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.38;
+}
+
+.cookie-card a {
+  color: var(--blue-900);
+  font-weight: 950;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cookie-button {
+  min-height: 40px;
+  padding: 0.58rem 0.78rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 950;
+  cursor: pointer;
+}
+
+.cookie-button.primary {
+  color: #ffffff;
+  border-color: transparent;
+  background: var(--gradient);
+}
+
+.cookie-button.secondary {
+  color: var(--blue-900);
+  background: #ffffff;
+}
+
+.cookie-button.ghost {
+  color: var(--blue-900);
+  background: var(--surface-blue);
+}
+
+.cookie-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 125;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  padding: 1rem;
+  background: rgba(7, 17, 31, 0.46);
+}
+
+.cookie-modal-card {
+  display: grid;
+  gap: 0.75rem;
+  width: min(560px, 100%);
+  max-height: min(760px, calc(100vh - 2rem));
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 28px 80px rgba(7, 17, 31, 0.28);
+}
+
+.cookie-modal-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.cookie-modal-head h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.cookie-modal-close {
+  display: grid;
+  place-items: center;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--blue-900);
+  background: var(--surface-blue);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cookie-option {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.cookie-option strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 950;
+}
+
+.cookie-option.locked {
+  background: var(--surface-blue);
+}
+
+.cookie-option.locked span {
+  color: var(--blue-900);
+  font-size: 0.78rem;
+  font-weight: 950;
+  white-space: nowrap;
+}
+
+.cookie-option input {
+  width: 24px;
+  min-height: 24px;
+  accent-color: var(--blue-700);
+}
+
+@media (max-width: 560px) {
+  .cookie-consent {
+    left: 0.625rem;
+    right: 0.625rem;
+    bottom: 0.625rem;
+    width: auto;
+    font-size: 0.88rem;
+  }
+
+  .cookie-card {
+    gap: 0.75rem;
+    padding: 0.85rem;
+  }
+
+  .cookie-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cookie-button {
+    width: 100%;
+    min-height: 38px;
+    padding: 0.52rem 0.65rem;
+  }
+
+  .cookie-modal {
+    padding: 0.625rem;
+  }
+
+  .cookie-modal-card {
+    max-height: calc(100vh - 1.25rem);
+    padding: 0.85rem;
+  }
+
+  .cookie-option {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+}
+
 .scroll-progress {
   position: fixed;
   top: 0;

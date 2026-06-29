@@ -368,6 +368,223 @@ function initAiAssistant() {
   });
 }
 
+function initCookieConsent() {
+  if (document.querySelector("[data-cookie-consent]")) return;
+
+  const scriptSource = document.currentScript?.src || document.querySelector("script[src*='app.js']")?.src || window.location.href;
+  const siteUrl = (path) => new URL(path, scriptSource).toString();
+  const cookieName = "nh_cookie_consent";
+  const cookieVersion = "2026-06-29";
+  const maxAge = 60 * 60 * 24 * 180;
+  const isEnglish = document.documentElement.lang?.toLowerCase().startsWith("en");
+  const t = isEnglish
+    ? {
+      headline: "Cookie settings",
+      intro: "We use necessary cookies for site operation and consent storage. Analytics and marketing only run after consent.",
+      acceptAll: "Accept all",
+      necessaryOnly: "Necessary only",
+      settings: "Settings",
+      save: "Save selection",
+      close: "Close cookie settings",
+      necessary: "Necessary",
+      necessaryText: "Required for page operation, security and storing your cookie choice.",
+      analytics: "Analytics",
+      analyticsText: "Helps us understand which pages and course searches work well. Currently not active.",
+      marketing: "Marketing",
+      marketingText: "Reserved for future campaign measurement. Currently not active.",
+      privacy: "Privacy policy",
+      footer: "Cookie settings"
+    }
+    : {
+      headline: "Cookie-Einstellungen",
+      intro: "Wir nutzen notwendige Cookies für den Betrieb der Seite und zum Speichern deiner Auswahl. Analyse und Marketing laufen nur nach Einwilligung.",
+      acceptAll: "Alle akzeptieren",
+      necessaryOnly: "Nur notwendige",
+      settings: "Einstellungen",
+      save: "Auswahl speichern",
+      close: "Cookie-Einstellungen schließen",
+      necessary: "Notwendig",
+      necessaryText: "Erforderlich für Seitenbetrieb, Sicherheit und das Speichern deiner Cookie-Auswahl.",
+      analytics: "Analyse",
+      analyticsText: "Hilft zu verstehen, welche Seiten und Kurssuchen gut funktionieren. Aktuell nicht aktiv.",
+      marketing: "Marketing",
+      marketingText: "Vorbereitet für spätere Kampagnenmessung. Aktuell nicht aktiv.",
+      privacy: "Datenschutz",
+      footer: "Cookie-Einstellungen"
+    };
+
+  const readConsent = () => {
+    const rawCookie = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith(`${cookieName}=`))
+      ?.split("=")
+      .slice(1)
+      .join("=");
+
+    const raw = rawCookie || localStorage.getItem(cookieName);
+    if (!raw) return null;
+
+    try {
+      const parsed = JSON.parse(decodeURIComponent(raw));
+      return parsed.version === cookieVersion ? parsed : null;
+    } catch {
+      return null;
+    }
+  };
+
+  const saveConsent = (preferences) => {
+    const payload = {
+      version: cookieVersion,
+      necessary: true,
+      analytics: Boolean(preferences.analytics),
+      marketing: Boolean(preferences.marketing),
+      savedAt: new Date().toISOString()
+    };
+    const encoded = encodeURIComponent(JSON.stringify(payload));
+    const secure = window.location.protocol === "https:" ? "; Secure" : "";
+    document.cookie = `${cookieName}=${encoded}; Max-Age=${maxAge}; Path=/; SameSite=Lax${secure}`;
+    localStorage.setItem(cookieName, encoded);
+    window.dispatchEvent(new CustomEvent("nhCookieConsent", { detail: payload }));
+    return payload;
+  };
+
+  const existing = readConsent();
+  const openSettingsButtons = [];
+
+  const addFooterSettings = () => {
+    const footerLinks = document.querySelector(".site-footer div:last-child");
+    if (!footerLinks || footerLinks.querySelector("[data-cookie-settings-open]")) return;
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "footer-cookie-settings";
+    button.dataset.cookieSettingsOpen = "";
+    button.textContent = t.footer;
+    footerLinks.appendChild(button);
+    openSettingsButtons.push(button);
+  };
+
+  const consent = document.createElement("aside");
+  consent.className = "cookie-consent";
+  consent.dataset.cookieConsent = "";
+  consent.innerHTML = `
+    <div class="cookie-card" role="region" aria-label="${t.headline}">
+      <div>
+        <strong>${t.headline}</strong>
+        <p>${t.intro} <a href="${siteUrl("datenschutz.html")}">${t.privacy}</a></p>
+      </div>
+      <div class="cookie-actions">
+        <button type="button" class="cookie-button secondary" data-cookie-necessary>${t.necessaryOnly}</button>
+        <button type="button" class="cookie-button ghost" data-cookie-settings>${t.settings}</button>
+        <button type="button" class="cookie-button primary" data-cookie-all>${t.acceptAll}</button>
+      </div>
+    </div>
+    <section class="cookie-modal" role="dialog" aria-modal="true" aria-labelledby="cookie-modal-title" hidden>
+      <div class="cookie-modal-card">
+        <div class="cookie-modal-head">
+          <h2 id="cookie-modal-title">${t.headline}</h2>
+          <button type="button" class="cookie-modal-close" aria-label="${t.close}">×</button>
+        </div>
+        <div class="cookie-option locked">
+          <div>
+            <strong>${t.necessary}</strong>
+            <p>${t.necessaryText}</p>
+          </div>
+          <span>Immer aktiv</span>
+        </div>
+        <label class="cookie-option">
+          <div>
+            <strong>${t.analytics}</strong>
+            <p>${t.analyticsText}</p>
+          </div>
+          <input type="checkbox" name="analytics">
+        </label>
+        <label class="cookie-option">
+          <div>
+            <strong>${t.marketing}</strong>
+            <p>${t.marketingText}</p>
+          </div>
+          <input type="checkbox" name="marketing">
+        </label>
+        <div class="cookie-actions">
+          <button type="button" class="cookie-button secondary" data-cookie-save>${t.save}</button>
+          <button type="button" class="cookie-button primary" data-cookie-all-modal>${t.acceptAll}</button>
+        </div>
+      </div>
+    </section>`;
+
+  document.body.appendChild(consent);
+  addFooterSettings();
+
+  const banner = consent.querySelector(".cookie-card");
+  const modal = consent.querySelector(".cookie-modal");
+  const analytics = consent.querySelector("input[name='analytics']");
+  const marketing = consent.querySelector("input[name='marketing']");
+
+  const syncInputs = (preferences = readConsent()) => {
+    analytics.checked = Boolean(preferences?.analytics);
+    marketing.checked = Boolean(preferences?.marketing);
+  };
+
+  const showBanner = () => {
+    banner.hidden = false;
+    consent.classList.add("visible");
+  };
+
+  const hideBanner = () => {
+    banner.hidden = true;
+    consent.classList.remove("visible");
+  };
+
+  const openSettings = () => {
+    syncInputs();
+    modal.hidden = false;
+    consent.classList.add("settings-open");
+    consent.querySelector(".cookie-modal-close")?.focus();
+  };
+
+  const closeSettings = () => {
+    modal.hidden = true;
+    consent.classList.remove("settings-open");
+  };
+
+  const accept = (preferences) => {
+    const saved = saveConsent(preferences);
+    syncInputs(saved);
+    closeSettings();
+    hideBanner();
+  };
+
+  consent.querySelector("[data-cookie-necessary]").addEventListener("click", () => accept({ analytics: false, marketing: false }));
+  consent.querySelector("[data-cookie-all]").addEventListener("click", () => accept({ analytics: true, marketing: true }));
+  consent.querySelector("[data-cookie-settings]").addEventListener("click", openSettings);
+  consent.querySelector("[data-cookie-save]").addEventListener("click", () => accept({ analytics: analytics.checked, marketing: marketing.checked }));
+  consent.querySelector("[data-cookie-all-modal]").addEventListener("click", () => accept({ analytics: true, marketing: true }));
+  consent.querySelector(".cookie-modal-close").addEventListener("click", closeSettings);
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) closeSettings();
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !modal.hidden) closeSettings();
+  });
+
+  openSettingsButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      showBanner();
+      openSettings();
+    });
+  });
+
+  if (existing) {
+    hideBanner();
+    syncInputs(existing);
+  } else {
+    showBanner();
+  }
+}
+
+initCookieConsent();
 initScrollProgress();
 initQcgCheck();
 initAiAssistant();
