@@ -1,24 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --ink: #07111f;
-  --text: #1b2638;
-  --muted: #596779;
-  --blue-900: #253b90;
-  --blue-700: #275fb3;
-  --blue-500: #2189ca;
-  --cyan: #239ad6;
-  --purple: #5b2da1;
-  --lime: #eef28a;
-  --green: #35b86b;
-  --surface: #ffffff;
-  --surface-soft: #f4f8fc;
-  --surface-blue: #edf6fd;
-  --line: #dce6f0;
-  --line-strong: #c7d6e6;
-  --shadow: 0 18px 46px rgba(28, 55, 104, 0.14);
-  --soft-shadow: 0 10px 24px rgba(28, 55, 104, 0.09);
-  --gradient: linear-gradient(100deg, #5b2da1 0%, #275fb3 50%, #239ad6 100%);
+  --nh-blue-dark: #2C2A6B;
+  --nh-cyan: #1FC0DB;
+  --nh-orange: #F46C0F;
+  --nh-white: #FFFFFF;
+  --nh-bg-light: #F6F8FB;
+  --nh-text-dark: #1D2433;
+
+  --ink: var(--nh-text-dark);
+  --text: var(--nh-text-dark);
+  --muted: rgba(29, 36, 51, 0.72);
+  --blue-900: var(--nh-blue-dark);
+  --blue-700: var(--nh-blue-dark);
+  --blue-500: var(--nh-cyan);
+  --cyan: var(--nh-cyan);
+  --purple: var(--nh-blue-dark);
+  --lime: var(--nh-orange);
+  --green: var(--nh-cyan);
+  --surface: var(--nh-white);
+  --surface-soft: var(--nh-bg-light);
+  --surface-blue: var(--nh-bg-light);
+  --line: rgba(44, 42, 107, 0.16);
+  --line-strong: rgba(44, 42, 107, 0.28);
+  --shadow: 0 18px 46px rgba(44, 42, 107, 0.14);
+  --soft-shadow: 0 10px 24px rgba(44, 42, 107, 0.09);
+  --gradient: linear-gradient(100deg, var(--nh-blue-dark) 0%, var(--nh-cyan) 100%);
   --content: 1180px;
 }
 
@@ -34,7 +41,7 @@ body {
   margin: 0;
   color: var(--text);
   background: var(--surface);
-  font-family: "Nunito Sans", "Aptos", "Segoe UI", system-ui, sans-serif;
+  font-family: "Montserrat", "Poppins", Arial, sans-serif;
   line-height: 1.55;
 }
 
@@ -111,7 +118,7 @@ img {
 }
 
 .utility-bar {
-  background: linear-gradient(90deg, #173680 0%, #214aa1 48%, #173680 100%);
+  background: linear-gradient(90deg, var(--nh-blue-dark) 0%, var(--nh-blue-dark) 58%, var(--nh-cyan) 100%);
   color: #ffffff;
 }
 
@@ -629,7 +636,7 @@ img {
 .hero {
   overflow: hidden;
   background:
-    linear-gradient(180deg, #f6fbff 0%, #ffffff 74%),
+    linear-gradient(180deg, var(--nh-bg-light) 0%, #ffffff 74%),
     #ffffff;
 }
 
@@ -1131,7 +1138,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 3px solid rgba(35, 154, 214, 0.18);
+  outline: 3px solid rgba(31, 192, 219, 0.18);
   border-color: var(--blue-500);
 }
 
@@ -1412,7 +1419,7 @@ textarea:focus {
   border: 1px solid var(--line-strong);
   border-radius: 8px;
   color: var(--blue-900);
-  background: #f4f9ff;
+  background: var(--nh-bg-light);
   font-weight: 850;
 }
 
@@ -1456,7 +1463,7 @@ textarea:focus {
 .home-choice-layout {
   margin-top: 0.3rem;
   padding: 0.85rem;
-  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+  background: linear-gradient(180deg, #ffffff 0%, var(--nh-bg-light) 100%);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--soft-shadow);
@@ -1608,14 +1615,14 @@ textarea:focus {
   font-size: 0.88rem;
   font-weight: 850;
   text-decoration: none;
-  background: #f3f8ff;
+  background: var(--nh-bg-light);
   border: 1px solid var(--line);
   border-radius: 999px;
 }
 
 .provider-chip-grid a:hover {
   border-color: var(--blue-700);
-  background: #eaf4ff;
+  background: var(--nh-bg-light);
 }
 
 .regional-course-finder {
@@ -1662,7 +1669,7 @@ textarea:focus {
   width: 100%;
   max-width: none;
   padding-inline: max(1rem, calc((100vw - var(--content)) / 2));
-  background: linear-gradient(135deg, #253b90 0%, #2189ca 100%);
+  background: var(--gradient);
   color: #ffffff;
 }
 
@@ -1718,7 +1725,7 @@ textarea:focus {
   grid-template-columns: 1.3fr 1fr 1fr;
   gap: 1rem;
   padding: 2rem max(1rem, calc((100vw - var(--content)) / 2)) 5rem;
-  background: #07162b;
+  background: var(--nh-blue-dark);
   color: rgba(255, 255, 255, 0.84);
 }
 
@@ -1972,8 +1979,8 @@ textarea:focus {
   height: 100%;
   transform: scaleX(var(--scroll-progress, 0));
   transform-origin: left center;
-  background: linear-gradient(90deg, #6b35c8, #198ed2, #54c7ff);
-  box-shadow: 0 0 14px rgba(84, 199, 255, 0.55);
+  background: linear-gradient(90deg, var(--nh-orange), var(--nh-cyan), var(--nh-blue-dark));
+  box-shadow: 0 0 14px rgba(31, 192, 219, 0.45);
 }
 
 .mobile-sticky {
@@ -2118,7 +2125,7 @@ textarea:focus {
   max-height: 280px;
   padding: 1rem;
   overflow-y: auto;
-  background: #f6fbff;
+  background: var(--nh-bg-light);
 }
 
 .ai-assistant-message {
@@ -2160,7 +2167,7 @@ textarea:focus {
   border: 1px solid rgba(28, 79, 158, 0.16);
   border-radius: 999px;
   color: var(--blue-900);
-  background: #eef6ff;
+  background: var(--nh-bg-light);
   font-weight: 900;
   cursor: pointer;
 }
@@ -2271,7 +2278,7 @@ textarea:focus {
 .course-detail-hero {
   padding-top: clamp(1.75rem, 4vw, 3rem);
   padding-bottom: clamp(1.5rem, 3vw, 2.35rem);
-  background: linear-gradient(135deg, #253b90 0%, #1e75bd 74%, #2097d2 100%);
+  background: var(--gradient);
 }
 
 .course-detail-hero h1 {
@@ -3231,8 +3238,8 @@ textarea:focus {
 
 .compass-hero {
   background:
-    linear-gradient(120deg, rgba(37, 59, 144, 0.96), rgba(35, 154, 214, 0.9)),
-    radial-gradient(circle at 80% 15%, rgba(238, 242, 138, 0.24), transparent 28%);
+    linear-gradient(120deg, rgba(44, 42, 107, 0.96), rgba(31, 192, 219, 0.88)),
+    radial-gradient(circle at 80% 15%, rgba(244, 108, 15, 0.22), transparent 28%);
 }
 
 .compass-panel {
@@ -3267,7 +3274,7 @@ textarea:focus {
 .compass-card.accent {
   border-top-color: var(--cyan);
   background:
-    linear-gradient(180deg, rgba(237, 246, 253, 0.72), #ffffff 62%),
+    linear-gradient(180deg, rgba(246, 248, 251, 0.72), #ffffff 62%),
     #ffffff;
 }
 
@@ -3333,8 +3340,8 @@ textarea:focus {
 
 .qcg-check-hero {
   background:
-    linear-gradient(120deg, rgba(37, 59, 144, 0.96), rgba(22, 126, 194, 0.9)),
-    radial-gradient(circle at 12% 18%, rgba(238, 242, 138, 0.25), transparent 30%),
+    linear-gradient(120deg, rgba(44, 42, 107, 0.96), rgba(31, 192, 219, 0.88)),
+    radial-gradient(circle at 12% 18%, rgba(244, 108, 15, 0.2), transparent 30%),
     radial-gradient(circle at 88% 12%, rgba(255, 255, 255, 0.2), transparent 22%);
 }
 
@@ -3369,7 +3376,7 @@ textarea:focus {
   padding: 0.95rem;
   border: 1px solid rgba(38, 87, 187, 0.18);
   border-radius: 8px;
-  background: linear-gradient(180deg, rgba(237, 246, 253, 0.64), #ffffff);
+  background: linear-gradient(180deg, rgba(246, 248, 251, 0.64), #ffffff);
 }
 
 .qcg-check-form legend {
@@ -3406,7 +3413,7 @@ textarea:focus {
   padding: clamp(1rem, 2.4vw, 1.35rem);
   border-top: 6px solid var(--cyan);
   background:
-    linear-gradient(135deg, rgba(237, 246, 253, 0.92), #ffffff 70%),
+    linear-gradient(135deg, rgba(246, 248, 251, 0.92), #ffffff 70%),
     #ffffff;
 }
 
