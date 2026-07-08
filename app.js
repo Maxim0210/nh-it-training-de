@@ -1,4 +1,29 @@
 ﻿const filters = document.querySelectorAll(".filter");
+const maintenanceMode = true;
+
+function initMaintenanceMode() {
+  const scriptSource = document.currentScript?.src || new URL("app.js", window.location.href).toString();
+  const logoSource = new URL("assets/new-horizons-muenchen-logo.svg", scriptSource).toString();
+  const screen = document.createElement("main");
+
+  document.documentElement.classList.add("maintenance-mode");
+
+  screen.className = "maintenance-screen";
+  screen.setAttribute("role", "status");
+  screen.setAttribute("aria-live", "polite");
+  screen.innerHTML = `
+    <div class="maintenance-content">
+      <img src="${logoSource}" alt="New Horizons">
+      <span aria-hidden="true"></span>
+      <h1>Die Seite befindet sich im Aufbau.</h1>
+    </div>`;
+
+  document.body.prepend(screen);
+}
+
+if (maintenanceMode) {
+  initMaintenanceMode();
+} else {
 const cards = document.querySelectorAll(".course-card");
 const searchForms = document.querySelectorAll(".search-box");
 const searchInputs = document.querySelectorAll(".search-box input[name='q']");
@@ -588,3 +613,4 @@ initCookieConsent();
 initScrollProgress();
 initQcgCheck();
 initAiAssistant();
+}

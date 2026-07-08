@@ -4,6 +4,12 @@ Static GitHub Pages deployment for nh-it-training.de.
 
 Forms are sent through FormSubmit to max.dilewski@newhorizons-muenchen.de. The first submission must be confirmed by email.
 
+## Maintenance mode
+
+The temporary maintenance screen is enabled with `maintenanceMode = true` at the top of `app.js`.
+Set the value to `false` and deploy to restore the full website. Existing URLs, metadata,
+canonical tags, robots.txt and sitemap.xml remain unchanged while maintenance mode is active.
+
 ## SEO action log
 
 ### 2026-06-29
