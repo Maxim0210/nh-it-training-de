@@ -13,9 +13,9 @@ Set the value to `true` and deploy only when the public website should show the 
 ## Regional scope
 
 The live site is scoped to Munich/Oberbayern, Nuremberg/Franken, Stuttgart/Baden-Württemberg
-and the allowed regional hub `standorte.html`. Legacy broad landing pages for DACH, Germany,
-Austria and Switzerland are kept only as `noindex,follow` redirects to preserve old links
-without visibly advertising unsupported regions.
+and the regional hub `standorte.html`. Legacy regional landing pages are kept only as
+`noindex,follow` redirects to preserve old links while the public site focuses on the current
+regional communication.
 
 ## SEO action log
 
@@ -41,8 +41,8 @@ without visibly advertising unsupported regions.
 ### 2026-07-14
 
 - Full website restored from temporary maintenance mode.
-- Header navigation changed from broad online/DACH wording to `Regionen`.
-- Added `standorte.html` as the allowed regional hub for Munich, Nuremberg, Stuttgart, Bavaria and Baden-Württemberg.
-- Removed broad DACH/Germany/Austria/Switzerland landing pages from `sitemap.xml`; legacy pages now point to `standorte.html` with `noindex,follow`.
-- Updated course FAQs, navigation links and visible regional blocks away from broad national wording.
+- Header navigation changed from wider regional wording to `Regionen`.
+- Added `standorte.html` as the regional hub for Munich, Nuremberg, Stuttgart, Bavaria and Baden-Württemberg.
+- Removed previous wider regional landing pages from `sitemap.xml`; legacy pages now point to `standorte.html` with `noindex,follow`.
+- Updated course FAQs, navigation links and visible regional blocks to focus on Munich, Nuremberg and Stuttgart.
 - Bumped static asset query version to `20260714-1` so browsers fetch the restored `app.js`.
