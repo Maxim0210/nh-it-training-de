@@ -526,12 +526,13 @@ img {
 .training-nav {
   min-height: 48px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.72rem;
   min-width: 0;
   max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow-x: visible;
+  overflow-y: visible;
   padding-block: 0.34rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -565,12 +566,12 @@ img {
 }
 
 .search-box {
-  flex: 0 0 260px;
+  flex: 1 1 290px;
   display: flex;
   align-items: stretch;
-  width: 260px;
-  min-width: 0;
-  max-width: 100%;
+  width: auto;
+  min-width: min(100%, 270px);
+  max-width: 420px;
   margin-left: auto;
   border: 1px solid var(--line-strong);
   background: #ffffff;
@@ -4140,7 +4141,7 @@ textarea:focus {
 
   .main-nav > a[href$="förderung.html"],
   .main-nav > a[href$="unternehmen.html"],
-  .main-nav > a[href$="it-weiterbildung-online-dach.html"],
+  .main-nav > a[href$="standorte.html"],
   .main-nav > a[href$="lernwege.html"],
   .main-nav > a[href$="blog.html"] {
     display: none;

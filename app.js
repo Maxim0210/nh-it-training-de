@@ -1,5 +1,5 @@
 ﻿const filters = document.querySelectorAll(".filter");
-const maintenanceMode = true;
+const maintenanceMode = false;
 
 function initMaintenanceMode() {
   const scriptSource = document.currentScript?.src || new URL("app.js", window.location.href).toString();

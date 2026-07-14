@@ -6,9 +6,16 @@ Forms are sent through FormSubmit to max.dilewski@newhorizons-muenchen.de. The f
 
 ## Maintenance mode
 
-The temporary maintenance screen is enabled with `maintenanceMode = true` at the top of `app.js`.
-Set the value to `false` and deploy to restore the full website. Existing URLs, metadata,
-canonical tags, robots.txt and sitemap.xml remain unchanged while maintenance mode is active.
+Maintenance mode is currently disabled with `maintenanceMode = false` at the top of `app.js`.
+Set the value to `true` and deploy only when the public website should show the temporary
+"Die Seite befindet sich im Aufbau." screen.
+
+## Regional scope
+
+The live site is scoped to Munich/Oberbayern, Nuremberg/Franken, Stuttgart/Baden-Württemberg
+and the allowed regional hub `standorte.html`. Legacy broad landing pages for DACH, Germany,
+Austria and Switzerland are kept only as `noindex,follow` redirects to preserve old links
+without visibly advertising unsupported regions.
 
 ## SEO action log
 
@@ -30,3 +37,12 @@ canonical tags, robots.txt and sitemap.xml remain unchanged while maintenance mo
   - Stuttgart page `https://nh-it-training.de/it-weiterbildung-online-stuttgart.html` was initially reported as not known to Google, then passed the live URL test as indexable.
   - Manual indexing request for the Stuttgart page was submitted after the successful live test.
 - Bing IndexNow resubmitted `338` sitemap URLs after the cookie banner update with status `200`.
+
+### 2026-07-14
+
+- Full website restored from temporary maintenance mode.
+- Header navigation changed from broad online/DACH wording to `Regionen`.
+- Added `standorte.html` as the allowed regional hub for Munich, Nuremberg, Stuttgart, Bavaria and Baden-Württemberg.
+- Removed broad DACH/Germany/Austria/Switzerland landing pages from `sitemap.xml`; legacy pages now point to `standorte.html` with `noindex,follow`.
+- Updated course FAQs, navigation links and visible regional blocks away from broad national wording.
+- Bumped static asset query version to `20260714-1` so browsers fetch the restored `app.js`.
