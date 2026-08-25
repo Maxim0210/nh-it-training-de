@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 :root {
   --nh-blue-dark: #2C2A6B;
   --nh-cyan: #1FC0DB;
@@ -22,7 +24,7 @@ body {
   min-height: 100%;
   margin: 0;
   color: var(--nh-text-dark);
-  font-family: "Montserrat", "Poppins", Arial, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   background:
     linear-gradient(180deg, rgba(44, 42, 107, 0.07), rgba(246, 248, 251, 0) 18rem),
     var(--nh-bg-light);
@@ -68,7 +70,7 @@ a {
   padding: 0.58rem 1rem;
   color: var(--nh-white);
   font-size: 0.84rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   background: var(--nh-blue-dark);
@@ -88,7 +90,7 @@ a {
   margin: 0 0 1rem;
   color: var(--nh-orange);
   font-size: 0.88rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -120,7 +122,7 @@ h1 {
 .location-row span {
   padding: 0.72rem 1rem;
   color: var(--nh-blue-dark);
-  font-weight: 900;
+  font-weight: 700;
   background: #EAF4FC;
   border: 1px solid #CFE0F0;
   border-radius: 8px;
@@ -139,7 +141,7 @@ h1 {
   justify-content: center;
   min-height: 3.2rem;
   padding: 0.9rem 1.25rem;
-  font-weight: 900;
+  font-weight: 700;
   text-decoration: none;
   border-radius: 999px;
 }
@@ -179,7 +181,7 @@ h1 {
   padding: 0 0.55rem;
   color: var(--nh-blue-dark);
   font-size: 0.78rem;
-  font-weight: 950;
+  font-weight: 700;
   background: #EAF4FC;
   border: 1px solid #CFE0F0;
   border-radius: 8px;
@@ -217,13 +219,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .maintenance-footer a,
 .legal-card a {
   color: var(--nh-blue-dark);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .legal-header {
