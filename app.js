@@ -268,6 +268,57 @@ function initScrollProgress() {
   window.addEventListener("resize", updateProgress);
 }
 
+function initDropdownCloseControls() {
+  const dropdowns = document.querySelectorAll("details.mega-menu, details.quick-menu");
+
+  dropdowns.forEach((details) => {
+    const summary = details.querySelector(":scope > summary");
+    const panel = details.querySelector(":scope > .mega-panel, :scope > .quick-menu-panel");
+    if (!summary || !panel || panel.querySelector("[data-dropdown-close]")) return;
+
+    const closeButton = document.createElement("button");
+    closeButton.type = "button";
+    closeButton.className = "dropdown-close";
+    closeButton.dataset.dropdownClose = "";
+    closeButton.setAttribute("aria-label", "Menü schließen");
+    closeButton.innerHTML = '<span aria-hidden="true">×</span>';
+
+    closeButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      details.open = false;
+      details.classList.add("dropdown-dismissed");
+      summary.focus({ preventScroll: true });
+    });
+
+    summary.addEventListener("pointerdown", () => {
+      details.classList.remove("dropdown-dismissed");
+    });
+
+    summary.addEventListener("keydown", () => {
+      details.classList.remove("dropdown-dismissed");
+    });
+
+    details.addEventListener("toggle", () => {
+      if (details.open) details.classList.remove("dropdown-dismissed");
+    });
+
+    details.addEventListener("pointerleave", () => {
+      details.classList.remove("dropdown-dismissed");
+    });
+
+    panel.prepend(closeButton);
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    dropdowns.forEach((details) => {
+      details.open = false;
+      details.classList.add("dropdown-dismissed");
+    });
+  });
+}
+
 function initAiAssistant() {
   if (document.querySelector("[data-ai-assistant]")) return;
 
@@ -611,6 +662,7 @@ function initCookieConsent() {
 
 initCookieConsent();
 initScrollProgress();
+initDropdownCloseControls();
 initQcgCheck();
 initAiAssistant();
 }
