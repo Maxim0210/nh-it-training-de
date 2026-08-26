@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
   --nh-blue-dark: #2C2A6B;
@@ -42,7 +42,7 @@ body {
   margin: 0;
   color: var(--text);
   background: var(--surface);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", "Poppins", Arial, sans-serif;
   line-height: 1.55;
 }
 
@@ -2461,18 +2461,21 @@ textarea:focus {
   right: 1.15rem;
   bottom: 1.15rem;
   z-index: 70;
-  width: min(390px, calc(100vw - 2rem));
+  width: auto;
+  max-width: calc(100vw - 2rem);
   font-size: 0.95rem;
 }
 
 .ai-assistant-toggle {
   display: flex;
-  gap: 0.85rem;
+  gap: 0;
   align-items: center;
-  width: max-content;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
   max-width: 100%;
   margin-left: auto;
-  padding: 0.45rem 1rem 0.45rem 0.45rem;
+  padding: 0.35rem;
   border: 1px solid rgba(255, 255, 255, 0.66);
   border-radius: 999px;
   color: #ffffff;
@@ -2485,6 +2488,15 @@ textarea:focus {
 .ai-assistant-toggle small {
   display: block;
   text-align: left;
+}
+
+.ai-assistant-toggle > span:not(.ai-assistant-avatar) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .ai-assistant-toggle strong {
@@ -2517,6 +2529,7 @@ textarea:focus {
 }
 
 .ai-assistant-panel {
+  width: min(390px, calc(100vw - 2rem));
   margin-bottom: 0.75rem;
   overflow: hidden;
   border: 1px solid rgba(28, 79, 158, 0.16);
@@ -3717,17 +3730,6 @@ textarea:focus {
   border-top: 6px solid var(--blue-700);
   border-radius: 8px;
   box-shadow: var(--soft-shadow);
-}
-
-.compass-card.business {
-  border-top-color: var(--purple);
-}
-
-.compass-card.accent {
-  border-top-color: var(--cyan);
-  background:
-    linear-gradient(180deg, rgba(246, 248, 251, 0.72), #ffffff 62%),
-    #ffffff;
 }
 
 .compass-card > span {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
   --nh-blue-dark: #2C2A6B;
@@ -24,7 +24,7 @@ body {
   min-height: 100%;
   margin: 0;
   color: var(--nh-text-dark);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", "Poppins", Arial, sans-serif;
   background:
     linear-gradient(180deg, rgba(44, 42, 107, 0.07), rgba(246, 248, 251, 0) 18rem),
     var(--nh-bg-light);

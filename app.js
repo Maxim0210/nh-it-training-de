@@ -333,7 +333,7 @@ function initAiAssistant() {
   assistant.className = "ai-assistant";
   assistant.dataset.aiAssistant = "";
   assistant.innerHTML = `
-    <button class="ai-assistant-toggle" type="button" aria-expanded="false" aria-controls="ai-assistant-panel">
+    <button class="ai-assistant-toggle" type="button" aria-label="KI-Assistentin öffnen" aria-expanded="false" aria-controls="ai-assistant-panel">
       <span class="ai-assistant-avatar"><img src="${assistantImage}" alt=""></span>
       <span><strong>KI-Assistentin</strong><small>Fragen zu Kursen?</small></span>
     </button>
