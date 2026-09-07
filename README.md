@@ -2,7 +2,7 @@
 
 Static GitHub Pages deployment for nh-it-training.de.
 
-Forms are sent through FormSubmit to max.dilewski@newhorizons-muenchen.de. The first submission must be confirmed by email.
+Forms are sent through FormSubmit to Max.Dilewski@NewHorizons-Muenchen.de. The first submission must be confirmed by email.
 
 ## Maintenance mode
 
@@ -10,12 +10,11 @@ Maintenance mode is currently disabled with `maintenanceMode = false` at the top
 Set the value to `true` and deploy only when the public website should show the temporary
 "Die Seite befindet sich im Aufbau." screen.
 
-## Regional scope
+## Public location scope
 
-The live site is scoped to Munich/Oberbayern, Nuremberg/Franken, Stuttgart/Baden-Württemberg
-and the regional hub `standorte.html`. Legacy regional landing pages are kept only as
-`noindex,follow` redirects to preserve old links while the public site focuses on the current
-regional communication.
+The live site uses the public location pages for Munich, Nuremberg and Stuttgart plus the
+neutral hub `standorte.html`. Legacy broad landing pages are kept only as `noindex,follow`
+redirects so old links do not break while public wording stays neutral and approval-safe.
 
 ## SEO action log
 
@@ -41,8 +40,8 @@ regional communication.
 ### 2026-07-14
 
 - Full website restored from temporary maintenance mode.
-- Header navigation changed from wider regional wording to `Regionen`.
-- Added `standorte.html` as the regional hub for Munich, Nuremberg, Stuttgart, Bavaria and Baden-Württemberg.
-- Removed previous wider regional landing pages from `sitemap.xml`; legacy pages now point to `standorte.html` with `noindex,follow`.
-- Updated course FAQs, navigation links and visible regional blocks to focus on Munich, Nuremberg and Stuttgart.
+- Header navigation changed from wider wording to neutral `Standorte`.
+- Added `standorte.html` as the neutral location hub for Munich, Nuremberg and Stuttgart.
+- Removed previous wider landing pages from `sitemap.xml`; legacy pages now point to `standorte.html` with `noindex,follow`.
+- Updated course FAQs, navigation links and visible location blocks for Munich, Nuremberg and Stuttgart.
 - Bumped static asset query version to `20260714-1` so browsers fetch the restored `app.js`.
