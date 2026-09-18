@@ -34,7 +34,7 @@
 }
 
 html {
-  font-size: 98%;
+  font-size: 96%;
   scroll-behavior: smooth;
 }
 
@@ -5358,6 +5358,189 @@ textarea:focus {
 
   .model-card-body {
     padding: 0.9rem;
+  }
+}
+
+/* Compact homepage; detailed course information remains on the linked pages. */
+.homepage [id] {
+  scroll-margin-top: calc(var(--home-header-height, 190px) + 1rem);
+}
+
+.homepage .hero-inner {
+  align-items: center;
+  padding-block: 2.5rem;
+}
+
+.homepage .hero-copy {
+  padding-top: 0;
+}
+
+.homepage .hero-photo-mobile {
+  display: none;
+}
+
+.homepage .hero h1 {
+  max-width: 38rem;
+  font-size: 2.55rem;
+  line-height: 1.15;
+}
+
+.homepage .hero-text {
+  max-width: 35rem;
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.homepage .hero-actions {
+  margin-bottom: 0;
+}
+
+.homepage .section {
+  padding-block: 2.75rem;
+}
+
+.homepage .section h2 {
+  font-size: 1.85rem;
+  line-height: 1.2;
+}
+
+.homepage .section-heading {
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.homepage .section-heading .eyebrow {
+  margin-bottom: 0.45rem;
+}
+
+.homepage .home-route-groups .route-panel {
+  min-height: 220px;
+  gap: 0.6rem;
+}
+
+.homepage .route-panel h3 {
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+.homepage .model-card-body {
+  min-height: 125px;
+}
+
+.homepage .training-model-card h3 {
+  font-size: 1.1rem;
+}
+
+.homepage .training-model-card {
+  box-shadow: none;
+}
+
+.homepage .home-contact > div > a {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  padding-block: 0.4rem;
+  color: var(--blue-900);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 761px) and (max-width: 1180px) {
+  .homepage .hero-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .homepage .hero h1 {
+    font-size: 2.15rem;
+  }
+
+  .homepage .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .homepage .home-route-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .homepage .site-header {
+    position: relative;
+  }
+
+  .homepage .hero-photo-mobile {
+    display: block;
+  }
+
+  .homepage .hero-inner {
+    padding-block: 1.15rem;
+  }
+
+  .homepage .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .homepage .hero-text {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .homepage .hero-side {
+    display: none;
+  }
+
+  .homepage .section {
+    padding-block: 1.75rem;
+  }
+
+  .homepage .section h2 {
+    max-width: 100%;
+    font-size: 1.48rem;
+  }
+
+  .homepage .home-route-groups .route-panel {
+    min-height: 0;
+    grid-template-columns: 2.1rem minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+    gap: 0.35rem 0.65rem;
+    border-radius: 8px;
+  }
+
+  .homepage .route-panel .route-icon {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .homepage .route-panel .route-label,
+  .homepage .route-panel h3,
+  .homepage .route-panel p {
+    grid-column: 2;
+  }
+
+  .homepage .route-panel .route-label {
+    padding: 0;
+    background: transparent;
+  }
+
+  .homepage .route-panel .route-button {
+    grid-column: 1 / -1;
+    margin-top: 0.3rem;
+  }
+
+  .homepage .model-card-body {
+    min-height: 0;
+  }
+
+  .homepage .home-contact form {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage .home-contact input,
+  .homepage .home-contact select {
+    font-size: 16px;
   }
 }
 

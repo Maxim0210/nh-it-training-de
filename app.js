@@ -268,6 +268,21 @@ function initScrollProgress() {
   window.addEventListener("resize", updateProgress);
 }
 
+function initHomepageAnchorSpacing() {
+  const header = document.querySelector(".homepage .site-header");
+  if (!header) return;
+
+  const updateSpacing = () => {
+    const position = getComputedStyle(header).position;
+    const height = position === "sticky" || position === "fixed" ? header.getBoundingClientRect().height : 0;
+    document.body.style.setProperty("--home-header-height", `${height}px`);
+  };
+
+  updateSpacing();
+  new ResizeObserver(updateSpacing).observe(header);
+  window.addEventListener("resize", updateSpacing);
+}
+
 function initDropdownCloseControls() {
   const dropdowns = document.querySelectorAll("details.mega-menu, details.quick-menu");
 
@@ -662,6 +677,7 @@ function initCookieConsent() {
 
 initCookieConsent();
 initScrollProgress();
+initHomepageAnchorSpacing();
 initDropdownCloseControls();
 initQcgCheck();
 initAiAssistant();

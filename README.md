@@ -4,6 +4,14 @@ Static GitHub Pages deployment for nh-it-training.de.
 
 Forms are sent through FormSubmit to Max.Dilewski@NewHorizons-Muenchen.de. The first submission must be confirmed by email.
 
+## Homepage update, 2026-09-18
+
+- Reduced the root type size from 98% to 96%, keeping Montserrat and the existing brand colors.
+- Shortened homepage headings and descriptions, removed repeated introductory content, and retained the four audience routes.
+- Moved the existing enquiry form into a dedicated contact section. In-page links account for the header height.
+- Kept the homepage free of visible online/hybrid wording and retained the existing location and course links.
+- Verified loaded fonts, images, navigation, search, contact destination and overflow at 320, 390, 768, 1024 and 1440 pixels. No enquiry was submitted.
+
 ## Maintenance mode
 
 Maintenance mode is currently disabled with `maintenanceMode = false` at the top of `app.js`.
