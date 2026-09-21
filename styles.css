@@ -5379,6 +5379,59 @@ textarea:focus {
   display: none;
 }
 
+.future-skills {
+  padding: 1rem 1.15rem 0.7rem;
+  border-left: 3px solid var(--nh-cyan);
+  background: var(--nh-white);
+  text-align: left;
+}
+
+.future-skills-label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.future-skills > strong {
+  display: block;
+  color: var(--nh-blue-dark);
+  font-size: 1rem;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+.future-skills-links {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  margin-top: 0.3rem;
+}
+
+.future-skills-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 36px;
+  color: var(--nh-blue-dark);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-underline-offset: 0.25rem;
+}
+
+.future-skills-links a:hover {
+  text-decoration: underline;
+}
+
+.future-skills-links a:focus-visible {
+  outline: 2px solid var(--nh-blue-dark);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 .homepage .hero h1 {
   max-width: 38rem;
   font-size: 2.55rem;

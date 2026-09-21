@@ -4,6 +4,11 @@ Static GitHub Pages deployment for nh-it-training.de.
 
 Forms are sent through FormSubmit to Max.Dilewski@NewHorizons-Muenchen.de. The first submission must be confirmed by email.
 
+## Homepage update, 2026-09-21
+
+- Added a compact caption below the hero image with direct links to AI/Copilot, Cloud and Cybersecurity training.
+- Verified desktop and mobile screenshots, links and responsive layout at five viewport widths.
+
 ## Homepage update, 2026-09-18
 
 - Reduced the root type size from 98% to 96%, keeping Montserrat and the existing brand colors.
