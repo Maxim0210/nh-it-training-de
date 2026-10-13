@@ -5449,12 +5449,81 @@ textarea:focus {
 }
 
 .homepage .section {
-  padding-block: 2.75rem;
+  width: min(100% - 48px, 1180px);
+  padding-block: 32px;
 }
 
 .homepage .section h2 {
-  font-size: 1.85rem;
-  line-height: 1.2;
+  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.homepage .section > div > p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 52ch;
+}
+
+.homepage .two-column,
+.homepage .split-band {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.homepage .split-band {
+  padding-inline: 0;
+  background: none;
+}
+
+.homepage .section-image {
+  aspect-ratio: 16 / 9;
+  box-shadow: none;
+}
+
+.homepage .topic-overview {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.homepage .topic-icon-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.homepage .topic-icon-grid a {
+  min-height: 76px;
+  box-shadow: none;
+}
+
+.homepage .training-model-card img {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.homepage .section .button {
+  min-height: 44px;
+  padding: 12px 18px;
+  font-size: 13px;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.homepage .faq {
+  width: 100%;
+  padding-inline: max(24px, calc((100% - 1180px) / 2));
+}
+
+.homepage .region-link-grid a {
+  box-shadow: none;
+}
+
+.homepage .home-text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 12px;
+  font-size: 13px;
 }
 
 .homepage .section-heading {
@@ -5545,12 +5614,50 @@ textarea:focus {
   }
 
   .homepage .section {
-    padding-block: 1.75rem;
+    width: calc(100% - 36px);
+    padding-block: 24px;
   }
 
   .homepage .section h2 {
     max-width: 100%;
-    font-size: 1.48rem;
+    font-size: 22px;
+  }
+
+  .homepage .two-column,
+  .homepage .split-band {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .homepage .topic-icon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage .training-model-card {
+    display: grid;
+    grid-template-columns: 108px minmax(0, 1fr);
+  }
+
+  .homepage .training-model-card img {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .homepage .training-model-card .model-card-body {
+    padding: 12px;
+  }
+
+  .homepage .training-model-card h3 {
+    font-size: 15px;
+  }
+
+  .homepage .training-model-card p {
+    font-size: 13px;
+  }
+
+  .homepage .faq {
+    width: 100%;
+    padding-inline: 18px;
   }
 
   .homepage .home-route-groups .route-panel {

@@ -1,0 +1,57 @@
+.finder-shell {
+  --finder-indigo: #2c2a6b;
+  --finder-cyan: #1fc0db;
+  --finder-orange: #f46c0f;
+  width: min(100%, 1120px);
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 7vw, 6rem) 1.25rem;
+  color: #202139;
+  letter-spacing: 0;
+}
+.finder-panel [hidden] { display: none !important; }
+.finder-intro { max-width: 740px; margin: 0 auto 2rem; text-align: center; }
+.finder-kicker, .finder-result-kicker { margin: 0 0 .65rem; color: var(--finder-indigo); font-size: .78rem; font-weight: 800; letter-spacing: 0; text-transform: uppercase; }
+.finder-intro h1 { margin: 0; color: var(--finder-indigo); font-size: 32px; line-height: 1.15; text-wrap: balance; }
+.finder-intro > p:last-child { margin: .9rem 0 0; color: #55566b; font-size: 1.05rem; }
+.finder-panel { max-width: 760px; margin: 0 auto; padding: 1.5rem; border: 1px solid #dedeea; border-top: 4px solid var(--finder-cyan); background: #fff; }
+.finder-progress-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .7rem; color: #55566b; font-size: .9rem; font-weight: 700; }
+.finder-reset, .finder-back { min-height: 44px; border: 0; background: transparent; color: var(--finder-indigo); font: inherit; font-weight: 700; text-decoration: underline; text-underline-offset: .18em; cursor: pointer; }
+.finder-progress { height: 6px; overflow: hidden; background: #e8e8f0; }
+.finder-progress span { display: block; width: 25%; height: 100%; background: var(--finder-cyan); transition: width .2s ease; }
+.finder-step { padding: 1.5rem 0 1rem; }
+.finder-step fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.finder-step legend { padding: 0; color: #23234b; font-size: 22px; font-weight: 800; line-height: 1.25; text-wrap: balance; }
+.finder-help { margin: .55rem 0 1.3rem; color: #5b5c6d; }
+.finder-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; }
+.finder-options label { display: flex; min-height: 56px; align-items: center; gap: .8rem; padding: .8rem .9rem; border: 1px solid #d8d9e4; background: #fff; cursor: pointer; line-height: 1.35; }
+.finder-options label:has(input:checked) { border-color: var(--finder-indigo); background: #f1f1fa; box-shadow: inset 3px 0 var(--finder-indigo); }
+.finder-options input { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; accent-color: var(--finder-indigo); }
+.finder-actions { display: flex; justify-content: space-between; gap: 1rem; padding-top: 1rem; border-top: 1px solid #e5e5ed; }
+.finder-next, .finder-contact { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: .6rem; padding: .75rem 1.25rem; border: 0; background: var(--finder-orange); color: #18152e; font: inherit; font-weight: 800; text-decoration: none; cursor: pointer; }
+.finder-next { margin-left: auto; }
+.finder-back[hidden] { display: none; }
+.finder-results { padding-top: 1.7rem; }
+.finder-results h2 { margin: 0; color: var(--finder-indigo); font-size: 1.8rem; }
+.finder-reason, .finder-note { max-width: 65ch; color: #55566b; line-height: 1.55; }
+.finder-course-list { display: block; margin: 1rem 0; padding: 0; list-style: none; }
+.finder-course-list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .35rem 1rem; padding: .75rem 0; border-bottom: 1px solid #dcdde7; }
+.finder-course-list a { color: var(--finder-indigo); font-weight: 750; text-decoration-thickness: 1px; text-underline-offset: .18em; overflow-wrap: anywhere; }
+.finder-course-list span { color: #55566b; font-size: .9rem; }
+.finder-contact { margin-top: .5rem; }
+.finder-route { display: inline-block; min-height: 44px; margin: .5rem 0 0 1rem; padding: .75rem 0; color: var(--finder-indigo); font-weight: 700; text-underline-offset: .2em; }
+.finder-error { margin: .75rem 0 0; padding: .65rem .8rem; border-left: 3px solid var(--finder-orange); background: #fff4ec; color: #562600; font-weight: 700; }
+.finder-panel :focus-visible { outline: 3px solid var(--finder-orange); outline-offset: 3px; }
+@media (max-width: 600px) {
+  .finder-shell { padding: 2.4rem 1rem; }
+  .finder-intro h1 { font-size: 26px; }
+  .finder-panel { padding: 1rem; }
+  .finder-step legend { font-size: 20px; }
+  .finder-options { grid-template-columns: minmax(0, 1fr); }
+  .finder-situations label { min-height: 62px; }
+  .finder-route { display: block; margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .finder-progress span { transition: none; }
+}

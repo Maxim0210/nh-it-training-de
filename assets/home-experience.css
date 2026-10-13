@@ -1,0 +1,92 @@
+/* Homepage experience: isolated from legacy hero and route-card styles. */
+.homepage main > .learning-horizon { order: 0; }
+.homepage main > #kurse.entry-paths { order: 1; }
+.homepage .compact-training-nav { display: flex; gap: 10px; flex-wrap: wrap; }
+.audience-direct { display: flex; gap: 18px; align-items: center; }
+.homepage .audience-direct a { padding: 10px 0; border: 0; border-radius: 0; background: none; font-size: 12px; font-weight: 600; white-space: nowrap; text-decoration: none; min-height: 44px; display: flex; align-items: center; }
+.audience-direct a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.audience-direct a:focus-visible { outline: 2px solid #2c2a6b; outline-offset: 3px; }
+.homepage .compact-training-nav > .quick-menu { flex: 0 1 125px; }
+.homepage .compact-training-nav > .search-box { flex: 1 1 230px; min-width: 180px; }
+.learning-horizon {
+  position: relative;
+  isolation: isolate;
+  min-height: 420px;
+  overflow: hidden;
+  background: #f6f8fb;
+  color: #2c2a6b;
+}
+.horizon-art { position: absolute; inset: 0; z-index: -1; }
+.horizon-art { pointer-events: none; overflow: hidden; }
+.horizon-fallback { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.horizon-art::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #f6f8fb 0%, #f6f8fb 38%, rgba(246,248,251,.94) 46%, rgba(246,248,251,0) 65%); }
+.glass-plane { position: absolute; z-index: 1; border: 1px solid rgba(255,255,255,.85); background: rgba(255,255,255,.12); backdrop-filter: blur(7px); box-shadow: 0 12px 35px rgba(44,42,107,.08), inset 0 1px 0 white; border-radius: 6px; transform: translate(var(--glass-x, 0px), var(--glass-y, 0px)); }
+.glass-plane-back { width: 65px; height: 150px; right: 38%; top: 8%; }
+.glass-plane-front { width: 140px; height: 45px; right: 3%; bottom: 3%; }
+.horizon-content { width: min(100% - 48px, 1180px); margin: auto; padding: 40px 0 60px; }
+.horizon-kicker { margin: 0 0 23px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0; }
+.learning-horizon h1 { margin: 0; max-width: 620px; color: #2c2a6b; font-size: 42px; font-weight: 600; line-height: 1.16; letter-spacing: 0; }
+.horizon-intro { max-width: 455px; font-size: 16px; line-height: 1.6; margin: 20px 0 24px; color: #1d2433; }
+.horizon-cta { display: inline-flex; gap: 30px; align-items: center; min-height: 50px; padding: 12px 22px; border-radius: 4px; color: white; background: #2c2a6b; font-size: 14px; font-weight: 600; text-decoration: none; }
+.horizon-cta span { font-size: 22px; line-height: 1; }
+.horizon-advice { display: block; width: fit-content; padding: 13px 0; font-size: 13px; text-underline-offset: 4px; }
+.horizon-bottom { position: absolute; bottom: 18px; left: max(24px, calc((100% - 1180px) / 2)); right: max(24px, calc((100% - 1180px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.horizon-topics { display: flex; gap: 25px; flex-wrap: wrap; }
+.horizon-topics a { font-size: 12px; font-weight: 600; text-decoration: none; padding: 8px 0; }
+.motion-control { display: grid; place-items: center; width: 40px; height: 40px; flex-shrink: 0; border: 1px solid #c8ccd6; border-radius: 50%; color: #2c2a6b; background: #fff; cursor: pointer; font: inherit; }
+.motion-control[hidden] { display: none; }
+.entry-paths { padding: 22px max(24px, calc((100% - 1180px) / 2)) 26px; background: white; }
+.entry-heading { display: flex; gap: 24px; align-items: baseline; margin-bottom: 14px; }
+.entry-heading p { margin: 0; color: #596276; font-size: 12px; font-weight: 600; }
+.entry-heading h2 { font-size: 23px; margin: 0; font-weight: 600; color: #2c2a6b; letter-spacing: 0; }
+.entry-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-block: 1px solid #dcdfe7; }
+.entry-options > a { position: relative; padding: 18px 36px 18px 22px; text-decoration: none; border-left: 1px solid #dcdfe7; min-width: 0; transition: background 180ms ease; }
+.entry-options > a:first-child { border-left: 0; padding-left: 0; }
+.entry-options > a:hover { background: #f6f8fb; }
+.entry-options span, .entry-options strong { display: block; }
+.entry-label { font-size: 12px; font-weight: 600; color: #2c2a6b; }
+.entry-options strong { font-size: 17px; line-height: 1.4; font-weight: 600; margin: 10px 0 6px; }
+.entry-detail { font-size: 12px; line-height: 1.65; color: #596276; }
+.entry-arrow { position: absolute; right: 14px; top: 20px; font-size: 22px; color: #2c2a6b; }
+.home-course-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.home-course-links a { display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #1fc0db; padding-top: 18px; text-decoration: none; }
+.home-course-links span, .home-course-links small { font-size: 12px; }
+.home-course-links strong { font-size: 17px; }
+.learning-horizon a:focus-visible, .entry-paths a:focus-visible, .motion-control:focus-visible { outline: 3px solid #f46c0f; outline-offset: 4px; }
+@media (max-width: 1050px) {
+  .learning-horizon h1 { font-size: 36px; max-width: 480px; }
+  .horizon-intro { max-width: 390px; font-size: 16px; }
+  .horizon-content { padding-top: 40px; }
+  .learning-horizon { min-height: 420px; }
+  .entry-heading { display: block; }
+  .entry-heading p { margin-bottom: 8px; }
+}
+@media (max-width: 680px) {
+  .homepage .compact-training-nav { gap: 6px; }
+  .audience-direct { width: 100%; justify-content: space-between; gap: 8px; }
+  .homepage .audience-direct a { font-size: 11px; width: auto; text-align: left; }
+  .learning-horizon { min-height: 515px; }
+  .horizon-content { width: calc(100% - 36px); padding: 25px 0 195px; }
+  .horizon-kicker { font-size: 10px; margin-bottom: 16px; }
+  .learning-horizon h1 { font-size: 30px; max-width: 100%; }
+  .horizon-intro { font-size: 14px; margin: 18px 0; max-width: 360px; }
+  .horizon-cta { min-height: 46px; font-size: 13px; }
+  .horizon-advice { font-size: 12px; }
+  .horizon-fallback { width: 100%; height: 185px; top: auto; bottom: 0; right: 0; object-position: center 42%; transform: none; }
+  .horizon-art::after { background: linear-gradient(180deg, #f6f8fb 0%, #f6f8fb 59%, transparent 73%); }
+  .glass-plane-back { width: 90px; height: 65px; top: auto; bottom: 100px; right: 5%; }
+  .glass-plane-front { width: 110px; height: 60px; right: auto; left: 6%; bottom: 16px; }
+  .glass-plane { display: none; }
+  .horizon-bottom { left: 18px; right: 18px; bottom: 8px; }
+  .horizon-topics { gap: 16px; }
+  .horizon-topics a { font-size: 10px; background: #f6f8fb; }
+  .entry-paths { padding: 25px 18px 28px; }
+  .entry-heading h2 { font-size: 20px; }
+  .entry-options { grid-template-columns: 1fr; }
+  .entry-options > a, .entry-options > a:first-child { border-left: 0; border-bottom: 1px solid #dcdfe7; padding: 17px 35px 17px 0; }
+  .entry-options > a:last-child { border-bottom: 0; }
+  .entry-options strong { font-size: 16px; margin: 4px 0; }
+  .entry-options .entry-arrow { right: 5px; top: 28px; }
+  .home-course-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) { .entry-options > a { transition: none; } }
