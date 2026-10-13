@@ -65,21 +65,22 @@
   .homepage .compact-training-nav { gap: 6px; }
   .audience-direct { width: 100%; justify-content: space-between; gap: 8px; }
   .homepage .audience-direct a { font-size: 11px; width: auto; text-align: left; }
-  .learning-horizon { min-height: 515px; }
-  .horizon-content { width: calc(100% - 36px); padding: 25px 0 195px; }
+  .learning-horizon { min-height: 0; display: flex; flex-direction: column; }
+  .horizon-content { order: 0; width: calc(100% - 36px); padding: 25px 0 18px; }
   .horizon-kicker { font-size: 10px; margin-bottom: 16px; }
   .learning-horizon h1 { font-size: 30px; max-width: 100%; }
   .horizon-intro { font-size: 14px; margin: 18px 0; max-width: 360px; }
   .horizon-cta { min-height: 46px; font-size: 13px; }
   .horizon-advice { font-size: 12px; }
-  .horizon-fallback { width: 100%; height: 185px; top: auto; bottom: 0; right: 0; object-position: center 42%; transform: none; }
-  .horizon-art::after { background: linear-gradient(180deg, #f6f8fb 0%, #f6f8fb 59%, transparent 73%); }
+  .horizon-art { position: relative; inset: auto; order: 1; z-index: auto; width: 100%; height: 185px; }
+  .horizon-fallback { width: 100%; height: 100%; inset: 0; object-position: center 42%; transform: none; }
+  .horizon-art::after { display: none; }
   .glass-plane-back { width: 90px; height: 65px; top: auto; bottom: 100px; right: 5%; }
   .glass-plane-front { width: 110px; height: 60px; right: auto; left: 6%; bottom: 16px; }
   .glass-plane { display: none; }
-  .horizon-bottom { left: 18px; right: 18px; bottom: 8px; }
-  .horizon-topics { gap: 16px; }
-  .horizon-topics a { font-size: 10px; background: #f6f8fb; }
+  .horizon-bottom { position: static; order: 2; padding: 0 18px; background: #fff; border-bottom: 1px solid #e5e8ee; }
+  .horizon-topics { width: 100%; gap: 12px; justify-content: space-between; }
+  .horizon-topics a { display: flex; align-items: center; min-height: 44px; font-size: 11px; background: transparent; }
   .entry-paths { padding: 25px 18px 28px; }
   .entry-heading h2 { font-size: 20px; }
   .entry-options { grid-template-columns: 1fr; }

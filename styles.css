@@ -5449,8 +5449,15 @@ textarea:focus {
 }
 
 .homepage .section {
-  width: min(100% - 48px, 1180px);
+  width: 100%;
   padding-block: 32px;
+  padding-inline: max(24px, calc((100% - 1180px) / 2));
+}
+
+.homepage .two-column,
+.homepage .home-course-selection,
+.homepage .training-models {
+  background: var(--nh-bg-light);
 }
 
 .homepage .section h2 {
@@ -5473,7 +5480,6 @@ textarea:focus {
 }
 
 .homepage .split-band {
-  padding-inline: 0;
   background: none;
 }
 
@@ -5614,8 +5620,9 @@ textarea:focus {
   }
 
   .homepage .section {
-    width: calc(100% - 36px);
+    width: 100%;
     padding-block: 24px;
+    padding-inline: 18px;
   }
 
   .homepage .section h2 {
