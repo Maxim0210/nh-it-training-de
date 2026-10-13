@@ -11,11 +11,11 @@
   --ink: var(--nh-text-dark);
   --text: var(--nh-text-dark);
   --muted: rgba(29, 36, 51, 0.72);
-  --blue-900: var(--nh-blue-dark);
-  --blue-700: var(--nh-blue-dark);
+  --blue-900: var(--nh-text-dark);
+  --blue-700: var(--nh-text-dark);
   --blue-500: var(--nh-cyan);
   --cyan: var(--nh-cyan);
-  --purple: var(--nh-blue-dark);
+  --purple: var(--nh-text-dark);
   --lime: var(--nh-orange);
   --green: var(--nh-cyan);
   --surface: var(--nh-white);
@@ -25,7 +25,7 @@
   --line-strong: rgba(44, 42, 107, 0.28);
   --shadow: 0 18px 46px rgba(44, 42, 107, 0.14);
   --soft-shadow: 0 10px 24px rgba(44, 42, 107, 0.09);
-  --gradient: linear-gradient(100deg, var(--nh-blue-dark) 0%, var(--nh-blue-dark) 100%);
+  --gradient: linear-gradient(100deg, var(--nh-cyan), var(--nh-cyan));
   --content: 1180px;
 }
 
@@ -119,8 +119,8 @@ img {
 }
 
 .utility-bar {
-  background: var(--nh-blue-dark);
-  color: #ffffff;
+  background: var(--nh-cyan);
+  color: var(--nh-text-dark);
 }
 
 .utility-inner,
@@ -220,7 +220,7 @@ img {
   min-width: 2.25rem;
   min-height: 1.65rem;
   padding-inline: 0.55rem;
-  color: #ffffff;
+  color: var(--nh-text-dark);
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 700;
@@ -242,8 +242,8 @@ img {
 
 .phone-link::before {
   content: "TEL";
-  color: #ffffff;
-  background: var(--nh-blue-dark);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   font-size: 0.64rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -254,7 +254,7 @@ img {
 }
 
 .email-link {
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -299,8 +299,8 @@ img {
   place-items: center;
   width: 48px;
   height: 48px;
-  color: #ffffff;
-  background: var(--nh-blue-dark);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   border-radius: 6px;
   box-shadow: var(--soft-shadow);
   font-weight: 700;
@@ -484,13 +484,13 @@ img {
 }
 
 .mega-trigger.accent {
-  color: #ffffff !important;
+  color: var(--nh-text-dark) !important;
   background: var(--gradient);
 }
 
 .mega-trigger.accent small,
 .mega-trigger.accent::after {
-  color: #ffffff;
+  color: var(--nh-text-dark);
 }
 
 .mega-results {
@@ -531,7 +531,7 @@ img {
   justify-content: center;
   min-height: 44px;
   padding: 0.7rem 1.05rem;
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: var(--gradient);
   border-radius: 999px;
   box-shadow: 0 12px 24px rgba(35, 103, 183, 0.24);
@@ -757,8 +757,8 @@ img {
 
 .dropdown-close:hover,
 .dropdown-close:focus-visible {
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   border-color: var(--blue-900);
   outline: none;
 }
@@ -863,8 +863,8 @@ img {
   min-width: 96px;
   padding-inline: 0.85rem;
   border: 0;
-  color: #ffffff;
-  background: var(--blue-700);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   font-weight: 700;
   white-space: nowrap;
   cursor: pointer;
@@ -894,8 +894,8 @@ img {
   place-items: center;
   width: 64px;
   min-height: 50px;
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   border-bottom: 1px solid rgba(255, 255, 255, 0.22);
   font-size: 0.74rem;
   font-weight: 700;
@@ -904,7 +904,7 @@ img {
 }
 
 .contact-rail a:hover {
-  background: var(--blue-700);
+  background: var(--nh-cyan);
 }
 
 .hero {
@@ -1139,7 +1139,7 @@ h3 {
 }
 
 .route-button:hover {
-  color: var(--nh-blue-dark);
+  color: var(--nh-text-dark);
   border-color: var(--nh-cyan);
 }
 
@@ -1233,7 +1233,7 @@ h3 {
 }
 
 .button.primary {
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: var(--gradient);
   box-shadow: 0 14px 30px rgba(35, 103, 183, 0.27);
 }
@@ -1246,8 +1246,8 @@ h3 {
 }
 
 .button.dark {
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   box-shadow: 0 12px 26px rgba(28, 55, 104, 0.2);
 }
 
@@ -1659,8 +1659,8 @@ textarea:focus {
   justify-content: center;
   width: 2.25rem;
   height: 2.25rem;
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 700;
@@ -1722,8 +1722,8 @@ textarea:focus {
 
 .filter.active,
 .filter:hover {
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   box-shadow: 0 10px 22px rgba(28, 55, 104, 0.18);
 }
 
@@ -1983,8 +1983,8 @@ textarea:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   border-radius: 8px;
   font-size: 0.82rem;
   font-weight: 700;
@@ -2179,17 +2179,17 @@ textarea:focus {
   max-width: none;
   padding-inline: max(1rem, calc((100vw - var(--content)) / 2));
   background: var(--gradient);
-  color: #ffffff;
+  color: var(--nh-text-dark);
 }
 
 .faq h2,
 .faq h3,
 .faq summary {
-  color: #ffffff;
+  color: var(--nh-text-dark);
 }
 
 .faq .eyebrow {
-  color: var(--lime);
+  color: var(--nh-text-dark);
 }
 
 .faq details {
@@ -2210,7 +2210,7 @@ textarea:focus {
 
 .faq details p {
   max-width: 760px;
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--nh-text-dark);
 }
 
 .final-cta {
@@ -2219,14 +2219,14 @@ textarea:focus {
   gap: 2rem;
   align-items: center;
   padding: clamp(3rem, 7vw, 5.5rem) max(1rem, calc((100vw - var(--content)) / 2));
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: var(--gradient);
 }
 
 .final-cta h2,
 .final-cta p,
 .final-cta .eyebrow {
-  color: #ffffff;
+  color: var(--nh-text-dark);
 }
 
 .site-footer {
@@ -2234,14 +2234,14 @@ textarea:focus {
   grid-template-columns: 1.3fr 1fr 1fr;
   gap: 1rem;
   padding: 2rem max(1rem, calc((100vw - var(--content)) / 2)) 5rem;
-  background: var(--nh-blue-dark);
-  color: rgba(255, 255, 255, 0.84);
+  background: var(--nh-cyan);
+  color: var(--nh-text-dark);
 }
 
 .site-footer a {
   display: block;
   margin-bottom: 0.35rem;
-  color: #ffffff;
+  color: var(--nh-text-dark);
   font-weight: 700;
 }
 
@@ -2250,7 +2250,7 @@ textarea:focus {
   margin: 0.1rem 0 0;
   padding: 0;
   border: 0;
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: transparent;
   font: inherit;
   font-weight: 700;
@@ -2329,7 +2329,7 @@ textarea:focus {
 }
 
 .cookie-button.primary {
-  color: #ffffff;
+  color: var(--nh-text-dark);
   border-color: transparent;
   background: var(--gradient);
 }
@@ -2488,7 +2488,7 @@ textarea:focus {
   height: 100%;
   transform: scaleX(var(--scroll-progress, 0));
   transform-origin: left center;
-  background: linear-gradient(90deg, var(--nh-cyan), var(--nh-blue-dark));
+  background: var(--nh-cyan);
   box-shadow: 0 0 10px rgba(31, 192, 219, 0.28);
 }
 
@@ -2504,8 +2504,8 @@ textarea:focus {
 .mobile-sticky a {
   flex: 1;
   padding: 0.75rem 0.9rem;
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   border-radius: 999px;
   text-align: center;
   text-decoration: none;
@@ -2535,8 +2535,8 @@ textarea:focus {
   padding: 0.35rem;
   border: 1px solid rgba(255, 255, 255, 0.66);
   border-radius: 999px;
-  color: #ffffff;
-  background: var(--nh-blue-dark);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   box-shadow: 0 18px 44px rgba(18, 48, 98, 0.28);
   cursor: pointer;
 }
@@ -2562,7 +2562,7 @@ textarea:focus {
 }
 
 .ai-assistant-toggle small {
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--nh-text-dark);
   font-size: 0.74rem;
   font-weight: 700;
 }
@@ -2605,8 +2605,8 @@ textarea:focus {
   gap: 1rem;
   align-items: start;
   padding: 1rem;
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
 }
 
 .ai-assistant-head span,
@@ -2615,7 +2615,7 @@ textarea:focus {
 }
 
 .ai-assistant-head span {
-  color: rgba(255, 255, 255, 0.76);
+  color: var(--nh-text-dark);
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -2634,7 +2634,7 @@ textarea:focus {
   height: 34px;
   border: 1px solid rgba(255, 255, 255, 0.36);
   border-radius: 999px;
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: rgba(255, 255, 255, 0.12);
   font-size: 1.35rem;
   line-height: 1;
@@ -2663,8 +2663,8 @@ textarea:focus {
 
 .ai-assistant-message.user {
   justify-self: end;
-  color: #ffffff;
-  background: var(--blue-700);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   border-color: var(--blue-700);
 }
 
@@ -2674,7 +2674,7 @@ textarea:focus {
 }
 
 .ai-assistant-message.user a {
-  color: #ffffff;
+  color: var(--nh-text-dark);
 }
 
 .ai-assistant-chips {
@@ -2714,8 +2714,8 @@ textarea:focus {
   min-width: 84px;
   border: 0;
   border-radius: 10px;
-  color: #ffffff;
-  background: var(--blue-700);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   font-weight: 700;
   cursor: pointer;
 }
@@ -2741,14 +2741,14 @@ textarea:focus {
 
 .page-hero {
   padding: clamp(3.5rem, 8vw, 6.5rem) max(1rem, calc((100vw - var(--content)) / 2)) 3rem;
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: var(--gradient);
 }
 
 .page-hero h1,
 .page-hero p,
 .page-hero .eyebrow {
-  color: #ffffff;
+  color: var(--nh-text-dark);
 }
 
 .page-hero h1 {
@@ -2870,7 +2870,7 @@ textarea:focus {
 
 .breadcrumb.light,
 .breadcrumb.light a {
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--nh-text-dark);
 }
 
 .course-hero-meta {
@@ -2884,7 +2884,7 @@ textarea:focus {
   padding: 0.46rem 0.72rem;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 999px;
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: rgba(255, 255, 255, 0.12);
   font-size: 0.88rem;
   font-weight: 700;
@@ -2995,25 +2995,25 @@ textarea:focus {
 
 .choice-sidebar a.active,
 .choice-sidebar a:hover {
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
 }
 
 .choice-sidebar a.active small,
 .choice-sidebar a:hover small,
 .choice-sidebar a.active::after,
 .choice-sidebar a:hover::after {
-  color: #ffffff;
+  color: var(--nh-text-dark);
 }
 
 .choice-sidebar a.accent {
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: var(--gradient);
 }
 
 .choice-sidebar a.accent small,
 .choice-sidebar a.accent::after {
-  color: #ffffff;
+  color: var(--nh-text-dark);
 }
 
 .choice-content {
@@ -3060,14 +3060,14 @@ textarea:focus {
 }
 
 .choice-card.accent {
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: var(--gradient);
   border-top-color: var(--lime);
 }
 
 .choice-card.accent strong,
 .choice-card.accent em {
-  color: #ffffff;
+  color: var(--nh-text-dark);
 }
 
 .split-choice-grid > div {
@@ -3477,8 +3477,8 @@ textarea:focus {
 
 .agenda-list summary span {
   flex: 0 0 auto;
-  color: #ffffff;
-  background: var(--blue-900);
+  color: var(--nh-text-dark);
+  background: var(--nh-cyan);
   border-radius: 999px;
   padding: 0.18rem 0.45rem;
   font-size: 0.72rem;
@@ -3794,7 +3794,7 @@ textarea:focus {
   place-items: center;
   width: 2.4rem;
   height: 2.4rem;
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: var(--gradient);
   border-radius: 999px;
   font-size: 0.9rem;
@@ -3932,7 +3932,7 @@ textarea:focus {
   width: max-content;
   max-width: 100%;
   padding: 0.32rem 0.65rem;
-  color: #ffffff;
+  color: var(--nh-text-dark);
   background: var(--gradient);
   border-radius: 999px;
   font-size: 0.78rem;
@@ -4572,7 +4572,7 @@ textarea:focus {
     justify-content: center;
     gap: 0.28rem;
     padding-inline: 0.3rem 0.42rem;
-    color: #ffffff;
+    color: var(--nh-text-dark);
     background: rgba(255, 255, 255, 0.13);
     border-color: rgba(255, 255, 255, 0.24);
   }
@@ -4790,7 +4790,7 @@ textarea:focus {
   }
 
   .mega-selector .mega-trigger.accent {
-    color: #ffffff !important;
+    color: var(--nh-text-dark) !important;
     background: var(--gradient);
   }
 
@@ -5397,7 +5397,7 @@ textarea:focus {
 
 .future-skills > strong {
   display: block;
-  color: var(--nh-blue-dark);
+  color: var(--nh-text-dark);
   font-size: 1rem;
   line-height: 1.4;
   text-wrap: balance;
@@ -5415,7 +5415,7 @@ textarea:focus {
   align-items: center;
   gap: 0.3rem;
   min-height: 36px;
-  color: var(--nh-blue-dark);
+  color: var(--nh-text-dark);
   font-size: 0.76rem;
   font-weight: 600;
   text-decoration: none;
@@ -5760,7 +5760,7 @@ html.maintenance-mode body > :not(.maintenance-screen) {
 .maintenance-content h1 {
   max-width: 620px;
   margin: 0;
-  color: var(--nh-blue-dark);
+  color: var(--nh-text-dark);
   font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 700;
   line-height: 1.14;

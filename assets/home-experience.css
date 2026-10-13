@@ -14,7 +14,7 @@
   min-height: 420px;
   overflow: hidden;
   background: #f6f8fb;
-  color: #2c2a6b;
+  color: var(--nh-text-dark);
 }
 .horizon-art { position: absolute; inset: 0; z-index: -1; }
 .horizon-art { pointer-events: none; overflow: hidden; }
@@ -25,29 +25,29 @@
 .glass-plane-front { width: 140px; height: 45px; right: 3%; bottom: 3%; }
 .horizon-content { width: min(100% - 48px, 1180px); margin: auto; padding: 40px 0 60px; }
 .horizon-kicker { margin: 0 0 23px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0; }
-.learning-horizon h1 { margin: 0; max-width: 620px; color: #2c2a6b; font-size: 42px; font-weight: 600; line-height: 1.16; letter-spacing: 0; }
+.learning-horizon h1 { margin: 0; max-width: 620px; color: var(--nh-text-dark); font-size: 42px; font-weight: 600; line-height: 1.16; letter-spacing: 0; }
 .horizon-intro { max-width: 455px; font-size: 16px; line-height: 1.6; margin: 20px 0 24px; color: #1d2433; }
-.horizon-cta { display: inline-flex; gap: 30px; align-items: center; min-height: 50px; padding: 12px 22px; border-radius: 4px; color: white; background: #2c2a6b; font-size: 14px; font-weight: 600; text-decoration: none; }
+.horizon-cta { display: inline-flex; gap: 30px; align-items: center; min-height: 50px; padding: 12px 22px; border-radius: 4px; color: var(--nh-text-dark); background: var(--nh-cyan); font-size: 14px; font-weight: 600; text-decoration: none; }
 .horizon-cta span { font-size: 22px; line-height: 1; }
 .horizon-advice { display: block; width: fit-content; padding: 13px 0; font-size: 13px; text-underline-offset: 4px; }
 .horizon-bottom { position: absolute; bottom: 18px; left: max(24px, calc((100% - 1180px) / 2)); right: max(24px, calc((100% - 1180px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .horizon-topics { display: flex; gap: 25px; flex-wrap: wrap; }
 .horizon-topics a { font-size: 12px; font-weight: 600; text-decoration: none; padding: 8px 0; }
-.motion-control { display: grid; place-items: center; width: 40px; height: 40px; flex-shrink: 0; border: 1px solid #c8ccd6; border-radius: 50%; color: #2c2a6b; background: #fff; cursor: pointer; font: inherit; }
+.motion-control { display: grid; place-items: center; width: 40px; height: 40px; flex-shrink: 0; border: 1px solid #c8ccd6; border-radius: 50%; color: var(--nh-text-dark); background: #fff; cursor: pointer; font: inherit; }
 .motion-control[hidden] { display: none; }
 .entry-paths { padding: 22px max(24px, calc((100% - 1180px) / 2)) 26px; background: white; }
 .entry-heading { display: flex; gap: 24px; align-items: baseline; margin-bottom: 14px; }
 .entry-heading p { margin: 0; color: #596276; font-size: 12px; font-weight: 600; }
-.entry-heading h2 { font-size: 23px; margin: 0; font-weight: 600; color: #2c2a6b; letter-spacing: 0; }
+.entry-heading h2 { font-size: 23px; margin: 0; font-weight: 600; color: var(--nh-text-dark); letter-spacing: 0; }
 .entry-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-block: 1px solid #dcdfe7; }
 .entry-options > a { position: relative; padding: 18px 36px 18px 22px; text-decoration: none; border-left: 1px solid #dcdfe7; min-width: 0; transition: background 180ms ease; }
 .entry-options > a:first-child { border-left: 0; padding-left: 0; }
 .entry-options > a:hover { background: #f6f8fb; }
 .entry-options span, .entry-options strong { display: block; }
-.entry-label { font-size: 12px; font-weight: 600; color: #2c2a6b; }
+.entry-label { font-size: 12px; font-weight: 600; color: var(--nh-text-dark); }
 .entry-options strong { font-size: 17px; line-height: 1.4; font-weight: 600; margin: 10px 0 6px; }
 .entry-detail { font-size: 12px; line-height: 1.65; color: #596276; }
-.entry-arrow { position: absolute; right: 14px; top: 20px; font-size: 22px; color: #2c2a6b; }
+.entry-arrow { position: absolute; right: 14px; top: 20px; font-size: 22px; color: var(--nh-text-dark); }
 .home-course-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
 .home-course-links a { display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #1fc0db; padding-top: 18px; text-decoration: none; }
 .home-course-links span, .home-course-links small { font-size: 12px; }
