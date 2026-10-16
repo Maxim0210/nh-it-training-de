@@ -1,6 +1,22 @@
 /* Homepage experience: isolated from legacy hero and route-card styles. */
 .homepage main > .learning-horizon { order: 0; }
 .homepage main > #kurse.entry-paths { order: 1; }
+.homepage main > .advice-offers { order: 2; }
+.academy-preview #academy-scene { width: 100%; height: 100%; display: block; }
+.academy-preview .horizon-art.is-ready { background: #f6f8fb; }
+.academy-preview .horizon-art.is-ready .horizon-fallback,
+.academy-preview .horizon-art.is-ready::after { display: none; }
+.academy-motion { display: grid; place-items: center; width: 44px; height: 44px; flex: 0 0 44px; border: 1px solid #c4d2d7; border-radius: 50%; background: white; color: #1d2433; cursor: pointer; }
+.academy-motion[hidden] { display: none; }
+.academy-motion:focus-visible { outline: 3px solid #1d2433; outline-offset: 3px; }
+.homepage .advice-offers { background: #edf8fa; }
+.advice-offer-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
+.advice-offer-grid article { display: flex; flex-direction: column; align-items: flex-start; }
+.advice-offer-grid h3 { margin: 0 0 10px; font-size: 20px; line-height: 1.3; }
+.advice-offer-grid p { margin: 0 0 18px; max-width: 52ch; font-size: 15px; line-height: 1.6; }
+.advice-offer-grid .button { margin-top: auto; }
+.advice-offer-grid small { display: block; margin-top: 10px; font-size: 12px; color: #596276; }
+.advice-offer-grid article + article { border-left: 1px solid #cbdfe4; padding-left: 40px; }
 .homepage .compact-training-nav { display: flex; gap: 10px; flex-wrap: wrap; }
 .audience-direct { display: flex; gap: 18px; align-items: center; }
 .homepage .audience-direct a { padding: 10px 0; border: 0; border-radius: 0; background: none; font-size: 12px; font-weight: 600; white-space: nowrap; text-decoration: none; min-height: 44px; display: flex; align-items: center; }
@@ -18,8 +34,8 @@
 }
 .horizon-art { position: absolute; inset: 0; z-index: -1; }
 .horizon-art { pointer-events: none; overflow: hidden; }
-.horizon-fallback { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.horizon-art::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #f6f8fb 0%, #f6f8fb 38%, rgba(246,248,251,.94) 46%, rgba(246,248,251,0) 65%); }
+.horizon-fallback { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.horizon-art::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, #f6f8fb 0%, rgba(246,248,251,0) 17%, rgba(246,248,251,0) 80%, #f6f8fb 100%), linear-gradient(90deg, #f6f8fb 0%, #f6f8fb 35%, rgba(246,248,251,.9) 44%, rgba(246,248,251,0) 64%); }
 .glass-plane { position: absolute; z-index: 1; border: 1px solid rgba(255,255,255,.85); background: rgba(255,255,255,.12); backdrop-filter: blur(7px); box-shadow: 0 12px 35px rgba(44,42,107,.08), inset 0 1px 0 white; border-radius: 6px; transform: translate(var(--glass-x, 0px), var(--glass-y, 0px)); }
 .glass-plane-back { width: 65px; height: 150px; right: 38%; top: 8%; }
 .glass-plane-front { width: 140px; height: 45px; right: 3%; bottom: 3%; }
@@ -53,7 +69,21 @@
 .home-course-links span, .home-course-links small { font-size: 12px; }
 .home-course-links strong { font-size: 17px; }
 .learning-horizon a:focus-visible, .entry-paths a:focus-visible, .motion-control:focus-visible { outline: 3px solid #f46c0f; outline-offset: 4px; }
+/* A shared background keeps the photograph continuous across section edges. */
+@media (min-width: 681px) {
+  body.homepage { position: relative; isolation: isolate; }
+  body.homepage::before { content: ''; position: absolute; z-index: -1; pointer-events: none; inset: 0 0 auto; height: max(800px, calc(100vw * 941 / 1672)); background: linear-gradient(180deg, rgba(255,255,255,.78) 0%, rgba(255,255,255,.5) 18%, transparent 34%, transparent 65%, #fff 100%), linear-gradient(90deg, #f6f8fb 0%, rgba(246,248,251,.96) 32%, rgba(246,248,251,.8) 44%, transparent 65%), url('hero-training-neutral.webp') center top / 100% auto no-repeat; }
+  .homepage .site-header { background: rgba(255,255,255,.76); }
+  .homepage .learning-horizon { background: transparent; }
+  .homepage .horizon-art { visibility: hidden; }
+  .homepage .entry-paths { background: rgba(255,255,255,.78); }
+}
 @media (max-width: 1050px) {
+  .academy-preview .learning-horizon { display: flex; flex-direction: column; min-height: 0; }
+  .academy-preview .horizon-content { order: 0; padding: 30px 0 12px; }
+  .academy-preview .horizon-art { position: relative; inset: auto; order: 1; z-index: auto; width: 100%; height: 260px; }
+  .academy-preview .horizon-bottom { position: static; order: 2; padding: 0 24px 8px; }
+  .academy-preview .horizon-fallback { height: 100%; }
   .learning-horizon h1 { font-size: 36px; max-width: 480px; }
   .horizon-intro { max-width: 390px; font-size: 16px; }
   .horizon-content { padding-top: 40px; }
@@ -62,6 +92,9 @@
   .entry-heading p { margin-bottom: 8px; }
 }
 @media (max-width: 680px) {
+  .advice-offer-grid { grid-template-columns: 1fr; gap: 24px; }
+  .advice-offer-grid article + article { border-left: 0; border-top: 1px solid #cbdfe4; padding: 24px 0 0; }
+  .advice-offer-grid h3 { font-size: 18px; }
   .homepage .compact-training-nav { gap: 6px; }
   .audience-direct { width: 100%; justify-content: space-between; gap: 8px; }
   .homepage .audience-direct a { font-size: 11px; width: auto; text-align: left; }
@@ -72,9 +105,9 @@
   .horizon-intro { font-size: 14px; margin: 18px 0; max-width: 360px; }
   .horizon-cta { min-height: 46px; font-size: 13px; }
   .horizon-advice { font-size: 12px; }
-  .horizon-art { position: relative; inset: auto; order: 1; z-index: auto; width: 100%; height: 185px; }
-  .horizon-fallback { width: 100%; height: 100%; inset: 0; object-position: center 42%; transform: none; }
-  .horizon-art::after { display: none; }
+  .horizon-art { position: relative; inset: auto; order: 1; z-index: auto; width: 100%; height: auto; aspect-ratio: 1672 / 941; }
+  .horizon-fallback { width: 100%; height: 100%; inset: 0; object-position: right center; transform: none; }
+  .horizon-art::after { display: block; background: linear-gradient(180deg, #f6f8fb 0%, rgba(246,248,251,0) 20%, rgba(255,255,255,0) 80%, #fff 100%); }
   .glass-plane-back { width: 90px; height: 65px; top: auto; bottom: 100px; right: 5%; }
   .glass-plane-front { width: 110px; height: 60px; right: auto; left: 6%; bottom: 16px; }
   .glass-plane { display: none; }

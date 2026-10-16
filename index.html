@@ -11,8 +11,8 @@
     <link rel="alternate icon" type="image/png" href="assets/favicon.png?v=20260721-1">
     <link rel="apple-touch-icon" href="assets/favicon.png?v=20260721-1">
     <link rel="canonical" href="https://nh-it-training.de/">
-    <link rel="stylesheet" href="styles.css?v=20261013-cyan">
-    <link rel="stylesheet" href="assets/home-experience.css?v=20261013-cyan">
+    <link rel="stylesheet" href="styles.css?v=20261014-advice">
+    <link rel="stylesheet" href="assets/home-experience.css?v=20261015-continuous">
     <meta property="og:type" content="website">
     <meta property="og:title" content="IT-Weiterbildung, Firmenseminare und Zertifikatskurse">
     <meta property="og:description" content="IT-Kurse, Zertifizierungen, Firmenseminare und Firmenqualifizierung für Unternehmen, Teams und Fachkräfte.">
@@ -140,7 +140,7 @@
           <a href="förderung.html">Förderung</a>
           <a href="unternehmen.html">Unternehmen</a>
           <a href="standorte.html">Standorte</a>
-          <a href="kontakt.html">Beratung sichern</a>
+          <a href="#lead" data-consultation="meeting">Kostenlose Beratung</a>
         </nav>
       </div>
       <div class="training-nav compact-training-nav" aria-label="Schnellwahl für Trainings">
@@ -194,20 +194,39 @@
       </section>
       <section class="learning-horizon" aria-labelledby="home-title">
         <div class="horizon-art" aria-hidden="true">
-          <img class="horizon-fallback" src="assets/hero-training.webp" width="1727" height="911" alt="" fetchpriority="high" decoding="async">
+          <img class="horizon-fallback" src="assets/hero-training-neutral.webp" width="1672" height="941" alt="" fetchpriority="high" decoding="async">
         </div>
         <div class="horizon-content">
           <p class="horizon-kicker">New Horizons · IT-Weiterbildung</p>
           <h1 id="home-title">IT-Weiterbildung.<br>Neue Perspektiven.</h1>
           <p class="horizon-intro">Fachwissen aufbauen. Zertifikate erreichen. Teams stärken. Finden Sie das Training für Ihren nächsten Schritt.</p>
           <a class="horizon-cta" href="weiterbildungs-kompass.html">Passenden Kurs finden <span aria-hidden="true">→</span></a>
-          <a class="horizon-advice" href="#lead">Persönlich beraten lassen</a>
+          <a class="horizon-advice" href="#lead" data-consultation="meeting">Kostenloses Beratungsgespräch</a>
         </div>
         <div class="horizon-bottom">
           <div class="horizon-topics" aria-label="Beliebte Trainingsthemen"><a href="trainings/thema-ki.html">KI & Copilot</a><a href="trainings/thema-cloud.html">Cloud</a><a href="trainings/thema-security.html">Cybersecurity</a></div>
         </div>
       </section>
 
+
+      <section class="section advice-offers" aria-labelledby="advice-offers-title">
+        <div class="section-heading compact">
+          <h2 id="advice-offers-title">Ihr nächster Schritt. Kostenlos und persönlich.</h2>
+        </div>
+        <div class="advice-offer-grid">
+          <article>
+            <h3>Kostenloses Beratungsgespräch</h3>
+            <p>Welches Training bringt Sie oder Ihr Team weiter? Wir besprechen Ihre Ziele, passende Kurse und mögliche Termine.</p>
+            <a class="button primary" href="#lead" data-consultation="meeting">Gespräch anfragen</a>
+          </article>
+          <article>
+            <h3>Kostenloser Fördercheck</h3>
+            <p>Sie möchten Mitarbeitende qualifizieren? Klären Sie mit uns, ob eine Förderung infrage kommt und welche Unterlagen benötigt werden.</p>
+            <a class="button secondary" href="qcg-foerdercheck.html">Fördercheck starten</a>
+            <small>Unverbindliche Orientierung, keine Förderzusage.</small>
+          </article>
+        </div>
+      </section>
 
       <section class="section two-column" id="förderung">
         <div>
@@ -332,18 +351,25 @@
       <section class="section two-column home-contact" aria-labelledby="contact-heading">
         <div>
           <p class="eyebrow dark">Persönliche Beratung</p>
-          <h2 id="contact-heading">Gemeinsam den passenden Kurs finden</h2>
-          <p>Max Dilewski berät Sie zu Kursen, Förderung und Firmenseminaren.</p>
+          <h2 id="contact-heading">Lassen Sie uns über Ihre Weiterbildung sprechen.</h2>
+          <p>Ihr Beratungsgespräch ist kostenlos und unverbindlich. Max Dilewski stimmt einen passenden Termin mit Ihnen ab.</p>
           <a href="tel:+4989997409352">089 997 409 352</a>
           <a href="mailto:max.dilewski@nhacademy.de">max.dilewski@nhacademy.de</a>
         </div>
         <aside class="lead-panel" id="lead" aria-label="Beratungsanfrage">
-          <h3>Beratung anfragen</h3>
+          <h3>Kostenloses Gespräch anfragen</h3>
           <form name="lead-beratung" method="POST" action="https://formsubmit.co/max.dilewski@nhacademy.de" accept-charset="UTF-8">
             <input type="hidden" name="quelle" value="Startseite Beratung">
             <input type="hidden" name="_subject" value="Neue Beratungsanfrage über nh-it-training.de">
             <input type="hidden" name="_next" value="https://nh-it-training.de/danke.html?gesendet=1">
             <input type="hidden" name="_captcha" value="false">
+            <label class="wide">Ihr Anliegen
+              <select name="anliegen" id="consultation-intent">
+                <option value="meeting">Kostenloses Beratungsgespräch</option>
+                <option value="funding">Kostenloser Fördercheck</option>
+                <option value="team">Firmenseminar planen</option>
+              </select>
+            </label>
             <p class="hidden">
               <label>Nicht ausfüllen <input name="_honey"></label>
             </p>
@@ -356,8 +382,8 @@
             <label>E-Mail
               <input name="email" type="email" autocomplete="email" required>
             </label>
-            <label>Wunschthema
-              <select name="thema" required>
+            <label>Wunschthema (optional)
+              <select name="thema">
                 <option value="">Bitte auswählen</option>
                 <option>Azure / Microsoft Cloud</option>
                 <option>KI / Copilot / Prompt Engineering</option>
@@ -379,7 +405,10 @@
               </select>
             </label>
             <p class="form-privacy wide">Wir verwenden Ihre Angaben zur Bearbeitung Ihrer Anfrage. Hinweise zur Verarbeitung und zum Formulardienst finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
-            <button class="button primary full" type="submit">Beratung anfragen</button>
+            <label class="wide">Terminwunsch oder Ihre Frage (optional)
+              <textarea name="nachricht" rows="2" placeholder="Wann können wir Sie erreichen?"></textarea>
+            </label>
+            <button class="button primary full" type="submit">Kostenloses Gespräch anfragen</button>
           </form>
         </aside>
       </section>
@@ -415,5 +444,6 @@
     </div>
 
     <script src="app.js?v=20261006-review" defer></script>
+    <script src="assets/consultation-intent.js" defer></script>
   </body>
 </html>
