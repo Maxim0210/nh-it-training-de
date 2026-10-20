@@ -95,7 +95,7 @@
       </div>
       <div class="training-nav compact-training-nav" aria-label="Schnellwahl für Trainings">
         <details class="quick-menu audience-menu">
-          <summary><span class="quick-icon quick-icon-user" aria-hidden="true"></span><span>Zielgruppe</span></summary>
+          <summary><span class="quick-icon quick-icon-user" aria-hidden="true"></span><span>Ihr Einstieg</span></summary>
           <div class="quick-menu-panel audience-panel">
             <a href="trainings/arbeitsuchende.html"><span class="quick-icon quick-icon-user" aria-hidden="true"></span><strong>Arbeitssuchende</strong><small>Förderung, Bildungsgutschein und passenden Kursweg prüfen</small></a>
             <a href="trainings/arbeitnehmer.html"><span class="quick-icon quick-icon-briefcase" aria-hidden="true"></span><strong>Arbeitnehmer</strong><small>Zertifizierung, Lernpfad und nächste Rolle planen</small></a>
@@ -133,8 +133,8 @@
     <main>
       <section class="page-hero">
         <p class="eyebrow">Kontakt</p>
-        <h1>Beratung für Kurs, Förderung und nächsten Start sichern.</h1>
-        <p class="hero-text">Sende deine Anfrage oder rufe direkt an. Die Rückmeldung soll Kursauswahl, Termin, Förderung und Trainingsform schnell klären.</p>
+        <h1>Beratung zu Kurs und Förderung</h1>
+        <p class="hero-text">Schreiben Sie uns oder rufen Sie an. Wir klären Kurs, Termin, Fördermöglichkeiten und Trainingsform mit Ihnen.</p>
       </section>
       <section class="section contact-grid" id="lead">
         
@@ -145,18 +145,18 @@
       <input type="hidden" name="_captcha" value="false">
       <p class="hidden"><label>Nicht ausfüllen <input name="_honey"></label></p>
       <h2>Beratung anfragen</h2>
-      <p>Die Anfrage geht direkt an Max Dilewski. Rückruf, Kursauswahl und Förderprüfung werden zusammen betrachtet.</p>
+      <p>Was möchten Sie lernen? Max Dilewski berät Sie persönlich zu Kursen, Terminen und Förderung. Das Erstgespräch ist kostenlos und unverbindlich.</p>
       <label>Vorname und Nachname
         <input name="name" autocomplete="name" required>
       </label>
-      <label>Telefon
-        <input name="telefon" type="tel" autocomplete="tel" required>
+      <label>Telefon (optional für einen Rückruf)
+        <input name="telefon" type="tel" autocomplete="tel">
       </label>
       <label>E-Mail
         <input name="email" type="email" autocomplete="email" required>
       </label>
-      <label>Wunschthema
-        <select name="thema" required>
+      <label>Wunschthema (optional)
+        <select name="thema">
           <option value="">Bitte auswählen</option>
           <option>Azure / Microsoft Cloud</option>
           <option>KI / Copilot / Prompt Engineering</option>
@@ -176,7 +176,11 @@
           <option>Selbstständig</option>
         </select>
       </label>
-      <button class="button primary full" type="submit">Beratung sichern</button>
+      <label>Ihre Frage oder Ihr Terminwunsch (optional)
+        <textarea name="nachricht" rows="3"></textarea>
+      </label>
+      <p>Wir nutzen Ihre Angaben zur Bearbeitung Ihrer Anfrage. Informationen zum Formulardienst und zur Datenverarbeitung finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+      <button class="button primary full" type="submit">Kostenlose Beratung anfragen</button>
       <a class="button secondary full" href="tel:+4989997409352">089 997 409 352 anrufen</a>
     </form>
         <aside class="detail-aside contact-aside">

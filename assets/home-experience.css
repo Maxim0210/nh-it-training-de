@@ -2,6 +2,38 @@
 .homepage main > .learning-horizon { order: 0; }
 .homepage main > #kurse.entry-paths { order: 1; }
 .homepage main > .advice-offers { order: 2; }
+.homepage main > .upcoming-section { order: 2; }
+.compact-header-phone { display: none; }
+.upcoming-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 40px; }
+.upcoming-grid h3 { margin: 12px 0; font-size: 21px; line-height: 1.3; }
+.upcoming-grid p { font-size: 14px; line-height: 1.65; }
+.webinar-banner { display: block; }
+.webinar-banner img { width: 100%; height: auto; display: block; }
+.course-start-list { list-style: none; margin: 0 0 20px; padding: 0; max-height: 295px; overflow: auto; scrollbar-width: thin; }
+.course-start-list li { border-bottom: 1px solid #dce3e8; padding: 13px 0; }
+.course-start-list li a { display: block; font-size: 14px; line-height: 1.5; font-weight: 600; }
+.course-start-list li span { display: block; margin-top: 6px; font-size: 12px; line-height: 1.5; color: #596276; }
+.upcoming-grid .schedule-source { font-size: 11px; color: #596276; }
+.upcoming-section [hidden] { display: none !important; }
+@media (min-width: 761px) {
+  .homepage .site-header.is-compact { background: rgba(255,255,255,.97); }
+  .homepage .site-header.is-compact .utility-bar,
+  .homepage .site-header.is-compact .training-nav { display: none; }
+  .homepage .site-header.is-compact .nav-row { min-height: 62px; padding-block: 6px; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; gap: 18px; }
+  .homepage .site-header.is-compact .brand { flex: 0 0 165px; width: 165px; }
+  .homepage .site-header.is-compact .brand-logo { width: 165px; }
+  .homepage .site-header.is-compact .main-nav { display: flex; flex: 0 1 auto; width: auto; margin-left: auto; gap: 14px; }
+  .homepage .site-header.is-compact .main-nav > a,
+  .homepage .site-header.is-compact .main-nav summary { font-size: 12px; }
+  .homepage .site-header.is-compact .compact-header-phone { display: block; flex-shrink: 0; font-size: 12px; font-weight: 600; }
+}
+@media (min-width: 761px) and (max-width: 1050px) {
+  .homepage .site-header.is-compact .compact-header-phone { display: none; }
+}
+@media (max-width: 760px) {
+  .upcoming-grid { grid-template-columns: 1fr; gap: 28px; }
+  .course-start-list { max-height: none; }
+}
 .academy-preview #academy-scene { width: 100%; height: 100%; display: block; }
 .academy-preview .horizon-art.is-ready { background: #f6f8fb; }
 .academy-preview .horizon-art.is-ready .horizon-fallback,
