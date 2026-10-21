@@ -9,6 +9,7 @@
 .upcoming-grid p { font-size: 14px; line-height: 1.65; }
 .webinar-feature { height: 100%; display: flex; flex-direction: column; align-items: flex-start; padding: 28px; border: 1px solid #dce3e8; border-radius: 8px; background: #f6f8fb; color: #1d2433; }
 .webinar-topline { display: flex; width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 12px; align-items: center; font-size: 11px; color: #596276; }
+.webinar-image { display: block; width: calc(100% + 56px); max-width: none; height: auto; flex-shrink: 0; margin: -28px -28px 24px; border-radius: 8px 8px 0 0; }
 .webinar-live { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: #1d2433; }
 .webinar-live::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #087e91; }
 .webinar-date { display: flex; align-items: center; gap: 24px; width: 100%; padding: 24px 0; margin: 0 0 8px; border-bottom: 1px solid #dce3e8; font-size: 14px; line-height: 1.6; }
@@ -44,6 +45,7 @@
 @media (max-width: 760px) {
   .upcoming-grid { grid-template-columns: 1fr; gap: 28px; }
   .webinar-feature { padding: 22px; }
+  .webinar-image { width: calc(100% + 44px); margin: -22px -22px 22px; }
   .upcoming-grid .webinar-feature h3 { font-size: 23px; }
   .webinar-date { gap: 16px; flex-wrap: wrap; }
   .course-start-list { max-height: none; }
