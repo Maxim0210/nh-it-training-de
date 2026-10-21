@@ -465,7 +465,7 @@ function initCookieConsent() {
   const scriptSource = document.currentScript?.src || document.querySelector("script[src*='app.js']")?.src || window.location.href;
   const siteUrl = (path) => new URL(path, scriptSource).toString();
   const cookieName = "nh_cookie_consent";
-  const cookieVersion = "2026-06-29";
+  const cookieVersion = "2026-10-21";
   const maxAge = 60 * 60 * 24 * 180;
   const isEnglish = document.documentElement.lang?.toLowerCase().startsWith("en");
   const t = isEnglish
@@ -480,7 +480,7 @@ function initCookieConsent() {
       necessary: "Necessary",
       necessaryText: "Required for page operation, security and storing your cookie choice.",
       analytics: "Analytics",
-      analyticsText: "Helps us understand which pages and course searches work well. Currently not active.",
+      analyticsText: "Cloudflare Web Analytics measures page views, referral sources and loading performance after your consent. No advertising profiles.",
       marketing: "Marketing",
       marketingText: "Reserved for future campaign measurement. Currently not active.",
       privacy: "Privacy policy",
@@ -497,7 +497,7 @@ function initCookieConsent() {
       necessary: "Notwendig",
       necessaryText: "Erforderlich für Seitenbetrieb, Sicherheit und das Speichern deiner Cookie-Auswahl.",
       analytics: "Analyse",
-      analyticsText: "Hilft zu verstehen, welche Seiten und Kurssuchen gut funktionieren. Aktuell nicht aktiv.",
+      analyticsText: "Cloudflare Web Analytics misst nach Ihrer Zustimmung Seitenaufrufe, Zugriffsquellen und Ladezeiten. Keine Werbeprofile.",
       marketing: "Marketing",
       marketingText: "Vorbereitet für spätere Kampagnenmessung. Aktuell nicht aktiv.",
       privacy: "Datenschutz",
@@ -540,6 +540,24 @@ function initCookieConsent() {
   };
 
   const existing = readConsent();
+  const syncAnalytics = (preferences) => {
+    if (location.hostname !== "nh-it-training.de" && location.hostname !== "www.nh-it-training.de") return;
+    const beacon = document.getElementById("nh-cloudflare-analytics");
+    if (!preferences?.analytics) {
+      // Reload after withdrawal to discard listeners installed by the third-party script.
+      if (beacon) location.reload();
+      return;
+    }
+    if (beacon) return;
+    const script = document.createElement("script");
+    script.id = "nh-cloudflare-analytics";
+    script.type = "module";
+    script.src = "https://static.cloudflareinsights.com/beacon.min.js";
+    script.dataset.cfBeacon = JSON.stringify({ token: "d2216843c2994a9ca211dc95bc5b23d8" });
+    document.head.appendChild(script);
+  };
+  window.addEventListener("nhCookieConsent", (event) => syncAnalytics(event.detail));
+  syncAnalytics(existing);
   const openSettingsButtons = [];
 
   const addFooterSettings = () => {
