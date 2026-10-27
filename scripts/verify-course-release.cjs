@@ -6,6 +6,7 @@ const { execFileSync } = require('node:child_process');
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 async function main() {
   const release = JSON.parse(fs.readFileSync('.qa/course-release.json', 'utf8'));
+  const expectedCourses = JSON.parse(fs.readFileSync('.qa/official-courses.json', 'utf8')).courses.length;
   const cache = new Map();
   const local = new Set(['app.js', 'assets/course-catalog.js', 'assets/course-schedule.css']);
   const server = http.createServer((req, res) => {
@@ -41,7 +42,7 @@ async function main() {
     page.on('response',r=>{if(r.url().startsWith(root)&&r.status()>=400)failures.push(r.url());});
     await page.goto(root+'/kursangebote.html', {waitUntil:'networkidle'});
     await page.getByRole('button',{name:'Nur notwendige',exact:true}).click();
-    assert.equal(await page.locator('[data-catalog-course]').count(),454);
+    assert.equal(await page.locator('[data-catalog-course]').count(),expectedCourses);
     assert.equal(await page.locator('main').innerText().then(t=>/Hamburg/i.test(t)),false);
     for(const width of [1440,768,390]){
       await page.setViewportSize({width,height:1000});
@@ -70,7 +71,7 @@ async function main() {
     assert.ok(await page.locator('[data-catalog-course]:visible').count()>0);
     await page.goto(root+'/kontakt.html?kurs=PL-300', {waitUntil:'networkidle'});
     assert.match(await page.locator('textarea[name="nachricht"]').inputValue(),/PL-300/);
-    console.log(JSON.stringify({htmlPages:validation.length,catalogueCourses:454,viewports:[1440,768,390],missingAssets:failures},null,2));
+    console.log(JSON.stringify({htmlPages:validation.length,catalogueCourses:expectedCourses,viewports:[1440,768,390],missingAssets:failures},null,2));
   } finally {await browser.close();await new Promise(resolve=>server.close(resolve));}
 }
 main().catch(e=>{console.error(e);process.exitCode=1;});
