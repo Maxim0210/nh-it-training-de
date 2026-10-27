@@ -42,8 +42,8 @@ function normalize(text) {
 }
 
 function searchTargetUrl(form, query) {
-  const fallback = "trainings/advanced-search.html#kurse";
-  const target = new URL(form.getAttribute("action") || fallback, window.location.href);
+  const script = document.querySelector('script[src*="app.js"]');
+  const target = new URL("kursangebote.html", script?.src || window.location.href);
   if (query) target.searchParams.set("q", query);
   if (activeFilter && activeFilter !== "all") target.searchParams.set("filter", activeFilter);
   if (!target.hash) target.hash = "#kurse";
@@ -116,7 +116,7 @@ searchForms.forEach((form) => {
     const input = form.querySelector("input[name='q']");
     const query = input?.value.trim() || "";
 
-    if (!shouldFilterHere) {
+    if (!shouldFilterHere || form.closest("header")) {
       event.preventDefault();
       window.location.href = searchTargetUrl(form, query);
       return;
@@ -129,6 +129,12 @@ searchForms.forEach((form) => {
     applyCourseView();
   });
 });
+
+const requestedCourse = params.get("kurs")?.trim().slice(0, 180);
+const inquiryMessage = document.querySelector('textarea[name="nachricht"]');
+if (requestedCourse && inquiryMessage && !inquiryMessage.value) {
+  inquiryMessage.value = `Ich interessiere mich für ${requestedCourse}. Bitte senden Sie mir ein Angebot.`;
+}
 
 if (shouldFilterHere) {
   syncSearchInputs();
