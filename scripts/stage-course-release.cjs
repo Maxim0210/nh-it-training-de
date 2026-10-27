@@ -7,6 +7,7 @@ if (git(['diff','--cached','--name-only']).trim()) throw Error('Existing staged 
 const release = JSON.parse(fs.readFileSync('.qa/course-release.json','utf8'));
 const extras = ['app.js','assets/course-catalog.js','assets/course-schedule.css','scripts/collect-official-courses.cjs','scripts/render-official-courses.cjs','scripts/course-sync.test.cjs','scripts/verify-course-release.cjs','scripts/stage-course-release.cjs','docs/course-sync.md'];
 const index = path.resolve('.qa/course-release-index');
+extras.push('scripts/course-topics.cjs','scripts/course-aliases.json');
 if(fs.existsSync(index))fs.unlinkSync(index);
 const env = {...process.env,GIT_INDEX_FILE:index};
 git(['read-tree','HEAD'],{env});

@@ -1,6 +1,6 @@
 # Official course updates
 
-Scope: factual course titles, durations, languages and explicit schedule/price records from public New Horizons course detail pages. No source marketing paragraphs are copied. New titles enter one useful searchable catalogue, not hundreds of thin SEO pages. Existing detail pages are matched by unique exact normalized H1 only. Unmatched/ambiguous titles remain in the catalogue with a source link and inquiry path.
+Scope: factual course titles, durations, languages and explicit schedule/price records from public New Horizons course detail pages. No source marketing paragraphs are copied. New titles enter one useful searchable catalogue, not hundreds of thin SEO pages. Existing detail pages are matched by unique exact normalized H1 or the reviewed title-to-page aliases in scripts/course-aliases.json. Never match solely by a course code: AI-3025 is an example with conflicting local content and is intentionally not linked. Unmatched/ambiguous titles remain in the catalogue with a source link and inquiry path. The official taxonomy feeds all 19 topic filters; unknown categories stop generation for review.
 
 ## Weekly workflow
 

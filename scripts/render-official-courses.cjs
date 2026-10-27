@@ -1,5 +1,6 @@
 const fs=require('node:fs'),{execFileSync}=require('node:child_process');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const topics=require('./course-topics.cjs'),aliases=require('./course-aliases.json');
 const head=f=>execFileSync('git',['show','HEAD:'+f],{encoding:'utf8',maxBuffer:20*1024*1024});
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function delivery(format){return /Virtual/i.test(format)?'Online-Teilnahme':'Durchführungsort auf Anfrage';}
@@ -24,6 +25,12 @@ async function main(){
  // The owner confirmed on 2026-10-27 that these source tariffs and bookings apply.
  // Preserve the source internally; never relabel a physical venue as a local one.
  const courses=source.courses.map(c=>{const upcoming=c.dates.filter(d=>d.center==='HAM').flatMap(d=>{const start=startDate(d.date);if(!start){invalid.push({course:c.title,date:d.date});return [];}return start>source.checkedAt?[{...d,start}]:[];}).sort((a,b)=>a.start.localeCompare(b.start));const match=mapped.get(normalize(c.title));return {...c,checkedAt:source.checkedAt,upcoming:[...new Map(upcoming.map(d=>[JSON.stringify(d),d])).values()],local:match?.length===1?match[0]:null};}).sort((a,b)=>a.title.localeCompare(b.title,'de'));
+ for(const c of courses){
+  const alias=aliases[c.title];
+  if(!c.local&&alias&&files.includes('kurse/'+alias))c.local='kurse/'+alias;
+  c.topic=new URL(c.source).pathname.split('/')[3];
+  if(!topics[c.topic])throw Error('Unmapped source topic: '+c.topic);
+ }
  if(invalid.length){fs.writeFileSync('.qa/unparsed-course-dates.json',JSON.stringify(invalid,null,2));throw Error(`${invalid.length} unparsed dates; inspect before publishing`);}
  for(const c of courses.filter(c=>c.local)){
   let html=head(c.local);const block=section(c);
@@ -41,11 +48,36 @@ async function main(){
  catalog=catalog.replace('</head>','<link rel="stylesheet" href="assets/course-schedule.css">\n</head>').replace('</body>','<script src="assets/course-catalog.js" defer></script>\n</body>');
  const schema={"@context":"https://schema.org","@type":"CollectionPage","name":"Kursangebote, Starttermine und Preise","url":"https://nh-it-training.de/kursangebote.html","inLanguage":"de-DE","description":"IT-Kurse, aktuelle Starttermine und Preise mit persönlicher Beratung.","mainEntity":{"@type":"ItemList","numberOfItems":courses.length,"itemListElement":courses.map((c,i)=>({"@type":"ListItem","position":i+1,"name":c.title,"url":"https://nh-it-training.de/kursangebote.html#course-"+(c.id||i)}))}};
  catalog=catalog.replace('</head>',`<script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>\n</head>`);
+ catalog=await page.evaluate(({catalog,courses,topics})=>{
+  const d=new DOMParser().parseFromString(catalog,'text/html');
+  const label=d.createElement('label');label.textContent='Thema';
+  const select=d.createElement('select');select.id='catalog-topic';select.name='topic';
+  const all=d.createElement('option');all.value='';all.textContent='Alle Themen';select.append(all);
+  for(const [value,name]of Object.entries(topics).sort((a,b)=>a[1].localeCompare(b[1],'de'))){const o=d.createElement('option');o.value=value;o.textContent=name;select.append(o);}
+  label.append(select);d.querySelector('.catalog-controls').insertBefore(label,d.querySelector('#catalog-format').parentElement);
+  for(const [i,c]of courses.entries()){
+   const card=d.getElementById('course-'+(c.id||i));card.dataset.topic=c.topic;
+   const taxonomy=new URL(c.source).pathname.split('/').slice(3,-1).join(' ').replace(/-/g,' ');
+   card.dataset.title=[c.title,topics[c.topic],taxonomy].join(' ').toLowerCase();
+   const p=d.createElement('p');p.className='catalog-topic-label';p.textContent=topics[c.topic];card.prepend(p);
+  }
+  return '<!doctype html>\n'+d.documentElement.outerHTML;
+ },{catalog,courses,topics});
  out['kursangebote.html']=catalog.replace(/^[ \t]+$/gm,'');
+ // Each existing topic entry point exposes the full, current source category.
+ const topicPages={'thema-cloud':['cloud'],'thema-data':['data-analytics'],'thema-security':['cybersecurity'],'thema-ki':['ki'],'thema-office':['office'],'thema-network':['networking','infrastructure'],'thema-devops':['devops','programming'],'thema-pm':['projekt-management','it-service-management','agile'],'thema-compliance':['datenschutz']};
+ for(const [slug,groups]of Object.entries(topicPages)){
+  const file='trainings/'+slug+'.html';let html=head(file);
+  const block='<section class="detail-block" data-official-topics><h2>Aktuelle Kursangebote</h2><ul>'+groups.map(group=>`<li><a href="../kursangebote.html?topic=${group}#kurse">${esc(topics[group])}: ${courses.filter(c=>c.topic===group).length} Kurse mit Terminen und Preisen</a></li>`).join('')+'</ul></section>';
+  if(html.includes('data-official-topics'))html=html.replace(/<section class="detail-block" data-official-topics>[\s\S]*?<\/section>/,block);
+  else html=html.replace('<div class="choice-content">','<div class="choice-content">'+block);
+  out[file]=html;
+ }
  // Use the existing catalogue and search entry points without removing their content.
- for(const file of ['kurskatalog.html','trainings/advanced-search.html']){
+ for(const file of ['kurskatalog.html','trainings/advanced-search.html','trainings.html','trainings/topics.html','trainings/brands.html']){
    let html=head(file);const href=file.includes('/')?'../kursangebote.html':'kursangebote.html';
    if(!html.includes('data-complete-catalog'))html=html.replace('<main>',`<main>\n<section class="section" data-complete-catalog><h2>Aktuelle Kurse, Termine und Preise</h2><p><a class="button primary" href="${href}">Alle ${courses.length} Kursangebote durchsuchen</a></p></section>`);
+   else html=html.replace(/(<section class="section" data-complete-catalog>[\s\S]*?)Alle \d+ Kursangebote durchsuchen/,`$1Alle ${courses.length} Kursangebote durchsuchen`);
    out[file]=html;
  }
  let home=head('index.html');if(!home.includes('href="kursangebote.html"'))home=home.replace('<h3>Last-Minute-Kurse</h3>','<h3>Last-Minute-Kurse</h3>\n<p><a href="kursangebote.html">Alle Kursangebote, Starttermine und Preise</a></p>');out['index.html']=home;

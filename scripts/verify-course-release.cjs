@@ -61,6 +61,16 @@ async function main() {
       assert.ok(visible>0, value);
     }
     assert.deepEqual(failures, []);
+    await page.locator('#catalog-format').selectOption('');
+    const sourceCourses=JSON.parse(fs.readFileSync('.qa/official-courses.json','utf8')).courses;
+    const topics=require('./course-topics.cjs');
+    for(const topic of Object.keys(topics)){
+      await page.locator('#catalog-topic').selectOption(topic);
+      assert.equal(await page.locator('[data-catalog-course]:visible').count(),sourceCourses.filter(c=>new URL(c.source).pathname.split('/')[3]===topic).length);
+    }
+    await page.goto(root+'/kursangebote.html?topic=office',{waitUntil:'networkidle'});
+    assert.equal(await page.locator('#catalog-topic').inputValue(),'office');
+    assert.equal(await page.locator('[data-catalog-course]:visible').count(),sourceCourses.filter(c=>new URL(c.source).pathname.split('/')[3]==='office').length);
     const detailFile = Object.keys(release).find(f=>f.startsWith('kurse/'));
     await page.goto(root+'/'+detailFile,{waitUntil:'networkidle'});
     assert.equal(await page.locator('.verified-course-dates').count(),1);

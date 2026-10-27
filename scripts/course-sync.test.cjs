@@ -21,3 +21,9 @@ test('Exact title matching ignores punctuation, not course variants',()=>{
  assert.equal(normalize('PRINCE2® Foundation'),normalize('PRINCE2 Foundation'));
  assert.notEqual(normalize('PL-300'),normalize('PL-300 advanced'));
 });
+test('Reviewed aliases exclude different courses sharing a code',()=>{
+ const aliases=require('./course-aliases.json');
+ assert.equal(aliases['AI-3025 Work smarter with AI'],undefined);
+ assert.equal(aliases['PL-900 Microsoft Power Platform Grundlagen'],'pl-900-power-platform-fundamentals.html');
+ assert.equal(new Set(Object.values(aliases)).size,Object.values(aliases).length);
+});

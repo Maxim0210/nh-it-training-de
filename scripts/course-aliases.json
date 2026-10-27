@@ -1,0 +1,18 @@
+{
+  "PL-900 Microsoft Power Platform Grundlagen": "pl-900-power-platform-fundamentals.html",
+  "SC-900 Microsoft Sicherheit, Konformität und Identität Grundlagen": "sc-900-security-compliance-identity-fundamentals.html",
+  "MD-102 Microsoft 365 Endpoint Administrator": "md-102-endpoint-administrator-associate.html",
+  "AZ-700 Designing and Implementing Microsoft Azure Networking Solutions": "az-700-azure-network-engineer-associate.html",
+  "AZ-305 Designing Microsoft Azure Infrastructure Solutions": "az-305-azure-solutions-architect-expert.html",
+  "AZ-120 Planning and Administering Microsoft Azure for SAP Workloads": "az-120-azure-for-sap-workloads-specialty.html",
+  "AZ-140 Configuring and Operating Windows Virtual Desktop on Microsoft Azure": "az-140-azure-virtual-desktop-specialty.html",
+  "SC-100 Microsoft Cybersecurity Architect": "sc-100-cybersecurity-architect-expert.html",
+  "SC-200 Microsoft Security Operations Analyst": "sc-200-security-operations-analyst-associate.html",
+  "DP-300 Administering Microsoft Azure SQL Solutions": "dp-300-azure-database-administrator-associate.html",
+  "PL-400 Microsoft Power Platform Developer": "pl-400-power-platform-developer.html",
+  "SC-5003 Implement information protection and data loss prevention by using Microsoft Purview": "sc-5003-microsoft-purview-information-protection.html",
+  "SC-5007 Implement retention, eDiscovery, and Communication compliance in Microsoft Purview": "sc-5007-microsoft-purview-retention-ediscovery.html",
+  "AI-3016 Develop copilots with Azure AI Studio": "ai-3016-custom-copilots-azure-ai-studio.html",
+  "DP-420 Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB": "dp-420-azure-cosmos-db-developer-specialty.html",
+  "AB-900 Einführung in Microsoft 365 und KI Administration": "ab-900-introduction-to-microsoft-365-and-ai-administration.html"
+}
