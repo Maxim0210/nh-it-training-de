@@ -19,7 +19,7 @@ const CITIES = {
     title: 'IT-Schulungen München: Kurse & Förderung | New Horizons',
     description: 'IT-Schulungen in München: New Horizons am Stahlgruberring, Online-Live-Kurse mit Terminen und Preisen, Firmenseminare und Beratung zur Förderung.',
     hero: 'Azure, Microsoft 365, Security, KI und Projektmanagement: im New Horizons Center am Stahlgruberring, online live oder als Firmenseminar.',
-    street: 'Stahlgruberring 11a', zip: '81829', phone: '089 997 409 350', phoneIntl: '+4989997409350', email: 'muenchen@newhorizons.de',
+    street: 'Stahlgruberring 11-11a', zip: '81829', phone: '089 997 409 350', phoneIntl: '+4989997409350', email: 'muenchen@newhorizons.de',
     walkin: 'Montag bis Freitag, 9:00 bis 17:00 Uhr',
     source: 'https://www.newhorizons.de/standorte/muenchen',
     region: 'Freising, Dachau, Erding, Fürstenfeldbruck, Starnberg und Ebersberg',
