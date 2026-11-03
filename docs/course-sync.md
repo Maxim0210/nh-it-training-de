@@ -20,3 +20,7 @@ Scope: factual course titles, durations, languages and explicit schedule/price r
 - No old guessed prices, funding guarantees or invented availability. Source date and direct course link accompany the facts.
 - Retain no more than six nearest schedule rows per course in static HTML for readability; the official course link provides further published options. The delivery filter includes a separate option for courses with dates on request.
 - No email, signup or reservation is performed by the update.
+
+## Search and AI summaries
+
+After every applied course update run `node scripts/seo-course-enhance.cjs --date=YYYY-MM-DD`. It refreshes the short course summary, removes expired `CourseInstance` entries from JSON-LD, updates the homepage FAQ schema and sets `lastmod` for pages that really changed. The exam facts in `EXAMS` come from the linked Microsoft study guides and must be rechecked when an exam changes.

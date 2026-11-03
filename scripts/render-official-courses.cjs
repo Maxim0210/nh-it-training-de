@@ -80,7 +80,11 @@ async function main(){
    else html=html.replace(/(<section class="section" data-complete-catalog>[\s\S]*?)Alle \d+ Kursangebote durchsuchen/,`$1Alle ${courses.length} Kursangebote durchsuchen`);
    out[file]=html;
  }
- let home=head('index.html');if(!home.includes('href="kursangebote.html"'))home=home.replace('<h3>Last-Minute-Kurse</h3>','<h3>Last-Minute-Kurse</h3>\n<p><a href="kursangebote.html">Alle Kursangebote, Starttermine und Preise</a></p>');out['index.html']=home;
+ let home=head('index.html');if(!home.includes('href="kursangebote.html"'))home=home.replace('<h3>Last-Minute-Kurse</h3>','<h3>Last-Minute-Kurse</h3>\n<p><a href="kursangebote.html">Alle Kursangebote, Starttermine und Preise</a></p>');
+ // Date-only course starts expire at the beginning of their Berlin calendar day.
+ home=home.replace(/<li data-expires="([^"]+)"[^>]*>[\s\S]*?<\/li>/g,(item,expires)=>expires.slice(0,10)<=source.checkedAt?'':item);
+ if(!/<li data-expires=/.test(home))home=home.replace('data-courses-empty hidden','data-courses-empty');
+ out['index.html']=home;
  let sitemap=head('sitemap.xml');for(const file of Object.keys(out)){const url='https://nh-it-training.de/'+(file==='index.html'?'':encodeURI(file));const entry=`<url><loc>${url}</loc><lastmod>${source.checkedAt}</lastmod><priority>0.7</priority></url>`;if(sitemap.includes('<loc>'+url+'</loc>'))sitemap=sitemap.replace(/<url>[\s\S]*?<\/url>/g,b=>b.includes('<loc>'+url+'</loc>')?b.replace(/<lastmod>.*?<\/lastmod>/,`<lastmod>${source.checkedAt}</lastmod>`):b);else sitemap=sitemap.replace('</urlset>',entry+'\n</urlset>');}out['sitemap.xml']=sitemap;
  fs.writeFileSync('.qa/course-release.json',JSON.stringify(out));
  fs.writeFileSync('.qa/course-coverage.json',JSON.stringify({checkedAt:source.checkedAt,sourcePages:source.sourcePages,uniqueCourses:courses.length,matched:courses.filter(c=>c.local).length,notMatched:courses.filter(c=>!c.local).map(c=>({title:c.title,source:c.source})),withDates:courses.filter(c=>c.upcoming.length).length},null,2));

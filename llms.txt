@@ -1,0 +1,31 @@
+# New Horizons IT-Weiterbildung
+
+> IT-Schulungen und Firmenseminare zu Microsoft, KI, Cloud, Cybersecurity, Daten und IT-Service-Management. Beratung für München, Nürnberg und Stuttgart. Anbieter laut Impressum: Scheurer GmbH, Stahlgruberring 11-11a, 81829 München.
+
+Kontakt: 089 997 409 352, max.dilewski@nhacademy.de
+
+## Kurse, Termine und Preise
+
+- [Kursangebote](https://nh-it-training.de/kursangebote.html): Suche über alle Kurse mit Starttermin und Preis, soweit veröffentlicht
+- [Kurskatalog](https://nh-it-training.de/kurskatalog.html): Kurse nach Anbieter und Thema
+- [Trainings](https://nh-it-training.de/trainings.html): Einstieg nach Anbieter, Thema und Zielgruppe
+- [Lernwege](https://nh-it-training.de/lernwege.html): empfohlene Kursfolgen für Azure, Microsoft 365, Security, Daten, KI und ITSM
+
+## Häufig gesuchte Kurse
+
+- [AZ-104 Microsoft Azure Administrator](https://nh-it-training.de/kurse/az-104-microsoft-azure-administrator.html)
+- [PL-300 Microsoft Power BI Data Analyst](https://nh-it-training.de/kurse/pl-300-power-bi-data-analyst.html)
+- [MS-102 Microsoft 365 Administrator](https://nh-it-training.de/kurse/ms-102-microsoft-365-administrator.html)
+- [SC-200 Security Operations Analyst](https://nh-it-training.de/kurse/sc-200-security-operations-analyst-associate.html)
+
+## Förderung und Unternehmen
+
+- [Förderung](https://nh-it-training.de/f%C3%B6rderung.html): Bildungsgutschein und Qualifizierungschancengesetz. Über eine Förderung entscheidet die zuständige Förderstelle.
+- [QCG-Fördercheck](https://nh-it-training.de/qcg-foerdercheck.html): Förderung der Mitarbeiterqualifizierung prüfen
+- [Für Unternehmen](https://nh-it-training.de/unternehmen.html): Firmenseminare und Teamqualifizierung
+
+## Standorte und Kontakt
+
+- [Standorte](https://nh-it-training.de/standorte.html): Übersicht München, Nürnberg und Stuttgart
+- [Kontakt](https://nh-it-training.de/kontakt.html): Beratung anfragen
+- [Impressum](https://nh-it-training.de/impressum.html)
