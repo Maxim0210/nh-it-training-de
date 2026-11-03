@@ -100,13 +100,7 @@ const EXAMS = {
   'ms-102-microsoft-365-administrator.html': {
     code: 'MS-102',
     replaceAgenda: true,
-    until: '2026-11-30',
-    after: {
-      heading: 'Was prüfte MS-102?',
-      intro: 'Der Kurs orientiert sich an der Microsoft-Prüfung MS-102, die bis zum 30.11.2026 abgelegt werden konnte. Microsoft prüfte diese Bereiche:',
-      closing: 'Zum Bestehen waren mindestens 700 Punkte nötig. Das Prüfungsprofil setzte praktische Erfahrung mit den Microsoft-365-Workloads und Microsoft Entra ID sowie Kenntnisse in Netzwerk, AD DS, DNS und PowerShell voraus.',
-    },
-    intro: 'Der Kurs orientiert sich an der Microsoft-Prüfung MS-102, die nur noch bis zum 30.11.2026 abgelegt werden kann. Microsoft prüft diese Bereiche (Stand der Prüfungsinhalte: 28.04.2026):',
+    intro: 'Der Kurs orientiert sich an der Microsoft-Prüfung MS-102, die am 30.11.2026 abläuft. Microsoft prüft diese Bereiche (Stand der Prüfungsinhalte: 28.04.2026):',
     skills: [
       ['Microsoft-365-Mandanten bereitstellen und verwalten'],
       ['Identität und Zugriff mit Microsoft Entra implementieren und verwalten'],
@@ -218,7 +212,7 @@ const RETIRED = {
   'dp-100': {kind: 'cert', date: '2026-06-01', listed: true},
   'dp-203': {kind: 'cert', date: '2025-03-31'},
   'dp-500': {kind: 'cert', date: '2024-04-30'},
-  'ms-102': {kind: 'exam', date: '2026-11-30', successor: 'Als Ersatz empfiehlt Microsoft die Zertifizierung Microsoft 365 and AI Services Administrator Associate mit der Prüfung AB-650, die laut Prüfungsseite derzeit nur auf Englisch verfügbar ist.'},
+  'ms-102': {kind: 'exam', date: '2026-11-30', expires: true},
   'ms-203': {kind: 'exam', date: '2023-12-31'},
   'ms-220': {kind: 'exam', date: '2023-07-31', successor: 'Microsoft führte sie unter dem Namen Troubleshooting Microsoft Exchange Online.'},
   'ms-500': {kind: 'exam', date: '2023-06-30'},
@@ -328,7 +322,6 @@ function summary(page) {
 }
 
 function examBlock(exam) {
-  if (exam.until && exam.until < today) exam = {...exam, ...exam.after};
   const intro = exam.intro || `Der Kurs ist auf die Microsoft-Prüfung ${exam.code} ausgerichtet. Microsoft gewichtet die Themen so (Stand der Prüfungsinhalte: ${exam.asOf}):`;
   const closing = exam.closing || 'Zum Bestehen sind mindestens 700 Punkte nötig. Die Zertifizierung gilt jeweils ein Jahr und lässt sich über eine kostenlose Online-Prüfung bei Microsoft Learn verlängern.';
   const list = exam.skills?.length ? `\n            <ul>${exam.skills.map(([skill, share]) => `<li>${share ? `${skill}: ${share}` : skill}</li>`).join('')}</ul>` : '';
@@ -347,9 +340,14 @@ function retiredCode(file) {
 }
 
 function statusNote(code) {
-  const {kind, date, successor, listed, noRenewal} = RETIRED[code];
+  const {kind, date, successor, listed, noRenewal, expires} = RETIRED[code];
   const label = code.toUpperCase();
   const day = german(date);
+  const source = `Quelle: <a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/${code}/" rel="noopener">Microsoft-Seite zu ${label}</a>`;
+  // Owner wording, 2026-11-04: stays as written after the date.
+  if (expires) return `<!-- course-status-start -->
+            <p><strong>Wichtig zur Prüfung:</strong> Die Prüfung ${label} läuft am ${day} ab. ${source}.</p>
+<!-- course-status-end -->`;
   let fact;
   if (date >= today) fact = `Microsoft stellt die Prüfung ${label} und die zugehörige Zertifizierung am ${day} ein. Danach kann die Prüfung nicht mehr abgelegt und die Zertifizierung weder erworben noch verlängert werden.`;
   else if (kind === 'exam') fact = `Microsoft hat die Prüfung ${label} am ${day} eingestellt. Sie kann nicht mehr abgelegt werden.`;
@@ -362,8 +360,9 @@ function statusNote(code) {
 }
 
 function statusDescription(code) {
-  const {kind, date} = RETIRED[code];
+  const {kind, date, expires} = RETIRED[code];
   const label = code.toUpperCase();
+  if (expires) { const fixed = `Die Prüfung ${label} läuft am ${german(date)} ab.`; return {past: fixed, future: fixed}; }
   const past = kind === 'exam' ? `Microsoft hat die Prüfung ${label} eingestellt.` : `Microsoft hat die Zertifizierung zu ${label} eingestellt.`;
   return {past, future: `Microsoft stellt die Prüfung ${label} am ${german(date)} ein.`};
 }
@@ -445,6 +444,7 @@ function enhanceCourse(html, file) {
     const isOver = RETIRED[retired].date < today;
     out = out.split('Online-Training, Agenda und Beratung anfragen.').join(`${isOver ? past : future} Inhalte und Beratung anfragen.`);
     if (isOver) out = out.split(future).join(past);
+    out = out.split('Microsoft stellt die Prüfung MS-102 am 30.11.2026 ein.').join(past);
   }
   for (const [from, to] of exam?.wording || []) out = out.split(from).join(to);
 

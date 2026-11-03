@@ -27,7 +27,7 @@ After every applied course update run `node scripts/seo-course-enhance.cjs --dat
 
 ## Exam status
 
-`EXAMS` and `RETIRED` in `scripts/seo-course-enhance.cjs` hold vendor facts checked on 2026-11-03. Recheck them about once a quarter against the linked vendor pages, because vendors retire and update exams without notice. Rerun the script after any change, and rerun it after 2026-11-30 so the MS-102 page switches to the past tense.
+`EXAMS` and `RETIRED` in `scripts/seo-course-enhance.cjs` hold vendor facts checked on 2026-11-03. Recheck them about once a quarter against the linked vendor pages, because vendors retire and update exams without notice. Rerun the script after any change. The MS-102 note says the exam runs out on 30.11.2026 and stays as written, by owner decision on 2026-11-04.
 
 ## City pages
 
