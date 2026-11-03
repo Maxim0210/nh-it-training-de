@@ -275,11 +275,32 @@ function upcoming(html) {
   return rows;
 }
 
+// Owner rule, 2026-11-04: the exam is included only when the course name says so.
+const EXAM_INCLUDED = /\b(mit|inkl\.?|inklusive)\s+Examen\b/i;
+
+function examFact(title, file) {
+  if (retiredCode(file)) return null;
+  if (EXAM_INCLUDED.test(title)) return 'Examen: im Kurs enthalten';
+  return EXAMS[file] ? 'Examen: nicht im Kurs enthalten' : null;
+}
+
+function examBox(html, title, file) {
+  if (retiredCode(file)) return html;
+  return html.replace(/(<span>Zertifizierung<\/span>\s*<p>)([\s\S]*?)(<\/p>)/, (all, open, text, close) => {
+    if (EXAM_INCLUDED.test(title)) return `${open}Das Examen ist in diesem Kurs enthalten.${close}`;
+    const note = 'Das Examen ist im Kurs nicht enthalten.';
+    if (text.includes(note)) return all;
+    const body = text.replace('Prüfungsbuchung und enthaltene Leistungen klären wir im Angebot.', 'Die Prüfungsbuchung klären wir im Angebot.');
+    return `${open}${body} ${note}${close}`;
+  });
+}
+
 function summary(page) {
   const facts = [];
   if (page.duration && page.duration !== 'Dauer auf Anfrage') facts.push(`Dauer: ${page.duration}`);
   if (page.language) facts.push(`Sprache: ${page.language}`);
   if (page.form) facts.push(`Durchführung: ${page.form}`);
+  if (page.examFact) facts.push(page.examFact);
   const next = page.rows[0];
   if (next) {
     facts.push(`Nächster Start: ${german(next.start)}${next.online ? ', online' : ''}`);
@@ -390,7 +411,7 @@ function enhanceCourse(html, file) {
   if (!metaBlock || !title || !hero) { console.warn(`Skipped: ${file}`); return html; }
   const [duration, language, form] = [...metaBlock.matchAll(/<span>([\s\S]*?)<\/span>/g)].map((m) => text(m[1]));
   const theme = text(html.match(/<p class="eyebrow">([\s\S]*?)<\/p>/)?.[1] || '').split('|')[1]?.trim();
-  const page = {title, hero, duration, language, form, theme, rows: upcoming(html)};
+  const page = {title, hero, duration, language, form, theme, rows: upcoming(html), examFact: examFact(title, file)};
 
   let out = html.replace(/\s*<!-- course-summary-start -->[\s\S]*?<!-- course-summary-end -->/, '');
   out = out.replace(/(<section class="detail-block compact-intro">)/, () => `<section class="detail-block compact-intro">\n            ${summary(page)}`);
@@ -425,6 +446,7 @@ function enhanceCourse(html, file) {
   // The source files Adobe under DevOps; the topic link keeps its real name.
   if (file.startsWith('adobe-')) out = out.replace(/DevOps, Testing und Collaboration(?!<\/a>)/g, 'Grafik, Layout, PDF und Web');
   out = out.replace(/Stand: (\d{4}-\d{2}-\d{2})\./g, (m, iso) => `Stand: ${german(iso)}.`);
+  out = examBox(out, title, file);
   return updateSchema(trimMeta(out), page, file);
 }
 

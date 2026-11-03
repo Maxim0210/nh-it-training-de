@@ -32,3 +32,7 @@ After every applied course update run `node scripts/seo-course-enhance.cjs --dat
 ## City pages
 
 `scripts/seo-city-pages.cjs` holds the centre data and local funding facts for the München, Nürnberg and Stuttgart pages, checked on 2026-11-03 against the linked sources. The enhancer refreshes their dates. `scripts/course-copy-table.json` holds the corrected template sentences and is applied after every render. The Stuttgart centre belongs to a partner (confirmed by the owner on 2026-11-03), so it is never listed as a location of the Scheurer GmbH organisation. Recheck funding programmes about once a quarter, because rates and deadlines change. No further city pages: this keeps to the project rule against doorway pages.
+
+## Exam included
+
+Owner rule, 2026-11-04: the exam is included only when the course name says "inkl. Examen" or "mit Examen". All other courses exclude it. The enhancer writes this into the course pages. HAM prices remain the published prices, reconfirmed on the same date.
