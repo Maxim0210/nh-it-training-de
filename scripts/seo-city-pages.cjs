@@ -130,13 +130,11 @@ function cityBlock(c, today) {
           <section class="detail-block compact-intro">
             <h2>New Horizons in ${c.city}</h2>
             <p>New Horizons ${c.city} bietet IT-Schulungen und berät zu Kursen, Zertifizierung und Förderung.${c.partner ? ' Das Center betreibt unser Partner New Horizons Stuttgart. Beratung erhalten Sie dort oder bei uns.' : ''} Je nach Kurs nehmen Sie im Center, online live oder gemeinsam mit Ihrem Team im Firmenseminar teil.</p>
-            <ul class="course-facts"><li>Adresse: ${c.street}, ${c.zip} ${c.city}</li><li>Telefon: <a href="tel:${c.phoneIntl}">${c.phone}</a></li><li>E-Mail: <a href="mailto:${c.email}">${c.email}</a></li><li>Öffnungszeiten: Montag bis Freitag, 8:30 bis 17:00 Uhr</li>${walkin}</ul>
+            <ul class="course-facts"><li>Adresse: ${c.street}, ${c.zip} ${c.city}</li><li>Telefon: <a href="tel:${c.phoneIntl}">${c.phone}</a></li><li>E-Mail: <a href="mailto:${c.email}">${c.email}</a></li><li>Öffnungszeiten: Montag bis Freitag, 8:30 bis 17:00 Uhr</li>${walkin}<li>Fördermöglichkeiten für Arbeitsuchende: ${contact(c.azav)}</li><li>QCG und Firmenseminare: ${contact(B2B)}</li></ul>
             <p>WalkIn bedeutet: flexibel im eigenen Tempo lernen, mit persönlicher Unterstützung. Wir beraten auch Unternehmen und Teilnehmende aus ${c.region}. Quelle der Standortdaten: ${link(c.source, `New Horizons ${c.city}`)}.</p>
           </section>${nextDates(c, today)}
           <section class="detail-block">
             <h2>Förderung für Weiterbildung in ${c.city}</h2>
-            <p><strong>Fördermöglichkeiten für Arbeitsuchende:</strong> ${contact(c.azav)}</p>
-            <p><strong>QCG und Firmenseminare:</strong> ${contact(B2B)}</p>
             <ul>${c.funding().join('')}</ul>
             <p>Alle Kurse auf dieser Website sind für den Bildungsgutschein zugelassen. Ob Sie die Voraussetzungen erfüllen, entscheidet die Förderstelle.</p>
           </section>
