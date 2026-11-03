@@ -40,3 +40,7 @@ Owner rule, 2026-11-04: the exam is included only when the course name says "ink
 ## Course approval
 
 Owner statement, 2026-11-04: every course on the website is approved for the Bildungsgutschein. The enhancer writes this into the course pages. If a course without approval is ever added, this statement and the wording on the city pages, förderung.html and the homepage must change first.
+
+## Contacts
+
+Named by the owner on 2026-11-04. Funding for jobseekers: one contact per city, kept in `scripts/seo-city-pages.cjs`. QCG and company training: Max Dilewski for all cities.

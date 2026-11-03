@@ -3,6 +3,8 @@
 const fs = require('node:fs');
 
 const SITE = 'https://nh-it-training.de/';
+// Contacts named by the owner on 2026-11-04.
+const B2B = {name: 'Max Dilewski', phone: '089 997 409 352', phoneIntl: '+4989997409352', email: 'max.dilewski@nhacademy.de'};
 const link = (url, label) => `<a href="${url}" rel="noopener">${label}</a>`;
 const BA_GUTSCHEIN = 'https://www.arbeitsagentur.de/karriere-und-weiterbildung/bildungsgutschein';
 const BA_FIRMEN = 'https://www.arbeitsagentur.de/unternehmen/finanziell/foerderung-von-weiterbildung/individuelle-foerderung';
@@ -23,6 +25,7 @@ const CITIES = {
     walkin: 'Montag bis Freitag, 9:00 bis 17:00 Uhr',
     source: 'https://www.newhorizons.de/standorte/muenchen',
     region: 'Freising, Dachau, Erding, Fürstenfeldbruck, Starnberg und Ebersberg',
+    azav: {name: 'Petra Kaufmann', phone: '089 997 409 355', phoneIntl: '+4989997409355', email: 'petra.kaufmann@newhorizons-muenchen.de'},
     agency: 'Agentur für Arbeit München', agencyAddress: 'Kapuzinerstraße 26',
     funding: () => [
       gutschein('Agentur für Arbeit München', 'Kapuzinerstraße 26'),
@@ -43,6 +46,7 @@ const CITIES = {
     walkin: 'Montag bis Freitag, 9:00 bis 12:30 Uhr und 13:00 bis 16:30 Uhr',
     source: 'https://www.newhorizons.de/standorte/nuernberg',
     region: 'Fürth, Erlangen, Schwabach, Ansbach und Forchheim',
+    azav: {name: 'Sandra Stich', phone: '0911 51 77 80 71', phoneIntl: '+4991151778071', email: 'sandra.stich@newhorizons-nuernberg.de'},
     agency: 'Agentur für Arbeit Nürnberg', agencyAddress: 'Richard-Wagner-Platz 5',
     funding: () => [
       gutschein('Agentur für Arbeit Nürnberg', 'Richard-Wagner-Platz 5'),
@@ -63,6 +67,7 @@ const CITIES = {
     street: 'Pragstraße 10', zip: '70376', phone: '0711 97 57 57 21', phoneIntl: '+4971197575721', email: 'stuttgart@newhorizons.de',
     source: 'https://www.newhorizons.de/standorte/stuttgart',
     region: 'Esslingen, Ludwigsburg, Böblingen, Sindelfingen und Waiblingen',
+    azav: {name: 'Luka Valjan', phone: '0711 97 57 57 22', phoneIntl: '+4971197575722', email: 'luka.valjan@newhorizons-stuttgart.de'},
     agency: 'Agentur für Arbeit Stuttgart', agencyAddress: 'Nordbahnhofstraße 30-34',
     funding: () => [
       gutschein('Agentur für Arbeit Stuttgart', 'Nordbahnhofstraße 30-34'),
@@ -108,12 +113,14 @@ function nextDates(c, today) {
           </section>`;
 }
 
+const contact = (p) => `${p.name}, <a href="tel:${p.phoneIntl}">${p.phone}</a>, <a href="mailto:${p.email}">${p.email}</a>`;
+
 function faqItems(c) {
   return [
     [`Wo finde ich New Horizons in ${c.city}?`, `New Horizons ${c.city} sitzt ${c.street.startsWith('Stahlgruberring') ? 'am' : 'in der'} ${c.street}, ${c.zip} ${c.city}.${c.partner ? ' Das Center wird von unserem Partner betrieben.' : ''} Es ist montags bis freitags von 8:30 bis 17:00 Uhr geöffnet und unter ${c.phone} erreichbar.`],
     [`Kann ich aus ${c.city} online an einer IT-Schulung teilnehmen?`, `Ja. Für viele Kurse sind Termine mit Online-Teilnahme veröffentlicht, in der Regel von 9:00 bis 17:00 Uhr. Welche Form für Ihren Kurs möglich ist, steht auf der jeweiligen Kursseite oder wird vor der Anmeldung geklärt.`],
-    [`Wer entscheidet in ${c.city} über einen Bildungsgutschein?`, `Über den Bildungsgutschein entscheidet die ${c.agency}. Beratung und Gutschein müssen vor Kursbeginn vorliegen. Alle Kurse auf dieser Website sind für den Bildungsgutschein zugelassen.`],
-    [`Gibt es Firmenseminare für Unternehmen in ${c.city}?`, `Ja. Firmenseminare und Teamschulungen werden nach Rollen, Gruppengröße, Lernziel, Sprache und Termin abgestimmt, online oder vor Ort.`],
+    [`Wer entscheidet in ${c.city} über einen Bildungsgutschein?`, `Über den Bildungsgutschein entscheidet die ${c.agency}. Beratung und Gutschein müssen vor Kursbeginn vorliegen. Alle Kurse auf dieser Website sind für den Bildungsgutschein zugelassen. Ihr Kontakt bei uns: ${c.azav.name}, ${c.azav.phone}, ${c.azav.email}.`],
+    [`Gibt es Firmenseminare für Unternehmen in ${c.city}?`, `Ja. Firmenseminare und Teamschulungen werden nach Rollen, Gruppengröße, Lernziel, Sprache und Termin abgestimmt, online oder vor Ort. Ihr Kontakt: ${B2B.name}, ${B2B.phone}, ${B2B.email}.`],
   ];
 }
 
@@ -128,6 +135,8 @@ function cityBlock(c, today) {
           </section>${nextDates(c, today)}
           <section class="detail-block">
             <h2>Förderung für Weiterbildung in ${c.city}</h2>
+            <p><strong>Fördermöglichkeiten für Arbeitsuchende:</strong> ${contact(c.azav)}</p>
+            <p><strong>QCG und Firmenseminare:</strong> ${contact(B2B)}</p>
             <ul>${c.funding().join('')}</ul>
             <p>Alle Kurse auf dieser Website sind für den Bildungsgutschein zugelassen. Ob Sie die Voraussetzungen erfüllen, entscheidet die Förderstelle.</p>
           </section>
