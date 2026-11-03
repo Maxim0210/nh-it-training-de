@@ -24,3 +24,7 @@ Scope: factual course titles, durations, languages and explicit schedule/price r
 ## Search and AI summaries
 
 After every applied course update run `node scripts/seo-course-enhance.cjs --date=YYYY-MM-DD`. It refreshes the short course summary, removes expired `CourseInstance` entries from JSON-LD, updates the homepage FAQ schema and sets `lastmod` for pages that really changed. The exam facts in `EXAMS` come from the linked Microsoft study guides and must be rechecked when an exam changes.
+
+## Exam status
+
+`EXAMS` and `RETIRED` in `scripts/seo-course-enhance.cjs` hold vendor facts checked on 2026-11-03. Recheck them about once a quarter against the linked vendor pages, because vendors retire and update exams without notice. Rerun the script after any change, and rerun it after 2026-11-30 so the MS-102 page switches to the past tense.
