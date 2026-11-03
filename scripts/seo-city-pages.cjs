@@ -56,6 +56,7 @@ const CITIES = {
   'it-weiterbildung-online-stuttgart.html': {
     city: 'Stuttgart',
     slug: 'stuttgart',
+    partner: true,
     title: 'IT-Schulungen Stuttgart: Kurse & Förderung | New Horizons',
     description: 'IT-Schulungen in Stuttgart: New Horizons in der Pragstraße, Online-Live-Kurse mit Terminen und Preisen, Firmenseminare und Beratung zur Förderung.',
     hero: 'Microsoft, KI, Security, Daten und Projektmanagement: im New Horizons Center in der Pragstraße, online live oder als Firmenseminar.',
@@ -109,7 +110,7 @@ function nextDates(c, today) {
 
 function faqItems(c) {
   return [
-    [`Wo finde ich New Horizons in ${c.city}?`, `New Horizons ${c.city} sitzt ${c.street.startsWith('Stahlgruberring') ? 'am' : 'in der'} ${c.street}, ${c.zip} ${c.city}. Das Center ist montags bis freitags von 8:30 bis 17:00 Uhr geöffnet und unter ${c.phone} erreichbar.`],
+    [`Wo finde ich New Horizons in ${c.city}?`, `New Horizons ${c.city} sitzt ${c.street.startsWith('Stahlgruberring') ? 'am' : 'in der'} ${c.street}, ${c.zip} ${c.city}.${c.partner ? ' Das Center wird von unserem Partner betrieben.' : ''} Es ist montags bis freitags von 8:30 bis 17:00 Uhr geöffnet und unter ${c.phone} erreichbar.`],
     [`Kann ich aus ${c.city} online an einer IT-Schulung teilnehmen?`, `Ja. Für viele Kurse sind Termine mit Online-Teilnahme veröffentlicht, in der Regel von 9:00 bis 17:00 Uhr. Welche Form für Ihren Kurs möglich ist, steht auf der jeweiligen Kursseite oder wird vor der Anmeldung geklärt.`],
     [`Wer entscheidet in ${c.city} über einen Bildungsgutschein?`, `Über den Bildungsgutschein entscheidet die ${c.agency}. Beratung und Gutschein müssen vor Kursbeginn vorliegen. Ob ein bestimmter Kurs förderfähig ist, klären wir vor der Anmeldung.`],
     [`Gibt es Firmenseminare für Unternehmen in ${c.city}?`, `Ja. Firmenseminare und Teamschulungen werden nach Rollen, Gruppengröße, Lernziel, Sprache und Termin abgestimmt, online oder vor Ort.`],
@@ -121,7 +122,7 @@ function cityBlock(c, today) {
   return `<!-- city-content-start -->
           <section class="detail-block compact-intro">
             <h2>New Horizons in ${c.city}</h2>
-            <p>New Horizons ${c.city} bietet IT-Schulungen und berät zu Kursen, Zertifizierung und Förderung. Je nach Kurs nehmen Sie im Center, online live oder gemeinsam mit Ihrem Team im Firmenseminar teil.</p>
+            <p>New Horizons ${c.city} bietet IT-Schulungen und berät zu Kursen, Zertifizierung und Förderung.${c.partner ? ' Das Center betreibt unser Partner New Horizons Stuttgart. Beratung erhalten Sie dort oder bei uns.' : ''} Je nach Kurs nehmen Sie im Center, online live oder gemeinsam mit Ihrem Team im Firmenseminar teil.</p>
             <ul class="course-facts"><li>Adresse: ${c.street}, ${c.zip} ${c.city}</li><li>Telefon: <a href="tel:${c.phoneIntl}">${c.phone}</a></li><li>E-Mail: <a href="mailto:${c.email}">${c.email}</a></li><li>Öffnungszeiten: Montag bis Freitag, 8:30 bis 17:00 Uhr</li>${walkin}</ul>
             <p>WalkIn bedeutet: flexibel im eigenen Tempo lernen, mit persönlicher Unterstützung. Wir beraten auch Unternehmen und Teilnehmende aus ${c.region}. Quelle der Standortdaten: ${link(c.source, `New Horizons ${c.city}`)}.</p>
           </section>${nextDates(c, today)}
@@ -164,13 +165,20 @@ function schema(html, c) {
     const page = data['@graph'].find((n) => n['@type'] === 'WebPage');
     page.name = c.title;
     page.description = c.description;
-    page.mainEntity.location = {
+    const place = {
       '@type': 'Place',
       name: `New Horizons ${c.city}`,
       telephone: c.phoneIntl,
       address: {'@type': 'PostalAddress', streetAddress: c.street, postalCode: c.zip, addressLocality: c.city, addressCountry: 'DE'},
       openingHoursSpecification: {'@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:30', closes: '17:00'},
     };
+    // A partner's centre is not a location of the Scheurer GmbH organisation.
+    if (c.partner) {
+      delete page.mainEntity.location;
+      page.contentLocation = place;
+    } else {
+      page.mainEntity.location = place;
+    }
     const list = data['@graph'].find((n) => n['@type'] === 'ItemList');
     if (list) {
       list.name = `IT-Kurse für ${c.city}`;
