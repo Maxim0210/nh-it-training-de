@@ -4,7 +4,7 @@
   <url><loc>https://nh-it-training.de/blog.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/azure-administrator-az-104-muenchen.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/azure-grundlagen-az-900-online.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/blog/bildungsgutschein-it-weiterbildung-muenchen.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/blog/bildungsgutschein-it-weiterbildung-muenchen.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/comptia-security-plus-online.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/cybersecurity-lernpfad-vom-einstieg-zur-analyse-rolle.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/cybersecurity-weiterbildung-muenchen.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
@@ -20,12 +20,12 @@
   <url><loc>https://nh-it-training.de/blog/python-lernen-online.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/qcg-foerderung-it-weiterbildung-unternehmen.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/datenschutz.html</loc><lastmod>2026-08-25</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/f%C3%B6rderung.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/f%C3%B6rderung.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/impressum.html</loc><lastmod>2026-08-25</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/</loc><lastmod>2026-11-04</lastmod><priority>1.0</priority></url>
-  <url><loc>https://nh-it-training.de/it-weiterbildung-online-m%C3%BCnchen.html</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority></url>
-  <url><loc>https://nh-it-training.de/it-weiterbildung-online-n%C3%BCrnberg.html</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority></url>
-  <url><loc>https://nh-it-training.de/it-weiterbildung-online-stuttgart.html</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority></url>
+  <url><loc>https://nh-it-training.de/it-weiterbildung-online-m%C3%BCnchen.html</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://nh-it-training.de/it-weiterbildung-online-n%C3%BCrnberg.html</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://nh-it-training.de/it-weiterbildung-online-stuttgart.html</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://nh-it-training.de/kontakt.html</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ab-900-introduction-to-microsoft-365-and-ai-administration.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/access-365-level-1.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
@@ -37,14 +37,14 @@
   <url><loc>https://nh-it-training.de/kurse/adobe-indesign-cc.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/adobe-photoshop-cc.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/agile-scrum-foundation.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/ai-102-azure-ai-engineer-associate.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/ai-102-azure-ai-engineer-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-103-develop-ai-apps-and-agents-on-azure.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-300-operationalize-machine-learning-and-generative-ai-solutions.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-3016-custom-copilots-azure-ai-studio.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-3017-copilot-microsoft-365-business-use-cases.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-3018-copilot-foundations.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-3025-work-with-ai-and-data-in-power-bi.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/ai-900-microsoft-azure-ai-fundamentals.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/ai-900-microsoft-azure-ai-fundamentals.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-agent.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-agile-project-management-fundamentals.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-architect.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
@@ -79,13 +79,13 @@
   <url><loc>https://nh-it-training.de/kurse/az-104-microsoft-azure-administrator.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/az-120-azure-for-sap-workloads-specialty.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/az-140-azure-virtual-desktop-specialty.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/az-204-azure-developer-associate.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/az-220-azure-iot-developer-specialty.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/az-204-azure-developer-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/az-220-azure-iot-developer-specialty.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/az-305-azure-solutions-architect-expert.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/az-500-azure-security-engineer-associate.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/az-600-azure-stack-hub-operator-associate.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/az-500-azure-security-engineer-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/az-600-azure-stack-hub-operator-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/az-700-azure-network-engineer-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/az-720-azure-support-engineer-connectivity.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/az-720-azure-support-engineer-connectivity.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/az-900-microsoft-azure-grundlagen.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/certnexus-certified-artificial-intelligence-practitioner.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/certnexus-cybersec-first-responder.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
@@ -141,11 +141,11 @@
   <url><loc>https://nh-it-training.de/kurse/developing-on-aws.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/devops-foundation.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/devops-leader.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/dp-100-azure-data-scientist-associate.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/dp-203-azure-data-engineer-associate.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/dp-100-azure-data-scientist-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/dp-203-azure-data-engineer-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/dp-300-azure-database-administrator-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/dp-420-azure-cosmos-db-developer-specialty.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/dp-500-enterprise-data-analyst-associate.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/dp-500-enterprise-data-analyst-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/dp-601-implementing-a-lakehouse-with-microsoft-fabric.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/dp-800-develop-ai-enabled-database-solutions.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/dp-900-microsoft-azure-daten-grundlagen.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
@@ -196,13 +196,13 @@
   <url><loc>https://nh-it-training.de/kurse/md-102-endpoint-administrator-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/microsoft-365-administration.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/microsoft-365-user-productivity.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/ms-102-microsoft-365-administrator.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/ms-203-messaging-administrator-associate.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/ms-220-exchange-server-2019.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/ms-500-microsoft-365-sicherheitsadministration.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/ms-600-microsoft-365-developer-associate.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/ms-102-microsoft-365-administrator.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/ms-203-messaging-administrator-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/ms-220-exchange-server-2019.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/ms-500-microsoft-365-sicherheitsadministration.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/ms-600-microsoft-365-developer-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ms-700-managing-microsoft-teams.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/ms-900-microsoft-365-fundamentals.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/ms-900-microsoft-365-fundamentals.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/onenote-365.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/opexa-ai-productivity.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/opexa-digital-skills-foundation.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
@@ -211,12 +211,12 @@
   <url><loc>https://nh-it-training.de/kurse/pecb-iso-27001-foundation.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/pecb-iso-27001-lead-auditor.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/pecb-iso-27001-lead-implementer.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/pl-100-power-apps-app-maker.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/pl-200-power-platform-functional-consultant.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/pl-100-power-apps-app-maker.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/pl-200-power-platform-functional-consultant.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/pl-300-power-bi-data-analyst.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/pl-400-power-platform-developer.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/pl-500-power-automate-rpa-developer.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/pl-600-power-platform-solution-architect.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/pl-400-power-platform-developer.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/pl-500-power-automate-rpa-developer.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/pl-600-power-platform-solution-architect.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/pl-900-power-platform-fundamentals.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/pmi-agile-certified-practitioner.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/pmi-capm-exam-preparation.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
@@ -247,7 +247,7 @@
   <url><loc>https://nh-it-training.de/kurse/sc-100-cybersecurity-architect-expert.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/sc-200-security-operations-analyst-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/sc-300-microsoft-identity-and-access-administrator.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/sc-400-information-protection-compliance.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/sc-400-information-protection-compliance.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/sc-5003-microsoft-purview-information-protection.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/sc-5004-defender-xdr.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/sc-5007-microsoft-purview-retention-ediscovery.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>

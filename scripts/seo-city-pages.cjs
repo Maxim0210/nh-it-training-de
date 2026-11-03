@@ -112,7 +112,7 @@ function faqItems(c) {
   return [
     [`Wo finde ich New Horizons in ${c.city}?`, `New Horizons ${c.city} sitzt ${c.street.startsWith('Stahlgruberring') ? 'am' : 'in der'} ${c.street}, ${c.zip} ${c.city}.${c.partner ? ' Das Center wird von unserem Partner betrieben.' : ''} Es ist montags bis freitags von 8:30 bis 17:00 Uhr geöffnet und unter ${c.phone} erreichbar.`],
     [`Kann ich aus ${c.city} online an einer IT-Schulung teilnehmen?`, `Ja. Für viele Kurse sind Termine mit Online-Teilnahme veröffentlicht, in der Regel von 9:00 bis 17:00 Uhr. Welche Form für Ihren Kurs möglich ist, steht auf der jeweiligen Kursseite oder wird vor der Anmeldung geklärt.`],
-    [`Wer entscheidet in ${c.city} über einen Bildungsgutschein?`, `Über den Bildungsgutschein entscheidet die ${c.agency}. Beratung und Gutschein müssen vor Kursbeginn vorliegen. Ob ein bestimmter Kurs förderfähig ist, klären wir vor der Anmeldung.`],
+    [`Wer entscheidet in ${c.city} über einen Bildungsgutschein?`, `Über den Bildungsgutschein entscheidet die ${c.agency}. Beratung und Gutschein müssen vor Kursbeginn vorliegen. Alle Kurse auf dieser Website sind für den Bildungsgutschein zugelassen.`],
     [`Gibt es Firmenseminare für Unternehmen in ${c.city}?`, `Ja. Firmenseminare und Teamschulungen werden nach Rollen, Gruppengröße, Lernziel, Sprache und Termin abgestimmt, online oder vor Ort.`],
   ];
 }
@@ -129,7 +129,7 @@ function cityBlock(c, today) {
           <section class="detail-block">
             <h2>Förderung für Weiterbildung in ${c.city}</h2>
             <ul>${c.funding().join('')}</ul>
-            <p>Verbindlich entscheidet immer die Förderstelle. Ob ein bestimmter Kurs zugelassen ist, klären wir vor der Anmeldung.</p>
+            <p>Alle Kurse auf dieser Website sind für den Bildungsgutschein zugelassen. Ob Sie die Voraussetzungen erfüllen, entscheidet die Förderstelle.</p>
           </section>
 <!-- city-content-end -->`;
 }

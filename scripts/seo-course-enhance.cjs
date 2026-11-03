@@ -295,6 +295,17 @@ function examBox(html, title, file) {
   });
 }
 
+// Owner statement, 2026-11-04: every course on the site is approved for the Bildungsgutschein.
+const APPROVED = 'Der Kurs ist für den Bildungsgutschein zugelassen.';
+
+function approvedCourse(html) {
+  if (html.includes(APPROVED)) return html;
+  return html
+    .replace(/(<span>Förderung<\/span>\s*<p>)/, `$1${APPROVED} `)
+    .replace(/(Gibt es Förderung für [^<]*\?<\/summary>\s*<p>)/, `$1${APPROVED} `)
+    .replace(/("name":"Gibt es Förderung für [^"]*\?","acceptedAnswer":\{"@type":"Answer","text":")/, `$1${APPROVED} `);
+}
+
 function summary(page) {
   const facts = [];
   if (page.duration && page.duration !== 'Dauer auf Anfrage') facts.push(`Dauer: ${page.duration}`);
@@ -447,6 +458,7 @@ function enhanceCourse(html, file) {
   if (file.startsWith('adobe-')) out = out.replace(/DevOps, Testing und Collaboration(?!<\/a>)/g, 'Grafik, Layout, PDF und Web');
   out = out.replace(/Stand: (\d{4}-\d{2}-\d{2})\./g, (m, iso) => `Stand: ${german(iso)}.`);
   out = examBox(out, title, file);
+  out = approvedCourse(out);
   return updateSchema(trimMeta(out), page, file);
 }
 

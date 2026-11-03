@@ -36,3 +36,7 @@ After every applied course update run `node scripts/seo-course-enhance.cjs --dat
 ## Exam included
 
 Owner rule, 2026-11-04: the exam is included only when the course name says "inkl. Examen" or "mit Examen". All other courses exclude it. The enhancer writes this into the course pages. HAM prices remain the published prices, reconfirmed on the same date.
+
+## Course approval
+
+Owner statement, 2026-11-04: every course on the website is approved for the Bildungsgutschein. The enhancer writes this into the course pages. If a course without approval is ever added, this statement and the wording on the city pages, förderung.html and the homepage must change first.
