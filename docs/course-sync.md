@@ -28,3 +28,7 @@ After every applied course update run `node scripts/seo-course-enhance.cjs --dat
 ## Exam status
 
 `EXAMS` and `RETIRED` in `scripts/seo-course-enhance.cjs` hold vendor facts checked on 2026-11-03. Recheck them about once a quarter against the linked vendor pages, because vendors retire and update exams without notice. Rerun the script after any change, and rerun it after 2026-11-30 so the MS-102 page switches to the past tense.
+
+## City pages
+
+`scripts/seo-city-pages.cjs` holds the centre data and local funding facts for the München, Nürnberg and Stuttgart pages, checked on 2026-11-03 against the linked sources. The enhancer refreshes their dates. `scripts/course-copy-table.json` holds the corrected template sentences and is applied after every render. Recheck funding programmes about once a quarter, because rates and deadlines change. No further city pages: this keeps to the project rule against doorway pages.

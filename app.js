@@ -179,7 +179,7 @@ async function loadDailyNews() {
     });
     target.appendChild(list);
   } catch (error) {
-    target.innerHTML = "<p>Live-News sind gerade nicht erreichbar. Die statischen Ratgeberartikel bleiben verfügbar und sind für SEO maßgeblich.</p>";
+    target.innerHTML = "<p>Live-News sind gerade nicht erreichbar. Die Ratgeberartikel bleiben verfügbar.</p>";
   }
 }
 
@@ -241,7 +241,7 @@ function initQcgCheck() {
     const timingText = isFast
       ? "Da der Start schnell erfolgen soll, ist ein kurzes Telefonat der beste nächste Schritt."
       : time === "planned"
-        ? "Bei einem Zeitfenster von ein bis drei Monaten können Kursdaten, Förderlogik und interne Freigabe sauber vorbereitet werden."
+        ? "Bei einem Zeitfenster von ein bis drei Monaten lassen sich Kurstermine, Förderung und die interne Freigabe gut vorbereiten."
         : "Wenn Budget und Planung noch offen sind, sollte zuerst der Qualifizierungsbedarf strukturiert werden.";
 
     result.innerHTML = `

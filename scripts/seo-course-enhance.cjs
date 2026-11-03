@@ -2,6 +2,8 @@
 // Usage: node scripts/seo-course-enhance.cjs --date=YYYY-MM-DD
 const fs = require('node:fs');
 const path = require('node:path');
+const {CITY_FILES, enhanceCity} = require('./seo-city-pages.cjs');
+const COPY_TABLE = require('./course-copy-table.json');
 
 const dateArg = process.argv.find((a) => a.startsWith('--date='))?.slice(7);
 const today = dateArg || new Intl.DateTimeFormat('en-CA', {timeZone: 'Europe/Berlin'}).format(new Date());
@@ -18,6 +20,10 @@ const EXAMS = {
   'az-104-microsoft-azure-administrator.html': {
     code: 'AZ-104',
     replaceAgenda: true,
+    wording: [
+      ['Falls der Kurs eine Prüfung oder Zertifizierung vorbereitet, wird der passende Prüfungsweg in der Beratung mitgeprüft.', 'Der Kurs bereitet auf die Prüfung AZ-104 vor. Prüfungsbuchung und enthaltene Leistungen klären wir im Angebot.'],
+      ['Bereitet der Kurs auf eine Prüfung oder Zertifizierung vor, klären wir den passenden Prüfungsweg in der Beratung.', 'Der Kurs bereitet auf die Prüfung AZ-104 vor. Prüfungsbuchung und enthaltene Leistungen klären wir im Angebot.'],
+    ],
     source: 'https://learn.microsoft.com/de-de/credentials/certifications/resources/study-guides/az-104',
     asOf: '26.10.2023',
     skills: [
@@ -330,6 +336,23 @@ function statusDescription(code) {
   return {past, future: `Microsoft stellt die Prüfung ${label} am ${german(date)} ein.`};
 }
 
+function trimMeta(html) {
+  const title = html.match(/<title>([^<]*)<\/title>/)?.[1];
+  const desc = html.match(/<meta name="description" content="([^"]*)"/)?.[1];
+  let out = html;
+  if (title && title.length > 60) {
+    let next = title.replace(' online | New Horizons', ' | New Horizons');
+    if (next.length > 60) next = next.replace(' | New Horizons', '');
+    out = out.split(title).join(next);
+  }
+  if (desc && desc.length > 160) {
+    let next = desc.replace(/ (Online-Training, )?(Agenda|Inhalte|Prüfungsinhalte) und Beratung anfragen\.$/, '');
+    if (next.length > 160) next = next.replace('Online Live, Connected Classroom oder Firmenseminar', 'online oder als Firmenseminar');
+    out = out.split(desc).join(next);
+  }
+  return out;
+}
+
 function updateSchema(html, page, file) {
   return html.replace(/(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/, (all, open, json, close) => {
     const data = JSON.parse(json);
@@ -397,7 +420,12 @@ function enhanceCourse(html, file) {
     .replace('Was du nach dem Kurs besser kannst', 'Was Sie nach dem Kurs besser können')
     .replace(/<h2>[^<]*richtig einordnen<\/h2>/, '<h2>Verwandte Kurse und Themen</h2>')
     .replace(/\s*<p>[^<]*Interessenten können den Kurs über[^<]*<\/p>/, '');
-  return updateSchema(out, page, file);
+  // Runs after the retired and exam wording above, because those match the original template sentences.
+  for (const [from, to] of COPY_TABLE) out = out.split(from).join(to);
+  // The source files Adobe under DevOps; the topic link keeps its real name.
+  if (file.startsWith('adobe-')) out = out.replace(/DevOps, Testing und Collaboration(?!<\/a>)/g, 'Grafik, Layout, PDF und Web');
+  out = out.replace(/Stand: (\d{4}-\d{2}-\d{2})\./g, (m, iso) => `Stand: ${german(iso)}.`);
+  return updateSchema(trimMeta(out), page, file);
 }
 
 function enhanceHome(html) {
@@ -446,6 +474,7 @@ for (const name of fs.readdirSync('kurse').filter((f) => f.endsWith('.html'))) {
 }
 apply('index.html', enhanceHome);
 apply('kursangebote.html', enhanceCatalog);
+for (const name of CITY_FILES) apply(name, (html) => enhanceCity(html, name, today));
 
 if (changed.length) {
   apply('sitemap.xml', (xml) => changed.reduce((acc, file) => {

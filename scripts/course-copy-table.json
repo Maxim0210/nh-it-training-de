@@ -1,0 +1,718 @@
+[
+ [
+  "Falls der Kurs eine Prüfung oder Zertifizierung vorbereitet, wird der passende Prüfungsweg in der Beratung mitgeprüft.",
+  "Bereitet der Kurs auf eine Prüfung oder Zertifizierung vor, klären wir den passenden Prüfungsweg in der Beratung."
+ ],
+ [
+  "bis zu 100 % förderfähig. Bildungsgutschein, QCG oder Firmenqualifizierung werden vor der Anmeldung sauber geklärt.",
+  "Je nach Einzelfall ist eine Förderung von bis zu 100 % möglich. Ob ein Bildungsgutschein, das Qualifizierungschancengesetz (QCG) oder eine Firmenqualifizierung infrage kommt, klären wir mit Ihnen vor der Anmeldung. Über die Förderung entscheidet die zuständige Stelle."
+ ],
+ [
+  "bis zu 100 % förderfähig. Ob Bildungsgutschein, Qualifizierungschancengesetz oder eine andere Förderung passt, wird vor der Anmeldung individuell geprüft.",
+  "Je nach Einzelfall ist eine Förderung von bis zu 100 % möglich. Ob ein Bildungsgutschein, das Qualifizierungschancengesetz oder eine andere Förderung passt, prüfen wir vor der Anmeldung individuell. Über die Förderung entscheidet die zuständige Stelle."
+ ],
+ [
+  "<strong>bis zu 100 % förderfähig</strong>",
+  "<strong>Je nach Einzelfall bis zu 100 %</strong>"
+ ],
+ [
+  "förderfähig nach Prüfung. Bildungsgutschein, QCG oder Firmenqualifizierung werden vor der Anmeldung sauber geklärt.",
+  "Eine Förderung ist nach Prüfung des Einzelfalls möglich. Ob ein Bildungsgutschein, das Qualifizierungschancengesetz (QCG) oder eine Firmenqualifizierung infrage kommt, klären wir mit Ihnen vor der Anmeldung. Über die Förderung entscheidet die zuständige Stelle."
+ ],
+ [
+  "förderfähig nach Prüfung. Ob Bildungsgutschein, Qualifizierungschancengesetz oder eine andere Förderung passt, wird vor der Anmeldung individuell geprüft.",
+  "Eine Förderung ist nach Prüfung des Einzelfalls möglich. Ob ein Bildungsgutschein, das Qualifizierungschancengesetz oder eine andere Förderung passt, klären wir mit Ihnen vor der Anmeldung. Über die Förderung entscheidet die zuständige Stelle."
+ ],
+ [
+  "<strong>förderfähig nach Prüfung</strong>",
+  "<strong>Nach Einzelfallprüfung möglich</strong>"
+ ],
+ [
+  "Förderung prüfbar. Bildungsgutschein, QCG oder Firmenqualifizierung werden vor der Anmeldung sauber geklärt.",
+  "Ob für diesen Kurs eine Förderung infrage kommt, etwa über einen Bildungsgutschein, das Qualifizierungschancengesetz (QCG) oder eine Firmenqualifizierung, klären wir mit Ihnen vor der Anmeldung. Über die Förderung entscheidet die zuständige Stelle."
+ ],
+ [
+  "Förderung prüfbar. Ob Bildungsgutschein, Qualifizierungschancengesetz oder eine andere Förderung passt, wird vor der Anmeldung individuell geprüft.",
+  "Ob für diesen Kurs eine Förderung infrage kommt und ob ein Bildungsgutschein, das Qualifizierungschancengesetz oder eine andere Förderung passt, prüfen wir vor der Anmeldung individuell. Über die Förderung entscheidet die zuständige Stelle."
+ ],
+ [
+  "<strong>Förderung prüfbar</strong>",
+  "<strong>Im Einzelfall prüfbar</strong>"
+ ],
+ [
+  "Cybersecurity: Inhalte, Format und nächster Schritt auf einen Blick.",
+  "Cybersecurity: Kursinhalte, Format und Beratung"
+ ],
+ [
+  "KI und Copilot: Inhalte, Format und nächster Schritt auf einen Blick.",
+  "KI und Copilot: Kursinhalte, Format und Beratung"
+ ],
+ [
+  "Cloud und Azure: Inhalte, Format und nächster Schritt auf einen Blick.",
+  "Cloud und Azure: Kursinhalte, Format und Beratung"
+ ],
+ [
+  "ITSM und Projektmanagement: Inhalte, Format und nächster Schritt auf einen Blick.",
+  "ITSM und Projektmanagement: Kursinhalte, Format und Beratung"
+ ],
+ [
+  "Data, Power BI und Python: Inhalte, Format und nächster Schritt auf einen Blick.",
+  "Data, Power BI und Python: Kursinhalte, Format und Beratung"
+ ],
+ [
+  "Office und Microsoft 365: Inhalte, Format und nächster Schritt auf einen Blick.",
+  "Office und Microsoft 365: Kursinhalte, Format und Beratung"
+ ],
+ [
+  "Networking, Linux und Virtualisierung: Inhalte, Format und nächster Schritt auf einen Blick.",
+  "Networking, Linux und Virtualisierung: Kursinhalte, Format und Beratung"
+ ],
+ [
+  "DevOps, Testing und Collaboration: Inhalte, Format und nächster Schritt auf einen Blick.",
+  "DevOps, Testing und Collaboration: Kursinhalte, Format und Beratung"
+ ],
+ [
+  "Teams, die ITSM und Projektmanagement strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in ITSM und Projektmanagement strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die Networking, Linux und Virtualisierung strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in Networking, Linux und Virtualisierung strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die Cybersecurity strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in Cybersecurity strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die KI und Copilot strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in KI und Copilot strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die Office und Microsoft 365 strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in Office und Microsoft 365 strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die Data, Power BI und Python strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in Data, Power BI und Python strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die DevOps, Testing und Collaboration strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in DevOps, Testing und Collaboration strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die Cloud und Azure strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in Cloud und Azure strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die Governance, Risiko und Compliance strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in Governance, Risiko und Compliance strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die Microsoft Office strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in Microsoft Office strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die KI und Cloud strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in KI und Cloud strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die Microsoft 365 strukturiert aufbauen oder eine passende Zertifizierung vorbereiten möchten",
+  "Teams, die Kenntnisse in Microsoft 365 strukturiert aufbauen oder sich auf eine passende Zertifizierung vorbereiten möchten"
+ ],
+ [
+  "Teams, die Data, Power BI und Python strukturiert aufbauen möchten",
+  "Teams, die Kenntnisse in Data, Power BI und Python strukturiert aufbauen möchten"
+ ],
+ [
+  "Teams, die Cloud und Azure strukturiert aufbauen möchten",
+  "Teams, die Kenntnisse in Cloud und Azure strukturiert aufbauen möchten"
+ ],
+ [
+  "Teams, die Office und Microsoft 365 strukturiert aufbauen möchten",
+  "Teams, die Kenntnisse in Office und Microsoft 365 strukturiert aufbauen möchten"
+ ],
+ [
+  "Teams, die DevOps, Testing und Collaboration strukturiert aufbauen möchten",
+  "Teams, die Kenntnisse in DevOps, Testing und Collaboration strukturiert aufbauen möchten"
+ ],
+ [
+  "Teams, die KI und Copilot strukturiert aufbauen möchten",
+  "Teams, die Kenntnisse in KI und Copilot strukturiert aufbauen möchten"
+ ],
+ [
+  "Teams, die Cybersecurity strukturiert aufbauen möchten",
+  "Teams, die Kenntnisse in Cybersecurity strukturiert aufbauen möchten"
+ ],
+ [
+  "Teams, die Microsoft 365 strukturiert aufbauen möchten",
+  "Teams, die Kenntnisse in Microsoft 365 strukturiert aufbauen möchten"
+ ],
+ [
+  "Teams, die Governance, Risiko und Compliance strukturiert aufbauen möchten",
+  "Teams, die Kenntnisse in Governance, Risiko und Compliance strukturiert aufbauen möchten"
+ ],
+ [
+  "Der Kurs ist als Online Live, Connected Classroom oder Firmenseminar geplant und wird vor der Anmeldung auf Ziel, Vorwissen, Termin und Förderfähigkeit geprüft.",
+  "Der Kurs ist als Online Live Training, Connected Classroom oder Firmenseminar geplant. Vor der Anmeldung prüfen wir mit Ihnen Ziel, Vorwissen, Termin und Fördermöglichkeiten."
+ ],
+ [
+  "Der Kurs ist als Online Live geplant und wird vor der Anmeldung auf Ziel, Vorwissen, Termin und Förderfähigkeit geprüft.",
+  "Der Kurs ist als Online Live Training geplant. Vor der Anmeldung prüfen wir mit Ihnen Ziel, Vorwissen, Termin und Fördermöglichkeiten."
+ ],
+ [
+  "Der Kurs ist als WalkIn geplant und wird vor der Anmeldung auf Ziel, Vorwissen, Termin und Förderfähigkeit geprüft.",
+  "Der Kurs ist als WalkIn geplant. Vor der Anmeldung prüfen wir mit Ihnen Ziel, Vorwissen, Termin und Fördermöglichkeiten."
+ ],
+ [
+  "Der Kurs ist als Connected Classroom geplant und wird vor der Anmeldung auf Ziel, Vorwissen, Termin und Förderfähigkeit geprüft.",
+  "Der Kurs ist als Connected Classroom geplant. Vor der Anmeldung prüfen wir mit Ihnen Ziel, Vorwissen, Termin und Fördermöglichkeiten."
+ ],
+ [
+  " für München, Nürnberg und Stuttgart online verfügbar?",
+  " online verfügbar?"
+ ],
+ [
+  " kann je nach Termin und Kursformat online, remote, im Connected Classroom oder als Firmenseminar geplant werden. In der Beratung werden Sprache, Starttermin, Durchführung und Ziel des Trainings geklärt.",
+  " kann je nach Termin und Kursformat online, im Connected Classroom oder als Firmenseminar stattfinden. Sprache, Starttermin, Durchführung und Ziel des Trainings klären wir in der Beratung."
+ ],
+ [
+  "Termin, Durchführung und passende Konditionen werden direkt über Max Dilewski geklärt, weil Verfügbarkeit, Sprache, Trainingsform und Gruppengröße je nach Kurs variieren können.",
+  "Termin, Durchführung und Konditionen klären Sie direkt mit Max Dilewski, denn Verfügbarkeit, Sprache, Trainingsform und Gruppengröße können je nach Kurs variieren."
+ ],
+ [
+  "Online Live, Firmenseminar, WalkIn, Connected Classroom oder hybrides Training je nach Kurs, Teamgröße und Terminverfügbarkeit.",
+  "Je nach Kurs, Teamgröße und verfügbaren Terminen ist die Durchführung als Online Live Training, Firmenseminar, WalkIn, Connected Classroom oder in hybrider Form möglich."
+ ],
+ [
+  "Normale PC- und Internetkenntnisse. Konkrete Vorkenntnisse werden vor der Anmeldung kurz geprüft.",
+  "Allgemeine PC- und Internetkenntnisse. Die konkreten Vorkenntnisse klären wir vor der Anmeldung."
+ ],
+ [
+  "Grundwissen zu IT, Netzwerken und Betriebssystemen hilft.",
+  "Grundwissen zu IT, Netzwerken und Betriebssystemen ist hilfreich."
+ ],
+ [
+  "Sicherer Umgang mit Tabellen, Datenbegriffen und analytischem Denken.",
+  "Sicherer Umgang mit Tabellen und Datenbegriffen sowie analytisches Denken."
+ ],
+ [
+  "die Daten sauber auswerten, visualisieren",
+  "die Daten zuverlässig auswerten, visualisieren"
+ ],
+ [
+  "Einsteiger, Anwender, Fachkräfte und Unternehmen, die den Kursinhalt beruflich nutzen oder eine passende Zertifizierung vorbereiten möchten.",
+  "Einsteiger, Anwender, Fachkräfte und Unternehmen, die den Kursinhalt beruflich nutzen oder sich auf eine passende Zertifizierung vorbereiten möchten."
+ ],
+ [
+  "steuern oder eine Zertifizierung vorbereiten möchten.",
+  "steuern oder sich auf eine Zertifizierung vorbereiten möchten."
+ ],
+ [
+  "Max Dilewski prüft Kurs, Termin, Durchführung, Fördermöglichkeit und passende Reihenfolge.",
+  "Max Dilewski prüft mit Ihnen Kurs, Termin, Durchführung, Fördermöglichkeiten und die Reihenfolge der Kurse."
+ ],
+ [
+  ">Kursberatung sichern</a>",
+  ">Kursberatung anfragen</a>"
+ ],
+ [
+  " als professionelles Online Live Training mit Praxisbezug",
+  ": Symbolbild für ein IT-Training"
+ ],
+ [
+  "<li>technische Kontrollen und Abläufe sicherer einordnen</li>",
+  "<li>Technische Kontrollen und Abläufe sicherer einordnen</li>"
+ ],
+ [
+  "<li>die passende Zertifizierung oder Vertiefung planen</li>",
+  "<li>Die passende Zertifizierung oder Vertiefung planen</li>"
+ ],
+ [
+  "<li>die passende Vertiefung planen</li>",
+  "<li>Die passende Vertiefung planen</li>"
+ ],
+ [
+  "<li>zentrale Konzepte</li>",
+  "<li>Zentrale Konzepte</li>"
+ ],
+ [
+  "<li>typische Aufgaben</li>",
+  "<li>Typische Aufgaben</li>"
+ ],
+ [
+  "<li>nächste Schritte</li>",
+  "<li>Nächste Schritte</li>"
+ ],
+ [
+  "<li>zentrale Kursbegriffe sicherer anwenden</li>",
+  "<li>Zentrale Kursbegriffe sicherer anwenden</li>"
+ ],
+ [
+  "<li>typische Aufgaben und Praxisfälle besser lösen</li>",
+  "<li>Typische Aufgaben und Praxisfälle besser lösen</li>"
+ ],
+ [
+  "<li>den eigenen Kenntnisstand für die nächste Rolle einordnen</li>",
+  "<li>Den eigenen Kenntnisstand für die nächste Rolle einordnen</li>"
+ ],
+ [
+  "<li>passende Folgekurse oder Zertifizierungsschritte auswählen</li>",
+  "<li>Passende Folgekurse oder Zertifizierungsschritte auswählen</li>"
+ ],
+ [
+  "<li>passende Folgekurse auswählen</li>",
+  "<li>Passende Folgekurse auswählen</li>"
+ ],
+ [
+  "<li>nächster Zertifizierungsschritt</li>",
+  "<li>Nächster Zertifizierungsschritt</li>"
+ ],
+ [
+  "<li>passende Anschlusszertifizierung oder Praxisvertiefung wählen</li>",
+  "<li>Passende Anschlusszertifizierung oder Praxisvertiefung wählen</li>"
+ ],
+ [
+  "<li>den nächsten rollenbasierten Lernpfad auswählen</li>",
+  "<li>Den nächsten rollenbasierten Lernpfad auswählen</li>"
+ ],
+ [
+  "<li>typische Einstellungen und Workflows</li>",
+  "<li>Typische Einstellungen und Workflows</li>"
+ ],
+ [
+  "<li>die Zertifizierung und den nächsten Lernschritt gezielt vorbereiten</li>",
+  "<li>Sich gezielt auf die Zertifizierung und den nächsten Lernschritt vorbereiten</li>"
+ ],
+ [
+  "<li>zentrale Begriffe und aktuelle Entwicklungen</li>",
+  "<li>Zentrale Begriffe und aktuelle Entwicklungen</li>"
+ ],
+ [
+  "<li>typische Einsatzfelder im beruflichen Kontext</li>",
+  "<li>Typische Einsatzfelder im beruflichen Kontext</li>"
+ ],
+ [
+  "<li>relevante KI-Tools und Plattformen</li>",
+  "<li>Relevante KI-Tools und Plattformen</li>"
+ ],
+ [
+  "<li>realistische Use Cases analysieren</li>",
+  "<li>Realistische Use Cases analysieren</li>"
+ ],
+ [
+  "<li>verantwortungsvoller Umgang mit KI</li>",
+  "<li>Verantwortungsvoller Umgang mit KI</li>"
+ ],
+ [
+  "<li>weitere Data-, BI- oder Python-Schritte planen</li>",
+  "<li>Weitere Data-, BI- oder Python-Schritte planen</li>"
+ ],
+ [
+  "<li>typische Administrations- oder Entwicklungsaufgaben</li>",
+  "<li>Typische Administrations- oder Entwicklungsaufgaben</li>"
+ ],
+ [
+  "<li>häufige Fehlerbilder und Best Practices</li>",
+  "<li>Häufige Fehlerbilder und Best Practices</li>"
+ ],
+ [
+  "<li>nächste Zertifizierungsschritte</li>",
+  "<li>Nächste Zertifizierungsschritte</li>"
+ ],
+ [
+  "<li>sinnvolle nächste Lernschritte</li>",
+  "<li>Sinnvolle nächste Lernschritte</li>"
+ ],
+ [
+  "<li>typische Business-Szenarien</li>",
+  "<li>Typische Business-Szenarien</li>"
+ ],
+ [
+  "<li>klassische, agile oder hybride Einordnung</li>",
+  "<li>Einordnung klassischer, agiler und hybrider Vorgehensweisen</li>"
+ ],
+ [
+  "<li>Beratung zu Zertifizierung oder Förderung</li>",
+  "<li>Beratung zu passenden Zertifizierungen und Fördermöglichkeiten</li>"
+ ],
+ [
+  "<li>Datenquellen, Modelle und Auswertungen sauber strukturieren</li>",
+  "<li>Datenquellen, Modelle und Auswertungen klar strukturieren</li>"
+ ],
+ [
+  "<span>Microsoft Training</span>",
+  "<span>Microsoft-Training</span>"
+ ],
+ [
+  "aria-label=\"Microsoft Training\"",
+  "aria-label=\"Microsoft-Training\""
+ ],
+ [
+  ">Microsoft Kurse</a>",
+  ">Microsoft-Kurse</a>"
+ ],
+ [
+  "<span>AI CERTs Training</span>",
+  "<span>AI-CERTs-Training</span>"
+ ],
+ [
+  "aria-label=\"AI CERTs Training\"",
+  "aria-label=\"AI-CERTs-Training\""
+ ],
+ [
+  ">AI CERTs Kurse</a>",
+  ">AI-CERTs-Kurse</a>"
+ ],
+ [
+  "<span>Citrix Training</span>",
+  "<span>Citrix-Training</span>"
+ ],
+ [
+  "aria-label=\"Citrix Training\"",
+  "aria-label=\"Citrix-Training\""
+ ],
+ [
+  ">Citrix Kurse</a>",
+  ">Citrix-Kurse</a>"
+ ],
+ [
+  "<span>CompTIA Training</span>",
+  "<span>CompTIA-Training</span>"
+ ],
+ [
+  "aria-label=\"CompTIA Training\"",
+  "aria-label=\"CompTIA-Training\""
+ ],
+ [
+  ">CompTIA Kurse</a>",
+  ">CompTIA-Kurse</a>"
+ ],
+ [
+  "<span>Professional Development Training</span>",
+  "<span>Professional-Development-Training</span>"
+ ],
+ [
+  "aria-label=\"Professional Development Training\"",
+  "aria-label=\"Professional-Development-Training\""
+ ],
+ [
+  ">Professional Development Kurse</a>",
+  ">Professional-Development-Kurse</a>"
+ ],
+ [
+  "<span>Cisco Training</span>",
+  "<span>Cisco-Training</span>"
+ ],
+ [
+  "aria-label=\"Cisco Training\"",
+  "aria-label=\"Cisco-Training\""
+ ],
+ [
+  ">Cisco Kurse</a>",
+  ">Cisco-Kurse</a>"
+ ],
+ [
+  "<span>EXIN Training</span>",
+  "<span>EXIN-Training</span>"
+ ],
+ [
+  "aria-label=\"EXIN Training\"",
+  "aria-label=\"EXIN-Training\""
+ ],
+ [
+  ">EXIN Kurse</a>",
+  ">EXIN-Kurse</a>"
+ ],
+ [
+  "<span>VMware Training</span>",
+  "<span>VMware-Training</span>"
+ ],
+ [
+  "aria-label=\"VMware Training\"",
+  "aria-label=\"VMware-Training\""
+ ],
+ [
+  ">VMware Kurse</a>",
+  ">VMware-Kurse</a>"
+ ],
+ [
+  "<span>PRINCE2 Training</span>",
+  "<span>PRINCE2-Training</span>"
+ ],
+ [
+  "aria-label=\"PRINCE2 Training\"",
+  "aria-label=\"PRINCE2-Training\""
+ ],
+ [
+  ">PRINCE2 Kurse</a>",
+  ">PRINCE2-Kurse</a>"
+ ],
+ [
+  "<span>Adobe Training</span>",
+  "<span>Adobe-Training</span>"
+ ],
+ [
+  "aria-label=\"Adobe Training\"",
+  "aria-label=\"Adobe-Training\""
+ ],
+ [
+  ">Adobe Kurse</a>",
+  ">Adobe-Kurse</a>"
+ ],
+ [
+  "<span>AWS Training</span>",
+  "<span>AWS-Training</span>"
+ ],
+ [
+  "aria-label=\"AWS Training\"",
+  "aria-label=\"AWS-Training\""
+ ],
+ [
+  ">AWS Kurse</a>",
+  ">AWS-Kurse</a>"
+ ],
+ [
+  "<span>EC-Council Training</span>",
+  "<span>EC-Council-Training</span>"
+ ],
+ [
+  "aria-label=\"EC-Council Training\"",
+  "aria-label=\"EC-Council-Training\""
+ ],
+ [
+  ">EC-Council Kurse</a>",
+  ">EC-Council-Kurse</a>"
+ ],
+ [
+  "<span>CertNexus Training</span>",
+  "<span>CertNexus-Training</span>"
+ ],
+ [
+  "aria-label=\"CertNexus Training\"",
+  "aria-label=\"CertNexus-Training\""
+ ],
+ [
+  ">CertNexus Kurse</a>",
+  ">CertNexus-Kurse</a>"
+ ],
+ [
+  "<span>ChatGPT Training</span>",
+  "<span>ChatGPT-Training</span>"
+ ],
+ [
+  "aria-label=\"ChatGPT Training\"",
+  "aria-label=\"ChatGPT-Training\""
+ ],
+ [
+  ">ChatGPT Kurse</a>",
+  ">ChatGPT-Kurse</a>"
+ ],
+ [
+  "<span>DevOps Training</span>",
+  "<span>DevOps-Training</span>"
+ ],
+ [
+  "aria-label=\"DevOps Training\"",
+  "aria-label=\"DevOps-Training\""
+ ],
+ [
+  ">DevOps Kurse</a>",
+  ">DevOps-Kurse</a>"
+ ],
+ [
+  "<span>Fortinet Training</span>",
+  "<span>Fortinet-Training</span>"
+ ],
+ [
+  "aria-label=\"Fortinet Training\"",
+  "aria-label=\"Fortinet-Training\""
+ ],
+ [
+  ">Fortinet Kurse</a>",
+  ">Fortinet-Kurse</a>"
+ ],
+ [
+  "<span>GitHub Training</span>",
+  "<span>GitHub-Training</span>"
+ ],
+ [
+  "aria-label=\"GitHub Training\"",
+  "aria-label=\"GitHub-Training\""
+ ],
+ [
+  ">GitHub Kurse</a>",
+  ">GitHub-Kurse</a>"
+ ],
+ [
+  "<span>ISACA Training</span>",
+  "<span>ISACA-Training</span>"
+ ],
+ [
+  "aria-label=\"ISACA Training\"",
+  "aria-label=\"ISACA-Training\""
+ ],
+ [
+  ">ISACA Kurse</a>",
+  ">ISACA-Kurse</a>"
+ ],
+ [
+  "<span>ISC2 Training</span>",
+  "<span>ISC2-Training</span>"
+ ],
+ [
+  "aria-label=\"ISC2 Training\"",
+  "aria-label=\"ISC2-Training\""
+ ],
+ [
+  ">ISC2 Kurse</a>",
+  ">ISC2-Kurse</a>"
+ ],
+ [
+  "<span>ISTQB Training</span>",
+  "<span>ISTQB-Training</span>"
+ ],
+ [
+  "aria-label=\"ISTQB Training\"",
+  "aria-label=\"ISTQB-Training\""
+ ],
+ [
+  ">ISTQB Kurse</a>",
+  ">ISTQB-Kurse</a>"
+ ],
+ [
+  "<span>ITIL Training</span>",
+  "<span>ITIL-Training</span>"
+ ],
+ [
+  "aria-label=\"ITIL Training\"",
+  "aria-label=\"ITIL-Training\""
+ ],
+ [
+  ">ITIL Kurse</a>",
+  ">ITIL-Kurse</a>"
+ ],
+ [
+  "<span>Linux Training</span>",
+  "<span>Linux-Training</span>"
+ ],
+ [
+  "aria-label=\"Linux Training\"",
+  "aria-label=\"Linux-Training\""
+ ],
+ [
+  ">Linux Kurse</a>",
+  ">Linux-Kurse</a>"
+ ],
+ [
+  "<span>PECB Training</span>",
+  "<span>PECB-Training</span>"
+ ],
+ [
+  "aria-label=\"PECB Training\"",
+  "aria-label=\"PECB-Training\""
+ ],
+ [
+  ">PECB Kurse</a>",
+  ">PECB-Kurse</a>"
+ ],
+ [
+  "<span>PMI Training</span>",
+  "<span>PMI-Training</span>"
+ ],
+ [
+  "aria-label=\"PMI Training\"",
+  "aria-label=\"PMI-Training\""
+ ],
+ [
+  ">PMI Kurse</a>",
+  ">PMI-Kurse</a>"
+ ],
+ [
+  "<span>Tableau Training</span>",
+  "<span>Tableau-Training</span>"
+ ],
+ [
+  "aria-label=\"Tableau Training\"",
+  "aria-label=\"Tableau-Training\""
+ ],
+ [
+  ">Tableau Kurse</a>",
+  ">Tableau-Kurse</a>"
+ ],
+ [
+  "<span>JIRA Training</span>",
+  "<span>JIRA-Training</span>"
+ ],
+ [
+  "aria-label=\"JIRA Training\"",
+  "aria-label=\"JIRA-Training\""
+ ],
+ [
+  ">JIRA Kurse</a>",
+  ">JIRA-Kurse</a>"
+ ],
+ [
+  "<span>Opexa Training</span>",
+  "<span>Opexa-Training</span>"
+ ],
+ [
+  "aria-label=\"Opexa Training\"",
+  "aria-label=\"Opexa-Training\""
+ ],
+ [
+  ">Opexa Kurse</a>",
+  ">Opexa-Kurse</a>"
+ ],
+ [
+  "<span>Python Training</span>",
+  "<span>Python-Training</span>"
+ ],
+ [
+  "aria-label=\"Python Training\"",
+  "aria-label=\"Python-Training\""
+ ],
+ [
+  ">Python Kurse</a>",
+  ">Python-Kurse</a>"
+ ],
+ [
+  ">Cybersecurity Kurse</a>",
+  ">Kurse zu Cybersecurity</a>"
+ ],
+ [
+  ">KI und Copilot Kurse</a>",
+  ">Kurse zu KI und Copilot</a>"
+ ],
+ [
+  ">Cloud und Azure Kurse</a>",
+  ">Kurse zu Cloud und Azure</a>"
+ ],
+ [
+  ">ITSM und Projektmanagement Kurse</a>",
+  ">Kurse zu ITSM und Projektmanagement</a>"
+ ],
+ [
+  ">Data, Power BI und Python Kurse</a>",
+  ">Kurse zu Data, Power BI und Python</a>"
+ ],
+ [
+  ">Office und Microsoft 365 Kurse</a>",
+  ">Kurse zu Office und Microsoft 365</a>"
+ ],
+ [
+  ">Networking, Linux und Virtualisierung Kurse</a>",
+  ">Kurse zu Networking, Linux und Virtualisierung</a>"
+ ],
+ [
+  ">DevOps, Testing und Collaboration Kurse</a>",
+  ">Kurse zu DevOps, Testing und Collaboration</a>"
+ ],
+ [
+  "Beratung sichern",
+  "Beratung anfragen"
+ ],
+ [
+  "Firmenseminar, WalkIn, Connected Classroom oder in hybrider Form möglich.",
+  "Firmenseminar, WalkIn (flexibel im eigenen Tempo, mit persönlicher Unterstützung), Connected Classroom oder in hybrider Form möglich."
+ ]
+]
