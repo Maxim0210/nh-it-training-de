@@ -4,6 +4,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {CITY_FILES, enhanceCity} = require('./seo-city-pages.cjs');
 const COPY_TABLE = require('./course-copy-table.json');
+// Non-Microsoft exam status, checked against the vendors on 2026-11-10.
+const VENDOR_STATUS = require('./vendor-status.json');
 
 const dateArg = process.argv.find((a) => a.startsWith('--date='))?.slice(7);
 const today = dateArg || new Intl.DateTimeFormat('en-CA', {timeZone: 'Europe/Berlin'}).format(new Date());
@@ -445,6 +447,14 @@ function enhanceCourse(html, file) {
     out = out.split('Online-Training, Agenda und Beratung anfragen.').join(`${isOver ? past : future} Inhalte und Beratung anfragen.`);
     if (isOver) out = out.split(future).join(past);
     out = out.split('Microsoft stellt die Prüfung MS-102 am 30.11.2026 ein.').join(past);
+  }
+  const vendor = !retired && VENDOR_STATUS[file.replace(/\.html$/, '')];
+  if (vendor) {
+    out = out.replace('<!-- course-summary-end -->', () => `<!-- course-summary-end -->
+            <!-- course-status-start -->
+            <p><strong>${vendor.label}:</strong> ${vendor.note} Quelle: <a href="${vendor.source}" rel="noopener">Herstellerangabe</a>.</p>
+<!-- course-status-end -->`);
+    if (vendor.retired) for (const [from, to] of RETIRED_WORDING) out = out.split(from).join(to);
   }
   for (const [from, to] of exam?.wording || []) out = out.split(from).join(to);
 

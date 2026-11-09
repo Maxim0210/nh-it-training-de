@@ -1,0 +1,206 @@
+{
+ "comptia-casp-plus": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "CompTIA hat CASP+ mit der Prüfungsversion V5, veröffentlicht am 17. Dezember 2024, in CompTIA SecurityX umbenannt (Prüfung CAS-005). Bestehende CASP+-Zertifizierungen behalten laut CompTIA ihren Status.",
+  "source": "https://www.comptia.org/en-us/blog/introducing-comptia-securityx/",
+  "retired": false
+ },
+ "comptia-cloud-essentials-plus": {
+  "label": "Wichtig zur Prüfung",
+  "note": "CompTIA führt Cloud Essentials+ als im Jahr 2025 eingestellte Zertifizierung, die nicht mehr verfügbar ist. Einen Nachfolger nennt CompTIA nicht.",
+  "source": "https://help.comptia.org/hc/en-us/articles/10830728209300-Which-CompTIA-Certifications-Have-Been-Retired",
+  "retired": true
+ },
+ "comptia-it-fundamentals-plus": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "CompTIA hat angekündigt, IT Fundamentals+ (FC0-U61) im Jahr 2025 einzustellen, und nennt CompTIA Tech+ (FC0-U71) als Weiterentwicklung. Tech+ ist laut CompTIA seit dem 16. Juli 2024 verfügbar.",
+  "source": "https://www.comptia.org/en-us/blog/get-answers-to-your-comptia-tech-questions/",
+  "retired": false
+ },
+ "cisco-cyberops-associate": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "Cisco führt die frühere Zertifizierung CyberOps Associate seit Februar 2026 als CCNA Cybersecurity. Die zugehörige Prüfung ist 200-201 CCNACBR (Understanding Cisco Cybersecurity Operations Fundamentals).",
+  "source": "https://blogs.cisco.com/learning/par-merat-announces-learn-with-cisco",
+  "retired": false
+ },
+ "cisco-devnet-associate": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "Cisco hat die Zertifizierung DevNet Associate am 3. Februar 2026 in CCNA Automation umbenannt. Die zugehörige Prüfung ist 200-901 CCNAAUTO (Automating Networks Using Cisco Platforms).",
+  "source": "https://blogs.cisco.com/learning/par-merat-announces-learn-with-cisco",
+  "retired": false
+ },
+ "cisco-devnet-professional": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "Cisco hat die Zertifizierung DevNet Professional am 3. Februar 2026 in CCNP Automation umbenannt. Die Kernprüfung DEVCOR war nur bis zum 2. Februar 2026 möglich. Heute gelten die Kernprüfung 350-901 AUTOCOR und eine Vertiefungsprüfung (300-435 ENAUTO oder 300-635 DCNAUTO).",
+  "source": "https://blogs.cisco.com/learning/views-from-an-insider-on-the-ccnp-automation-track-autocor-edition",
+  "retired": false
+ },
+ "prince2-agile-foundation": {
+  "label": "Wichtig zur Prüfung",
+  "note": "PeopleCert stellt PRINCE2 Agile (Version 1) ein: Prüfungsgutscheine gab es bis 30.06.2026, Prüfungen sind bis 31.12.2026 möglich. Aktuell ist PRINCE2 Agile Foundation (Version 2).",
+  "source": "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-Agile-28",
+  "retired": false
+ },
+ "prince2-agile-practitioner": {
+  "label": "Wichtig zur Prüfung",
+  "note": "PeopleCert stellt PRINCE2 Agile (Version 1) ein: Prüfungsgutscheine gab es bis 30.06.2026, Prüfungen sind bis 31.12.2026 möglich. Aktuell ist PRINCE2 Agile Practitioner (Version 2).",
+  "source": "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-Agile-28",
+  "retired": false
+ },
+ "itil-4-managing-professional": {
+  "label": "Wichtig zur Prüfung",
+  "note": "PeopleCert plant derzeit, alle ITIL 4 Module am 31.12.2027 einzustellen. Inhaber von ITIL 4 Managing Professional können über das Modul ITIL Managing Professional Transition (Version 5) zu ITIL Managing Professional (Version 5) wechseln.",
+  "source": "https://www.peoplecert.org/help-and-support/faq-itil",
+  "retired": false
+ },
+ "itil-4-strategic-leader": {
+  "label": "Wichtig zur Prüfung",
+  "note": "PeopleCert plant derzeit, alle ITIL 4 Module am 31.12.2027 einzustellen. Nachfolger ist ITIL Strategic Leader (Version 5) mit den Modulen ITIL Foundation, ITIL Strategy und ITIL Transformation; Inhaber von ITIL 4 Strategic Leader können über ITIL Transformation (Version 5) wechseln.",
+  "source": "https://www.peoplecert.org/help-and-support/faq-itil",
+  "retired": false
+ },
+ "istqb-agile-tester": {
+  "label": "Wichtig zur Prüfung",
+  "note": "Das ISTQB stellt den Certified Tester Foundation Level Agile Tester (CTFL-AT) ein: Prüfungen (auch Wiederholungen) und Schulungen sind auf Englisch bis 6. Mai 2027 und in anderen Sprachen bis 6. November 2027 möglich. Für vertiefte agile Inhalte verweist das ISTQB auf den Certified Tester Advanced Level Agile Tester (CTAL-AT) v2.0, agile Grundlagen sind im Foundation Level (CTFL) v4.0 enthalten.",
+  "source": "https://istqb.org/certifications/certified-tester-foundation-level-agile-tester-ctfl-at/",
+  "retired": false
+ },
+ "istqb-test-automation-engineer": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "Das ISTQB hat am 12. Juni 2024 den Lehrplan Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE) v2.0 veröffentlicht. Für die Version von 2016 endeten Prüfungen und akkreditierte Schulungen auf Englisch am 12. Juni 2025 und in anderen Sprachen am 12. Dezember 2025; wer das Zertifikat von 2016 hat, bleibt zertifiziert.",
+  "source": "https://istqb.org/istqb-has-released-two-new-syllabi-for-test-automation/",
+  "retired": false
+ },
+ "ai-agent": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen unter dem Namen AI+ Agent Specialty™ (AP 1401), früher AI+ Agent™.",
+  "source": "https://www.aicerts.ai/certifications/specialization/ai-agent/",
+  "retired": false
+ },
+ "ai-architect": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen als AI+ Architect Practitioner™ (AT-320), früher AI+ Architect™.",
+  "source": "https://www.aicerts.ai/certifications/cloud/ai-architect/",
+  "retired": false
+ },
+ "ai-chief-ai-officer": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen als AI+ Chief AI Officer Practitioner™ (AP 910), früher AI+ Chief AI Officer™.",
+  "source": "https://www.aicerts.ai/certifications/business/chief-ai-officer/",
+  "retired": false
+ },
+ "ai-cloud": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen als AI+ Cloud Practitioner™ (AT-110), früher AI+ Cloud™.",
+  "source": "https://www.aicerts.ai/certifications/cloud/ai-cloud/",
+  "retired": false
+ },
+ "ai-context-engineering": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen als AI+ Context Engineering Practitioner™ (AP 3309), früher AI+ Context Engineering™.",
+  "source": "https://www.aicerts.ai/certifications/development/ai-context-engineering/",
+  "retired": false
+ },
+ "ai-developer": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen als AI+ Developer Practitioner™ (AT-310), früher AI+ Developer™.",
+  "source": "https://www.aicerts.ai/certifications/development/ai-developer/",
+  "retired": false
+ },
+ "ai-educator": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen als AI+ Educator Practitioner™ (AP-410), früher AI+ Educator™.",
+  "source": "https://www.aicerts.ai/certifications/learning-education/ai-educator/",
+  "retired": false
+ },
+ "ai-engineer": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen als AI+ Engineer Practitioner™ (AT-330), früher AI+ Engineer™.",
+  "source": "https://www.aicerts.ai/certifications/development/ai-engineer/",
+  "retired": false
+ },
+ "ai-everyone": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen als AI+ Everyone Fundamentals™ (AC-900), früher AI+ Everyone™.",
+  "source": "https://www.aicerts.ai/certifications/essentials/ai-everyone/",
+  "retired": false
+ },
+ "ai-executive": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen unter dem Namen AI+ Executive Fundamentals™ (AC-110). Der frühere Name war AI+ Executive.",
+  "source": "https://www.aicerts.ai/certifications/essentials/ai-executive",
+  "retired": false
+ },
+ "ai-legal": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen unter dem Namen AI+ Legal Practitioner™ (AP-280). Der frühere Name war AI+ Legal.",
+  "source": "https://www.aicerts.ai/certifications/business/ai-legal/",
+  "retired": false
+ },
+ "ai-medical-assistant": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen unter dem Namen AI+ Medical Assistant Practitioner™ (AP 5010). Der frühere Name war AI+ Medical Assistant.",
+  "source": "https://www.aicerts.ai/certifications/healthcare/ai-medical-assistant/",
+  "retired": false
+ },
+ "ai-nurse": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen unter dem Namen AI+ Nurse Practitioner™ (AP 1102). Der frühere Name war AI+ Nurse.",
+  "source": "https://www.aicerts.ai/certifications/healthcare/ai-nurse/",
+  "retired": false
+ },
+ "ai-prompt-engineer-level-1": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen unter dem Namen AI+ Prompting Fundamentals™ (AC-130). Der frühere Name war AI+ Prompt Engineer Level 1™.",
+  "source": "https://www.aicerts.ai/certifications/essentials/ai-prompt-engineer",
+  "retired": false
+ },
+ "ai-robotics": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen unter dem Namen AI+ Robotics Practitioner™ (AT-420). Der frühere Name war AI+ Robotics.",
+  "source": "https://www.aicerts.ai/certifications/data-robotics/ai-robotics",
+  "retired": false
+ },
+ "ai-sales": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AI CERTs führt diese Zertifizierung inzwischen unter dem Namen AI+ Sales Practitioner™ (AP-270). Der frühere Name war AI+ Sales.",
+  "source": "https://www.aicerts.ai/certifications/business/ai-sales/",
+  "retired": false
+ },
+ "vmware-carbon-black-cloud-audit-remediation": {
+  "label": "Wichtig zur Prüfung",
+  "note": "Broadcom führt die Prüfung „VMware Carbon Black Cloud Audit and Remediation Skills 2024“ (5V0-92.22) seit dem 30.06.2025 als eingestellt. Eine Nachfolgeprüfung nennt Broadcom in dieser Liste nicht.",
+  "source": "https://docs.broadcom.com/doc/vmware-retired-exams-certifications-and-badges",
+  "retired": true
+ },
+ "vmware-carbon-black-cloud-endpoint-standard": {
+  "label": "Wichtig zur Prüfung",
+  "note": "Broadcom führt die Prüfung „VMware Carbon Black Cloud Endpoint Standard Skills“ (5V0-93.22) seit dem 30.06.2025 als eingestellt. Eine Nachfolgeprüfung nennt Broadcom in dieser Liste nicht.",
+  "source": "https://docs.broadcom.com/doc/vmware-retired-exams-certifications-and-badges",
+  "retired": true
+ },
+ "vmware-carbon-black-cloud-enterprise-edr": {
+  "label": "Wichtig zur Prüfung",
+  "note": "Broadcom führt die Prüfung „VMware Carbon Black Cloud Enterprise EDR Skills 2024“ (5V0-94.22) seit dem 30.06.2025 als eingestellt. Eine Nachfolgeprüfung nennt Broadcom in dieser Liste nicht.",
+  "source": "https://docs.broadcom.com/doc/vmware-retired-exams-certifications-and-badges",
+  "retired": true
+ },
+ "developing-on-aws": {
+  "label": "Wichtig zur Prüfung",
+  "note": "AWS bietet die Prüfung AWS Certified Developer – Associate in der Version DVA-C02 nur noch bis zum 30.11.2026 an. Ab dem 01.12.2026 gilt die neue Version DVA-C03.",
+  "source": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+  "retired": false
+ },
+ "systems-operations-on-aws": {
+  "label": "Hinweis zur Zertifizierung",
+  "note": "AWS hat den Kurs „Systems Operations on AWS“ am 21.02.2023 in „Cloud Operations on AWS“ umbenannt. Die zugehörige Prüfung AWS Certified SysOps Administrator – Associate konnte bis zum 29.09.2025 abgelegt werden und heißt jetzt AWS Certified CloudOps Engineer – Associate (SOA-C03).",
+  "source": "https://aws.amazon.com/certification/certified-sysops-admin-associate/",
+  "retired": false
+ },
+ "aws-cloud-practitioner-essentials": {
+  "label": "Wichtig zur Prüfung",
+  "note": "AWS bietet die Prüfung AWS Certified Cloud Practitioner auf Deutsch nur noch bis zum 31.12.2026 an.",
+  "source": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+  "retired": false
+ }
+}
