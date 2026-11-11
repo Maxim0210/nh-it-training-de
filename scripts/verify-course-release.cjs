@@ -8,7 +8,7 @@ async function main() {
   const release = JSON.parse(fs.readFileSync('.qa/course-release.json', 'utf8'));
   const expectedCourses = JSON.parse(fs.readFileSync('.qa/official-courses.json', 'utf8')).courses.length;
   const cache = new Map();
-  const local = new Set(['app.js', 'assets/course-catalog.js', 'assets/course-schedule.css']);
+  const local = new Set(['app.js', 'assets/course-catalog.js', 'assets/course-schedule.css', 'assets/webinar-qcg-20261111.jpg']);
   const server = http.createServer((req, res) => {
     const file = decodeURIComponent(new URL(req.url, 'http://localhost').pathname).slice(1) || 'index.html';
     if (file.split('/').includes('..')) { res.writeHead(403).end(); return; }
@@ -81,6 +81,16 @@ async function main() {
     assert.ok(await page.locator('[data-catalog-course]:visible').count()>0);
     await page.goto(root+'/kontakt.html?kurs=PL-300', {waitUntil:'networkidle'});
     assert.match(await page.locator('textarea[name="nachricht"]').inputValue(),/PL-300/);
+    await page.goto(root+'/', {waitUntil:'networkidle'});
+    for (const width of [1440,390]) {
+      await page.setViewportSize({width,height:1000});
+      await page.locator('.upcoming-section').scrollIntoViewIfNeeded();
+      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,'home overflow');
+      assert.equal(await page.locator('.webinar-image').evaluate(img=>img.complete&&img.naturalWidth>0),true);
+      assert.equal(await page.locator('[data-webinar] a').getAttribute('href'),'https://kurzlinks.de/r1xm');
+      await page.screenshot({path:`.qa/webinar-${width}.png`,fullPage:false});
+    }
+    assert.deepEqual(failures, []);
     console.log(JSON.stringify({htmlPages:validation.length,catalogueCourses:expectedCourses,viewports:[1440,768,390],missingAssets:failures},null,2));
   } finally {await browser.close();await new Promise(resolve=>server.close(resolve));}
 }
