@@ -44,3 +44,7 @@ Owner statement, 2026-11-04: every course on the website is approved for the Bil
 ## Contacts
 
 Named by the owner on 2026-11-04. Funding for jobseekers: one contact per city, kept in `scripts/seo-city-pages.cjs`. QCG and company training: Max Dilewski for all cities.
+
+## Index policy and course content
+
+Decided 2026-11-17: Search Console showed 1 indexed page, and 214 of 243 course pages had under 20 % unique text. Only the course pages in `scripts/index-policy.json` stay indexable; all others get `noindex,follow` and leave the sitemap. `scripts/course-content.json` holds course-specific agendas, audience and prerequisites for those pages, written in our own words from the linked vendor outlines. Add a page to the policy only after it has such content.

@@ -6,6 +6,46 @@ const {CITY_FILES, enhanceCity} = require('./seo-city-pages.cjs');
 const COPY_TABLE = require('./course-copy-table.json');
 // Non-Microsoft exam status, checked against the vendors on 2026-11-10.
 const VENDOR_STATUS = require('./vendor-status.json');
+// Only these course pages stay indexable; see the note in the file.
+const INDEXABLE = new Set(require('./index-policy.json').indexable);
+const ROBOTS_INDEX = 'index,follow,max-image-preview:large';
+const ROBOTS_NOINDEX = 'noindex,follow';
+// Course-specific content from official vendor outlines, written in our own words (2026-11-17).
+const COURSE_CONTENT = fs.existsSync(path.join(__dirname, 'course-content.json')) ? require('./course-content.json') : {};
+
+function contentBlock(c) {
+  const modules = c.modules.map((m, i) => `<details${i ? '' : ' open'}>
+<summary><span>${String(i + 1).padStart(2, '0')}</span>${esc(m.title)}</summary>
+<ul>${m.points.map((pt) => `<li>${esc(pt)}</li>`).join('')}</ul>
+</details>`).join('');
+  const sources = c.sources.map((u, i) => `<a href="${u}" rel="noopener">${i ? 'weitere Quelle' : 'Herstellerangabe'}</a>`).join(', ');
+  return `<!-- course-content-start -->
+          <section class="detail-block">
+            <h2>Kursinhalte und Agenda</h2>
+            <p>${esc(c.intro)}</p>
+            <div class="agenda-list">
+${modules}
+            </div>
+            <p>Grundlage: ${esc(c.officialCourse)}. Quelle: ${sources}.</p>
+          </section>
+<!-- course-content-end -->`;
+}
+
+function applyContent(html, file) {
+  const c = COURSE_CONTENT[file.replace(/\.html$/, '')];
+  if (!c) return html;
+  let out = html;
+  const existing = /<!-- course-content-start -->[\s\S]*?<!-- course-content-end -->/;
+  const agenda = /<section class="detail-block">\s*<h2>Kursinhalte und Agenda<\/h2>[\s\S]*?<\/section>/;
+  // Replace an earlier block in place so reruns do not move it.
+  if (existing.test(out)) out = out.replace(existing, () => contentBlock(c));
+  else if (agenda.test(out)) out = out.replace(agenda, () => contentBlock(c));
+  else if (out.includes('<!-- course-exam-end -->')) out = out.replace('<!-- course-exam-end -->', () => `<!-- course-exam-end -->\n\n          ${contentBlock(c)}`);
+  else out = out.replace(/(<h2>Worum geht es in diesem Kurs\?<\/h2>[\s\S]*?<\/section>)/, (m) => `${m}\n\n          ${contentBlock(c)}`);
+  out = out.replace(/(<h2>Zielgruppe<\/h2>\s*<p>)[\s\S]*?(<\/p>)/, (m, a, b) => a + esc(c.audience) + b);
+  out = out.replace(/(<h2>Voraussetzungen<\/h2>\s*<p>)[\s\S]*?(<\/p>)/, (m, a, b) => a + esc(c.prerequisites) + b);
+  return out;
+}
 
 const dateArg = process.argv.find((a) => a.startsWith('--date='))?.slice(7);
 const today = dateArg || new Intl.DateTimeFormat('en-CA', {timeZone: 'Europe/Berlin'}).format(new Date());
@@ -175,7 +215,7 @@ const EXAMS = {
       ['Sicherheitsbetrieb', '28 %'],
       ['Management und Aufsicht des Sicherheitsprogramms', '20 %'],
     ],
-    closing: 'Die Prüfung umfasst bis zu 90 Fragen in 90 Minuten, zum Bestehen sind 750 Punkte auf einer Skala von 100 bis 900 nötig. Sie wird nicht auf Deutsch angeboten. CompTIA empfiehlt Network+ und zwei Jahre Erfahrung als Security- oder Systemadministrator. Die englische SY0-701 endet am 11.06.2027, die <a href="https://www.comptia.org/en-us/certifications/security/v8/" rel="noopener">Nachfolgeversion V8 (SY0-801)</a> soll laut CompTIA um den 17.11.2026 starten. Auf welche Version ein Termin ausgerichtet ist, klären wir vor der Anmeldung.',
+    closing: 'Die Prüfung umfasst bis zu 90 Fragen in 90 Minuten, zum Bestehen sind 750 Punkte auf einer Skala von 100 bis 900 nötig. Sie wird nicht auf Deutsch angeboten. CompTIA empfiehlt Network+ und zwei Jahre Erfahrung als Security- oder Systemadministrator. Die englische SY0-701 endet am 11.06.2027, die <a href="https://www.comptia.org/en-us/certifications/security/v8/" rel="noopener">Nachfolgeversion V8 (SY0-801)</a> ist laut CompTIA seit dem 17.11.2026 verfügbar. Auf welche Version ein Termin ausgerichtet ist, klären wir vor der Anmeldung.',
     source: 'https://www.comptia.org/en-us/certifications/security/v7/',
     sourceLabel: 'CompTIA-Seite zu Security+ V7',
     wording: [
@@ -469,6 +509,9 @@ function enhanceCourse(html, file) {
   out = out.replace(/Stand: (\d{4}-\d{2}-\d{2})\./g, (m, iso) => `Stand: ${german(iso)}.`);
   out = examBox(out, title, file);
   out = approvedCourse(out);
+  out = applyContent(out, file);
+  const robots = INDEXABLE.has(file.replace(/\.html$/, '')) ? ROBOTS_INDEX : ROBOTS_NOINDEX;
+  out = out.replace(/<meta name="robots" content="[^"]*">/, `<meta name="robots" content="${robots}">`);
   return updateSchema(trimMeta(out), page, file);
 }
 
@@ -528,4 +571,6 @@ if (changed.length) {
       : acc;
   }, xml));
 }
+// Noindexed course pages do not belong in the sitemap; the renderer may add them back.
+apply('sitemap.xml', (xml) => xml.replace(/\s*<url><loc>https:\/\/nh-it-training\.de\/kurse\/([^<]+)\.html<\/loc>[\s\S]*?<\/url>/g, (block, slug) => (INDEXABLE.has(decodeURI(slug)) ? block : '')));
 console.log(`Date ${today}. Changed ${changed.length} files.`);

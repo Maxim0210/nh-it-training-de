@@ -1,0 +1,2201 @@
+{
+ "az-104-microsoft-azure-administrator": {
+  "officialCourse": "AZ-104T00-A: Microsoft Azure Administrator (Microsoft Learn, Stufe Intermediate, 4 Tage); Prüfung AZ-104, Zertifizierung Microsoft Certified: Azure Administrator Associate. Die Module folgen den Prüfungszielen im Studienleitfaden (Stand 26.10.2023), da die Lernpfade der Kursseite dieselben fünf Bereiche abdecken.",
+  "intro": "Der Kurs behandelt den laufenden Betrieb einer Azure-Umgebung: Benutzer und Rollen in Microsoft Entra ID, Governance mit Azure Policy, Speicherkonten, virtuelle Maschinen, Container, App Service, virtuelle Netzwerke sowie Überwachung und Sicherung. Danach können Sie Azure-Ressourcen über Portal, PowerShell, Azure CLI und Vorlagen bereitstellen, Zugriffe absichern, Netzwerke verbinden und Workloads überwachen und wiederherstellen.",
+  "modules": [
+   {
+    "title": "Identitäten in Microsoft Entra ID verwalten",
+    "points": [
+     "Benutzer und Gruppen anlegen, Eigenschaften und Lizenzen pflegen",
+     "Externe Benutzer einladen und verwalten",
+     "Self-Service-Kennwortzurücksetzung einrichten"
+    ]
+   },
+   {
+    "title": "Zugriff und Governance",
+    "points": [
+     "Integrierte Azure-Rollen auf verschiedenen Ebenen zuweisen und Zuweisungen auswerten",
+     "Azure Policy, Ressourcensperren und Tags einsetzen",
+     "Verwaltungsgruppen, Abonnements und Ressourcengruppen strukturieren",
+     "Kosten mit Budgets, Warnungen und Azure Advisor steuern"
+    ]
+   },
+   {
+    "title": "Speicher konfigurieren",
+    "points": [
+     "Speicherkonten, Redundanz, Objektreplikation und Verschlüsselung einrichten",
+     "Zugriff über SAS-Token, Zugriffsschlüssel und Firewallregeln steuern",
+     "Blob-Container, Dateifreigaben, Zugriffsebenen und Lebenszyklusregeln",
+     "Daten mit Azure Storage Explorer und AzCopy übertragen"
+    ]
+   },
+   {
+    "title": "Bereitstellung mit ARM-Vorlagen und Bicep",
+    "points": [
+     "ARM-Vorlagen und Bicep-Dateien lesen und anpassen",
+     "Ressourcen aus Vorlagen bereitstellen",
+     "Bereitstellungen exportieren und ARM-Vorlagen nach Bicep konvertieren"
+    ]
+   },
+   {
+    "title": "Virtuelle Maschinen",
+    "points": [
+     "VMs erstellen sowie Größen und Datenträger verwalten",
+     "In Verfügbarkeitszonen, Verfügbarkeitsgruppen und Skalierungsgruppen bereitstellen",
+     "Azure Disk Encryption konfigurieren",
+     "VMs in andere Ressourcengruppen, Abonnements oder Regionen verschieben"
+    ]
+   },
+   {
+    "title": "Container und Azure App Service",
+    "points": [
+     "Container Registry, Container Instances und Container Apps nutzen",
+     "App Service-Pläne bereitstellen und skalieren",
+     "Eigene Domänen, TLS-Zertifikate und Bereitstellungsslots konfigurieren",
+     "Sicherung und Netzwerkeinstellungen für App Service festlegen"
+    ]
+   },
+   {
+    "title": "Virtuelle Netzwerke",
+    "points": [
+     "VNets, Subnetze, Peering, öffentliche IP-Adressen und benutzerdefinierte Routen",
+     "Netzwerk- und Anwendungssicherheitsgruppen sowie Azure Bastion",
+     "Dienst- und private Endpunkte für PaaS-Dienste",
+     "Azure DNS und interne oder öffentliche Load Balancer"
+    ]
+   },
+   {
+    "title": "Überwachung, Sicherung und Wiederherstellung",
+    "points": [
+     "Metriken, Protokolle und Warnregeln in Azure Monitor",
+     "Netzwerkdiagnose mit Network Watcher und Connection Monitor",
+     "Sicherungen mit Recovery Services- und Backup-Tresoren und Sicherungsrichtlinien",
+     "Failover in eine zweite Region mit Azure Site Recovery"
+    ]
+   }
+  ],
+  "audience": "Der Kurs richtet sich an Azure-Administratorinnen und -Administratoren, die Identitäten, Governance, Speicher, Compute und virtuelle Netzwerke in Azure umsetzen, verwalten und überwachen.",
+  "prerequisites": "Microsoft erwartet Grundwissen zu lokaler Virtualisierung, Netzwerkkonfiguration (TCP/IP, DNS, VPN, Firewalls, Verschlüsselung), Active-Directory-Konzepten wie Benutzern, Gruppen und rollenbasierter Zugriffssteuerung sowie zu Sicherung und Notfallwiederherstellung. Für die Prüfung nennt Microsoft zusätzlich Erfahrung mit PowerShell, Azure CLI, dem Azure-Portal, ARM-Vorlagen und Microsoft Entra ID.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/az-104t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104"
+  ]
+ },
+ "az-900-microsoft-azure-grundlagen": {
+  "officialCourse": "AZ-900T00-A: Introduction to Cloud Infrastructure (Microsoft Learn, Stufe Beginner, 1 Tag); Prüfung AZ-900, Zertifizierung Microsoft Certified: Azure Fundamentals. Die Module folgen den Prüfungszielen im Studienleitfaden (Stand 20.07.2026), die den drei Lernpfaden des Kurses entsprechen.",
+  "intro": "Der Kurs vermittelt Grundwissen zu Cloud Computing und Microsoft Azure: Cloudmodelle, Diensttypen, die Architektur von Azure, zentrale Dienste für Compute, Netzwerk und Speicher sowie Identität, Sicherheit, Kostenverwaltung und Governance. Danach können Sie Azure-Dienste einordnen, Begriffe wie IaaS, PaaS oder Verfügbarkeitszone erklären und Werkzeuge für Kosten, Governance und Überwachung benennen.",
+  "modules": [
+   {
+    "title": "Grundlagen des Cloud Computing",
+    "points": [
+     "Modell der geteilten Verantwortung",
+     "Öffentliche, private und hybride Cloud mit typischen Einsatzfällen",
+     "Verbrauchsbasierte Abrechnung und Preismodelle im Vergleich",
+     "Serverlose Ansätze"
+    ]
+   },
+   {
+    "title": "Nutzen und Diensttypen der Cloud",
+    "points": [
+     "Hochverfügbarkeit, Skalierbarkeit, Zuverlässigkeit und Vorhersagbarkeit",
+     "Sicherheit, Governance und Verwaltbarkeit",
+     "IaaS, PaaS und SaaS mit passenden Einsatzfällen"
+    ]
+   },
+   {
+    "title": "Architektur von Azure",
+    "points": [
+     "Regionen, Regionspaare, souveräne Regionen und Verfügbarkeitszonen",
+     "Azure-Rechenzentren als physische Grundlage",
+     "Ressourcen, Ressourcengruppen, Abonnements und Verwaltungsgruppen in ihrer Hierarchie"
+    ]
+   },
+   {
+    "title": "Compute- und Netzwerkdienste",
+    "points": [
+     "Virtuelle Maschinen, Container und Functions im Vergleich",
+     "Skalierungsgruppen, Verfügbarkeitsgruppen und Azure Virtual Desktop",
+     "VNets, Peering, Azure DNS, VPN Gateway und ExpressRoute",
+     "Öffentliche und private Endpunkte"
+    ]
+   },
+   {
+    "title": "Speicher- und Migrationsdienste",
+    "points": [
+     "Azure Storage-Dienste, Zugriffsebenen und Redundanzoptionen",
+     "Daten verschieben mit AzCopy, Storage Explorer und Azure File Sync",
+     "Migration mit Azure Migrate und Azure Data Box"
+    ]
+   },
+   {
+    "title": "Identität, Zugriff und Sicherheit",
+    "points": [
+     "Microsoft Entra ID, Domain Services und externe Identitäten",
+     "SSO, Multi-Faktor-Authentifizierung und kennwortlose Anmeldung",
+     "Bedingter Zugriff und rollenbasierte Zugriffssteuerung",
+     "Zero Trust, gestaffelte Abwehr und Microsoft Defender for Cloud"
+    ]
+   },
+   {
+    "title": "Kosten und Governance",
+    "points": [
+     "Kostenfaktoren, Preisrechner und Kostenverwaltung",
+     "Tags, Azure Policy und Ressourcensperren",
+     "Microsoft Purview in Azure"
+    ]
+   },
+   {
+    "title": "Verwaltung und Überwachung",
+    "points": [
+     "Azure-Portal, Cloud Shell, Azure CLI und Azure PowerShell",
+     "Azure Arc, Infrastructure as Code und ARM-Vorlagen",
+     "Azure Advisor und Azure Service Health",
+     "Azure Monitor mit Log Analytics, Warnungen und Application Insights"
+    ]
+   }
+  ],
+  "audience": "Der Kurs richtet sich an IT-Fachkräfte, die neu mit Azure arbeiten, das Angebot kennenlernen und selbst Ressourcen anlegen möchten, auch als Grundlage für rollenbasierte Kurse wie Azure Administrator.",
+  "prerequisites": "Für den Kurs sind keine Skripting-Kenntnisse nötig, Ressourcen werden über das Azure-Portal und die Befehlszeile angelegt. Für die Prüfung erwartet Microsoft Erfahrung in einem IT-Bereich wie Infrastrukturverwaltung, Datenbankverwaltung oder Softwareentwicklung.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/az-900t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+  ]
+ },
+ "az-305-azure-solutions-architect-expert": {
+  "officialCourse": "AZ-305T00-A: Design Microsoft Azure Infrastructure Solutions (Microsoft Learn, Stufe Advanced, 4 Tage); Prüfung AZ-305, Zertifizierung Microsoft Certified: Azure Solutions Architect Expert. Die Module folgen den Prüfungszielen im Studienleitfaden (Stand 17.04.2026) und dem Lernpfad zum Azure Well-Architected Framework aus dem Kurs.",
+  "intro": "Der Kurs behandelt den Entwurf von Lösungen in Azure: Identität und Governance, Protokollierung und Überwachung, Datenspeicherung, Geschäftskontinuität, Compute, Anwendungsarchitektur, Netzwerke und Migration. Er arbeitet mit Fallstudien. Danach können Sie Geschäftsanforderungen in Azure-Architekturen übersetzen und Entwurfsentscheidungen anhand des Azure Well-Architected Framework und des Cloud Adoption Framework begründen.",
+  "modules": [
+   {
+    "title": "Protokollierung und Überwachung entwerfen",
+    "points": [
+     "Lösung für Protokollierung und Weiterleitung von Logs empfehlen",
+     "Überwachungskonzept für Azure-Workloads festlegen"
+    ]
+   },
+   {
+    "title": "Authentifizierung und Autorisierung entwerfen",
+    "points": [
+     "Authentifizierung und Identitätsverwaltung planen",
+     "Zugriff auf Azure- und lokale Ressourcen autorisieren",
+     "Geheimnisse, Zertifikate und Schlüssel verwalten"
+    ]
+   },
+   {
+    "title": "Governance entwerfen",
+    "points": [
+     "Verwaltungsgruppen, Abonnements, Ressourcengruppen und Tagging strukturieren",
+     "Compliance-Verwaltung und Identity Governance planen"
+    ]
+   },
+   {
+    "title": "Datenspeicherlösungen entwerfen",
+    "points": [
+     "Relationale Daten: Dienst- und Compute-Tarif, Skalierung und Schutz",
+     "Semistrukturierte und unstrukturierte Daten nach Funktion, Leistung und Kosten",
+     "Datenintegration und Datenanalyse planen"
+    ]
+   },
+   {
+    "title": "Geschäftskontinuität entwerfen",
+    "points": [
+     "Wiederherstellungsziele für Azure- und Hybrid-Workloads festlegen",
+     "Sicherung und Wiederherstellung für Compute, Datenbanken und Dateien",
+     "Hochverfügbarkeit für Compute und Datenspeicher planen"
+    ]
+   },
+   {
+    "title": "Compute und Anwendungsarchitektur entwerfen",
+    "points": [
+     "Lösungen mit VMs, Containern, serverlosen Diensten und Batch",
+     "Messaging, ereignisgesteuerte Architektur und API-Integration",
+     "Caching, Konfigurationsverwaltung und automatisierte Bereitstellung"
+    ]
+   },
+   {
+    "title": "Netzwerklösungen entwerfen",
+    "points": [
+     "Anbindung an das Internet und an lokale Netzwerke",
+     "Netzwerkleistung und Netzwerksicherheit optimieren",
+     "Lastverteilung und Routing auswählen"
+    ]
+   },
+   {
+    "title": "Migrationen und Well-Architected Framework",
+    "points": [
+     "Migration nach dem Cloud Adoption Framework bewerten",
+     "Lokale Server, Daten und Anwendungen für die Migration bewerten",
+     "Migrationswege nach IaaS und PaaS, für Datenbanken und unstrukturierte Daten",
+     "Entwürfe an den Säulen des Well-Architected Framework prüfen"
+    ]
+   }
+  ],
+  "audience": "Der Kurs richtet sich an Azure-Lösungsarchitektinnen und -architekten, die Cloud- und Hybridlösungen entwerfen und dabei mit Entwicklung, Administration, Security und Data Engineering zusammenarbeiten.",
+  "prerequisites": "Microsoft setzt Erfahrung mit Bereitstellung oder Verwaltung von Azure-Ressourcen voraus sowie fundiertes konzeptionelles Wissen zu Compute (VMs, Container, serverlos), virtuellen Netzwerken mit Load Balancern, Azure Storage und Datenbanken sowie Anwendungsdesign wie Messaging und Hochverfügbarkeit. Für den Expert-Titel verlangt Microsoft zusätzlich die Zertifizierung Azure Administrator Associate.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/az-305t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305",
+   "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/"
+  ]
+ },
+ "az-500-azure-security-engineer-associate": {
+  "officialCourse": "AZ-500T00: Microsoft Azure Security Technologies. Die Kursseite auf Microsoft Learn ist nicht mehr abrufbar (Weiterleitung auf den allgemeinen Katalog), die Prüfung AZ-500 wurde am 31.08.2026 eingestellt. Die Module beruhen daher auf dem offiziellen Studienleitfaden AZ-500 (Prüfungsinhalte Stand 22.01.2026).",
+  "intro": "Der Kurs behandelt die Absicherung von Azure-Umgebungen: Identitäten und Zugriffe, Netzwerke, Compute, Speicher und Datenbanken sowie Governance und Überwachung mit Microsoft Defender for Cloud und Microsoft Sentinel. Danach können Sie Zugriffe mit Azure RBAC und Microsoft Entra ID steuern, Netzwerkzugriffe einschränken, Schlüssel und Geheimnisse in Key Vault verwalten und Sicherheitswarnungen bearbeiten. Die Microsoft-Prüfung AZ-500 wurde am 31.08.2026 eingestellt.",
+  "modules": [
+   {
+    "title": "Identitäten und Zugriffe absichern",
+    "points": [
+     "Integrierte und benutzerdefinierte Azure- und Microsoft-Entra-Rollen verwalten",
+     "Privileged Identity Management, MFA und Conditional Access für Azure-Ressourcen",
+     "Unternehmensanwendungen, App-Registrierungen, Berechtigungen und Einwilligungen",
+     "Service Principals und verwaltete Identitäten einsetzen"
+    ]
+   },
+   {
+    "title": "Virtuelle Netzwerke schützen",
+    "points": [
+     "NSGs, ASGs und benutzerdefinierte Routen planen und umsetzen",
+     "Netzwerke mit Azure Virtual Network Manager verwalten",
+     "VNet-Peering, VPN-Gateway, Virtual WAN mit gesichertem Hub und ExpressRoute-Verschlüsselung",
+     "Firewall-Einstellungen von Ressourcen und Überwachung mit Network Watcher"
+    ]
+   },
+   {
+    "title": "Privaten und öffentlichen Zugriff steuern",
+    "points": [
+     "Service Endpoints, Private Endpoints und Private Link einrichten",
+     "Netzwerkschutz für App Service, Functions, App Service Environment und SQL Managed Instance",
+     "Azure Firewall mit Firewall Manager, Application Gateway und Front Door",
+     "TLS für Anwendungen, Web Application Firewall und Einsatz von DDoS Protection"
+    ]
+   },
+   {
+    "title": "Compute und Container absichern",
+    "points": [
+     "Fernzugriff auf VMs über Azure Bastion und Just-in-Time-Zugriff",
+     "AKS: Netzwerkisolation, Authentifizierung und Überwachung",
+     "Überwachung von Container Instances und Container Apps, Zugriff auf Container Registry",
+     "Datenträgerverschlüsselung und Sicherheitsempfehlungen für API Management"
+    ]
+   },
+   {
+    "title": "Speicher und Datenbanken schützen",
+    "points": [
+     "Zugriffssteuerung und Zugriffsschlüssel für Speicherkonten verwalten",
+     "Zugriffsmethoden für Blob Storage und Azure Files auswählen",
+     "Soft Delete, Backups, Versionierung, unveränderlicher Speicher, BYOK und doppelte Verschlüsselung",
+     "Azure SQL: Entra-Anmeldung, Auditing, dynamische Maskierung, TDE und Always Encrypted"
+    ]
+   },
+   {
+    "title": "Governance mit Azure Policy und Key Vault",
+    "points": [
+     "Richtlinien und Initiativen in Azure Policy erstellen, zuweisen und auswerten",
+     "Key Vault: Netzwerkeinstellungen, Zugriffsrichtlinien und Azure RBAC",
+     "Zertifikate, Geheimnisse und Schlüssel verwalten, rotieren und wiederherstellen",
+     "Sicherheitskontrollen für Backups und Asset Management"
+    ]
+   },
+   {
+    "title": "Sicherheitsstatus mit Defender for Cloud",
+    "points": [
+     "Risiken über Secure Score und Inventar erkennen und beheben",
+     "Compliance gegen Standards prüfen und eigene Standards ergänzen",
+     "AWS, Google Cloud und hybride Umgebungen anbinden, Defender EASM nutzen",
+     "Defender for Servers, Databases und Storage sowie DevOps Security für GitHub, Azure DevOps und GitLab"
+    ]
+   },
+   {
+    "title": "Sicherheitsüberwachung und Automatisierung",
+    "points": [
+     "Sicherheitswarnungen in Defender for Cloud bearbeiten und Workflows automatisieren",
+     "Datensammlungsregeln in Azure Monitor für Netzwerkereignisse konfigurieren",
+     "Datenconnectors und Analyseregeln in Microsoft Sentinel einrichten",
+     "Automatisierung in Microsoft Sentinel konfigurieren"
+    ]
+   }
+  ],
+  "audience": "Microsoft beschreibt als Zielrolle Azure-Sicherheitsingenieure, die Sicherheit für Ressourcen in Azure, Multi-Cloud- und Hybridumgebungen umsetzen, verwalten und überwachen und dabei mit Architekten, Administratoren und Entwicklern zusammenarbeiten.",
+  "prerequisites": "Microsoft erwartet praktische Erfahrung in der Administration von Azure und hybriden Umgebungen. Dazu kommen gute Kenntnisse in Microsoft Entra ID sowie in Compute, Netzwerk und Speicher in Azure.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500",
+   "https://learn.microsoft.com/en-us/training/courses/az-500t00"
+  ]
+ },
+ "ai-900-microsoft-azure-ai-fundamentals": {
+  "officialCourse": "AI-900T00: Microsoft Azure AI Fundamentals. Die Kursseite auf Microsoft Learn ist nicht mehr abrufbar (Weiterleitung auf den allgemeinen Katalog), die Prüfung AI-900 wurde am 30.06.2026 eingestellt (Nachfolger AI-901). Die Module beruhen daher auf dem offiziellen Studienleitfaden AI-900 (Prüfungsinhalte Stand 02.05.2025).",
+  "intro": "Der Kurs führt in die Grundbegriffe der künstlichen Intelligenz und die zugehörigen Azure-Dienste ein: maschinelles Lernen, Bildanalyse, Text- und Sprachverarbeitung sowie generative KI. Danach können Sie typische KI-Szenarien einordnen, passende Azure-Dienste dafür benennen und Grundsätze für den verantwortungsvollen Einsatz von KI erläutern. Die Prüfung AI-900 wurde am 30.06.2026 eingestellt, Microsoft ersetzt sie durch AI-901.",
+  "modules": [
+   {
+    "title": "KI-Workloads erkennen",
+    "points": [
+     "Workloads für Bildverarbeitung, Sprachverarbeitung und Dokumentverarbeitung",
+     "Merkmale generativer KI-Workloads"
+    ]
+   },
+   {
+    "title": "Verantwortungsvolle KI",
+    "points": [
+     "Fairness, Zuverlässigkeit und Sicherheit von KI-Lösungen",
+     "Datenschutz, Inklusion, Transparenz und Verantwortlichkeit"
+    ]
+   },
+   {
+    "title": "Grundlagen des maschinellen Lernens",
+    "points": [
+     "Szenarien für Regression, Klassifizierung und Clustering unterscheiden",
+     "Merkmale von Deep Learning und der Transformer-Architektur",
+     "Features und Labels sowie Trainings- und Validierungsdaten"
+    ]
+   },
+   {
+    "title": "Azure Machine Learning",
+    "points": [
+     "Funktionen von automatisiertem maschinellem Lernen",
+     "Daten- und Compute-Dienste für Data Science und maschinelles Lernen",
+     "Modelle in Azure Machine Learning verwalten und bereitstellen"
+    ]
+   },
+   {
+    "title": "Computer Vision in Azure",
+    "points": [
+     "Bildklassifizierung, Objekterkennung und Texterkennung (OCR)",
+     "Erkennung und Analyse von Gesichtern",
+     "Funktionen von Azure AI Vision und Azure AI Face"
+    ]
+   },
+   {
+    "title": "Sprachverarbeitung (NLP) in Azure",
+    "points": [
+     "Schlüsselbegriffe, Entitäten und Stimmungen aus Texten ermitteln",
+     "Sprachmodelle, Erkennung und Synthese gesprochener Sprache sowie Übersetzung",
+     "Funktionen von Azure AI Language und Azure AI Speech"
+    ]
+   },
+   {
+    "title": "Generative KI in Azure",
+    "points": [
+     "Merkmale generativer Modelle und typische Einsatzszenarien",
+     "Verantwortungsvoller Umgang mit generativer KI",
+     "Azure AI Foundry, Azure OpenAI Service und der Foundry-Modellkatalog"
+    ]
+   }
+  ],
+  "audience": "Laut Microsoft richtet sich die Prüfung an Personen mit technischem und nichttechnischem Hintergrund, die Grundlagen zu maschinellem Lernen, KI-Konzepten und den zugehörigen Azure-Diensten nachweisen möchten.",
+  "prerequisites": "Erfahrung in Data Science oder Softwareentwicklung ist laut Microsoft nicht erforderlich. Hilfreich ist ein Grundverständnis von Cloud-Konzepten und Client-Server-Anwendungen.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900",
+   "https://learn.microsoft.com/en-us/training/courses/ai-900t00"
+  ]
+ },
+ "ai-103-develop-ai-apps-and-agents-on-azure": {
+  "officialCourse": "AI-103T00-A: Develop AI apps and agents on Azure (Microsoft Learn, Niveau Intermediate, 4 Tage, zugehörige Zertifizierung Microsoft Certified: Azure AI Apps and Agents Developer Associate). Die Module beruhen auf den vier Lernpfaden des Kurses.",
+  "intro": "Der Kurs zeigt, wie Sie mit Microsoft Foundry generative KI-Anwendungen und KI-Agenten entwickeln. Behandelt werden Modellauswahl und Bewertung, Chat-Anwendungen mit Tools, Agenten mit MCP und Wissensquellen, Multi-Agent-Lösungen sowie die Analyse von Text, Sprache, Bildern und Dokumenten. Danach können Sie Modelle vergleichen und bereitstellen, Agenten an Unternehmenswissen anbinden und multimodale Inhalte in eigenen Anwendungen verarbeiten.",
+  "modules": [
+   {
+    "title": "Modelle auswählen, bereitstellen und bewerten",
+    "points": [
+     "Azure-Dienste und Entwicklungsumgebung für ein KI-Vorhaben planen",
+     "Modelle im Foundry-Modellkatalog anhand von Benchmarks vergleichen",
+     "Modelle auf Endpunkten bereitstellen und manuell oder automatisiert bewerten"
+    ]
+   },
+   {
+    "title": "Generative KI-Anwendungen entwickeln",
+    "points": [
+     "Chat-Anwendung mit Foundry-Projekten und der Responses API erstellen",
+     "Tools einbinden, damit Modelle mit externen Systemen arbeiten",
+     "Prompt Engineering, RAG und Feintuning abwägen und kombinieren",
+     "Risiken schädlicher Inhalte bei generativer KI begrenzen"
+    ]
+   },
+   {
+    "title": "KI-Agenten mit Foundry Agent Service",
+    "points": [
+     "Agenten im Azure-Portal und mit dem Foundry Toolkit für VS Code erstellen und testen",
+     "Eigene Tools und MCP-Tools an Agenten anbinden",
+     "Agenten in Microsoft Teams und Microsoft 365 Copilot veröffentlichen"
+    ]
+   },
+   {
+    "title": "Wissen und Kontext für Agenten",
+    "points": [
+     "Unternehmenswissen mit Foundry IQ und RAG bereitstellen",
+     "Aktuelle Webinformationen über Web IQ einbinden",
+     "Arbeitsplatzdaten über Work IQ nutzen"
+    ]
+   },
+   {
+    "title": "Workflows und Multi-Agent-Lösungen",
+    "points": [
+     "Agentengesteuerte Workflows in Microsoft Foundry aufbauen",
+     "Agenten mit dem Microsoft Agent Framework entwickeln",
+     "Mehrere Agenten orchestrieren und über das A2A-Protokoll verbinden"
+    ]
+   },
+   {
+    "title": "Text- und Sprachlösungen",
+    "points": [
+     "Texte mit Azure Language analysieren",
+     "Agenten über die MCP-Server von Azure Language und Azure Speech",
+     "Spracherkennung und Sprachsynthese mit Azure Speech und generativen Modellen",
+     "Sprachagenten mit Voice Live, Übersetzung von Text und Sprache"
+    ]
+   },
+   {
+    "title": "Bilder, Videos und Dokumente auswerten",
+    "points": [
+     "Bildfähige Chat-Anwendungen sowie Bild- und Videogenerierung",
+     "Bilder und multimodale Inhalte mit Azure Content Understanding analysieren",
+     "Daten aus Formularen und Dokumenten mit Azure Document Intelligence extrahieren",
+     "Knowledge Mining mit Azure AI Search"
+    ]
+   }
+  ],
+  "audience": "Microsoft richtet den Kurs an Softwareentwickler, die KI-Lösungen auf Basis von Microsoft Foundry entwickeln, verwalten und bereitstellen; als Rollen nennt Microsoft Entwickler und KI-Engineers.",
+  "prerequisites": "Laut Microsoft sind die Teilnehmenden mit Python vertraut und haben Erfahrung mit APIs und SDKs. Die Lernpfade setzen zusätzlich Grundkenntnisse zu KI-Konzepten und Azure-Diensten sowie Programmiererfahrung voraus.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/ai-103t00",
+   "https://learn.microsoft.com/en-us/training/paths/develop-generative-ai-apps/",
+   "https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-azure/",
+   "https://learn.microsoft.com/en-us/training/paths/develop-language-solutions-azure-ai/",
+   "https://learn.microsoft.com/en-us/training/paths/insight-visual-data/"
+  ]
+ },
+ "ms-102-microsoft-365-administrator": {
+  "officialCourse": "Microsoft Learn Kurs MS-102T00-A: Microsoft 365 Administrator (5 Tage), Prüfung MS-102; Module nach Kurslernpfaden und Studienleitfaden (Prüfungsinhalte Stand 28.04.2026)",
+  "intro": "Der Kurs behandelt die Verwaltung eines Microsoft-365-Mandanten mit Benutzern, Lizenzen, Rollen und Domänen, die Identitätssynchronisierung mit Microsoft Entra sowie Sicherheit mit Microsoft Defender XDR und Compliance mit Microsoft Purview. Danach können Sie einen Mandanten einrichten, Anmeldung und Zugriff absichern, Vorfälle und Warnungen in Defender XDR bearbeiten und Richtlinien für Vertraulichkeitsbezeichnungen, Aufbewahrung und Schutz vor Datenverlust umsetzen.",
+  "modules": [
+   {
+    "title": "Microsoft-365-Mandanten einrichten und betreiben",
+    "points": [
+     "Mandant anlegen, Domänen hinzufügen und Organisationsprofil pflegen",
+     "Dienststatus mit Benachrichtigungen und Netzwerkkonnektivität überwachen",
+     "Software-Updates im Microsoft 365 Admin Center konfigurieren und überwachen",
+     "Nutzung und Akzeptanz auswerten, Microsoft 365 Backup verwalten"
+    ]
+   },
+   {
+    "title": "Benutzer, Gruppen und Lizenzen",
+    "points": [
+     "Benutzer einschließlich externer Benutzer sowie Kontakte verwalten",
+     "Microsoft-365-Gruppen und freigegebene Postfächer einrichten",
+     "Lizenzen gruppenbasiert zuweisen und deren Nutzung überwachen",
+     "Massenänderungen mit Microsoft Graph PowerShell und Entra PowerShell"
+    ]
+   },
+   {
+    "title": "Rollen und delegierte Administration",
+    "points": [
+     "Administratorrollen in Microsoft 365 und Microsoft Entra ID zuweisen",
+     "Berechtigungen für Defender XDR und Purview über Rollengruppen steuern",
+     "Verwaltung mit Verwaltungseinheiten delegieren",
+     "Entra-Rollen mit Privileged Identity Management verwalten"
+    ]
+   },
+   {
+    "title": "Identitätssynchronisierung mit Microsoft Entra",
+    "points": [
+     "Lokales Verzeichnis mit IdFix für die Synchronisierung vorbereiten",
+     "Entra Connect Sync oder Entra Cloud Sync einrichten",
+     "Synchronisierung mit Connect Health überwachen und Fehler beheben"
+    ]
+   },
+   {
+    "title": "Authentifizierung und sicherer Zugriff",
+    "points": [
+     "Authentifizierungsmethoden, Self-Service-Kennwortzurücksetzung und Kennwortschutz",
+     "Bedingten Zugriff planen und MFA über Richtlinien erzwingen",
+     "Microsoft Entra ID Protection einrichten und Anmeldeprobleme klären"
+    ]
+   },
+   {
+    "title": "Sicherheitslage mit Microsoft Defender XDR",
+    "points": [
+     "Secure Score und Security Exposure Management auswerten",
+     "Vorfälle und Warnungen bearbeiten, Advanced Hunting nutzen",
+     "Berichte und Erkenntnisse aus Defender Threat Intelligence bewerten"
+    ]
+   },
+   {
+    "title": "Schutz für E-Mail, Endpunkte und Cloud-Apps",
+    "points": [
+     "Bedrohungsrichtlinien, Warnrichtlinien und Angriffssimulationen in Defender for Office 365",
+     "Geräte in Defender for Endpoint aufnehmen und Schwachstellen prüfen",
+     "App-Connector, Richtlinien und Cloud App Discovery in Defender for Cloud Apps"
+    ]
+   },
+   {
+    "title": "Compliance mit Microsoft Purview",
+    "points": [
+     "Vertrauliche Informationstypen mit Schlüsselwörtern und regulären Ausdrücken",
+     "Vertraulichkeits- und Aufbewahrungsbezeichnungen samt Richtlinien umsetzen",
+     "DLP-Richtlinien für Microsoft-365-Workloads und Endpoint DLP",
+     "Bezeichnungen mit Inhalts- und Aktivitäts-Explorer überwachen"
+    ]
+   }
+  ],
+  "audience": "Microsoft richtet den Kurs an Personen, die als Microsoft 365 Administrator arbeiten möchten und bereits mindestens einen rollenbasierten Microsoft-365-Administratorpfad abgeschlossen haben.",
+  "prerequisites": "Laut Studienleitfaden sollten Sie praktische Erfahrung mit allen Microsoft-365-Workloads und Microsoft Entra ID mitbringen und mindestens einen dieser Bereiche bereits administriert haben. Dazu kommen Grundkenntnisse in Netzwerken, Active Directory Domain Services, DNS und PowerShell.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/ms-102t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102"
+  ]
+ },
+ "md-102-endpoint-administrator-associate": {
+  "officialCourse": "Microsoft Learn Kurs MD-102T00-A: Manage and secure Microsoft 365 endpoints by using Intune (5 Tage), Prüfung MD-102; Module nach Kurslernpfaden und Studienleitfaden (Prüfungsinhalte Stand 27.10.2026)",
+  "intro": "Der Kurs zeigt, wie Sie Endgeräte mit Microsoft Intune und Microsoft Entra ID bereitstellen, konfigurieren und absichern. Behandelt werden Geräteregistrierung, Windows Autopilot, Konfigurationsprofile, Updates, App-Verteilung und Endpoint Security mit Defender for Endpoint. Anschließend können Sie Windows-, macOS-, iOS- und Android-Geräte zentral verwalten, Compliance-Regeln mit bedingtem Zugriff verknüpfen und Verwaltungsaufgaben mit PowerShell und Microsoft Graph automatisieren.",
+  "modules": [
+   {
+    "title": "Geräte in Microsoft Entra ID aufnehmen",
+    "points": [
+     "Passende Join-Art wählen: Entra Join oder Geräteregistrierung",
+     "Geräte in Entra ID einbinden und dynamische Gerätegruppen anlegen",
+     "Rollen, Bereichsmarkierungen und Mehrfach-Admin-Genehmigung in Intune",
+     "Windows Hello for Business und Windows LAPS über Intune einrichten"
+    ]
+   },
+   {
+    "title": "Geräteregistrierung in Intune",
+    "points": [
+     "Automatische Registrierung für Windows einrichten",
+     "Apple Business Manager für macOS- und iOS-Firmengeräte anbinden",
+     "Android-Profile, Knox Mobile Enrollment und Zero-Touch konfigurieren",
+     "Registrierungsbeschränkungen setzen und Registrierungsfehler beheben"
+    ]
+   },
+   {
+    "title": "Windows bereitstellen mit Autopilot und Windows 365",
+    "points": [
+     "Autopilot-Profile, Bereitstellungsmodi und Statusseite für die Registrierung",
+     "Upgrades auf Windows 11 mit Intune planen und durchführen",
+     "Cloud-PCs in Windows 365 bereitstellen, Windows-Sicherung einrichten"
+    ]
+   },
+   {
+    "title": "Konfigurationsprofile und Remote-Aktionen",
+    "points": [
+     "Profile für Windows, macOS, iOS, Android und Spezialgeräte erstellen",
+     "ADMX-Import, Gruppenrichtlinienanalyse und Zuweisungsfilter nutzen",
+     "Geräte zurücksetzen, BitLocker- und LAPS-Kennwörter rotieren, Logs sammeln"
+    ]
+   },
+   {
+    "title": "Compliance und Endpoint Security",
+    "points": [
+     "Compliance-Richtlinien mit bedingtem Zugriff verknüpfen",
+     "Antivirus, Datenträgerverschlüsselung, Firewall und Angriffsflächenreduzierung",
+     "Sicherheitsbaselines, App Control for Business und Defender for Endpoint"
+    ]
+   },
+   {
+    "title": "Updates für Endgeräte steuern",
+    "points": [
+     "Update-Ringe, Funktions- und Qualitätsupdates für Windows verwalten",
+     "Windows Autopatch und Hotpatch-Richtlinien einrichten",
+     "Updates für Apple- und Android-Geräte sowie Übermittlungsoptimierung"
+    ]
+   },
+   {
+    "title": "Apps verteilen und schützen",
+    "points": [
+     "Win32-, LOB- und Store-Apps sowie Microsoft 365 Apps bereitstellen",
+     "App-Schutzrichtlinien für verwaltete und private Geräte umsetzen",
+     "App-Konfigurationsrichtlinien und Fehleranalyse bei Installationen"
+    ]
+   },
+   {
+    "title": "Intune Suite, Automatisierung und Monitoring",
+    "points": [
+     "Endpoint Privilege Management, Remote Help, Cloud PKI und Microsoft Tunnel",
+     "Aufgaben mit PowerShell und Microsoft Graph automatisieren",
+     "Empfehlungen von Security-Copilot-Agenten in Intune auswerten",
+     "Endpoint Analytics, Remediations, Berichte und Warnregeln einsetzen"
+    ]
+   }
+  ],
+  "audience": "Der Kurs richtet sich an Endpoint-Administratoren, die Geräte und Client-Anwendungen in einem Microsoft-365-Mandanten mit Microsoft Intune verwalten und dabei mit Architekten sowie Microsoft-365- und Sicherheitsadministratoren zusammenarbeiten.",
+  "prerequisites": "Microsoft setzt Erfahrung mit Microsoft Entra ID und Microsoft-365-Technologien einschließlich Intune voraus, außerdem fundierte Praxis in Bereitstellung, Konfiguration und Wartung von Windows- und Nicht-Windows-Geräten. Ein Grundverständnis von Security Copilot, Intune-Agenten und Microsoft Defender XDR wird erwartet.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/md-102t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102"
+  ]
+ },
+ "sc-300-microsoft-identity-and-access-administrator": {
+  "officialCourse": "Microsoft Learn Kurs SC-300T00-A: Microsoft Identity and Access Administrator (4 Tage), Prüfung SC-300; Module nach Kurslernpfaden und Studienleitfaden (Prüfungsinhalte Stand 28.10.2026)",
+  "intro": "Der Kurs behandelt die Identitäts- und Zugriffsverwaltung mit Microsoft Entra von der Planung bis zum laufenden Betrieb. Themen sind Benutzer- und Gastidentitäten, hybride Identität, Authentifizierung, bedingter Zugriff, App-Integration und Identity Governance. Danach können Sie MFA und Richtlinien für bedingten Zugriff umsetzen, Unternehmensanwendungen anbinden, Zugriffspakete und Zugriffsüberprüfungen einrichten und privilegierte Rollen mit Privileged Identity Management steuern.",
+  "modules": [
+   {
+    "title": "Microsoft-Entra-Mandant und Rollen",
+    "points": [
+     "Integrierte und benutzerdefinierte Rollen verwalten, effektive Rechte prüfen",
+     "Verwaltungseinheiten, Domänen und Unternehmensbranding konfigurieren",
+     "Mandanten-, Benutzer-, Gruppen- und Geräteeinstellungen festlegen"
+    ]
+   },
+   {
+    "title": "Benutzer, Gruppen und externe Identitäten",
+    "points": [
+     "Benutzer, Gruppen und benutzerdefinierte Sicherheitsattribute verwalten",
+     "Gäste einladen und Einstellungen für externe Zusammenarbeit steuern",
+     "Mandantenübergreifenden Zugriff und Synchronisierung einrichten"
+    ]
+   },
+   {
+    "title": "Hybride Identität",
+    "points": [
+     "Entra Connect Sync und Entra Cloud Sync implementieren",
+     "Kennwort-Hash-Synchronisierung, Pass-Through-Authentifizierung und nahtloses SSO",
+     "Von AD FS auf andere Anmeldeverfahren migrieren, Connect Health nutzen"
+    ]
+   },
+   {
+    "title": "Authentifizierung und Kennwortschutz",
+    "points": [
+     "Passkeys (FIDO2), Authenticator, Zertifikate und Temporary Access Pass",
+     "MFA-Einstellungen, Self-Service-Kennwortzurücksetzung und Kennwortschutz",
+     "Windows Hello for Business und Entra-Kerberos für hybride Identitäten"
+    ]
+   },
+   {
+    "title": "Bedingter Zugriff und ID Protection",
+    "points": [
+     "Richtlinien für bedingten Zugriff planen, testen und Fehler eingrenzen",
+     "Sitzungssteuerung, fortlaufende Zugriffsauswertung, Authentifizierungskontext",
+     "Benutzer- und Anmelderisiken mit Entra ID Protection behandeln"
+    ]
+   },
+   {
+    "title": "Global Secure Access",
+    "points": [
+     "Global-Secure-Access-Clients verteilen",
+     "Microsoft Entra Private Access und Internet Access einrichten",
+     "Datenverkehrsprofil für Microsoft 365 verwalten"
+    ]
+   },
+   {
+    "title": "Workload-Identitäten und Anwendungen",
+    "points": [
+     "Verwaltete Identitäten und Dienstprinzipale für Azure-Workloads einsetzen",
+     "Unternehmens-Apps, SaaS-Apps und Anwendungsproxy integrieren",
+     "App-Registrierungen, API-Berechtigungen und Einwilligungen verwalten",
+     "App-Zugriff mit Microsoft Defender for Cloud Apps überwachen"
+    ]
+   },
+   {
+    "title": "Identity Governance und Überwachung",
+    "points": [
+     "Kataloge, Zugriffspakete und Zugriffsüberprüfungen einrichten",
+     "Privileged Identity Management für Rollen, Azure-Ressourcen und Gruppen",
+     "Anmelde- und Überwachungsprotokolle mit KQL und Workbooks auswerten"
+    ]
+   }
+  ],
+  "audience": "Microsoft richtet den Kurs an Identity- und Access-Administratoren, die sich auf die Prüfung SC-300 vorbereiten oder diese Aufgaben im Arbeitsalltag erledigen, und an Administratoren, die sich auf Identitätslösungen für Azure spezialisieren möchten.",
+  "prerequisites": "Laut Studienleitfaden sollten Sie mit Azure, den Diensten und Workloads von Microsoft 365 sowie mit Active Directory Domain Services vertraut sein. Auch PowerShell und die Kusto Query Language (KQL) sollten Sie kennen.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/sc-300t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300"
+  ]
+ },
+ "sc-200-security-operations-analyst-associate": {
+  "officialCourse": "Microsoft SC-200T00-A: Defend against cyberthreats with Microsoft's security operations platform (Prüfung SC-200, Microsoft Certified: Security Operations Analyst Associate)",
+  "intro": "Der Kurs behandelt die Abwehr von Angriffen mit Microsoft Defender XDR, Defender for Endpoint, Defender for Cloud, Microsoft Purview, Microsoft Sentinel und Microsoft Security Copilot. Sie schreiben Abfragen in KQL, binden Protokolldaten an Sentinel an und erstellen Analyseregeln. Danach können Sie Vorfälle untersuchen, Warnungen bearbeiten, Gegenmaßnahmen einleiten und gezielt nach Bedrohungen suchen. Der Kurs bereitet auf die Prüfung SC-200 vor.",
+  "modules": [
+   {
+    "title": "Bedrohungen mit Microsoft Defender XDR abwehren",
+    "points": [
+     "Vorfälle im Microsoft Defender-Portal bündeln und bearbeiten",
+     "Phishing und andere Bedrohungen mit Defender for Office 365 beheben",
+     "Identitäten mit Entra ID Protection und Defender for Identity schützen",
+     "Cloud-Apps mit Defender for Cloud Apps überwachen"
+    ]
+   },
+   {
+    "title": "Microsoft Security Copilot in der Sicherheitsanalyse",
+    "points": [
+     "Grundlagen generativer KI, Sprachmodelle und Agents",
+     "Aufbau wirksamer Prompts und Einsatz von Promptbooks",
+     "Plug-ins und Möglichkeiten zum Export von Ergebnissen",
+     "Copilot direkt in Defender XDR und Purview verwenden"
+    ]
+   },
+   {
+    "title": "Datenrisiken mit Microsoft Purview untersuchen",
+    "points": [
+     "Warnungen aus Data Loss Prevention prüfen und beheben",
+     "Insider-Risiko-Warnungen und zugehörige Fälle bearbeiten",
+     "Aktivitäten mit Microsoft Purview Audit nachvollziehen",
+     "Inhalte in Microsoft 365 mit eDiscovery durchsuchen"
+    ]
+   },
+   {
+    "title": "Endpunkte mit Defender for Endpoint schützen",
+    "points": [
+     "Geräte einbinden und die Umgebung konfigurieren",
+     "Angriffsfläche unter Windows mit ASR-Regeln verringern",
+     "Geräte, Beweismittel und Entitäten untersuchen und Geräte isolieren",
+     "Automatisierung, Indikatoren und Schwachstellenmanagement einrichten"
+    ]
+   },
+   {
+    "title": "Cloud-Workloads mit Defender for Cloud absichern",
+    "points": [
+     "Schutz für Cloud-Workloads planen und aktivieren",
+     "Azure-Ressourcen und Nicht-Azure-Ressourcen anbinden",
+     "Sicherheitslage mit CSPM bewerten und härten",
+     "Sicherheitswarnungen auswerten und beheben"
+    ]
+   },
+   {
+    "title": "Abfragen mit Kusto Query Language (KQL)",
+    "points": [
+     "Grundaufbau von KQL-Anweisungen für Sentinel",
+     "Ergebnisse zusammenfassen und visualisieren",
+     "Abfragen über mehrere Tabellen erstellen",
+     "Zeichenketten aus Protokolldaten verarbeiten"
+    ]
+   },
+   {
+    "title": "Microsoft Sentinel einrichten und Daten anbinden",
+    "points": [
+     "Arbeitsbereiche anlegen, Protokolle abfragen und Watchlists nutzen",
+     "Microsoft-Dienste und Defender XDR per Datenconnector anbinden",
+     "Windows-Ereignisse, Sysmon, CEF und Syslog erfassen",
+     "Bedrohungsindikatoren in den Arbeitsbereich übernehmen"
+    ]
+   },
+   {
+    "title": "Erkennung, Vorfallbearbeitung und Threat Hunting",
+    "points": [
+     "Analyseregeln, Automatisierungsregeln und Playbooks erstellen",
+     "Vorfälle bearbeiten, UEBA und ASIM-Normalisierung nutzen",
+     "Hunting-Abfragen, Lesezeichen und Suchaufträge einsetzen",
+     "Notebooks für die erweiterte Suche verwenden"
+    ]
+   }
+  ],
+  "audience": "Microsoft richtet den Kurs an Security Operations Analysts und Security Engineers, die Bedrohungen mit Microsoft Sentinel, Defender XDR, Defender for Cloud und Sicherheitsprodukten anderer Hersteller untersuchen, beantworten und aufspüren.",
+  "prerequisites": "Die Microsoft-Kursseite nennt keine eigenen Voraussetzungen und stuft den Kurs als Intermediate ein. Die zugehörigen Lernpfade setzen Grundkenntnisse zu Microsofts Sicherheits-, Compliance- und Identitätsprodukten, zu Defender XDR sowie zu Windows-Geräten und Azure-Diensten voraus.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/sc-200t00",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-purview/",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-connect-logs-to-azure-sentinel/",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/",
+   "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
+  ]
+ },
+ "sc-900-security-compliance-identity-fundamentals": {
+  "officialCourse": "Microsoft SC-900T00-A: Introduction to Microsoft Security, Compliance, and Identity (Prüfung SC-900, Microsoft Certified: Security, Compliance, and Identity Fundamentals)",
+  "intro": "Der Einstiegskurs erklärt Grundbegriffe aus Sicherheit, Compliance und Identität, etwa gemeinsame Verantwortung, Zero Trust, Verschlüsselung und Datenhoheit. Sie lernen die Aufgaben von Microsoft Entra, Defender for Cloud, Microsoft Sentinel, Defender XDR, Security Copilot und Microsoft Purview kennen. Danach können Sie einordnen, welche Microsoft-Lösung welches Schutz- oder Compliance-Ziel abdeckt. Der Kurs bereitet auf die Prüfung SC-900 vor.",
+  "modules": [
+   {
+    "title": "Konzepte zu Sicherheit, Compliance und Identität",
+    "points": [
+     "Modell der gemeinsamen Verantwortung und Zero Trust",
+     "Verschlüsselung, Datenresidenz und Datenhoheit",
+     "Authentifizierung, Autorisierung und Identität als Sicherheitsgrenze",
+     "Identitätsanbieter, Verzeichnisdienste und Verbund"
+    ]
+   },
+   {
+    "title": "Identität und Zugriff mit Microsoft Entra",
+    "points": [
+     "Funktionen von Entra ID und Identitätstypen wie Hybrid- und externe Identitäten",
+     "MFA, Self-Service-Kennwortzurücksetzung und Kennwortschutz",
+     "Bedingter Zugriff, Entra-Rollen und rollenbasierte Zugriffssteuerung",
+     "Identitätsschutz und Identity Governance in Microsoft Entra"
+    ]
+   },
+   {
+    "title": "Sicherheitslösungen von Microsoft",
+    "points": [
+     "Grundlegende Infrastruktur-Sicherheitsdienste in Azure",
+     "Defender for Cloud mit Richtlinien, Empfehlungen und Sicherheitsbewertung",
+     "Microsoft Sentinel als SIEM- und SOAR-Lösung",
+     "Defender XDR und Grundlagen von Microsoft Security Copilot"
+    ]
+   },
+   {
+    "title": "Datensicherheit mit Microsoft Purview",
+    "points": [
+     "Datenklassifizierung und Vertraulichkeitsbezeichnungen",
+     "Data Loss Prevention gegen unzulässiges Teilen sensibler Daten",
+     "Insider-Risikomanagement und adaptiver Schutz",
+     "Data Security Posture Management und Data Security Investigations"
+    ]
+   },
+   {
+    "title": "Compliance, Governance und Datenschutzgrundsätze",
+    "points": [
+     "Service Trust Portal und Datenschutzgrundsätze von Microsoft",
+     "Compliance Manager und Communication Compliance",
+     "eDiscovery, Audit, Datenlebenszyklus- und Datensatzverwaltung",
+     "Data Map und Unified Catalog für die Data Governance"
+    ]
+   }
+  ],
+  "audience": "Microsoft richtet den Kurs an Personen, die eine Einführung in Sicherheit, Compliance und Identität bei cloudbasierten Microsoft-Diensten suchen.",
+  "prerequisites": "Microsoft setzt ein allgemeines Verständnis von Netzwerk- und Cloud-Konzepten sowie allgemeine IT-Kenntnisse oder Erfahrung in einem IT-Umfeld voraus. Hinzu kommen Grundkenntnisse zu Microsoft Azure und Microsoft 365.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/sc-900t00",
+   "https://learn.microsoft.com/en-us/training/paths/describe-concepts-of-security-compliance-identity/",
+   "https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-identity-access/",
+   "https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-security-solutions/",
+   "https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/",
+   "https://learn.microsoft.com/en-us/training/modules/describe-purview-data-solutions/",
+   "https://learn.microsoft.com/en-us/training/modules/describe-purview-risk-compliance-governance/"
+  ]
+ },
+ "pl-300-power-bi-data-analyst": {
+  "officialCourse": "Microsoft PL-300T00-A: Design and manage analytics solutions using Power BI (Prüfung PL-300, Microsoft Certified: Power BI Data Analyst Associate)",
+  "intro": "Der Kurs führt von der Datenquelle bis zum freigegebenen Bericht in Power BI. Sie laden Daten aus relationalen und nicht relationalen Quellen, bereinigen sie mit Power Query, konfigurieren ein semantisches Modell und schreiben Berechnungen mit DAX. Danach können Sie Berichte gestalten, Daten analysieren und Inhalte im Power BI-Dienst mit Arbeitsbereichen, Aktualisierung und Sicherheit auf Zeilenebene bereitstellen. Der Kurs bereitet auf die Prüfung PL-300 vor.",
+  "modules": [
+   {
+    "title": "Einstieg in Datenanalyse und Power BI",
+    "points": [
+     "Analysearten, Rollen und Aufgaben in der Datenanalyse",
+     "Bausteine und Ablauf in Power BI",
+     "Überblick über Analysen mit Microsoft Fabric",
+     "Copilot in Power BI für Modelle und Berichte"
+    ]
+   },
+   {
+    "title": "Daten abrufen und Modellrahmen wählen",
+    "points": [
+     "Verbindungen zu Excel, relationalen Datenbanken und NoSQL-Quellen",
+     "Speichermodus und Verbindungsart festlegen",
+     "Häufige Importfehler erkennen und beheben",
+     "Modell-Frameworks mit Stärken und Grenzen vergleichen"
+    ]
+   },
+   {
+    "title": "Daten mit Power Query bereinigen",
+    "points": [
+     "Datentypen ändern, Objekte umbenennen und Daten pivotieren",
+     "Nullwerte und uneinheitliche Einträge bereinigen",
+     "Spalten profilieren, um die Datenqualität zu prüfen"
+    ]
+   },
+   {
+    "title": "Semantisches Modell konfigurieren",
+    "points": [
+     "Modellierungsoptionen und Beziehungen einrichten",
+     "Tabellen- und Spalteneigenschaften festlegen",
+     "Hierarchien und Schnellmeasures anlegen",
+     "Numerische Bereichsparameter und Feldparameter erstellen"
+    ]
+   },
+   {
+    "title": "Berechnungen mit DAX",
+    "points": [
+     "DAX-Formeln schreiben und Berechnungen im Modell anlegen",
+     "Filterkontext gezielt verändern",
+     "Zeitintelligenzfunktionen für Periodenvergleiche nutzen",
+     "Visuelle Berechnungen in Power BI Desktop erstellen"
+    ]
+   },
+   {
+    "title": "Berichte planen und gestalten",
+    "points": [
+     "Zielgruppe, Berichtstyp und Anforderungen klären",
+     "Berichtsaufbau, interaktive Elemente und Filter festlegen",
+     "Navigation, Lesezeichen und Visual-Header einsetzen",
+     "Berichtsleistung verbessern und Ansicht für Mobilgeräte anpassen"
+    ]
+   },
+   {
+    "title": "Daten in Power BI analysieren",
+    "points": [
+     "Statistische Zusammenfassung erstellen und Ausreißer erkennen",
+     "Daten gruppieren, in Klassen einteilen und clustern",
+     "Zeitreihen auswerten und Was-wäre-wenn-Parameter nutzen"
+    ]
+   },
+   {
+    "title": "Inhalte bereitstellen und absichern",
+    "points": [
+     "Arbeitsbereiche verwalten und Verteilungsweg wählen",
+     "Gateways sowie geplante und inkrementelle Aktualisierung einrichten",
+     "Dashboards mit Datenwarnungen und Mobilansicht erstellen",
+     "Sicherheit auf Zeilen- und Objektebene umsetzen"
+    ]
+   }
+  ],
+  "audience": "Microsoft richtet den Kurs an Daten- und BI-Fachleute, die Daten mit Power BI analysieren, sowie an Personen, die Berichte auf Basis von Cloud- und lokalen Datenplattformen erstellen.",
+  "prerequisites": "Die Microsoft-Kursseite nennt keine eigenen Voraussetzungen und stuft den Kurs als Intermediate ein. Der Lernpfad zur Datenmodellierung setzt Vertrautheit mit Power BI Desktop und Grundbegriffe der Datenanalyse wie Tabellen, Beziehungen und Berechnungen voraus.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/pl-300t00",
+   "https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/",
+   "https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/",
+   "https://learn.microsoft.com/en-us/training/paths/model-data-power-bi/",
+   "https://learn.microsoft.com/en-us/training/modules/configure-semantic-model-power-bi/",
+   "https://learn.microsoft.com/en-us/training/paths/power-bi-effective/",
+   "https://learn.microsoft.com/en-us/training/modules/power-bi-effective-user-experience/",
+   "https://learn.microsoft.com/en-us/training/modules/perform-analytics-power-bi/",
+   "https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/",
+   "https://learn.microsoft.com/en-us/training/modules/manage-datasets-power-bi/",
+   "https://learn.microsoft.com/en-us/training/modules/create-dashboards-power-bi/"
+  ]
+ },
+ "dp-900-microsoft-azure-daten-grundlagen": {
+  "officialCourse": "Microsoft DP-900T00-A: Introduction to Microsoft Azure Data (Prüfung DP-900, Microsoft Certified: Azure Data Fundamentals)",
+  "intro": "Der Kurs führt in grundlegende Datenkonzepte und die zugehörigen Datendienste in Microsoft Azure ein. Sie unterscheiden strukturierte, halbstrukturierte und unstrukturierte Daten, transaktionale und analytische Workloads sowie relationale und nicht relationale Speicheroptionen. Danach können Sie Azure-Dienste wie Azure SQL, Azure Storage, Azure Cosmos DB, Microsoft Fabric und Power BI typischen Anwendungsfällen zuordnen und sich gezielt auf die Prüfung DP-900 vorbereiten.",
+  "modules": [
+   {
+    "title": "Grundlegende Datenkonzepte",
+    "points": [
+     "Strukturierte, halbstrukturierte und unstrukturierte Daten unterscheiden",
+     "Gängige Dateiformate und Arten von Datenspeichern",
+     "Transaktionale und analytische Workloads vergleichen",
+     "Aufgaben in Datenbankadministration, Data Engineering und Datenanalyse"
+    ]
+   },
+   {
+    "title": "Relationale Daten verstehen",
+    "points": [
+     "Tabellen, Schlüssel und Beziehungen im relationalen Modell",
+     "Normalisierung und ihr Zweck",
+     "Häufige SQL-Anweisungen und gängige Datenbankobjekte"
+    ]
+   },
+   {
+    "title": "Relationale Datendienste in Azure",
+    "points": [
+     "Azure SQL Database, Azure SQL Managed Instance und SQL Server auf Azure-VMs",
+     "Azure-Datenbankdienste für Open-Source-Systeme wie MySQL und PostgreSQL",
+     "Passenden relationalen Dienst nach Einsatzszenario auswählen"
+    ]
+   },
+   {
+    "title": "Nicht relationale Daten in Azure Storage",
+    "points": [
+     "Azure Blob Storage für Dateien und unstrukturierte Objekte",
+     "Azure Files für gemeinsam genutzte Dateifreigaben",
+     "Azure Table Storage für Schlüssel-Wert-Daten"
+    ]
+   },
+   {
+    "title": "Azure Cosmos DB",
+    "points": [
+     "Typische Anwendungsfälle für Azure Cosmos DB",
+     "Überblick über die verfügbaren Cosmos-DB-APIs"
+    ]
+   },
+   {
+    "title": "Analyse großer Datenmengen",
+    "points": [
+     "Anforderungen an Datenaufnahme und Datenverarbeitung",
+     "Analytische Datenspeicher wie Data Warehouse und Data Lake",
+     "Microsoft Fabric und Azure Databricks im Überblick"
+    ]
+   },
+   {
+    "title": "Echtzeitanalyse",
+    "points": [
+     "Batch-Verarbeitung und Streaming-Daten unterscheiden",
+     "Microsoft-Clouddienste für Echtzeitanalysen einordnen"
+    ]
+   },
+   {
+    "title": "Datenvisualisierung mit Power BI",
+    "points": [
+     "Funktionen von Power BI im Überblick",
+     "Grundlagen von Datenmodellen in Power BI",
+     "Passende Visualisierungen für unterschiedliche Daten wählen"
+    ]
+   }
+  ],
+  "audience": "Der Kurs richtet sich an Personen, die Grundlagen von Datenbankkonzepten in der Cloud kennenlernen und ein erstes Verständnis für Datendienste in Microsoft Azure aufbauen möchten.",
+  "prerequisites": "Die Microsoft-Kursseite nennt keine Voraussetzungen. Laut Prüfungsleitfaden sollten Sie relationale und nicht relationale Daten sowie transaktionale und analytische Workloads grundsätzlich kennen.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/dp-900t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900"
+  ]
+ },
+ "dp-601-implementing-a-lakehouse-with-microsoft-fabric": {
+  "officialCourse": "Microsoft DP-601T00-A: Implement a Lakehouse with Microsoft Fabric (ohne zugeordnete Zertifizierung)",
+  "intro": "Der Kurs behandelt Data Engineering in Microsoft Fabric mit dem Lakehouse als zentralem Element. Sie legen ein Lakehouse an, verarbeiten Daten mit Apache Spark, arbeiten mit Delta-Lake-Tabellen und laden Daten über Dataflows Gen2 und Pipelines. Danach können Sie Daten in einem Fabric-Lakehouse aufnehmen, transformieren und abfragen und das Lakehouse nach der Medallion-Architektur in Bronze-, Silber- und Gold-Schicht gliedern.",
+  "modules": [
+   {
+    "title": "Microsoft Fabric für End-to-End-Analysen",
+    "points": [
+     "Funktionen und Arbeitsweise von Microsoft Fabric",
+     "Datenteams und ihre Zusammenarbeit in Fabric",
+     "Fabric aktivieren und für Analyseanforderungen einsetzen",
+     "KI-Funktionen wie Copilot, Datenagenten und Fabric IQ einordnen"
+    ]
+   },
+   {
+    "title": "Lakehouses in Microsoft Fabric",
+    "points": [
+     "Lakehouse anlegen und Dateien sowie Tabellen unterscheiden",
+     "Daten in das Lakehouse aufnehmen und transformieren",
+     "Daten mit SQL und Spark abfragen"
+    ]
+   },
+   {
+    "title": "Apache Spark in Microsoft Fabric",
+    "points": [
+     "Spark in einem Fabric-Arbeitsbereich konfigurieren",
+     "Einsatz von Spark-Notebooks und Spark-Jobs abwägen",
+     "Daten mit DataFrames und Spark SQL analysieren und umwandeln",
+     "Daten in einem Spark-Notebook visualisieren"
+    ]
+   },
+   {
+    "title": "Delta-Lake-Tabellen",
+    "points": [
+     "Delta Lake als Grundlage der Lakehouse-Tabellen",
+     "Delta-Tabellen mit Spark erstellen, verwalten und optimieren",
+     "Daten in Delta-Tabellen mit Spark abfragen und transformieren",
+     "Delta-Tabellen mit Spark Structured Streaming nutzen"
+    ]
+   },
+   {
+    "title": "Datenaufnahme mit Dataflows Gen2",
+    "points": [
+     "Funktionen von Dataflows Gen2 in Fabric",
+     "Daten mit Power Query Online aufnehmen und umwandeln",
+     "Einen Dataflow in eine Pipeline einbinden"
+    ]
+   },
+   {
+    "title": "Orchestrierung mit Pipelines",
+    "points": [
+     "Funktionen von Pipelines in Microsoft Fabric",
+     "Daten mit der Aktivität zum Kopieren von Daten übertragen",
+     "Pipelines aus vordefinierten und eigenen Vorlagen erstellen",
+     "Pipelines ausführen und überwachen"
+    ]
+   },
+   {
+    "title": "Medallion-Architektur im Lakehouse",
+    "points": [
+     "Bronze-, Silber- und Gold-Schicht und ihr Zweck",
+     "Zentrale Entscheidungen bei der Planung in Fabric",
+     "Daten der Gold-Schicht für Abfragen und Berichte bereitstellen",
+     "Schichten absichern und Governance umsetzen"
+    ]
+   }
+  ],
+  "audience": "Der Kurs richtet sich an Datenfachleute mit Erfahrung in Datenmodellierung, Datenextraktion und Analyse, die die Lakehouse-Architektur und Microsoft Fabric für durchgängige Analysen kennenlernen möchten.",
+  "prerequisites": "Microsoft empfiehlt für den zugehörigen Lernpfad, dass Sie mit der Oberfläche und den Grundkonzepten von Microsoft Fabric vertraut sind. Laut Zielgruppenbeschreibung sollten Sie außerdem Erfahrung mit Datenmodellierung, Datenextraktion und Analyse mitbringen.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/dp-601t00",
+   "https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/",
+   "https://learn.microsoft.com/en-us/training/modules/introduction-end-analytics-use-microsoft-fabric/",
+   "https://learn.microsoft.com/en-us/training/modules/use-apache-spark-work-files-lakehouse/",
+   "https://learn.microsoft.com/en-us/training/modules/work-delta-lake-tables-fabric/",
+   "https://learn.microsoft.com/en-us/training/modules/use-dataflow-gen-2-fabric/",
+   "https://learn.microsoft.com/en-us/training/modules/use-data-factory-pipelines-fabric/",
+   "https://learn.microsoft.com/en-us/training/modules/describe-medallion-architecture/"
+  ]
+ },
+ "github-copilot-fundamentals": {
+  "officialCourse": "Microsoft GH-300T00-A: GitHub Copilot (Lernpfade GitHub Copilot Fundamentals Teil 1 und 2, Zertifizierung GitHub Copilot, Prüfung GH-300)",
+  "intro": "Der Kurs zeigt, wie Sie GitHub Copilot als KI-Assistenten in der Softwareentwicklung einsetzen und dabei Risiken generativer KI berücksichtigen. Behandelt werden Inline-Vorschläge, Copilot Chat, Agentenmodus, Copilot CLI, Prompt Engineering, Tests, Code-Reviews sowie Richtlinien und Inhaltsausschlüsse. Danach können Sie Copilot in IDE, Kommandozeile und auf GitHub.com gezielt nutzen, Vorschläge prüfen und die Einführung in Ihrer Organisation vorbereiten.",
+  "modules": [
+   {
+    "title": "Verantwortungsvoller Umgang mit KI",
+    "points": [
+     "Risiken und Grenzen generativer KI-Werkzeuge",
+     "Grundsätze ethischer und verantwortungsvoller KI-Nutzung",
+     "KI-Ausgaben prüfen und mögliche Schäden begrenzen"
+    ]
+   },
+   {
+    "title": "Einführung in GitHub Copilot",
+    "points": [
+     "Unterschiede der Pläne für Einzelpersonen, Business und Enterprise",
+     "Inline-Vorschläge und Copilot Chat in der Entwicklungsumgebung",
+     "Code erzeugen, erklären, umgestalten und Fehler suchen"
+    ]
+   },
+   {
+    "title": "Prompt Engineering und Kontext",
+    "points": [
+     "Aufbau wirksamer Prompts und Herkunft des Kontexts",
+     "Zero-Shot- und Few-Shot-Prompts anwenden",
+     "Kommentare und Chatverlauf gezielt einsetzen",
+     "Copilot Spaces für fundierte Antworten nutzen"
+    ]
+   },
+   {
+    "title": "Copilot in verschiedenen Umgebungen",
+    "points": [
+     "Copilot in IDE, Chat, GitHub.com und Kommandozeile",
+     "Copilot CLI installieren und interaktiv nutzen",
+     "Vom Code bis zum Pull Request mit Copilot arbeiten"
+    ]
+   },
+   {
+    "title": "Agentenmodus, Cloud-Agent und MCP",
+    "points": [
+     "Entwicklungsaufgaben im Agentenmodus bearbeiten lassen",
+     "Aufgaben an Copilot in der Cloud delegieren",
+     "GitHub MCP Server in VS Code einrichten und mit Copilot Chat nutzen"
+    ]
+   },
+   {
+    "title": "Tests, Reviews und Codequalität",
+    "points": [
+     "Unit-Tests mit Copilot und Copilot Chat erstellen",
+     "Randfälle erkennen und Assertions ergänzen",
+     "Code-Reviews und Pull-Request-Zusammenfassungen mit Copilot",
+     "Verbesserungen bei Sicherheit und Leistung vorschlagen lassen"
+    ]
+   },
+   {
+    "title": "Datenfluss, Datenschutz und Verwaltung",
+    "points": [
+     "Datenverarbeitung und Lebenszyklus eines Codevorschlags",
+     "Inhaltsausschlüsse und Filter für öffentlichen Code",
+     "Richtlinien auf Organisationsebene und Audit-Log-Ereignisse",
+     "Review-Standards über Anweisungsdateien anpassen"
+    ]
+   }
+  ],
+  "audience": "Microsoft richtet den Kurs an Fachleute aus KI-Entwicklung und Datenanalyse, Führungskräfte sowie Verantwortliche für KI-Richtlinien, die GitHub Copilot wirksam und unter Beachtung ethischer und betrieblicher Risiken einsetzen möchten.",
+  "prerequisites": "Für die zugehörigen Lernpfade setzt Microsoft Grundkenntnisse zu GitHub voraus. Laut Prüfungsleitfaden GH-300 sollten Sie außerdem Erfahrung mit mindestens einer Programmiersprache haben.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/gh-300t00",
+   "https://learn.microsoft.com/en-us/training/paths/copilot/",
+   "https://learn.microsoft.com/en-us/training/paths/gh-copilot-2/",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300"
+  ]
+ },
+ "comptia-security-plus": {
+  "officialCourse": "CompTIA Security+ (Prüfung SY0-701, Version V7). Kein offizieller Kursaufbau des Anbieters geprüft; Module nach den von CompTIA veröffentlichten Prüfungszielen V7 gegliedert, da die Kursseite auf SY0-701 ausgerichtet ist",
+  "intro": "Der Kurs behandelt die fünf Prüfungsbereiche von CompTIA Security+ V7: allgemeine Sicherheitskonzepte, Bedrohungen und Gegenmaßnahmen, Sicherheitsarchitektur, Sicherheitsbetrieb sowie Steuerung des Sicherheitsprogramms. Danach können Sie Bedrohungsakteure und Schwachstellen einordnen, passende Kontrollen auswählen, Identitäten und Zugriffe absichern und bei der Behandlung von Sicherheitsvorfällen mitarbeiten. Der Kurs bereitet auf die Prüfung SY0-701 vor.",
+  "modules": [
+   {
+    "title": "Sicherheitskonzepte und Kryptografie",
+    "points": [
+     "Kategorien und Arten von Sicherheitskontrollen",
+     "Schutzziele, Zero Trust und Täuschungstechniken wie Honeypots",
+     "Sicherheitsaspekte im Change Management",
+     "PKI, Verschlüsselung, Hashing und digitale Signaturen"
+    ]
+   },
+   {
+    "title": "Bedrohungsakteure, Angriffswege und Schwachstellen",
+    "points": [
+     "Akteure, Motive und typische Angriffsvektoren",
+     "Angriffsflächen und Schwachstellen in Anwendungen und Systemen",
+     "Anzeichen schädlicher Aktivitäten erkennen",
+     "Techniken zur Risikominderung auswählen"
+    ]
+   },
+   {
+    "title": "Sicherheitsarchitektur",
+    "points": [
+     "Architekturmodelle von On-Premises bis Cloud",
+     "Absicherung der Unternehmensinfrastruktur",
+     "Verfahren zum Schutz von Daten",
+     "Resilienz, Datensicherung und Wiederherstellung"
+    ]
+   },
+   {
+    "title": "Identitäts- und Zugriffsmanagement",
+    "points": [
+     "Lebenszyklus von Konten und Berechtigungen",
+     "Multifaktor-Authentifizierung, Single Sign-on und Föderation",
+     "Privilegierte Zugriffe absichern"
+    ]
+   },
+   {
+    "title": "Sicherheitsbetrieb und Überwachung",
+    "points": [
+     "Sichere Konfiguration von Systemen und Geräten",
+     "Inventarisierung und Lebenszyklus von IT-Assets",
+     "Schwachstellen erkennen, bewerten und behandeln",
+     "Alarmierung und Überwachung im Unternehmen"
+    ]
+   },
+   {
+    "title": "Incident Response und Untersuchung",
+    "points": [
+     "Phasen der Vorfallsbehandlung",
+     "Grundlagen der digitalen Forensik",
+     "Datenquellen für Untersuchungen nutzen",
+     "Automatisierung und Orchestrierung im Sicherheitsbetrieb"
+    ]
+   },
+   {
+    "title": "Governance, Risiko und Compliance",
+    "points": [
+     "Richtlinien, Standards und Verantwortlichkeiten",
+     "Risiken analysieren, bewerten und behandeln",
+     "Risiken durch Dienstleister und Lieferanten einschätzen",
+     "Compliance, Audits, Assessments und Security Awareness"
+    ]
+   }
+  ],
+  "audience": "CompTIA ordnet Security+ den Rollen Security Analyst, Security Engineer und Systemadministrator zu; der Kurs richtet sich an Fachkräfte, die in diesen Aufgaben arbeiten oder dorthin wechseln möchten.",
+  "prerequisites": "CompTIA empfiehlt für SY0-701 die Zertifizierung Network+ und zwei Jahre Erfahrung als Security- oder Systemadministrator. Laut Kursseite ist Grundwissen zu IT, Netzwerken und Betriebssystemen hilfreich.",
+  "sources": [
+   "https://www.comptia.org/en-us/certifications/security/",
+   "https://www.comptia.org/en-us/certifications/security/v7/",
+   "https://www.comptia.org/en-us/certifications/security/v8/"
+  ]
+ },
+ "comptia-cysa-plus": {
+  "officialCourse": "CompTIA Cybersecurity Analyst (CySA+), Prüfung CS0-004 (Version V4). Kein offizieller Kursaufbau vorliegend; Module nach den von CompTIA veröffentlichten Prüfungszielen V4 gegliedert",
+  "intro": "Der Kurs behandelt die vier Prüfungsbereiche von CompTIA CySA+ V4: Security Operations, Schwachstellenmanagement, Incident Response sowie Berichte und Kommunikation. Danach können Sie Hinweise auf schädliche Aktivitäten mit Werkzeugen wie SIEM und EDR auswerten, Schwachstellen risikobasiert priorisieren, Sicherheitsvorfälle strukturiert bearbeiten und Ergebnisse für Technik und Management aufbereiten. Neu in V4 ist der Einsatz von KI im Security-Betrieb.",
+  "modules": [
+   {
+    "title": "Systeme und Netzwerke im Security-Betrieb",
+    "points": [
+     "Architekturkonzepte wie Zero Trust, ZTNA und SASE",
+     "Sicherheitsbetrieb in Cloud-nativen Umgebungen",
+     "Anzeichen schädlicher Aktivitäten auf Hosts und im Netzwerk"
+    ]
+   },
+   {
+    "title": "Werkzeuge zur Erkennung und Analyse",
+    "points": [
+     "SIEM-Alarme auswerten",
+     "EDR und XDR zur Untersuchung von Endpunkten",
+     "Indicators of Compromise prüfen und einordnen"
+    ]
+   },
+   {
+    "title": "Threat Intelligence, Threat Hunting und SOC-Prozesse",
+    "points": [
+     "Bedrohungsinformationen beschaffen und bewerten",
+     "Gezielte Suche nach Angreifern im eigenen Netz",
+     "Abläufe im SOC mit SOAR automatisieren und verbessern",
+     "KI im Security-Betrieb: Einsatzfälle, Risiken und Governance"
+    ]
+   },
+   {
+    "title": "Schwachstellen erkennen",
+    "points": [
+     "Passende Scanmethode für die jeweilige Umgebung wählen",
+     "Ausgaben von Scannern und Bewertungswerkzeugen auswerten",
+     "Risiken in der Software-Lieferkette mithilfe einer SBOM erkennen"
+    ]
+   },
+   {
+    "title": "Schwachstellen priorisieren und behandeln",
+    "points": [
+     "Priorisierung mit EPSS und weiteren Risikofaktoren",
+     "Kontrolltypen und Maßnahmen zur Risikominderung",
+     "Konzepte des Schwachstellenmanagements"
+    ]
+   },
+   {
+    "title": "Angriffsmodelle und Incident Response",
+    "points": [
+     "Frameworks zur Beschreibung von Angriffsmethoden",
+     "Ablauf der Vorfallsbehandlung",
+     "Techniken zur Untersuchung und Eindämmung von Vorfällen"
+    ]
+   },
+   {
+    "title": "Berichte und Kommunikation",
+    "points": [
+     "Berichte zum Schwachstellenmanagement erstellen",
+     "Vorfallsberichte und Abstimmung mit Beteiligten",
+     "Ergebnisse für technische und leitende Zielgruppen aufbereiten"
+    ]
+   }
+  ],
+  "audience": "Laut CompTIA richtet sich CySA+ an Fachkräfte in Security Operations und Schwachstellenmanagement, etwa als Security Analyst, SOC-Analyst, Schwachstellenanalyst oder Incident Responder.",
+  "prerequisites": "CompTIA empfiehlt etwa vier Jahre praktische Erfahrung im SOC, in der Incident Response oder im Schwachstellenmanagement sowie Kenntnisse auf dem Niveau von Network+ oder Security+.",
+  "sources": [
+   "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/",
+   "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/",
+   "https://www.comptia.org/en/blog/the-new-comptia-cybersecurity-analyst-cysa-your-questions-answered/"
+  ]
+ },
+ "comptia-a-plus": {
+  "officialCourse": "CompTIA A+ Core 1 und Core 2, Prüfungen 220-1201 und 220-1202 (Version V15). Kein offizieller Kursaufbau vorliegend; Module nach den von CompTIA veröffentlichten Prüfungszielen V15 gegliedert",
+  "intro": "Der Kurs bereitet auf die beiden Prüfungen von CompTIA A+ V15 vor. Core 1 behandelt Hardware, Mobilgeräte, Netzwerke, Virtualisierung und Cloud sowie die Fehlersuche an Hardware und Netzwerk. Core 2 behandelt Betriebssysteme, Sicherheit, Software-Troubleshooting und betriebliche Abläufe. Danach können Sie Komponenten und Mobilgeräte einrichten, mit Windows, macOS und Linux arbeiten, Störungen systematisch eingrenzen und Änderungen nachvollziehbar dokumentieren.",
+  "modules": [
+   {
+    "title": "Hardware und Peripherie",
+    "points": [
+     "Arbeitsspeicher, Prozessoren und Datenträger einbauen",
+     "Kabel und Anschlüsse wie HDMI, Ethernet und USB",
+     "Mainboards, Netzteile und Kühlung",
+     "Drucker und andere Peripheriegeräte einrichten und warten"
+    ]
+   },
+   {
+    "title": "Mobile Geräte",
+    "points": [
+     "Akkus, Kameras und WLAN-Antennen in Mobilgeräten",
+     "Zubehör über USB, Bluetooth, NFC und Dockingstationen anbinden",
+     "WLAN, Mobilfunkdaten und Synchronisation einrichten"
+    ]
+   },
+   {
+    "title": "Netzwerkgrundlagen",
+    "points": [
+     "Protokolle, Ports und Drahtlostechnologien",
+     "Kleine Büro- und Heimnetze mit IP-Adressierung und VPN",
+     "Werkzeuge wie Crimpzange, Kabeltester und WLAN-Analyzer"
+    ]
+   },
+   {
+    "title": "Virtualisierung und Cloud",
+    "points": [
+     "Virtuelle Maschinen und Hypervisoren",
+     "Desktop-Virtualisierung",
+     "Cloud-Modelle IaaS, PaaS und SaaS"
+    ]
+   },
+   {
+    "title": "Fehlersuche an Hardware und Netzwerk",
+    "points": [
+     "Hardware- und Verbindungsprobleme systematisch eingrenzen",
+     "Messgeräte wie Multimeter, Kabeltester und Loopback-Stecker einsetzen"
+    ]
+   },
+   {
+    "title": "Betriebssysteme",
+    "points": [
+     "Windows, macOS, Linux und mobile Betriebssysteme",
+     "Windows verwalten mit Task-Manager, Eingabeaufforderung und Datenträgerverwaltung",
+     "Dateisysteme, Updates und Upgrades"
+    ]
+   },
+   {
+    "title": "Sicherheit am Arbeitsplatz",
+    "points": [
+     "Verschlüsselung und Zugriffssteuerung",
+     "WLAN mit passenden Sicherheitsprotokollen absichern",
+     "Schadsoftware erkennen, entfernen und vorbeugen"
+    ]
+   },
+   {
+    "title": "Software-Troubleshooting und betriebliche Abläufe",
+    "points": [
+     "Probleme mit Betriebssystem, Anwendungen und Mobilgeräten beheben",
+     "Unbefugte Zugriffe und Schadsoftware als Fehlerursache erkennen",
+     "Änderungen dokumentieren, Sicherheitsregeln und Kommunikation",
+     "Datensicherung und Wiederherstellung von Arbeitsplätzen"
+    ]
+   }
+  ],
+  "audience": "CompTIA ordnet A+ dem Berufseinstieg in die IT zu, insbesondere Rollen wie IT-Support-Spezialist und Helpdesk-Techniker.",
+  "prerequisites": "CompTIA empfiehlt zwölf Monate praktische Erfahrung im IT-Support. Laut Kursseite genügen allgemeine PC- und Internetkenntnisse für den Einstieg.",
+  "sources": [
+   "https://www.comptia.org/en-us/certifications/a/",
+   "https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/",
+   "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+   "https://www.comptia.org/en-us/certifications/a/core-2-v15/"
+  ]
+ },
+ "comptia-network-plus": {
+  "officialCourse": "CompTIA Network+ (Prüfung N10-009, Version V9). CompTIA nennt auf der Zertifizierungsseite keinen eigenen Präsenzkurs mit Gliederung; die Module beruhen auf den fünf offiziellen Prüfungsdomänen und den Prüfungszielen von N10-009.",
+  "intro": "Der Kurs behandelt Netzwerkkonzepte, die Einrichtung und den Betrieb von Netzwerken, Netzwerksicherheit und die systematische Fehlersuche entlang der fünf Prüfungsdomänen von CompTIA Network+ N10-009. Danach können Sie Adressierung, Switching, Routing und WLAN einordnen, Netzwerkdienste wie DHCP und DNS erklären, typische Angriffe erkennen und Störungen mit einer festen Methode eingrenzen.",
+  "modules": [
+   {
+    "title": "Netzwerkkonzepte und Modelle",
+    "points": [
+     "OSI-Modell und die Zuordnung von Protokollen zu den Schichten",
+     "Häufige Ports, Protokolle und Verkehrsarten",
+     "Übertragungsmedien, Steckverbinder und Topologien",
+     "Netzwerkgeräte, ihre Funktionen und Cloud-Konzepte"
+    ]
+   },
+   {
+    "title": "IP-Adressierung und moderne Netzwerkumgebungen",
+    "points": [
+     "IPv4-Adressierung und Subnetting",
+     "Grundlagen von IPv6",
+     "SDN, SD-WAN und VXLAN im Überblick",
+     "Zero Trust, SASE/SSE und Infrastructure as Code"
+    ]
+   },
+   {
+    "title": "Netzwerke einrichten",
+    "points": [
+     "Statisches und dynamisches Routing, NAT/PAT und FHRP",
+     "Switching mit VLANs, Spanning Tree und Jumbo Frames",
+     "WLAN-Geräte, Frequenzen, Kanäle und Verschlüsselung",
+     "Physische Installation, Verkabelung und Rack-Umgebung"
+    ]
+   },
+   {
+    "title": "Netzwerkbetrieb",
+    "points": [
+     "Dokumentation, Diagramme und Asset-Verwaltung",
+     "Lebenszyklus-, Änderungs- und Konfigurationsmanagement",
+     "Netzwerkdienste wie DHCP, DNS und NTP",
+     "Zugriffs- und Verwaltungswege für Netzwerkgeräte"
+    ]
+   },
+   {
+    "title": "Überwachung und Notfallwiederherstellung",
+    "points": [
+     "Monitoring mit Protokollen, Logs und Leistungskennzahlen",
+     "Konzepte für Hochverfügbarkeit",
+     "Notfallwiederherstellung und Wiederanlaufziele"
+    ]
+   },
+   {
+    "title": "Netzwerksicherheit",
+    "points": [
+     "Logische und physische Sicherheit sowie Grundbegriffe",
+     "Audits und Compliance-Anforderungen",
+     "Typische Angriffe auf Netzwerke erkennen",
+     "Netzwerksegmentierung und weitere Schutzfunktionen"
+    ]
+   },
+   {
+    "title": "Fehlersuche im Netzwerk",
+    "points": [
+     "Strukturierte Methode zur Fehleranalyse",
+     "Probleme mit Kabeln und Schnittstellen",
+     "Fehler bei Netzwerkdiensten und Leistung eingrenzen",
+     "Werkzeuge und Protokolle für die Diagnose"
+    ]
+   }
+  ],
+  "audience": "CompTIA ordnet die Zertifizierung Rollen im technischen Support, im Netzwerkbetrieb und in der Systemadministration zu.",
+  "prerequisites": "CompTIA empfiehlt die A+-Zertifizierung und etwa 9 bis 12 Monate praktische Erfahrung als Junior-Netzwerkadministrator oder im Netzwerksupport. Beides ist eine Empfehlung, keine formale Zulassungsvoraussetzung.",
+  "sources": [
+   "https://www.comptia.org/en-us/certifications/network/",
+   "https://assets.ctfassets.net/82ripq7fjls2/113XqW3JHT7AlIU33M63I0/af42da2af7383a38f318bad10aa9afbd/Network_Plus_N10-009_Exam_Objectives.pdf"
+  ]
+ },
+ "cisco-ccna": {
+  "officialCourse": "Implementing and Administering Cisco Solutions (CCNA), Vorbereitung auf die Prüfung 200-301 CCNA. Die Cisco-Kursseite nennt weder Versionsnummer noch Dauer; die Version 1.1 der Prüfungsthemen ist nur aus dem Link auf der Prüfungsseite abgeleitet.",
+  "intro": "Der Kurs vermittelt Aufbau, Betrieb und Absicherung kleiner bis mittlerer Netzwerke mit Cisco-Geräten. Behandelt werden Cisco IOS, Switching mit VLANs und STP, IPv4- und IPv6-Routing mit OSPF, IP-Dienste, WLAN, Gerätesicherheit und Automatisierung. Danach können Sie Switches und Router per Kommandozeile konfigurieren, typische Fehler in Switch-Netzen und bei IPv4-Adressen beheben und sich auf die Prüfung 200-301 vorbereiten.",
+  "modules": [
+   {
+    "title": "Netzwerkgrundlagen und Cisco IOS",
+    "points": [
+     "Aufgaben von Netzwerkkomponenten und Host-zu-Host-Kommunikation",
+     "Schichten des TCP/IP-Modells und Ethernet im LAN",
+     "Bedienung von Cisco IOS über die Kommandozeile",
+     "Inbetriebnahme und Grundkonfiguration eines Switches"
+    ]
+   },
+   {
+    "title": "IP-Adressierung und Routing",
+    "points": [
+     "IPv4-Adressen und Subnetting",
+     "Router-Schnittstellen konfigurieren und Paketzustellung nachvollziehen",
+     "Typische Fehler in Switch-Netzen und bei IPv4-Adressen beheben",
+     "IPv6-Grundlagen und statische Routen für IPv4 und IPv6"
+    ]
+   },
+   {
+    "title": "Switching und VLANs",
+    "points": [
+     "VLANs und Trunks einrichten",
+     "Routing zwischen VLANs",
+     "Redundante Switch-Topologien mit STP und RSTP",
+     "Bündelung von Verbindungen mit EtherChannel"
+    ]
+   },
+   {
+    "title": "OSPF und Redundanz auf Schicht 3",
+    "points": [
+     "Grundlagen dynamischer Routing-Protokolle",
+     "Single-Area-OSPF einrichten und prüfen",
+     "Zweck von Redundanzprotokollen auf Schicht 3"
+    ]
+   },
+   {
+    "title": "IP-Dienste und Internetanbindung",
+    "points": [
+     "Zugriffskontrolllisten für IPv4",
+     "Internetanbindung mit DHCP-Client und Provider-Adresse",
+     "Statisches und dynamisches NAT sowie PAT",
+     "Grundlagen zu WAN, VPN und QoS"
+    ]
+   },
+   {
+    "title": "WLAN, Architektur und Virtualisierung",
+    "points": [
+     "Grundlagen drahtloser Netzwerke und Wireless LAN Controller",
+     "WLAN mit WPA2-PSK einrichten",
+     "Netzwerk- und Gerätearchitekturen sowie Virtualisierung",
+     "Grundlagen von Software-Defined Networking"
+    ]
+   },
+   {
+    "title": "Geräteverwaltung und Gerätesicherheit",
+    "points": [
+     "Systemüberwachung mit Bordmitteln von Cisco IOS und NTP",
+     "IOS-Images sichern und aktualisieren",
+     "Konsolen- und Fernzugriff absichern",
+     "Port Security und Härtung von Netzwerkgeräten"
+    ]
+   },
+   {
+    "title": "Bedrohungen und Automatisierung",
+    "points": [
+     "Aktuelle Bedrohungslage und Abwehrtechnologien",
+     "Netzwerkprogrammierbarkeit und Konfigurationsmanagement-Tools",
+     "KI und maschinelles Lernen im Netzwerkbetrieb"
+    ]
+   }
+  ],
+  "audience": "Cisco richtet den Kurs an Einsteiger in Netzwerktechnik, Netzwerkadministration, Netzwerksupport und Helpdesk.",
+  "prerequisites": "Cisco setzt grundlegende PC-Kenntnisse, sicheren Umgang mit einem PC-Betriebssystem und dem Internet sowie Grundwissen über IP-Adressen voraus.",
+  "sources": [
+   "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccna.html",
+   "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html"
+  ]
+ },
+ "aws-cloud-practitioner-essentials": {
+  "officialCourse": "AWS Cloud Practitioner Essentials (AWS Classroom Training, Stufe Fundamental, 1 Tag), Vorbereitung auf AWS Certified Cloud Practitioner",
+  "intro": "Der eintägige Grundlagenkurs gibt einen Überblick über die AWS-Cloud unabhängig von einer technischen Rolle. Behandelt werden Bereitstellungsmodelle, globale Infrastruktur, Kerndienste für Rechenleistung, Netzwerk, Speicher und Datenbanken, das Modell der geteilten Verantwortung sowie Preise, Abrechnung und Support. Danach können Sie passende AWS-Dienste für typische Anwendungsfälle benennen und Kostenfragen einordnen.",
+  "modules": [
+   {
+    "title": "Einführung in AWS und Cloud-Modelle",
+    "points": [
+     "Begriff Cloud Computing und Arbeitsdefinition von AWS",
+     "On-Premises, Hybrid-Cloud und reine Cloud unterscheiden",
+     "Vorteile der Cloud aus Sicht von AWS"
+    ]
+   },
+   {
+    "title": "Rechenleistung in der Cloud",
+    "points": [
+     "Amazon EC2, Instanztypen und Preisoptionen",
+     "Automatische Skalierung und Elastic Load Balancing",
+     "Serverlose Dienste und Container-Angebote von AWS"
+    ]
+   },
+   {
+    "title": "Globale Infrastruktur und Zugriff auf AWS",
+    "points": [
+     "Regionen, Availability Zones und Edge-Standorte",
+     "AWS Outposts für lokale Umgebungen",
+     "Zugriff auf AWS-Dienste, gezeigt an der AWS Management Console"
+    ]
+   },
+   {
+    "title": "Netzwerk in AWS",
+    "points": [
+     "Amazon VPC als eigenes virtuelles Netzwerk",
+     "Netzwerk-ACLs und Sicherheitsgruppen unterscheiden",
+     "Anbindung an das globale AWS-Netzwerk"
+    ]
+   },
+   {
+    "title": "Speicher und Datenbanken",
+    "points": [
+     "Speicherdienste von AWS und ihre Einsatzzwecke",
+     "Relationale und weitere Datenbankdienste",
+     "Auswahl eines Dienstes nach Anwendungsfall"
+    ]
+   },
+   {
+    "title": "Sicherheit und Compliance",
+    "points": [
+     "Modell der geteilten Verantwortung",
+     "Identitäten und Berechtigungen mit IAM",
+     "Kontenstruktur mit AWS Organizations und Compliance-Themen",
+     "Anwendungssicherheit und weitere Sicherheitsdienste"
+    ]
+   },
+   {
+    "title": "Überwachung, Preise und Support",
+    "points": [
+     "Amazon CloudWatch, AWS CloudTrail und AWS Trusted Advisor",
+     "Preismodelle, konsolidierte Abrechnung und Kostenwerkzeuge",
+     "AWS-Supportpläne und AWS Marketplace"
+    ]
+   },
+   {
+    "title": "Migration, Architektur und Prüfungsvorbereitung",
+    "points": [
+     "Cloud Adoption Framework und Migrationsstrategien",
+     "Datentransfer mit AWS Snowball",
+     "Säulen des AWS Well-Architected Framework",
+     "Ablauf und Strategien für die Cloud-Practitioner-Prüfung"
+    ]
+   }
+  ],
+  "audience": "AWS richtet den Kurs an Personen, die ein Gesamtverständnis der AWS-Cloud brauchen, etwa aus Vertrieb, Recht, Marketing, Business-Analyse, Projektmanagement und anderen IT-nahen Berufen.",
+  "prerequisites": "AWS empfiehlt allgemeines betriebswirtschaftliches IT-Wissen und allgemeine technische IT-Kenntnisse.",
+  "sources": [
+   "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/training/approved/pdfs/classroom-training/aws-cloud-practitioner-essentials.pdf"
+  ]
+ },
+ "isc2-cissp": {
+  "officialCourse": "ISC2 Official CISSP Training (Certified Information Systems Security Professional); Module nach dem CISSP Exam Outline von ISC2, gültig seit 15. April 2024 (nächste Fassung ab 15. April 2027). ISC2 veröffentlicht auf der Trainingsseite kein eigenes Kapitelverzeichnis.",
+  "intro": "Der Kurs behandelt die acht Domänen des CISSP-Prüfungsrahmens von ISC2: Risikomanagement und Governance, Schutz von Informationswerten, Sicherheitsarchitektur, Netzwerksicherheit, Identitäts- und Zugriffsmanagement, Sicherheitsprüfungen, Sicherheitsbetrieb und sichere Softwareentwicklung. Danach können Sie Sicherheitsmaßnahmen über Technik, Prozesse und Organisation hinweg einordnen, begründen und sich gezielt auf die CISSP-Prüfung vorbereiten.",
+  "modules": [
+   {
+    "title": "Sicherheits- und Risikomanagement",
+    "points": [
+     "Governance, Richtlinien, Standards und Berufsethik nach ISC2",
+     "Rechtliche und regulatorische Anforderungen, Untersuchungsarten",
+     "Risikomanagement, Threat Modeling und Risiken in der Lieferkette",
+     "Business Continuity, Personalsicherheit und Awareness-Programme"
+    ]
+   },
+   {
+    "title": "Schutz von Informationswerten",
+    "points": [
+     "Daten und Assets identifizieren und klassifizieren",
+     "Anforderungen an Umgang und Bereitstellung von Informationswerten",
+     "Datenlebenszyklus und Aufbewahrung von Assets",
+     "Kontrollen zur Datensicherheit und Compliance-Anforderungen"
+    ]
+   },
+   {
+    "title": "Sicherheitsarchitektur und Engineering",
+    "points": [
+     "Prinzipien für sicheres Design und Sicherheitsmodelle",
+     "Schwachstellen in Architekturen, Entwürfen und Lösungen",
+     "Kryptografische Lösungen und kryptoanalytische Angriffe",
+     "Sicherheit von Standorten und Gebäuden"
+    ]
+   },
+   {
+    "title": "Kommunikations- und Netzwerksicherheit",
+    "points": [
+     "Sichere Netzwerkarchitekturen entwerfen",
+     "Netzwerkkomponenten absichern",
+     "Kommunikationskanäle sicher gestalten"
+    ]
+   },
+   {
+    "title": "Identitäts- und Zugriffsmanagement",
+    "points": [
+     "Physische und logische Zugriffskontrolle",
+     "Identifikation, Authentifizierung und föderierte Identitäten",
+     "Autorisierungsmodelle wie RBAC, MAC, DAC und ABAC",
+     "Lebenszyklus von Identitäten und Berechtigungen"
+    ]
+   },
+   {
+    "title": "Sicherheitsbewertung und Tests",
+    "points": [
+     "Strategien für Assessments, Tests und Audits",
+     "Sicherheitskontrollen testen und Prozessdaten erheben",
+     "Testergebnisse auswerten und berichten",
+     "Interne, externe und Drittanbieter-Audits"
+    ]
+   },
+   {
+    "title": "Sicherheitsbetrieb",
+    "points": [
+     "Logging, Monitoring und Untersuchungen",
+     "Incident Management, Patch- und Schwachstellenmanagement",
+     "Konfigurations- und Änderungsmanagement",
+     "Wiederherstellung, Disaster Recovery und Tests der Notfallpläne"
+    ]
+   },
+   {
+    "title": "Sicherheit in der Softwareentwicklung",
+    "points": [
+     "Sicherheit im Softwareentwicklungszyklus",
+     "Kontrollen in Entwicklungsumgebungen",
+     "Wirksamkeit der Softwaresicherheit und Risiken zugekaufter Software",
+     "Richtlinien und Standards für sicheres Programmieren"
+    ]
+   }
+  ],
+  "audience": "Erfahrene Fachkräfte aus der Informationssicherheit, die Sicherheitsprogramme planen, umsetzen oder verantworten und die CISSP-Zertifizierung anstreben; ISC2 nennt keine Zielgruppe, die Einordnung folgt aus der geforderten Berufserfahrung.",
+  "prerequisites": "Für die Zertifizierung verlangt ISC2 mindestens fünf Jahre Vollzeit-Berufserfahrung in mindestens zwei der acht Domänen; ein einschlägiger Studienabschluss oder eine anerkannte Zertifizierung kann insgesamt ein Jahr ersetzen. Ohne diese Erfahrung können Sie nach bestandener Prüfung Associate of ISC2 werden und haben dann sechs Jahre Zeit, die Erfahrung nachzuweisen.",
+  "sources": [
+   "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+   "https://www.isc2.org/training/cissp-training"
+  ]
+ },
+ "isaca-cism": {
+  "officialCourse": "ISACA CISM (Certified Information Security Manager); Module nach dem CISM Exam Content Outline von ISACA, gültig seit 3. November 2026. Kein eigenes Kursverzeichnis von ISACA ausgewertet.",
+  "intro": "Der Kurs folgt den vier Bereichen des aktuellen CISM-Prüfungsrahmens von ISACA: Governance der Informationssicherheit, Risikomanagement, Aufbau und Steuerung eines Sicherheitsprogramms sowie Incident Management. Sie lernen, eine Sicherheitsstrategie an Unternehmenszielen auszurichten, Risiken zu bewerten und zu behandeln, Kontrollen und Kennzahlen zu steuern und Vorfälle strukturiert zu bearbeiten. Grundlage ist die seit November 2026 geltende Fassung.",
+  "modules": [
+   {
+    "title": "Unternehmens-Governance",
+    "points": [
+     "Zweck und Kultur der Organisation berücksichtigen",
+     "Rechtliche, regulatorische und vertragliche Anforderungen",
+     "Organisationsstrukturen, Rollen und Verantwortlichkeiten"
+    ]
+   },
+   {
+    "title": "Strategie der Informationssicherheit",
+    "points": [
+     "Sicherheitsstrategie entwickeln",
+     "Enterprise-Architektur einbeziehen",
+     "Governance-Frameworks und Standards einordnen",
+     "Budget, Ressourcen und Business Case planen"
+    ]
+   },
+   {
+    "title": "Risiken erkennen und bewerten",
+    "points": [
+     "Neue Risiken und aktuelle Bedrohungslage",
+     "Schwachstellen und Lücken in Kontrollen analysieren",
+     "Risikobewertung und Risikoanalyse durchführen"
+    ]
+   },
+   {
+    "title": "Risikobehandlung und Überwachung",
+    "points": [
+     "Optionen zur Risikobehandlung auswählen",
+     "Risiko- und Kontrollverantwortung festlegen",
+     "Risiken überwachen und an das Management berichten"
+    ]
+   },
+   {
+    "title": "Sicherheitsprogramm aufbauen",
+    "points": [
+     "Sicherheitsarchitektur, Programmressourcen und Branchenstandards",
+     "Richtlinien, Standards, Verfahren und Leitlinien",
+     "Informationswerte identifizieren und klassifizieren",
+     "Kontrollen auswählen und Kennzahlen entwickeln"
+    ]
+   },
+   {
+    "title": "Sicherheitsprogramm steuern",
+    "points": [
+     "Kontrollen einführen, integrieren, testen und bewerten",
+     "Awareness- und Schulungsmaßnahmen",
+     "Externe Dienstleister und Drittparteien steuern",
+     "Kennzahlen, Kommunikation und Berichtswesen"
+    ]
+   },
+   {
+    "title": "Vorbereitung auf Sicherheitsvorfälle",
+    "points": [
+     "Incident-Response-Plan und Klassifizierung von Vorfällen",
+     "Business Impact Analysis, BCP und Disaster Recovery Plan",
+     "Schulung, Tests und Bewertung der Incident-Prozesse"
+    ]
+   },
+   {
+    "title": "Sicherheitsvorfälle bearbeiten",
+    "points": [
+     "Werkzeuge, Untersuchung und Bewertung von Vorfällen",
+     "Eindämmung, Bereinigung und Wiederherstellung",
+     "Meldung, Benachrichtigung und Eskalation",
+     "Nachbereitung und Lessons Learned"
+    ]
+   }
+  ],
+  "audience": "Fachkräfte mit Managementverantwortung in der Informationssicherheit, die Governance, Risiko, Sicherheitsprogramme und Incident Management steuern und die CISM-Zertifizierung anstreben.",
+  "prerequisites": "Die Prüfung können Sie ohne Erfahrungsnachweis ablegen; den Antrag auf Zertifizierung stellen Sie innerhalb von fünf Jahren nach bestandener Prüfung. Dafür verlangt ISACA fünf Jahre Berufserfahrung im Informationssicherheitsmanagement aus den zehn Jahren vor dem Antrag, wobei sich ein Teil durch bestimmte Abschlüsse oder Zertifizierungen ersetzen lässt.",
+  "sources": [
+   "https://www.isaca.org/credentialing/cism",
+   "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+   "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities"
+  ]
+ },
+ "ec-council-certified-ethical-hacker": {
+  "officialCourse": "EC-Council Certified Ethical Hacker (CEH v13, von EC-Council als CEH AI vermarktet); 20 offizielle Kursmodule, hier zu acht Themenblöcken zusammengefasst.",
+  "intro": "Der Kurs folgt den 20 Modulen des aktuellen CEH v13 von EC-Council. Sie lernen die Phasen eines Angriffs von der Informationsbeschaffung über Scans und Enumeration bis zum System Hacking kennen und behandeln Malware, Social Engineering, Web-Anwendungen, WLAN, Mobilgeräte, IoT, OT, Cloud und Kryptografie. Danach können Sie Schwachstellen in autorisierten Tests aufspüren und daraus Schutzmaßnahmen ableiten.",
+  "modules": [
+   {
+    "title": "Grundlagen und Informationsbeschaffung",
+    "points": [
+     "Grundbegriffe der Informationssicherheit und des Ethical Hacking",
+     "Footprinting und Reconnaissance mit aktuellen Techniken und Werkzeugen",
+     "Netzwerk-Scans und Gegenmaßnahmen",
+     "Enumeration, etwa über BGP und NFS"
+    ]
+   },
+   {
+    "title": "Schwachstellenanalyse und System Hacking",
+    "points": [
+     "Sicherheitslücken im Netzwerk einer Zielorganisation aufspüren",
+     "Methoden des System Hacking zum Auffinden von Schwachstellen"
+    ]
+   },
+   {
+    "title": "Malware und Social Engineering",
+    "points": [
+     "Trojaner, Viren, Würmer, APTs und dateilose Malware",
+     "Konzepte und Techniken des Social Engineering",
+     "Versuche von Identitätsdiebstahl erkennen"
+    ]
+   },
+   {
+    "title": "Angriffe auf Netzwerkebene",
+    "points": [
+     "Packet Sniffing zum Aufdecken von Netzwerkschwachstellen",
+     "DoS- und DDoS-Angriffstechniken",
+     "Session Hijacking und Sitzungsverwaltung auf Netzwerkebene"
+    ]
+   },
+   {
+    "title": "Umgehung von Schutzsystemen",
+    "points": [
+     "Aufgabe von IDS, Firewalls und Honeypots",
+     "Techniken zur Umgehung dieser Schutzsysteme"
+    ]
+   },
+   {
+    "title": "Webserver und Webanwendungen",
+    "points": [
+     "Angriffe auf Webserver und das methodische Vorgehen dabei",
+     "Methodik für Angriffe auf Webanwendungen",
+     "SQL Injection: Angriffs- und Umgehungstechniken, Gegenmaßnahmen"
+    ]
+   },
+   {
+    "title": "WLAN, Mobilgeräte, IoT und OT",
+    "points": [
+     "Verschlüsselung, Bedrohungen und Werkzeuge bei WLAN-Angriffen",
+     "Angriffsvektoren bei Android, iOS und Mobile Device Management",
+     "Angriffsarten gegen IoT- und OT-Umgebungen"
+    ]
+   },
+   {
+    "title": "Cloud und Kryptografie",
+    "points": [
+     "Cloud-Konzepte wie Container und Serverless Computing",
+     "Verschlüsselungsalgorithmen und kryptografische Werkzeuge",
+     "Public Key Infrastructure und E-Mail-Verschlüsselung"
+    ]
+   }
+  ],
+  "audience": "Fachkräfte aus der Cybersicherheit sowie Teams in Unternehmen, Behörden und Militär und Lehrende, die Angriffstechniken verstehen und Systeme in autorisierten Tests prüfen wollen.",
+  "prerequisites": "EC-Council nennt keine formalen Voraussetzungen, empfiehlt aber mindestens zwei Jahre Erfahrung in der IT-Sicherheit sowie Grundwissen zu IT-Systemen und Netzwerken. Einsteigern ohne diese Grundlagen empfiehlt EC-Council zunächst die Cybersecurity Essentials Series.",
+  "sources": [
+   "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/"
+  ]
+ },
+ "itil-4-foundation": {
+  "officialCourse": "ITIL 4 Foundation (PeopleCert, Prüfung ITIL 4 Foundation). PeopleCert veröffentlicht keine feste Kursgliederung; die Module folgen den Lernthemen auf den PeopleCert-Seiten zur Zertifizierung. Der detaillierte Syllabus war nicht öffentlich abrufbar.",
+  "intro": "Der Kurs behandelt die Grundlagen von ITIL 4: was einen Service ausmacht und welchen Wert er stiftet, die vier Dimensionen des Servicemanagements, das Service Value System mit Leitprinzipien, Governance und Service Value Chain sowie ausgewählte Praktiken wie Problem Management und Service Level Management. Danach können Sie Aufgaben im IT-Servicemanagement mit den ITIL-Begriffen beschreiben und sich gezielt auf die Prüfung ITIL 4 Foundation vorbereiten.",
+  "modules": [
+   {
+    "title": "Grundbegriffe des Servicemanagements",
+    "points": [
+     "Was einen Service ausmacht und aus welchen Bestandteilen er besteht",
+     "Wert eines Service für Kunden, Anwender und weitere Stakeholder"
+    ]
+   },
+   {
+    "title": "Die vier Dimensionen",
+    "points": [
+     "Organisationen und Menschen",
+     "Information und Technologie",
+     "Partner und Lieferanten",
+     "Wertströme und Prozesse"
+    ]
+   },
+   {
+    "title": "Service Value System",
+    "points": [
+     "Aufbau des Systems zum Erstellen, Bereitstellen und Steuern von Services",
+     "Governance als Bestandteil des Service Value Systems",
+     "Kontinuierliche Verbesserung als fester Teil des Systems"
+    ]
+   },
+   {
+    "title": "Die sieben Leitprinzipien",
+    "points": [
+     "Inhalt und Zweck der sieben Leitprinzipien",
+     "Leitprinzipien als Grundlage für die Anpassung von ITIL-Praktiken"
+    ]
+   },
+   {
+    "title": "Service Value Chain",
+    "points": [
+     "Zweck der Service Value Chain im Service Value System",
+     "Abstimmung von Aktivitäten und Ressourcen entlang der Kette"
+    ]
+   },
+   {
+    "title": "ITIL-Praktiken und Messung",
+    "points": [
+     "Beitrag der Praktiken zu Geschäftsstrategie und Serviceentwicklung",
+     "Problem Management im Servicebetrieb",
+     "Service Level Management und Service Level Agreements",
+     "Kennzahlen und KPIs zur Bewertung der Serviceleistung"
+    ]
+   },
+   {
+    "title": "Prüfungsvorbereitung",
+    "points": [
+     "Prüfungsformat: 40 Multiple-Choice-Fragen, 60 Minuten, ohne Unterlagen",
+     "Bestehensgrenze von 65 Prozent",
+     "Übungsfragen zu den Lernthemen",
+     "Verhältnis von ITIL 4 zu ITIL (Version 5) in der Übergangszeit"
+    ]
+   }
+  ],
+  "audience": "PeopleCert beschreibt die Zertifizierung als Einstieg in das IT-Servicemanagement für jede Karrierephase und nennt passende Rollen wie IT Service Manager, IT-Projektmanager, IT Operations Specialist, Teamleiter in der IT und Digital Product Manager.",
+  "prerequisites": "PeopleCert nennt auf der Zertifizierungsseite für ITIL 4 Foundation keine Voraussetzungen.",
+  "sources": [
+   "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
+   "https://www.peoplecert.org/products/ITIL-4/itil-4-foundation-21-06-english",
+   "https://www.peoplecert.org/help-and-support/faq-itil"
+  ]
+ },
+ "prince2-7-foundation": {
+  "officialCourse": "PRINCE2 Project Management Foundation (Version 7), PeopleCert. Keine feste Kursgliederung veröffentlicht; die Module folgen den Lernthemen auf der PeopleCert-Zertifizierungsseite.",
+  "intro": "Der Kurs führt in PRINCE2 Version 7 ein: die sieben Prinzipien, die sieben Praktiken und die sieben Prozesse vom Projektstart bis zum Abschluss, dazu Rollen und Verantwortlichkeiten, Personalführung, Kommunikation sowie Nachhaltigkeit und digitales Datenmanagement. Danach können Sie die Methode an Größe, Komplexität und Umfeld eines Projekts anpassen und sich auf die Prüfung PRINCE2 7 Foundation vorbereiten.",
+  "modules": [
+   {
+    "title": "Aufbau und Anpassung der Methode",
+    "points": [
+     "Zusammenspiel von Prinzipien, Praktiken und Prozessen",
+     "Anpassung an Bedarf, Größe, Komplexität und Umfeld eines Projekts",
+     "Einsatz von PRINCE2 zusammen mit Agile, Lean und ITIL"
+    ]
+   },
+   {
+    "title": "Die sieben Prinzipien",
+    "points": [
+     "Prinzipien als Grundlage für Entscheidungen im Projekt",
+     "Anwendung der Prinzipien auf konkrete Projektsituationen"
+    ]
+   },
+   {
+    "title": "Menschen, Rollen und Kommunikation",
+    "points": [
+     "Rollen und Verantwortlichkeiten in der Projektorganisation",
+     "Personalführung als neues Element in Version 7",
+     "Transparente Kommunikation zu Fortschritt und Problemen"
+    ]
+   },
+   {
+    "title": "Die sieben Praktiken",
+    "points": [
+     "Praktiken als Themen, die das gesamte Projekt begleiten",
+     "Anwendung der Praktiken im laufenden Projekt"
+    ]
+   },
+   {
+    "title": "Projektleistung, Digitales und Daten",
+    "points": [
+     "Nachhaltigkeit als Teil der Projektleistung",
+     "Umgang mit digitalen Werkzeugen und Projektdaten",
+     "Einsatz von KI für Prognosen und Analysen im Projekt"
+    ]
+   },
+   {
+    "title": "Die sieben Prozesse",
+    "points": [
+     "Schrittweiser Ablauf vom Projektstart bis zum Abschluss",
+     "Anwendung der Prozesse in den Projektphasen"
+    ]
+   },
+   {
+    "title": "Prüfungsvorbereitung",
+    "points": [
+     "Prüfungsformat: 60 Multiple-Choice-Fragen, 60 Minuten, ohne Unterlagen",
+     "Bestehensgrenze von 60 Prozent",
+     "Übungsfragen zu Begriffen und Zusammenhängen der Methode"
+    ]
+   }
+  ],
+  "audience": "PeopleCert bezeichnet die Zertifizierung als geeignet für jede Karrierephase und nennt unter anderem Projekt- und Programmmanager, Projektunterstützung und Projektkoordination, Business Analysten, PMO-, Risiko-, Change- und Produktmanager sowie Führungskräfte.",
+  "prerequisites": "PeopleCert nennt für PRINCE2 7 Foundation keine Voraussetzungen. Für die Practitioner-Prüfung ist die Foundation einer von mehreren anerkannten Nachweisen.",
+  "sources": [
+   "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579",
+   "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-practitioner-3581",
+   "https://www.peoplecert.org/news-and-announcements/2023/prince2-receives-major-update"
+  ]
+ },
+ "tableau-desktop-i-fundamentals": {
+  "officialCourse": "Tableau Desktop I: Fundamentals (Tableau Classroom Training, Buchung heute über Salesforce Trailhead Academy, dort als TTD101 Tableau Desktop Fundamentals gelistet). Gliederung nach der offiziellen Tableau-Kursbeschreibung.",
+  "intro": "Der Kurs führt in Tableau Desktop ein: Daten anbinden, eine Datenquelle bearbeiten und speichern, Daten ordnen und nach Datum aufschlüsseln sowie Ansichten von der Kreuztabelle über Karten bis zu Diagrammen mit doppelter Achse erstellen. Danach können Sie einfache Berechnungen und schnelle Tabellenberechnungen anlegen, Werte mit Referenzlinien hervorheben und mehrere Ansichten in einem interaktiven Dashboard zum Teilen zusammenführen.",
+  "modules": [
+   {
+    "title": "Einstieg und Datenanbindung",
+    "points": [
+     "Begriffe und Arbeitsweise von Tableau Desktop",
+     "Verbindung zu eigenen Daten herstellen",
+     "Datenquelle bearbeiten und speichern"
+    ]
+   },
+   {
+    "title": "Daten ordnen und aufschlüsseln",
+    "points": [
+     "Ansichten vereinfachen und sortieren",
+     "Daten in der Ansicht organisieren",
+     "Daten nach Datumswerten aufschlüsseln"
+    ]
+   },
+   {
+    "title": "Mehrere Kennzahlen und Zusammenhänge",
+    "points": [
+     "Mehrere Measures in einer Ansicht verwenden",
+     "Diagramme mit doppelter Achse und unterschiedlichen Markierungstypen",
+     "Streudiagramme für Zusammenhänge zwischen Zahlenwerten"
+    ]
+   },
+   {
+    "title": "Karten und Detailwerte",
+    "points": [
+     "Daten geografisch auf Karten darstellen",
+     "Kreuztabellen und Hervorhebungstabellen für einzelne Werte",
+     "Heatmaps zum Vergleich vieler Werte"
+    ]
+   },
+   {
+    "title": "Berechnungen",
+    "points": [
+     "Einfache arithmetische Berechnungen",
+     "Eigene Aggregationen und Verhältniswerte",
+     "Berechnungen mit Datumswerten",
+     "Analysen mit schnellen Tabellenberechnungen"
+    ]
+   },
+   {
+    "title": "Anteile und Referenzlinien",
+    "points": [
+     "Anteile am Ganzen mit Treemaps, Kreis- und Balkendiagrammen",
+     "Daten mit Referenzlinien hervorheben"
+    ]
+   },
+   {
+    "title": "Dashboards und Bereitstellung",
+    "points": [
+     "Mehrere Ansichten zu einem interaktiven Dashboard kombinieren",
+     "Ansichten und Dashboards für andere bereitstellen",
+     "Übungen mit bereitgestellten Arbeitsmappen und Datenquellen"
+    ]
+   }
+  ],
+  "audience": "Tableau richtet den Kurs an Einsteiger in Tableau und an alle, die mit Daten arbeiten, unabhängig von technischem oder analytischem Hintergrund.",
+  "prerequisites": "Tableau nennt für diesen Kurs keine Voraussetzungen.",
+  "sources": [
+   "https://mkt.tableau.com/files/Desktop_I_Course_Description.pdf",
+   "https://www.tableau.com/learn/classroom/desktop-one",
+   "https://trailheadacademy.salesforce.com/classes/TTD101-Tableau-Desktop-Fundamentals"
+  ]
+ },
+ "introduction-to-python": {
+  "officialCourse": "Introduction to Python (eigener Kurs von New Horizons Deutschland, ohne Herstellerzertifizierung und ohne Kurscode; Module nach der Themenliste der offiziellen Kursseite von New Horizons gruppiert)",
+  "intro": "Der Kurs führt in die Programmierung mit Python ein. Er beginnt mit Kommandozeile, Installation und Jupyter und behandelt dann Datentypen, Datenstrukturen, Kontrollfluss, Funktionen und objektorientierte Programmierung. Danach können Sie einfache Python-Programme schreiben, Fehler suchen, Dateien lesen und schreiben sowie erste Skripte für Automatisierung, Web-Scraping oder kleine grafische Oberflächen umsetzen.",
+  "modules": [
+   {
+    "title": "Arbeitsumgebung einrichten",
+    "points": [
+     "Grundlegende Befehle auf der Kommandozeile",
+     "Python installieren und einrichten",
+     "Code in Jupyter Notebooks schreiben und ausführen"
+    ]
+   },
+   {
+    "title": "Datentypen und Datenstrukturen",
+    "points": [
+     "Grundlegende Datentypen in Python",
+     "Datenstrukturen anlegen und bearbeiten"
+    ]
+   },
+   {
+    "title": "Logik, Kontrollfluss und Funktionen",
+    "points": [
+     "Bedingungen und logische Ausdrücke",
+     "Programmablauf mit Schleifen steuern",
+     "Eigene Funktionen definieren und aufrufen"
+    ]
+   },
+   {
+    "title": "Fehlersuche, Module und Tests",
+    "points": [
+     "Fehler im Code finden und beheben (Debugging)",
+     "Module einbinden und Code aufteilen",
+     "Programme mit Tests überprüfen"
+    ]
+   },
+   {
+    "title": "Objektorientierte Programmierung",
+    "points": [
+     "Klassen und Objekte in Python",
+     "Grundprinzipien der objektorientierten Programmierung"
+    ]
+   },
+   {
+    "title": "Dateien, Dekoratoren und Generatoren",
+    "points": [
+     "Dateien lesen und schreiben",
+     "Dekoratoren verstehen und einsetzen",
+     "Generatoren für schrittweise Datenverarbeitung"
+    ]
+   },
+   {
+    "title": "Automatisierung, Web-Scraping und GUIs",
+    "points": [
+     "Wiederkehrende Aufgaben mit Python-Skripten automatisieren",
+     "Inhalte von Webseiten mit Python auslesen",
+     "Einfache grafische Oberflächen erstellen"
+    ]
+   }
+  ],
+  "audience": "Laut New Horizons richtet sich der Kurs an Programmiereinsteiger, Fachkräfte mit IT-Bezug und Personen, die sich für Daten, Automatisierung oder KI-Anwendungen interessieren.",
+  "prerequisites": "Python-Kenntnisse werden nicht vorausgesetzt. Erwartet werden ein grundlegendes technisches Verständnis und Interesse am Programmieren.",
+  "sources": [
+   "https://www.newhorizons.de/trainings/topics/data-analytics/python/introduction-to-python"
+  ]
+ },
+ "ai-foundation": {
+  "officialCourse": "AI+ Foundation (AI CERTs, Zertifizierungscode AF-101)",
+  "intro": "Der Kurs behandelt Grundlagen der künstlichen Intelligenz und des maschinellen Lernens, das Formulieren von Prompts für GPT-Modelle, den Einsatz von KI in Unternehmen sowie Ethik und Bias. Danach können Sie KI-Anwendungen in Ihrem Arbeitsumfeld einordnen, Prompts gezielter aufbauen und Risiken durch verzerrte Daten erkennen. Der Kurs bereitet auf die Prüfung AF-101 vor.",
+  "modules": [
+   {
+    "title": "Einführung in KI und ihre Auswirkungen",
+    "points": [
+     "Was künstliche Intelligenz ausmacht",
+     "KI-Anwendungen im Alltag",
+     "Einstieg in das maschinelle Lernen",
+     "Anwendungsfall, Fallstudie und praktische Übung"
+    ]
+   },
+   {
+    "title": "Prompt Engineering",
+    "points": [
+     "Begriff und Bedeutung von Prompt Engineering",
+     "Ergebnisse durch gut aufgebaute Prompts verbessern",
+     "Arbeiten mit GPT",
+     "Anwendungsfall, Fallstudie und praktische Übung"
+    ]
+   },
+   {
+    "title": "KI in Unternehmen und Branchen",
+    "points": [
+     "KI-Strategien für Unternehmen entwickeln",
+     "Wichtige KI-Werkzeuge für den Geschäftseinsatz",
+     "Generative Modelle auf Basis von GANs",
+     "Anwendungsfall, Fallstudie und praktische Übung"
+    ]
+   },
+   {
+    "title": "Ethik und Bias in der KI",
+    "points": [
+     "Ethische Fragen beim Einsatz von KI",
+     "Datenerhebung und Folgen von Verzerrungen",
+     "Einfluss von Bias auf Entscheidungen",
+     "Anwendungsfall, Fallstudie und praktische Übung"
+    ]
+   },
+   {
+    "title": "Zukunft der KI und berufliche Perspektiven",
+    "points": [
+     "Beitrag von KI zu globalen Herausforderungen",
+     "Veränderung von Branchen und Arbeitswelt",
+     "Wegfall und Entstehung von Arbeitsplätzen",
+     "Künftig gefragte Kompetenzen"
+    ]
+   },
+   {
+    "title": "Optional: KI-Agenten",
+    "points": [
+     "Was KI-Agenten sind und welche Bedeutung sie haben",
+     "Funktionsweise, Merkmale und Arten von KI-Agenten",
+     "Einsatzfelder und aktuelle Entwicklungen"
+    ]
+   }
+  ],
+  "audience": "AI CERTs richtet den Kurs an Fachkräfte aus Unternehmen, an KI-Interessierte, Führungskräfte im Technologiebereich, Fachleute für Ethik, Studierende und Hochschulabsolventen sowie an alle, die neu in das Thema KI einsteigen.",
+  "prerequisites": "Vorkenntnisse in KI sind laut AI CERTs nicht erforderlich. Erwartet werden ein grundlegender Umgang mit digitalen Werkzeugen sowie Interesse an KI-Anwendungen in verschiedenen Branchen und an ihren ethischen Folgen.",
+  "sources": [
+   "https://www.aicerts.ai/certifications/essentials/ai-foundation/"
+  ]
+ }
+}
