@@ -573,4 +573,24 @@ if (changed.length) {
 }
 // Noindexed course pages do not belong in the sitemap; the renderer may add them back.
 apply('sitemap.xml', (xml) => xml.replace(/\s*<url><loc>https:\/\/nh-it-training\.de\/kurse\/([^<]+)\.html<\/loc>[\s\S]*?<\/url>/g, (block, slug) => (INDEXABLE.has(decodeURI(slug)) ? block : '')));
+// Course pages newly added to the index policy enter the sitemap in alphabetical order.
+apply('sitemap.xml', (xml) => {
+  let out = xml;
+  for (const slug of [...INDEXABLE].sort()) {
+    const loc = `${SITE}kurse/${encodeURI(slug)}.html`;
+    if (out.includes(`<loc>${loc}</loc>`) || !fs.existsSync(path.join('kurse', `${slug}.html`))) continue;
+    const entry = `  <url><loc>${loc}</loc><lastmod>${today}</lastmod><priority>0.7</priority></url>\n`;
+    const courseLine = /^[ \t]*<url><loc>https:\/\/nh-it-training\.de\/kurse\/[^<]+<\/loc>.*\n/gm;
+    let insertAt = -1;
+    let afterLast = -1;
+    for (const m of out.matchAll(courseLine)) {
+      const other = m[0].match(/<loc>([^<]+)<\/loc>/)[1];
+      if (insertAt < 0 && other > loc) insertAt = m.index;
+      afterLast = m.index + m[0].length;
+    }
+    if (insertAt < 0) insertAt = afterLast;
+    out = insertAt < 0 ? out.replace('</urlset>', `${entry}</urlset>`) : out.slice(0, insertAt) + entry + out.slice(insertAt);
+  }
+  return out;
+});
 console.log(`Date ${today}. Changed ${changed.length} files.`);

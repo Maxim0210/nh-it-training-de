@@ -2197,5 +2197,1432 @@
   "sources": [
    "https://www.aicerts.ai/certifications/essentials/ai-foundation/"
   ]
+ },
+ "sc-100-cybersecurity-architect-expert": {
+  "officialCourse": "SC-100T00-A: Microsoft Cybersecurity Architect (Microsoft Learn, Stufe Advanced, 4 Tage laut Hersteller); Prüfung SC-100, Zertifizierung Microsoft Certified: Cybersecurity Architect Expert. Die Module folgen den vier Bereichen des Studienleitfadens zur Prüfung SC-100 (Stand 21.10.2026), denen auch die vier Lernpfade der Kursseite entsprechen.",
+  "intro": "Der Kurs behandelt den Entwurf von Sicherheitsarchitekturen mit Microsoft-Technologien nach Zero-Trust-Prinzipien. Themen sind Resilienz gegen Ransomware, die Referenzarchitekturen und Benchmarks von Microsoft, Security Operations, Identität und privilegierter Zugriff, Compliance sowie der Schutz von Infrastruktur, Anwendungen, Daten und KI-Workloads. Danach können Sie Sicherheitsanforderungen in Lösungsentwürfe übersetzen, bestehende Lösungen bewerten und Vorgaben für hybride und Multicloud-Umgebungen festlegen.",
+  "modules": [
+   {
+    "title": "Resilienz und Best Practices von Microsoft",
+    "points": [
+     "Sicherheitsstrategie an Geschäftszielen ausrichten und Bedrohungen für kritische Werte priorisieren",
+     "Ransomware-Abwehr, sichere Sicherung und Wiederherstellung (BCDR) entwerfen",
+     "Microsoft Cybersecurity Reference Architectures (MCRA) und Microsoft Cloud Security Benchmark (MCSB) anwenden",
+     "Zero Trust Adoption Framework als Leitlinie nutzen"
+    ]
+   },
+   {
+    "title": "Cloud Adoption Framework und Well-Architected Framework",
+    "points": [
+     "Sicherheits- und Governance-Strategie nach CAF und WAF entwerfen oder bewerten",
+     "Azure-Landing-Zones für Sicherheit und Governance einsetzen",
+     "DevSecOps-Prozess nach CAF gestalten",
+     "Strategie für die sichere Einführung von KI"
+    ]
+   },
+   {
+    "title": "Security Operations",
+    "points": [
+     "Erkennung und Reaktion mit XDR und SIEM entwerfen",
+     "Zentrale Protokollierung und Überwachung, auch mit Microsoft Purview Audit",
+     "Automatisierung (SOAR) mit Microsoft Sentinel und Microsoft Defender XDR",
+     "Abläufe für Incident Response und Threat Hunting sowie Abdeckung nach MITRE ATT&CK bewerten"
+    ]
+   },
+   {
+    "title": "Identität und privilegierter Zugriff",
+    "points": [
+     "Zugriff auf SaaS-, PaaS-, IaaS-, hybride und Multicloud-Ressourcen entwerfen",
+     "Microsoft Entra ID, externe Identitäten und Agent-Identitäten einplanen",
+     "Conditional Access an der Zero-Trust-Strategie ausrichten",
+     "Privilegierte Rollen nach dem Enterprise Access Model, PIM, Zugriffsüberprüfungen und Härtung von AD DS"
+    ]
+   },
+   {
+    "title": "Regulatorische Compliance",
+    "points": [
+     "Compliance-Anforderungen in Sicherheitskontrollen übersetzen",
+     "Lösungen mit Microsoft Purview und Azure Policy entwerfen",
+     "Einhaltung von Standards mit Microsoft Defender for Cloud bewerten"
+    ]
+   },
+   {
+    "title": "Sicherheit der Infrastruktur",
+    "points": [
+     "Sicherheitsstatus mit Defender for Cloud, Secure Score und Microsoft Security Exposure Management bewerten",
+     "Hybride und Multicloud-Umgebungen über Azure Arc einbinden",
+     "Anforderungen für Server, Clients, mobile Geräte, IoT und OT festlegen",
+     "Baselines für SaaS, PaaS und IaaS, Container sowie Netzwerksicherheit mit Microsoft Entra Internet Access und Private Access"
+    ]
+   },
+   {
+    "title": "Sicherheit von Anwendungen und Daten",
+    "points": [
+     "Microsoft 365 mit Defender for Office 365, Defender for Cloud Apps, Intune und Purview absichern, einschließlich Microsoft 365 Copilot",
+     "Bedrohungsmodellierung, sicherer Entwicklungsprozess, Workload-Identitäten, API-Schutz und Azure Web Application Firewall",
+     "Daten klassifizieren und verschlüsseln, unter anderem mit Azure Key Vault",
+     "Daten in Azure SQL, Azure Storage und KI-Workloads schützen"
+    ]
+   }
+  ],
+  "audience": "Laut Microsoft richtet sich der Kurs an erfahrene Cloud-Security-Engineers mit fortgeschrittenem Wissen in Identität und Zugriff, Plattformschutz, Security Operations sowie Daten- und Anwendungssicherheit und mit Erfahrung in hybriden und Cloud-Umgebungen. Für Einsteiger verweist Microsoft auf SC-900.",
+  "prerequisites": "Für die Kursteilnahme nennt Microsoft keine verpflichtende Voraussetzung, empfiehlt aber dringend eine bestandene Associate-Zertifizierung aus dem Bereich Security, Compliance und Identity. Für die Zertifizierung Cybersecurity Architect Expert ist zusätzlich zur Prüfung SC-100 mindestens eine dieser Zertifizierungen verpflichtend: Identity and Access Administrator Associate, Security Operations Analyst Associate oder Cloud and AI Security Engineer Associate.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/sc-100t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100",
+   "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+   "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams"
+  ]
+ },
+ "az-700-azure-network-engineer-associate": {
+  "officialCourse": "AZ-700T00-A: Design and Implement Microsoft Azure Network Solutions (Microsoft Learn, Stufe Intermediate, 3 Tage laut Hersteller); Prüfung AZ-700, Zertifizierung Microsoft Certified: Azure Network Engineer Associate. Die Module folgen den fünf Bereichen des Studienleitfadens zur Prüfung AZ-700 (Stand 27.07.2026).",
+  "intro": "Der Kurs behandelt Planung, Aufbau und Betrieb von Netzwerken in Azure: IP-Adressierung, Namensauflösung, Routing, VPN, ExpressRoute und Virtual WAN, Lastverteilung, privaten Zugriff auf Azure-Dienste sowie Netzwerksicherheit und Überwachung. Danach können Sie virtuelle Netzwerke entwerfen und einrichten, Standorte an Azure anbinden, Anwendungen über Load Balancer, Application Gateway und Front Door bereitstellen und Verbindungsprobleme eingrenzen.",
+  "modules": [
+   {
+    "title": "IP-Adressierung und Namensauflösung",
+    "points": [
+     "Adressräume, Subnetze und Subnetzdelegierung planen",
+     "Öffentliche IP-Adressen, Präfixe und eigene IP-Präfixe verwenden",
+     "Öffentliche und private DNS-Zonen entwerfen und mit VNets verknüpfen",
+     "Azure DNS Private Resolver einrichten"
+    ]
+   },
+   {
+    "title": "VNet-Konnektivität, Routing und Überwachung",
+    "points": [
+     "VNet-Peering, Gateway-Transit und Azure Virtual Network Manager",
+     "Benutzerdefinierte Routen, erzwungenes Tunneling und Azure Route Server",
+     "Azure NAT Gateway einsetzen",
+     "Netzwerke mit Network Watcher, Azure Monitor und Defender for Cloud überwachen und DDoS-Schutz aktivieren"
+    ]
+   },
+   {
+    "title": "Site-to-Site- und Point-to-Site-VPN",
+    "points": [
+     "Gateway-SKU wählen und hochverfügbare Site-to-Site-Verbindungen entwerfen",
+     "Lokale Netzwerkgateways und IPsec/IKE-Richtlinien konfigurieren",
+     "Tunneltyp und Authentifizierung für Point-to-Site wählen, etwa RADIUS oder Microsoft Entra ID",
+     "Verbindungs- und Authentifizierungsprobleme eingrenzen"
+    ]
+   },
+   {
+    "title": "ExpressRoute und Virtual WAN",
+    "points": [
+     "Konnektivitätsmodell, SKU und Tarif für ExpressRoute wählen",
+     "Privates Peering und Microsoft-Peering, Global Reach, FastPath und ExpressRoute Direct",
+     "Redundanz, regionsübergreifende Anbindung und Verschlüsselung",
+     "Virtual-WAN-Architektur mit virtuellen Hubs, Gateways und Hub-Routing"
+    ]
+   },
+   {
+    "title": "Anwendungsbereitstellung und Lastverteilung",
+    "points": [
+     "Azure Load Balancer und Gateway Load Balancer mit Regeln für NAT und ausgehenden Verkehr",
+     "Azure Traffic Manager einrichten",
+     "Application Gateway mit Listenern, Routingregeln, Integritätstests und TLS",
+     "Azure Front Door mit Routing, Caching, Regeln und Private Link zum Ursprung"
+    ]
+   },
+   {
+    "title": "Privater Zugriff auf Azure-Dienste",
+    "points": [
+     "Private Endpunkte planen und erstellen",
+     "Private-Link-Dienst bereitstellen und mit DNS sowie lokalen Clients verbinden",
+     "Dienstendpunkte und Dienstendpunktrichtlinien konfigurieren"
+    ]
+   },
+   {
+    "title": "Netzwerksicherheit",
+    "points": [
+     "Netzwerk- und Anwendungssicherheitsgruppen, Flow-Protokolle und IP-Flow-Prüfung",
+     "Azure Firewall und Firewall Manager entwerfen, bereitstellen und mit Regeln versehen",
+     "Gesicherter Hub mit Azure Firewall im Virtual-WAN-Hub",
+     "Web Application Firewall auf Front Door und Application Gateway"
+    ]
+   }
+  ],
+  "audience": "Laut Microsoft richtet sich der Kurs an Network Engineers, die sich auf Azure-Netzwerklösungen spezialisieren möchten und Erfahrung mit Unternehmensnetzwerken, lokaler oder Cloud-Infrastruktur und Netzwerksicherheit mitbringen.",
+  "prerequisites": "Die Kursseite von Microsoft beschreibt als Ausgangsbasis Verständnis für Virtualisierung, Netzwerkkonfiguration (TCP/IP, DNS, VPN, Firewalls, Verschlüsselung), Software-defined Networking, hybride Anbindung sowie Hochverfügbarkeit und Wiederherstellung. Für die Prüfung sollten Sie laut Studienleitfaden Erfahrung mit Compute-, Speicher- und Netzwerkressourcen in Azure mitbringen. Eine verpflichtende Vorzertifizierung nennt Microsoft weder auf der Kurs- noch auf der Zertifizierungsseite.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/az-700t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+   "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+   "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams"
+  ]
+ },
+ "az-140-azure-virtual-desktop-specialty": {
+  "officialCourse": "AZ-140T00-A: Configure and Operate Microsoft Azure Virtual Desktop (Microsoft Learn, Stufe Intermediate, 4 Tage laut Hersteller); Prüfung AZ-140, Zertifizierung Microsoft Certified: Azure Virtual Desktop Specialty. Die Module folgen den vier Bereichen des Studienleitfadens zur Prüfung AZ-140 (Stand 20.07.2026), deren Themen auch die fünf Lernpfade der Kursseite behandeln.",
+  "intro": "Der Kurs behandelt Planung, Bereitstellung und Betrieb von Azure Virtual Desktop. Themen sind Netzwerk und Speicher, Hostpools und Sitzungshosts, Images, Identität und Sicherheit, FSLogix, Clienteinstellungen und Anwendungsbereitstellung sowie Überwachung, Skalierung und Notfallwiederherstellung. Danach können Sie eine Azure-Virtual-Desktop-Umgebung aufbauen, Benutzerprofile und Apps bereitstellen, Zugriffe absichern und den laufenden Betrieb überwachen und pflegen.",
+  "modules": [
+   {
+    "title": "Netzwerk und Speicher für Azure Virtual Desktop",
+    "points": [
+     "Netzwerkkapazität bewerten und Netzwerkkonfiguration für Sitzungshosts entwerfen",
+     "RDP Shortpath, RDP Multipath, QoS-Richtlinien und Azure Private Link",
+     "Speicher für Benutzerdaten und FSLogix planen",
+     "Speicherkonten, Dateifreigaben und Azure NetApp Files einrichten"
+    ]
+   },
+   {
+    "title": "Hostpools und Sitzungshosts",
+    "points": [
+     "Hostpool-Architektur, Betriebssystem und Lizenzmodell auswählen",
+     "Leistung und VM-Kapazität dimensionieren",
+     "Hostpools im Azure-Portal erstellen oder mit PowerShell, Azure CLI, ARM-Vorlagen und Bicep automatisieren",
+     "Einstellungen und Lizenzierung der Sitzungshosts konfigurieren"
+    ]
+   },
+   {
+    "title": "Images für Sitzungshosts",
+    "points": [
+     "Images manuell oder mit Azure VM Image Builder erstellen",
+     "Betriebssystem- und Anwendungsupdates einspielen und den Lebenszyklus planen",
+     "Images in der Azure Compute Gallery ablegen",
+     "Sitzungshosts aus einem eigenen Image bereitstellen"
+    ]
+   },
+   {
+    "title": "Identität und Sicherheit",
+    "points": [
+     "Identitätsszenario mit AD DS, Microsoft Entra ID oder Microsoft Entra Domain Services wählen",
+     "Azure RBAC, Conditional Access, Single Sign-On und Authentifizierungsoptionen",
+     "Sitzungshosts mit Defender for Cloud, Defender Antivirus und Defender for Endpoint schützen",
+     "Netzwerkzugriff mit NSGs, Azure Firewall, Azure Bastion und Just-in-Time-Zugriff absichern"
+    ]
+   },
+   {
+    "title": "FSLogix und Benutzerumgebung",
+    "points": [
+     "Profilcontainer, ODFC-Container und Cloud Cache konfigurieren",
+     "Client auswählen, verteilen und Fehler eingrenzen",
+     "Geräte- und Multimediaumleitung, Drucken und Universal Print",
+     "RDP-Eigenschaften, Sitzungstimeouts und Start VM on Connect"
+    ]
+   },
+   {
+    "title": "Anwendungen bereitstellen",
+    "points": [
+     "Anwendungsgruppen erstellen, Benutzer zuweisen und RemoteApps veröffentlichen",
+     "Microsoft 365 Apps, OneDrive und Microsoft Teams auf Sitzungshosts betreiben",
+     "Anwendungen dynamisch über App attach bereitstellen und Pakete erstellen"
+    ]
+   },
+   {
+    "title": "Überwachung, Updates und Notfallwiederherstellung",
+    "points": [
+     "Protokolle sammeln und mit Azure Monitor und Azure Virtual Desktop Insights auswerten",
+     "Kapazität optimieren und automatische Skalierung in Hostpools einrichten",
+     "Updatestrategie für Sitzungshosts festlegen",
+     "Sicherung, Wiederherstellung und Betrieb über mehrere Regionen planen"
+    ]
+   }
+  ],
+  "audience": "Laut Microsoft richtet sich der Kurs an Azure-Administratoren, die Anwendungen und Desktops über Azure Virtual Desktop bereitstellen und für Umgebungen mit mehreren Sitzungen optimieren. Die Prüfung ist für Server- oder Desktop-Administratoren gedacht.",
+  "prerequisites": "Microsoft setzt gefestigte Kenntnisse in der Azure-Administration voraus, dazu Erfahrung mit Virtualisierung, Netzwerk, Identität, Speicher, Sicherung und Notfallwiederherstellung sowie mit Azure PowerShell und Cloud Shell. Kenntnisse lokaler VDI-Technologien werden erwartet. Eine verpflichtende Vorzertifizierung nennt Microsoft weder auf der Kurs- noch auf der Zertifizierungsseite.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/az-140t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+   "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+   "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams"
+  ]
+ },
+ "ms-700-managing-microsoft-teams": {
+  "officialCourse": "MS-700T00-A: Manage collaboration and communication with Microsoft Teams (Microsoft Learn, Stufe Intermediate, 4 Tage laut Hersteller); Prüfung MS-700, Zertifizierung Microsoft 365 Certified: Teams Administrator Associate. Die Module folgen den vier Bereichen des Studienleitfadens zur Prüfung MS-700 (Stand 27.10.2026).",
+  "intro": "Der Kurs behandelt die Verwaltung von Microsoft Teams in einer Microsoft-365-Umgebung: Netzwerkplanung, Sicherheit und Compliance, Governance, Zusammenarbeit mit externen Personen, Geräte, Teams und Kanäle, Apps, Besprechungen, Teams Phone sowie Berichte und Fehlerbehebung. Danach können Sie eine Teams-Umgebung einrichten, Richtlinien für Nachrichten, Besprechungen und Apps zuweisen, Gast- und externen Zugriff steuern und Qualitäts- oder Clientprobleme eingrenzen.",
+  "modules": [
+   {
+    "title": "Netzwerk für Teams planen",
+    "points": [
+     "Bandbreite für Sprache, Video, Besprechungen und Events berechnen",
+     "Teams Network Planner und Network Assessment Tool einsetzen",
+     "Ports und Protokolle von Teams festlegen"
+    ]
+   },
+   {
+    "title": "Sicherheit und Compliance",
+    "points": [
+     "Passende Teams-Administratorrollen auswählen",
+     "Aufbewahrungsrichtlinien, Vertraulichkeitsbezeichnungen und DLP-Richtlinien in Microsoft Purview",
+     "Conditional Access und Informationsbarrieren für Teams",
+     "Bedrohungsrichtlinien in Microsoft Defender for Office 365"
+    ]
+   },
+   {
+    "title": "Governance und Lebenszyklus",
+    "points": [
+     "Erstellung, Ablauf und Benennung von Microsoft-365-Gruppen regeln",
+     "Richtlinienpakete und Richtlinienzuweisung für Benutzer und Gruppen",
+     "Teams archivieren, löschen und wiederherstellen",
+     "Aufgaben mit PowerShell und Microsoft Graph ausführen"
+    ]
+   },
+   {
+    "title": "Externe Zusammenarbeit",
+    "points": [
+     "Externen Zugriff und Gastzugriff im Teams Admin Center und in Microsoft Entra ID konfigurieren",
+     "Freigabeeinstellungen für SharePoint Online und OneDrive",
+     "Geteilte Kanäle mit B2B Direct Connect und mandantenübergreifenden Zugriffseinstellungen",
+     "Multitenant-Organisation (MTO) einrichten"
+    ]
+   },
+   {
+    "title": "Clients und Geräte",
+    "points": [
+     "Konfigurationsprofile, Einstellungen und Firmware für Teams-Geräte verwalten",
+     "Konten und Systeme für Microsoft Teams Rooms einrichten",
+     "Teams für VDI planen und konfigurieren"
+    ]
+   },
+   {
+    "title": "Teams, Kanäle, Chats und Apps",
+    "points": [
+     "Teams aus Gruppen, SharePoint-Websites oder Vorlagen erstellen und Mitgliedschaften verwalten",
+     "Standard-, private und geteilte Kanäle sowie Nachrichtenrichtlinien",
+     "App-Berechtigungen, App-Einrichtungsrichtlinien und eigene Apps",
+     "Teams und Funktionen für Beschäftigte in Service und Produktion (Frontline)"
+    ]
+   },
+   {
+    "title": "Besprechungen, Events und Teams Phone",
+    "points": [
+     "Besprechungsarten auswählen, darunter Webinare und Town Halls",
+     "Besprechungseinstellungen, Vorlagen und Richtlinien, auch für Microsoft 365 Copilot",
+     "Telefonnummern für Benutzer und Ressourcenkonten bereitstellen und zuweisen",
+     "Automatische Telefonzentralen, Anrufwarteschlangen sowie Anruf- und Voicemailrichtlinien"
+    ]
+   },
+   {
+    "title": "Überwachung, Berichte und Fehlerbehebung",
+    "points": [
+     "Sprach- und Besprechungsqualität überwachen und Warnregeln einrichten",
+     "Nutzungsberichte zu Teams, Apps, Gästen und Speicher auswerten",
+     "Clientprotokolle sammeln sowie Anmelde-, Installations- und Updateprobleme beheben",
+     "Probleme beim Beitritt zu Besprechungen und mit Copilot-Funktionen in Teams eingrenzen"
+    ]
+   }
+  ],
+  "audience": "Laut Microsoft richtet sich der Kurs an Personen, die die Rolle Teams-Administrator in Microsoft 365 anstreben oder die Prüfung zum Teams Administrator Associate ablegen möchten.",
+  "prerequisites": "Für die Prüfung erwartet Microsoft, dass Sie wissen, wie Teams mit den Microsoft-365-Diensten zusammenarbeitet. Eine verpflichtende Vorzertifizierung nennt Microsoft weder auf der Kurs- noch auf der Zertifizierungsseite.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/ms-700t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+   "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+   "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams"
+  ]
+ },
+ "pl-900-power-platform-fundamentals": {
+  "officialCourse": "PL-900T00-A: Introduction to Microsoft Power Platform (Microsoft Learn, Stufe Beginner, 1 Tag); Prüfung PL-900, Zertifizierung Microsoft Certified: Power Platform Fundamentals. Die Module folgen den Prüfungszielen im Studienleitfaden (Stand 24.07.2026) und dem zugehörigen Lernpfad auf Microsoft Learn, der dieselben Bereiche abdeckt.",
+  "intro": "Der Kurs gibt einen Überblick über Microsoft Power Platform: Power Apps, Power Automate, Microsoft Dataverse, Konnektoren, Power Pages und Agents in Microsoft Copilot Studio. Sie lernen, welchen Nutzen die einzelnen Dienste haben, wie Umgebungen, Sicherheit und Governance aufgebaut sind und wie KI-Funktionen beim Erstellen von Tabellen, Apps und Flows helfen. Danach können Sie einfache Apps, Flows und Agents einordnen und beschreiben, wie sie entstehen.",
+  "modules": [
+   {
+    "title": "Geschäftlicher Nutzen von Microsoft Power Platform",
+    "points": [
+     "Power Apps, Power Automate und Power Pages im Überblick",
+     "Dataverse und Konnektoren als Daten- und Integrationsschicht",
+     "Generative KI in Power Platform und Agents mit Copilot Studio"
+    ]
+   },
+   {
+    "title": "Microsoft Dataverse",
+    "points": [
+     "Unterschiede zwischen klassischen Datenbanken und Dataverse",
+     "Tabellen, Spalten, Beziehungen, Formulare und Ansichten",
+     "Geschäftslogik in Dataverse, auch mit Power Fx",
+     "Tabellen und Beziehungen mit KI-Unterstützung anlegen und ändern"
+    ]
+   },
+   {
+    "title": "Verwaltung und Governance",
+    "points": [
+     "Umgebungen und das Sicherheitsmodell von Power Platform",
+     "Datenschutz und Barrierefreiheit",
+     "Überwachung und Auswertungen",
+     "Application Lifecycle Management mit Power Platform-Pipelines"
+    ]
+   },
+   {
+    "title": "Power Apps",
+    "points": [
+     "Einsatzfälle für Canvas-Apps und modellgesteuerte Apps",
+     "Plan Designer und Code-Apps einordnen",
+     "Einfache Apps mit KI-Unterstützung erstellen"
+    ]
+   },
+   {
+    "title": "Power Automate",
+    "points": [
+     "Cloud-Flows und Desktop-Flows unterscheiden",
+     "Genehmigungen, Dokumentenautomatisierung und Abläufe mit Teams, Outlook, SharePoint und Forms",
+     "Trigger und Aktionen von Konnektoren in Cloud-Flows",
+     "Flows mit KI-Unterstützung erstellen und anpassen"
+    ]
+   },
+   {
+    "title": "Agents in Microsoft Copilot Studio",
+    "points": [
+     "Einsatzfälle für Agents, Gesprächsverläufe mit Themen aufbauen",
+     "Wissensquellen und Tools wie MCP-Server und Agent-Flows",
+     "Agents über Kanäle veröffentlichen",
+     "Nutzung überwachen, Agents bewerten, Microsoft Agent 365 einordnen"
+    ]
+   }
+  ],
+  "audience": "Laut Microsoft richtet sich der Kurs an Personen, die verstehen möchten, wie sich mit Microsoft Power Platform eigene Geschäftslösungen entwickeln lassen, und die am Anfang ihrer Arbeit mit der Plattform stehen.",
+  "prerequisites": "Microsoft nennt für den Lernpfad keine Voraussetzungen. Die Prüfung PL-900 kann zur Vorbereitung auf rollenbasierte Zertifizierungen dienen, ist dafür aber keine Pflicht.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/pl-900t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900",
+   "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+   "https://learn.microsoft.com/en-us/training/paths/pl-900-power-platform-fundamentals/"
+  ]
+ },
+ "dp-300-azure-database-administrator-associate": {
+  "officialCourse": "DP-300T00-A: Implement scalable database solutions using Azure SQL (Microsoft Learn, Stufe Intermediate, 4 Tage); Prüfung DP-300 Administering Microsoft Azure SQL Solutions, Zertifizierung Microsoft Certified: Azure Database Administrator Associate. Die Module folgen den Prüfungszielen im Studienleitfaden (Stand 27.10.2026); die sechs Lernpfade der Kursseite decken dieselben Bereiche ab.",
+  "intro": "Der Kurs behandelt den Betrieb relationaler Datenbanken mit Azure SQL Database, Azure SQL Managed Instance und SQL Server auf Azure-VMs sowie in hybriden Umgebungen. Themen sind Bereitstellung und Migration, Authentifizierung und Verschlüsselung, Leistungsüberwachung und Abfrageoptimierung, Automatisierung sowie Hochverfügbarkeit und Notfallwiederherstellung. Danach können Sie Datenbankdienste auswählen und bereitstellen, Zugriffe und Daten absichern, Leistungsprobleme eingrenzen, wiederkehrende Aufgaben automatisieren und Sicherung und Wiederherstellung planen.",
+  "modules": [
+   {
+    "title": "Datenplattform planen und bereitstellen",
+    "points": [
+     "Passendes Azure SQL-Angebot anhand der Anforderungen auswählen",
+     "Azure SQL Database, Managed Instance und SQL Server auf Azure-VMs bereitstellen",
+     "Skalierung, Tabellenpartitionierung und Datenkomprimierung konfigurieren",
+     "Einsatzfälle für Azure Arc-fähige SQL-Dienste und Azure SQL Database in Microsoft Fabric"
+    ]
+   },
+   {
+    "title": "Migration nach Azure SQL",
+    "points": [
+     "Anforderungen bewerten, Online- und Offline-Migration abwägen",
+     "Migration nach Azure und zwischen Azure SQL-Diensten durchführen",
+     "Fehler bei der Migration eingrenzen"
+    ]
+   },
+   {
+    "title": "Authentifizierung und Berechtigungen",
+    "points": [
+     "Microsoft Entra ID-Authentifizierung für Azure SQL und SQL Server",
+     "Sicherheitsprinzipale und Benutzer aus Entra-Identitäten anlegen",
+     "Berechtigungen auf Datenbank- und Objektebene nach dem Prinzip der geringsten Rechte",
+     "Zugriffe mit T-SQL verwalten und Anmeldeprobleme beheben"
+    ]
+   },
+   {
+    "title": "Datensicherheit und Compliance",
+    "points": [
+     "Transparent Data Encryption, Always Encrypted und Verschlüsselung auf Objektebene",
+     "Firewallregeln, Private Link und Dienstendpunkte",
+     "Datenklassifizierung, Überwachung (Auditing) und dynamische Datenmaskierung",
+     "Sicherheit auf Zeilenebene und Ledger in Azure SQL"
+    ]
+   },
+   {
+    "title": "Überwachung und Abfrageleistung",
+    "points": [
+     "Leistungsbasislinie erstellen und Metriken auswerten",
+     "Database Watcher, Extended Events und Intelligent Insights",
+     "Query Store, dynamische Verwaltungssichten und Ausführungspläne",
+     "Blockierungen auflösen und Indizes anpassen"
+    ]
+   },
+   {
+    "title": "Datenbanken für Leistung konfigurieren",
+    "points": [
+     "Wartung von Indizes und Statistiken, Integritätsprüfungen",
+     "Automatische Optimierung und datenbankweit gültige Konfiguration",
+     "Servereinstellungen und Resource Governor",
+     "Intelligent Query Processing einordnen"
+    ]
+   },
+   {
+    "title": "Aufgaben automatisieren",
+    "points": [
+     "SQL Server-Agent-Aufträge, Zeitpläne, Warnungen und Benachrichtigungen",
+     "Bereitstellung mit ARM- und Bicep-Vorlagen, Azure PowerShell und Azure CLI",
+     "Elastische Aufträge und automatisierte Datenbankaufgaben in Azure"
+    ]
+   },
+   {
+    "title": "Hochverfügbarkeit und Notfallwiederherstellung",
+    "points": [
+     "HA/DR-Strategie anhand von RPO und RTO festlegen und testen",
+     "Sicherung, Wiederherstellung auf einen Zeitpunkt und Langzeitaufbewahrung",
+     "Aktive Georeplikation und Failovergruppen",
+     "Always On-Verfügbarkeitsgruppen, Failoverclusterinstanzen und Protokollversand"
+    ]
+   }
+  ],
+  "audience": "Laut Microsoft richtet sich der Kurs an Datenfachleute, die Daten und Datenbanken verwalten und die Datenplattformtechnologien in Azure administrieren möchten. Er eignet sich außerdem für Datenarchitekten und Anwendungsentwickler, die diese Technologien kennen und aus Anwendungen nutzen müssen.",
+  "prerequisites": "Verpflichtende Voraussetzungen nennt Microsoft nicht. Für den ersten Lernpfad des Kurses werden Grundkenntnisse in Virtualisierung und Netzwerkkonfiguration, das Anlegen einer SQL Server-Datenbank, einfache T-SQL-Kenntnisse und Erfahrung mit dem Azure-Portal vorausgesetzt. Für die Prüfung erwartet Microsoft Kenntnisse und Erfahrung mit Azure SQL Database, Azure SQL Managed Instance, SQL Server auf Azure-VMs und lokal betriebenem SQL Server.",
+  "sources": [
+   "https://learn.microsoft.com/en-us/training/courses/dp-300t00",
+   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+   "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+   "https://learn.microsoft.com/en-us/training/paths/plan-implement-data-platform-resources/"
+  ]
+ },
+ "aws-technical-essentials": {
+  "officialCourse": "AWS Technical Essentials (AWS Classroom Training, Stufe Fundamental, laut AWS 1 Tag), Version 5.8.6, zuletzt aktualisiert am 30.10.2026. Die Module folgen der Kursgliederung auf AWS Skill Builder.",
+  "intro": "Der Kurs führt in die grundlegenden AWS-Dienste für Compute, Netzwerk, Speicher, Datenbanken, Überwachung und Sicherheit ein. In praktischen Übungen arbeiten Sie mit der AWS Management Console, richten Zugriffe mit IAM ein, bauen eine VPC auf und verbinden eine Anwendung mit Amazon S3 und DynamoDB. Danach können Sie die Dienste begrifflich einordnen, EC2, Container und Lambda voneinander abgrenzen und CloudWatch für die Überwachung nutzen.",
+  "modules": [
+   {
+    "title": "Einführung in Amazon Web Services",
+    "points": [
+     "Cloud Computing und die AWS-Dienste im Überblick",
+     "Sicherheit in der AWS Cloud",
+     "AWS Identity and Access Management (IAM)",
+     "Übung: erste Schritte mit IAM"
+    ]
+   },
+   {
+    "title": "Compute",
+    "points": [
+     "Amazon EC2 und der Lebenszyklus von Instanzen",
+     "Container-Dienste von AWS",
+     "Serverless und AWS Lambda"
+    ]
+   },
+   {
+    "title": "Netzwerk",
+    "points": [
+     "Amazon Virtual Private Cloud (VPC)",
+     "Routing, Routingtabellen und AWS Direct Connect",
+     "Sicherheit in der VPC",
+     "Übung: VPC anlegen und Anwendung auf EC2 neu starten"
+    ]
+   },
+   {
+    "title": "Speicher",
+    "points": [
+     "Speicherarten in AWS",
+     "EC2-Instanzspeicher und Amazon Elastic Block Store (EBS)",
+     "Objektspeicher mit Amazon S3"
+    ]
+   },
+   {
+    "title": "Datenbanken",
+    "points": [
+     "Vorteile von Datenbanken in AWS",
+     "Amazon Relational Database Service (RDS)",
+     "Zweckgebundene Datenbanken und Amazon DynamoDB",
+     "Übung: Webanwendung mit S3-Bucket und DynamoDB-Tabelle verbinden"
+    ]
+   },
+   {
+    "title": "Überwachung, Lastverteilung und Skalierung",
+    "points": [
+     "Überwachung mit Amazon CloudWatch",
+     "Load Balancing und Skalierung",
+     "Übung: Hochverfügbarkeit für eine Anwendung einrichten"
+    ]
+   }
+  ],
+  "audience": "AWS nennt als Zielgruppe Personen, die Kunden den technischen Nutzen von AWS-Diensten erläutern, Einsteiger in AWS sowie SysOps-Administratoren, Solutions Architects und Entwickler.",
+  "prerequisites": "AWS empfiehlt IT-Erfahrung und Grundkenntnisse zu üblichen Rechenzentrumsarchitekturen und ihren Komponenten wie Servern, Netzwerken, Datenbanken und Anwendungen. Vorerfahrung mit Cloud Computing oder AWS ist nicht erforderlich.",
+  "sources": [
+   "https://skillbuilder.aws/learn/KRREM87781/aws-technical-essentials/W5T3UTW15Z"
+  ]
+ },
+ "tableau-desktop-ii-intermediate": {
+  "officialCourse": "Tableau Desktop II: Intermediate, Kurscode TTD201 (Trailhead Academy von Salesforce, Rolle Datenanalyst, Stufe Intermediate, laut Hersteller 2 Tage). Die Module folgen der Lektionsübersicht der Kursbeschreibung in der Trailhead Academy, abgerufen am 18.11.2026.",
+  "intro": "Der Kurs baut auf den Grundlagen von Tableau auf. Behandelt werden Datenquellen aus mehreren Tabellen mit Joins, Unions und Beziehungen, Extrakte, berechnete Felder, LOD-Ausdrücke und Tabellenberechnungen, Parameter, Mengen sowie interaktive Dashboards. Danach können Sie Daten aus mehreren Tabellen kombinieren, Diagramme wie Balken-in-Balken, Bullet-Diagramm, Histogramm und Boxplot erstellen und Dashboards mit Filtern und Aktionen aufbauen. Laut Hersteller unterstützt der Kurs das Erstellen von Inhalten in Tableau Desktop, Tableau Cloud und Tableau Server.",
+  "modules": [
+   {
+    "title": "Wiederholung und Einstieg",
+    "points": [
+     "Kennzahlenwerte und Kennzahlennamen in einer Ansicht",
+     "Mit Datumsangaben arbeiten",
+     "Diskrete Datumsteile und fortlaufende Datumswerte"
+    ]
+   },
+   {
+    "title": "Datenquellen und Datenverbindungen",
+    "points": [
+     "Logische und physische Ebene einer Datenquelle",
+     "Joins und Unions erstellen",
+     "Beziehungen zwischen Tabellen, auch aus verschiedenen Datenbanken",
+     "Joins und Beziehungen gegenüberstellen"
+    ]
+   },
+   {
+    "title": "Extrakte",
+    "points": [
+     "Einsatz von Datenextrakten",
+     "Extrakt konfigurieren und ausführen",
+     "Extrakte aus logischen und aus physischen Tabellen"
+    ]
+   },
+   {
+    "title": "Berechnungen",
+    "points": [
+     "Berechnete Felder erstellen und bearbeiten",
+     "Aggregationen und Dimensionen in Berechnungen",
+     "Join-Berechnungen",
+     "LOD-Ausdrücke (Level of Detail)"
+    ]
+   },
+   {
+    "title": "Vergleichs- und Verteilungsansichten",
+    "points": [
+     "Balken-in-Balken-Diagramm und Bullet-Diagramm",
+     "Referenzlinien und Referenzbänder",
+     "Klassen (Bins), Histogramme und Boxplots"
+    ]
+   },
+   {
+    "title": "Tabellenberechnungen",
+    "points": [
+     "Umfang und Richtung von Tabellenberechnungen",
+     "Berechnung über bestimmte Dimensionen",
+     "Umgang mit NULL-Werten",
+     "Tabellenberechnungen für statistische Auswertungen"
+    ]
+   },
+   {
+    "title": "Parameter und Mengen",
+    "points": [
+     "Parameter mit Filtern und Referenzlinien einsetzen",
+     "Mengen bilden und kombinieren, In- und Out-Mengen",
+     "Reihenfolge der Vorgänge in Tableau, Kontextfilter und verschachtelte Sortierung",
+     "Ausreißer mit „Erklär die Daten“ untersuchen"
+    ]
+   },
+   {
+    "title": "Dashboards",
+    "points": [
+     "Dashboard planen und aufbauen",
+     "Interaktivität mit Filtern, Aktionen und Parameteraktionen",
+     "Gestaltungsregeln, Hinweise, Anmerkungen und QuickInfos",
+     "Online veröffentlichen und als PDF speichern"
+    ]
+   }
+  ],
+  "audience": "Laut Hersteller richtet sich der Kurs an geübte Tableau-Anwender, die weiterführende Kenntnisse aufbauen möchten.",
+  "prerequisites": "Der Hersteller empfiehlt mindestens drei Monate Erfahrung mit Tableau oder gleichwertige Kenntnisse. Sie sollten Daten verbinden, Visualisierungen mit Feldern auf Containern und der Markierungskarte erstellen, Daten filtern und sortieren und ein Dashboard bauen können. Eine verpflichtende Voraussetzung nennt der Hersteller nicht.",
+  "sources": [
+   "https://trailheadacademy.salesforce.com/classes/TTD201-Tableau-Desktop-Intermediate"
+  ]
+ },
+ "comptia-cloud-plus": {
+  "officialCourse": "CompTIA Cloud+, Prüfung CV0-004 (Version V4, von CompTIA am 24.09.2024 eingeführt). Kein offizieller Kursaufbau vorliegend; Module nach den von CompTIA veröffentlichten Prüfungszielen V4 gegliedert",
+  "intro": "Der Kurs behandelt die sechs Prüfungsbereiche von CompTIA Cloud+ V4: Cloud-Architektur, Bereitstellung, Betrieb, Sicherheit, DevOps-Grundlagen und Fehlerbehebung. Die Inhalte sind herstellerneutral. Danach können Sie Cloud-Modelle anhand geschäftlicher Anforderungen bewerten, Migrationen von Workloads einordnen und Ressourcen mit Infrastructure as Code bereitstellen, Sicherung und Überwachung einrichten, Zugriffe absichern und Störungen bei Bereitstellung, Netzwerk und Sicherheit eingrenzen.",
+  "modules": [
+   {
+    "title": "Cloud-Architektur",
+    "points": [
+     "Servicemodelle (IaaS, PaaS, SaaS, FaaS), Shared-Responsibility-Modell und Verfügbarkeit",
+     "Virtualisierung, Container und Orchestrierung",
+     "Cloud-Netzwerke wie VPN und Virtual Private Cloud, Speicherarten und Speicherklassen",
+     "Datenbankgrundlagen, Optimierung von Workloads und Abrechnungsmodelle"
+    ]
+   },
+   {
+    "title": "Bereitstellung und Migration",
+    "points": [
+     "Bereitstellungsmodelle Public, Private, Hybrid und Community",
+     "Migrationsarten, Migrationsstrategien und zu prüfende Anforderungen",
+     "Infrastructure as Code zur Automatisierung einsetzen",
+     "Cloud-Ressourcen nach Anforderungen bereitstellen und konfigurieren"
+    ]
+   },
+   {
+    "title": "Betrieb",
+    "points": [
+     "Lebenszyklus von Cloud-Ressourcen einschließlich Skalierung und Updates",
+     "Verfahren für Sicherung und Wiederherstellung",
+     "Observability: Logging, Monitoring und Alarmierung"
+    ]
+   },
+   {
+    "title": "Sicherheit",
+    "points": [
+     "Schwachstellenmanagement in Cloud-Umgebungen",
+     "Identitäts- und Zugriffsmanagement (IAM)",
+     "Absicherung von Containern und Einsatz von Sicherheitskontrollen",
+     "Compliance-Vorgaben wie PCI DSS, SOC 2 und ISO 27001"
+    ]
+   },
+   {
+    "title": "DevOps-Grundlagen",
+    "points": [
+     "Konzepte der Versionsverwaltung von Code",
+     "Konzepte von CI/CD-Pipelines",
+     "Werkzeuge wie Kubernetes, Ansible und Jenkins",
+     "Systemintegration und ereignisgesteuerte Architekturen"
+    ]
+   },
+   {
+    "title": "Fehlerbehebung",
+    "points": [
+     "Probleme bei der Bereitstellung und Fehlkonfigurationen",
+     "Netzwerkprobleme, etwa nicht erreichbare Dienste wie DNS, DHCP und NTP",
+     "Sicherheitsprobleme wie offengelegte Zugangsdaten und Rechteausweitung"
+    ]
+   }
+  ],
+  "audience": "CompTIA ordnet Cloud+ unter anderem den Rollen Systemadministrator, Network Operations Specialist, Enterprise Architect und Security Architect zu und nennt als Erfahrungshintergrund die Arbeit als Systemadministrator oder Cloud Engineer.",
+  "prerequisites": "CompTIA empfiehlt zwei bis drei Jahre praktische Erfahrung als Systemadministrator oder Cloud Engineer; die Prüfungsziele nennen zusätzlich CompTIA Network+ und Server+ oder gleichwertige Kenntnisse. Das sind Empfehlungen; eine verpflichtende Voraussetzung nennt CompTIA nicht.",
+  "sources": [
+   "https://www.comptia.org/en-us/certifications/cloud/",
+   "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-cloud-cv0-004-exam-objectives-(2-0).pdf"
+  ]
+ },
+ "comptia-linux-plus": {
+  "officialCourse": "CompTIA Linux+, Prüfung XK0-006 (Version V8, von CompTIA am 15.07.2025 eingeführt). Kein offizieller Kursaufbau vorliegend; Module nach den von CompTIA veröffentlichten Prüfungszielen V8 gegliedert",
+  "intro": "Der Kurs behandelt die fünf Prüfungsbereiche von CompTIA Linux+ V8: Systemverwaltung, Dienste und Benutzerverwaltung, Sicherheit, Automatisierung mit Skripten sowie Fehlerbehebung. Danach können Sie Linux-Systeme einrichten und verwalten, Speicher, Netzwerk, Pakete, Dienste und Container betreuen, Systeme härten, wiederkehrende Aufgaben mit Shell-Skripten, Python, Git und Werkzeugen wie Ansible automatisieren und Störungen an Hardware, Netzwerk und Leistung eingrenzen.",
+  "modules": [
+   {
+    "title": "Systemgrundlagen, Geräte und Speicher",
+    "points": [
+     "Bootvorgang, Kernel, Verzeichnisstruktur und Serverarchitekturen",
+     "Kernelmodule, Hardwarekomponenten und Werkzeuge zur Geräteverwaltung",
+     "LVM, RAID, Partitionen und eingehängter Speicher"
+    ]
+   },
+   {
+    "title": "Shell, Netzwerk, Sicherung und Virtualisierung",
+    "points": [
+     "Navigation, Editoren, Umleitungen und Umgebungsvariablen in der Shell",
+     "Hostkonfiguration, DNS, Netzwerkschnittstellen und Netzwerkwerkzeuge",
+     "Archivierung, Komprimierung und Wiederherstellung von Daten",
+     "Hypervisoren, virtuelle Maschinen und Disk-Images"
+    ]
+   },
+   {
+    "title": "Dienste, Benutzer und Software",
+    "points": [
+     "Dateien und Verzeichnisse: Berechtigungen, Links und Spezialdateien",
+     "Benutzer und Gruppen anlegen, ändern und entfernen",
+     "Prozesse überwachen, priorisieren und Aufgaben planen",
+     "Pakete und Repositories, Dienste, Logs und Timer sowie Container"
+    ]
+   },
+   {
+    "title": "Sicherheit",
+    "points": [
+     "Authentifizierung und Protokollierung mit PAM, LDAP, Kerberos und Auditing",
+     "Firewalls mit iptables, nftables und UFW",
+     "Härtung: Berechtigungen, sudo, sicherer Fernzugriff, Kennwortrichtlinien und MFA",
+     "Verschlüsselung, Hashing, Zertifikate, Integritätsprüfung und Compliance"
+    ]
+   },
+   {
+    "title": "Automatisierung, Orchestrierung und Skripte",
+    "points": [
+     "Automatisierung mit Ansible, Puppet und CI/CD-Werkzeugen",
+     "Shell-Skripte mit Variablen, Funktionen und Kontrollstrukturen",
+     "Python-Grundlagen: Umgebungen, Pakete und Datentypen",
+     "Versionsverwaltung mit Git und verantwortungsvoller Einsatz von KI bei der Codeerstellung"
+    ]
+   },
+   {
+    "title": "Fehlerbehebung",
+    "points": [
+     "Systemzustand, Logs und Ereignismeldungen überwachen",
+     "Boot-, Mount-, Hardware- und Speicherprobleme",
+     "Netzwerkprobleme bei Firewall, Routing, DNS und Verbindung",
+     "SELinux- und Berechtigungsprobleme sowie Analyse von CPU, Arbeitsspeicher und I/O"
+    ]
+   }
+  ],
+  "audience": "CompTIA nennt für Linux+ die Rollen Linux-Systemadministrator, Systems Engineer und Network Engineer.",
+  "prerequisites": "CompTIA empfiehlt etwa zwölf Monate praktische Erfahrung mit Linux-Servern sowie CompTIA A+, Network+ oder Server+ oder vergleichbare Kenntnisse. Das sind Empfehlungen; eine verpflichtende Voraussetzung nennt CompTIA auf der Zertifizierungsseite nicht.",
+  "sources": [
+   "https://www.comptia.org/en-us/certifications/linux/"
+  ]
+ },
+ "comptia-pentest-plus": {
+  "officialCourse": "CompTIA PenTest+, Prüfung PT0-003 (Version V3, von CompTIA am 17.12.2024 eingeführt). Kein offizieller Kursaufbau vorliegend; Module nach den von CompTIA veröffentlichten Prüfungszielen V3 gegliedert",
+  "intro": "Der Kurs behandelt die fünf Prüfungsbereiche von CompTIA PenTest+ V3: Steuerung des Testauftrags, Aufklärung und Enumeration, Schwachstellenerkennung und -analyse, Angriffe und Exploits sowie Post-Exploitation und Lateral Movement. Danach können Sie einen Penetrationstest mit klaren Regeln und Freigaben planen, Ziele erkunden, Scan-Ergebnisse prüfen, Angriffe auf Netzwerke, Hosts, Webanwendungen und Cloud-Umgebungen durchführen und die Ergebnisse mit Empfehlungen zur Behebung berichten.",
+  "modules": [
+   {
+    "title": "Testauftrag planen und steuern",
+    "points": [
+     "Umfang, Rules of Engagement, Testfenster und Zielauswahl festlegen",
+     "Rechtliche und ethische Vorgaben, Autorisierung und Meldepflichten",
+     "Abstimmung mit Beteiligten, Eskalationswege und Peer Reviews",
+     "Testberichte mit Management-Zusammenfassung, Angriffsverlauf, Befunden und Empfehlungen zur Behebung"
+    ]
+   },
+   {
+    "title": "Aufklärung und Enumeration",
+    "points": [
+     "Aktive und passive Aufklärung mit OSINT, Mitschnitt des Netzwerkverkehrs und Protokollscans",
+     "DNS-, Dienst- und Verzeichnis-Enumeration",
+     "Werkzeuge wie Nmap, Wireshark und Shodan",
+     "Python-, PowerShell- und Bash-Skripte für die eigene Aufgabe anpassen"
+    ]
+   },
+   {
+    "title": "Schwachstellen finden und bewerten",
+    "points": [
+     "Authentifizierte und nicht authentifizierte Scans, SAST und DAST",
+     "Ergebnisse validieren und Fehlalarme erkennen",
+     "Werkzeuge wie Nessus, Nikto und OpenVAS"
+    ]
+   },
+   {
+    "title": "Angriffe auf Netzwerke, Authentifizierung und Hosts",
+    "points": [
+     "Netzwerkangriffe wie VLAN Hopping und On-Path-Angriffe",
+     "Angriffe auf Anmeldeverfahren wie Brute Force, Pass-the-Hash und Credential Stuffing",
+     "Hostbasierte Angriffe wie Rechteausweitung, Process Injection und Credential Dumping"
+    ]
+   },
+   {
+    "title": "Angriffe auf Webanwendungen, Cloud und KI-Systeme",
+    "points": [
+     "SQL Injection, Cross-Site Scripting und Directory Traversal",
+     "Container Escapes, Angriffe auf Metadatendienste und IAM-Fehlkonfigurationen",
+     "Angriffe auf KI-Systeme wie Prompt Injection und Modellmanipulation einordnen"
+    ]
+   },
+   {
+    "title": "Post-Exploitation und Lateral Movement",
+    "points": [
+     "Persistenz einrichten und aufrechterhalten",
+     "Lateral Movement in der Zielumgebung",
+     "Staging und Exfiltration von Daten einordnen",
+     "Aufräumen nach dem Test: Persistenz, Werkzeuge und angelegte Konten entfernen"
+    ]
+   }
+  ],
+  "audience": "CompTIA nennt für PenTest+ die Rollen Penetration Tester und Security Consultant.",
+  "prerequisites": "CompTIA empfiehlt drei bis vier Jahre Erfahrung in einer Rolle als Penetration Tester sowie Network+ und Security+ oder gleichwertige Kenntnisse. Das sind Empfehlungen; eine verpflichtende Voraussetzung nennt CompTIA auf der Zertifizierungsseite nicht.",
+  "sources": [
+   "https://www.comptia.org/en-us/certifications/pentest/",
+   "https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-pentest-pt0-003-exam-objectives-(3-0).pdf"
+  ]
+ },
+ "comptia-data-plus": {
+  "officialCourse": "CompTIA Data+, Prüfung DA0-002 (Version V2, von CompTIA am 14.10.2025 eingeführt). Kein offizieller Kursaufbau vorliegend; Module nach den von CompTIA veröffentlichten Prüfungszielen V2 gegliedert",
+  "intro": "Der Kurs behandelt die fünf Prüfungsbereiche von CompTIA Data+ V2: Datenkonzepte und Umgebungen, Datenbeschaffung und -aufbereitung, Datenanalyse, Visualisierung und Reporting sowie Data Governance. Danach können Sie Daten aus verschiedenen Quellen zusammenführen und bereinigen, grundlegende statistische Verfahren anwenden, Ergebnisse in Diagrammen, Dashboards und Berichten für unterschiedliche Empfänger aufbereiten und Anforderungen an Datenqualität, Datenschutz und Compliance berücksichtigen.",
+  "modules": [
+   {
+    "title": "Datenkonzepte und Umgebungen",
+    "points": [
+     "Datenbanktypen, Datenstrukturen, Dateiformate und Datentypen",
+     "Datenquellen wie Datenbanken, APIs, Web Scraping, Dateien und Logs",
+     "Infrastruktur: Cloud, On-Premises, Speicher und Container",
+     "Werkzeuge für Analyse und BI sowie Grundbegriffe der KI"
+    ]
+   },
+   {
+    "title": "Datenbeschaffung und Aufbereitung",
+    "points": [
+     "Daten über Abfragen und Datenintegration beschaffen und zusammenführen",
+     "Daten erkunden: fehlende Werte, Duplikate, Redundanz und Ausreißer finden",
+     "Daten bereinigen, zusammenführen, zerlegen und vereinheitlichen"
+    ]
+   },
+   {
+    "title": "Datenanalyse",
+    "points": [
+     "Statistische Methoden auswählen und grundlegende Verfahren anwenden",
+     "Analyseergebnisse passend für die jeweiligen Empfänger vermitteln",
+     "Probleme in der Analyse mit Werkzeugen und Hilfsquellen eingrenzen"
+    ]
+   },
+   {
+    "title": "Visualisierung und Reporting",
+    "points": [
+     "Diagramme, Karten, Tabellen und Gestaltungselemente gezielt einsetzen",
+     "Berichte und Dashboards auf geeignetem Weg bereitstellen",
+     "Berichte validieren, prüfen und Fehler beheben"
+    ]
+   },
+   {
+    "title": "Data Governance",
+    "points": [
+     "Dokumentation, Versionierung und Data Lineage",
+     "Compliance: Aufbewahrung, Audits und Regulierung",
+     "Datenschutz mit Zugriffskontrolle, Verschlüsselung und Maskierung",
+     "Qualitätssicherung durch Profiling, Monitoring und Tests"
+    ]
+   }
+  ],
+  "audience": "CompTIA beschreibt Data+ als Zertifizierung für den frühen Berufsweg in der Datenanalyse und ordnet sie der Rolle Data Analyst zu.",
+  "prerequisites": "CompTIA empfiehlt 18 bis 24 Monate Erfahrung als Data Analyst oder in einer ähnlichen Rolle, mit Berührung zu Datenbanken, Analysewerkzeugen, grundlegender Statistik und Datenvisualisierung. Das ist eine Empfehlung; eine verpflichtende Voraussetzung nennt CompTIA auf der Zertifizierungsseite nicht.",
+  "sources": [
+   "https://www.comptia.org/en-us/certifications/data/"
+  ]
+ },
+ "isc2-ccsp": {
+  "officialCourse": "ISC2 CCSP (Certified Cloud Security Professional); Module nach dem CCSP Certification Exam Outline von ISC2 in der Fassung vom 1. August 2026 mit sechs Domänen. Ein eigenes Kapitelverzeichnis des ISC2-Trainings wurde nicht ausgewertet.",
+  "intro": "Der Kurs folgt den sechs Domänen des CCSP-Prüfungsrahmens von ISC2 in der seit August 2026 geltenden Fassung: Cloud-Konzepte und Architektur, Datensicherheit, Plattform- und Infrastruktursicherheit, Anwendungssicherheit, Sicherheitsbetrieb sowie Recht, Risiko und Compliance. Eigene Abschnitte behandeln KI und Machine Learning. Danach können Sie Sicherheitsanforderungen für Cloud-Umgebungen einordnen, Schutzmaßnahmen begründen und sich gezielt auf die CCSP-Prüfung vorbereiten.",
+  "modules": [
+   {
+    "title": "Cloud-Konzepte, Architektur und Design",
+    "points": [
+     "Begriffe des Cloud Computing und Cloud-Referenzarchitektur",
+     "Sicherheitskonzepte und Designprinzipien für sichere Cloud-Umgebungen",
+     "Cloud Service Provider bewerten",
+     "KI und Machine Learning: Bedrohungserkennung, SOAR, ethische und regulatorische Fragen"
+    ]
+   },
+   {
+    "title": "Datensicherheit in der Cloud",
+    "points": [
+     "Speicherarchitekturen und Technologien zum Schutz von Daten",
+     "Data Discovery, Datenklassifizierung und Information Rights Management",
+     "Aufbewahrung, Löschung und Archivierung",
+     "Nachvollziehbarkeit von Datenereignissen und Schutz von KI- und ML-Daten"
+    ]
+   },
+   {
+    "title": "Sicherheit von Cloud-Plattform und Infrastruktur",
+    "points": [
+     "Komponenten von Infrastruktur und Plattform",
+     "Sicheres Rechenzentrumsdesign und Risikoanalyse",
+     "Sicherheitskontrollen planen und umsetzen",
+     "Business Continuity und Disaster Recovery planen"
+    ]
+   },
+   {
+    "title": "Anwendungssicherheit in der Cloud",
+    "points": [
+     "Schulung und Awareness für Anwendungssicherheit",
+     "Secure Software Development Life Cycle verstehen und anwenden",
+     "Software Assurance, Validierung und geprüfte Software",
+     "Cloud-Anwendungsarchitektur und Identity and Access Management"
+    ]
+   },
+   {
+    "title": "Sicherheitsbetrieb in der Cloud",
+    "points": [
+     "Physische und logische Infrastruktur aufbauen, betreiben und warten",
+     "Betriebliche Kontrollen und Standards, zum Beispiel nach NIST, ISO, COBIT oder ITIL",
+     "Digitale Forensik und Kommunikation mit Beteiligten",
+     "Security Operations: SOC, Log-Analyse, Incident Response, Schwachstellen- und Penetrationstests"
+    ]
+   },
+   {
+    "title": "Recht, Risiko und Compliance",
+    "points": [
+     "Rechtliche Anforderungen und besondere Risiken in Cloud-Umgebungen",
+     "Datenschutzfragen",
+     "Auditprozess und Anpassungen für die Cloud",
+     "Enterprise Risk Management, Outsourcing und Gestaltung von Cloud-Verträgen"
+    ]
+   }
+  ],
+  "audience": "ISC2 nennt Verantwortliche für IT-, Cyber-, Informations- und Softwaresicherheit, etwa Cloud-Architekten, Cloud Engineers, Cloud-Administratoren, Cloud-Security-Analysten, Berater und Auditoren für Cloud-Dienste.",
+  "prerequisites": "Für die Zertifizierung verlangt ISC2 fünf Jahre Vollzeit-Berufserfahrung in der IT, davon drei Jahre in der Cybersicherheit und ein Jahr in mindestens einer der sechs CCSP-Domänen; ein einschlägiger Studienabschluss oder das CCSK-Zertifikat der CSA kann ein Jahr ersetzen (insgesamt höchstens ein Jahr), eine aktive CISSP-Zertifizierung die gesamte Anforderung. Ohne diese Erfahrung können Sie nach bestandener Prüfung Associate of ISC2 werden und haben dann sechs Jahre Zeit, die Erfahrung nachzuweisen.",
+  "sources": [
+   "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+   "https://www.isc2.org/certifications/ccsp"
+  ]
+ },
+ "isaca-cisa": {
+  "officialCourse": "ISACA CISA (Certified Information Systems Auditor); Module nach dem CISA Exam Content Outline von ISACA mit fünf Domänen, gültig seit 1. August 2024. Kein eigenes Kursverzeichnis von ISACA ausgewertet.",
+  "intro": "Der Kurs folgt den fünf Domänen des aktuellen CISA-Prüfungsrahmens von ISACA: Prüfungsprozess für Informationssysteme, Governance und Management der IT, Beschaffung, Entwicklung und Einführung von Systemen, IT-Betrieb und Business Resilience sowie Schutz von Informationswerten. Sie lernen, Audits risikobasiert zu planen und durchzuführen, Kontrollen zu beurteilen und Ergebnisse zu berichten. Grundlage ist die seit August 2024 geltende Fassung.",
+  "modules": [
+   {
+    "title": "Audits planen",
+    "points": [
+     "IS-Audit-Standards, Leitlinien und Berufsethik",
+     "Arten von Audits, Assessments und Reviews",
+     "Risikobasierte Auditplanung",
+     "Kontrollarten und ihre Einordnung"
+    ]
+   },
+   {
+    "title": "Audits durchführen und berichten",
+    "points": [
+     "Projektmanagement im Audit, Test- und Stichprobenverfahren",
+     "Prüfungsnachweise erheben und Datenanalysen einsetzen",
+     "Berichterstattung und Kommunikation",
+     "Qualitätssicherung und Verbesserung des Auditprozesses"
+    ]
+   },
+   {
+    "title": "IT-Governance",
+    "points": [
+     "Gesetze, Regulierung und Branchenstandards",
+     "Organisationsstruktur, IT-Strategie, Richtlinien und Verfahren",
+     "Enterprise-Architektur und Enterprise Risk Management",
+     "Datenschutzprogramm, Data Governance und Klassifizierung"
+    ]
+   },
+   {
+    "title": "IT-Management",
+    "points": [
+     "IT-Ressourcen und Lieferanten steuern",
+     "Leistungsüberwachung und Berichtswesen der IT",
+     "Qualitätssicherung und Qualitätsmanagement"
+    ]
+   },
+   {
+    "title": "Beschaffung, Entwicklung und Einführung von Systemen",
+    "points": [
+     "Projekt-Governance, Business Case und Machbarkeitsanalyse",
+     "Entwicklungsmethoden und Entwurf von Kontrollen",
+     "Tests, Konfigurations- und Release-Management",
+     "Migration, Datenübernahme und Post-Implementation Review"
+    ]
+   },
+   {
+    "title": "IT-Betrieb",
+    "points": [
+     "IT-Komponenten, Asset Management und Schnittstellen",
+     "Schatten-IT, Verfügbarkeit und Kapazität",
+     "Problem-, Incident-, Change-, Konfigurations- und Patch-Management",
+     "Log-Management, Service Level und Datenbankverwaltung"
+    ]
+   },
+   {
+    "title": "Business Resilience",
+    "points": [
+     "Business Impact Analysis",
+     "Resilienz von Systemen und Betrieb",
+     "Datensicherung, Speicherung und Wiederherstellung",
+     "Business-Continuity- und Disaster-Recovery-Pläne"
+    ]
+   },
+   {
+    "title": "Schutz von Informationswerten",
+    "points": [
+     "Frameworks, physische Kontrollen sowie Identity and Access Management",
+     "Netzwerk- und Endpunktsicherheit, Data Loss Prevention, Verschlüsselung und PKI",
+     "Cloud, Virtualisierung, mobile Geräte und IoT",
+     "Awareness, Angriffsmethoden, Sicherheitstests, Monitoring, Incident Response und Forensik"
+    ]
+   }
+  ],
+  "audience": "ISACA richtet CISA an IT- und IS-Auditoren sowie an Fachkräfte aus Kontrolle, Assurance und Informationssicherheit.",
+  "prerequisites": "Für die Zertifizierung verlangt ISACA mindestens fünf Jahre Berufserfahrung in IS- oder IT-Audit, Kontrolle, Assurance oder Sicherheit; bis zu drei Jahre lassen sich durch anerkannte Ersatzleistungen abdecken. Den Antrag auf Zertifizierung stellen Sie innerhalb von fünf Jahren nach bestandener Prüfung.",
+  "sources": [
+   "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+   "https://www.isaca.org/credentialing/cisa",
+   "https://www.isaca.org/about-us/newsroom/press-releases/2024/isacas-cisa-exam-updated-to-reflect-innovations-and-evolving-technologies-impacting-it-audit",
+   "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/exam-candidate-guides/2026/exam-candidate-guide.pdf"
+  ]
+ },
+ "isaca-crisc": {
+  "officialCourse": "ISACA CRISC (Certified in Risk and Information Systems Control); Module nach dem CRISC Exam Content Outline von ISACA mit vier Domänen, gültig seit 3. November 2025. Kein eigenes Kursverzeichnis von ISACA ausgewertet.",
+  "intro": "Der Kurs folgt den vier Domänen des aktuellen CRISC-Prüfungsrahmens von ISACA: Governance, Risikobewertung, Risikobehandlung und Berichterstattung sowie Technologie und Sicherheit. Sie lernen, IT-Risiken zu erkennen und zu analysieren, Risikoszenarien und ein Risikoregister zu pflegen, Kontrollen mit den Verantwortlichen auszuwählen und zu prüfen und Kennzahlen für das Berichtswesen zu nutzen. Grundlage ist die seit November 2025 geltende Fassung.",
+  "modules": [
+   {
+    "title": "Governance der Organisation",
+    "points": [
+     "Strategie, Ziele, Organisationsstruktur und Rollen",
+     "Kultur, Ethik, Richtlinien und Standards",
+     "Geschäftsprozesse und Resilienz, zum Beispiel DRP und BCP",
+     "Verwaltung der Assets der Organisation"
+    ]
+   },
+   {
+    "title": "Risk Governance",
+    "points": [
+     "Enterprise Risk Management und Lines of Defense",
+     "Risikoprofil, Risikoappetit und Risikotoleranz",
+     "Risiko-Frameworks sowie rechtliche, regulatorische und vertragliche Anforderungen"
+    ]
+   },
+   {
+    "title": "Risiken identifizieren",
+    "points": [
+     "Risikoereignisse und Bedrohungslage, Threat Modeling",
+     "Schwachstellenmanagement",
+     "Risikoszenarien entwickeln und bewerten"
+    ]
+   },
+   {
+    "title": "Risiken analysieren",
+    "points": [
+     "Konzepte und Standards der Risikobewertung, Methoden der Risikoanalyse",
+     "Business Impact Analysis",
+     "Risikoregister",
+     "Inhärentes Risiko und Restrisiko"
+    ]
+   },
+   {
+    "title": "Risikobehandlung",
+    "points": [
+     "Optionen der Risikobehandlung",
+     "Verantwortung für Risiken und Kontrollen",
+     "Risiken bei Dienstleistern und in der Lieferkette",
+     "Umgang mit Feststellungen, Ausnahmen und Befreiungen"
+    ]
+   },
+   {
+    "title": "Kontrollen entwerfen und umsetzen",
+    "points": [
+     "Kontroll-Frameworks, Kontrollarten und Standards",
+     "Kontrollen auswählen, entwerfen, einführen und analysieren",
+     "Methoden zum Testen von Kontrollen"
+    ]
+   },
+   {
+    "title": "Risiken überwachen und berichten",
+    "points": [
+     "Maßnahmenpläne für Risiken; Daten erheben, zusammenführen, auswerten und validieren",
+     "Kennzahlen wie KRIs, KCIs und KPIs",
+     "Techniken für Überwachung und Berichte, etwa Heatmaps, Scorecards und Dashboards",
+     "Neu entstehende Risiken beobachten und melden"
+    ]
+   },
+   {
+    "title": "Technologie und Sicherheit",
+    "points": [
+     "Technologie-Roadmaps, Enterprise-Architektur und Betriebsmanagement",
+     "SDLC, Datenlebenszyklus, Portfolio- und Projektmanagement",
+     "Technische Resilienz, Wiederherstellung und neue Technologien",
+     "Sicherheitskonzepte, Awareness sowie Datenschutz und Datensicherheit"
+    ]
+   }
+  ],
+  "audience": "ISACA richtet CRISC an Fachkräfte aus IT und Fachbereichen, die Risiken erkennen und steuern und dafür Kontrollen für Informationssysteme entwickeln, einführen und pflegen, etwa Risiko- und Compliance-Verantwortliche, Business-Analysten und Projektleiter.",
+  "prerequisites": "Für die Zertifizierung verlangt ISACA mindestens drei Jahre Berufserfahrung im IT-Risikomanagement und in der Kontrolle von Informationssystemen; Ersatzleistungen oder Anrechnungen gibt es dafür nicht. Den Antrag auf Zertifizierung stellen Sie innerhalb von fünf Jahren nach bestandener Prüfung.",
+  "sources": [
+   "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+   "https://www.isaca.org/credentialing/crisc",
+   "https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities",
+   "https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/exam-candidate-guides/2026/exam-candidate-guide.pdf"
+  ]
+ },
+ "pecb-iso-27001-foundation": {
+  "officialCourse": "PECB ISO/IEC 27001:2022 Foundation, laut PECB zwei Kurstage, Grundlage ist die Normausgabe ISO/IEC 27001:2022. PECB veröffentlicht keine Modulgliederung, sondern nur zwei Tagesthemen, drei Lernziele, eine Kursbeschreibung und zwei Prüfungsdomänen; die Module sind daraus abgeleitet.",
+  "intro": "Der Kurs vermittelt die Grundlagen eines Informationssicherheits-Managementsystems (ISMS) nach ISO/IEC 27001:2022. Am ersten Tag geht es um Begriffe, Prinzipien und Konzepte, am zweiten um die Anforderungen der Norm an ein ISMS. Danach können Sie die wichtigsten Konzepte der Informationssicherheit beschreiben, die zentralen Normanforderungen erläutern und Ansätze, Methoden und Techniken für Einführung und Betrieb eines ISMS benennen.",
+  "modules": [
+   {
+    "title": "Grundbegriffe und Prinzipien der Informationssicherheit",
+    "points": [
+     "Konzepte, Prinzipien und Definitionen des Informationssicherheitsmanagements",
+     "ISMS-Konzepte im Sinne von ISO/IEC 27001:2022",
+     "Prüfungsdomäne 1: Grundlegende Prinzipien und Konzepte eines ISMS"
+    ]
+   },
+   {
+    "title": "Anforderungen an ein ISMS nach ISO/IEC 27001:2022",
+    "points": [
+     "Die wichtigsten Anforderungen der Norm an ein ISMS",
+     "ISMS-Politik und Verfahren",
+     "Verpflichtung der Leitung",
+     "Prüfungsdomäne 2: Informationssicherheits-Managementsystem"
+    ]
+   },
+   {
+    "title": "ISMS einführen und betreiben",
+    "points": [
+     "Ansätze, Methoden und Techniken für die Einführung",
+     "Ansätze, Methoden und Techniken für das Management eines ISMS"
+    ]
+   },
+   {
+    "title": "Bewertung und Verbesserung",
+    "points": [
+     "Leistungsmessung",
+     "Internes Audit und Managementbewertung",
+     "Fortlaufende Verbesserung"
+    ]
+   }
+  ],
+  "audience": "PECB nennt Führungskräfte und Berater, die mehr über Informationssicherheit wissen möchten, Fachkräfte, die die Anforderungen von ISO/IEC 27001:2022 an ein ISMS kennenlernen wollen, Personen mit Aufgaben oder Verantwortung in der Informationssicherheit sowie alle, die eine Laufbahn in diesem Bereich anstreben.",
+  "prerequisites": "PECB nennt keine Voraussetzungen für den Kurs. Für das Zertifikat „PECB Certificate Holder in ISO/IEC 27001:2022 Foundation“ müssen Sie den Kurs absolvieren, die Prüfung bestehen und den PECB Code of Ethics unterzeichnen; Berufs-, Audit- oder Projekterfahrung wird nicht verlangt.",
+  "sources": [
+   "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27001/iso-iec-27001-foundation",
+   "https://pecb.com/pdf/brochures/iso-iec-27001-foundation-en.pdf"
+  ]
+ },
+ "istqb-certified-tester-foundation": {
+  "officialCourse": "ISTQB Certified Tester Foundation Level (CTFL), Lehrplan Version 4.0; deutschsprachige Ausgabe V4.0.2 vom 1. März 2025 (German Testing Board, Austrian Testing Board, Swiss Testing Board), Übersetzung des englischen Syllabus v4.0.1. Die acht Module decken die sechs prüfungsrelevanten Kapitel des Lehrplans ab; Kapitel 4 (Testanalyse und -entwurf) und Kapitel 5 (Management der Testaktivitäten) sind auf je zwei Module verteilt. Für akkreditierte Schulungen verlangt der Lehrplan mindestens 1135 Minuten Unterricht.",
+  "intro": "Der Kurs folgt dem ISTQB-Lehrplan Certified Tester Foundation Level in der Version 4.0. Sie lernen, was Testen leistet, wie es in klassische und agile Entwicklungsmodelle sowie in DevOps eingebunden wird und wie Reviews ablaufen. Sie leiten Testfälle mit Black-Box-, White-Box- und erfahrungsbasierten Verfahren ab, planen und überwachen Testaktivitäten, berücksichtigen Risiken, schreiben verständliche Fehlerberichte und ordnen Nutzen und Risiken der Testautomatisierung ein.",
+  "modules": [
+   {
+    "title": "Grundlagen des Testens",
+    "points": [
+     "Testziele, Abgrenzung von Testen und Debugging",
+     "Fehlhandlung, Fehlerzustand, Fehlerwirkung und Grundursache",
+     "Grundsätze des Testens",
+     "Testaktivitäten, Testmittel, Rollen und Whole-Team-Ansatz"
+    ]
+   },
+   {
+    "title": "Testen während des Softwareentwicklungslebenszyklus",
+    "points": [
+     "Einfluss des Entwicklungsmodells auf das Testen",
+     "Test-First-Ansätze, DevOps und Shift-Left",
+     "Teststufen, Testarten, Fehlernachtest und Regressionstest",
+     "Wartungstest"
+    ]
+   },
+   {
+    "title": "Statischer Test",
+    "points": [
+     "Arbeitsergebnisse, die sich statisch prüfen lassen",
+     "Unterschiede zwischen statischem und dynamischem Test",
+     "Reviewprozess, Rollen und Reviewarten",
+     "Erfolgsfaktoren für Reviews und frühes Stakeholder-Feedback"
+    ]
+   },
+   {
+    "title": "Testanalyse und Testentwurf: Black-Box-Verfahren",
+    "points": [
+     "Äquivalenzklassenbildung und Grenzwertanalyse",
+     "Entscheidungstabellentest",
+     "Zustandsübergangstest"
+    ]
+   },
+   {
+    "title": "White-Box-, erfahrungsbasierte und kollaborative Ansätze",
+    "points": [
+     "Anweisungs- und Zweigüberdeckung",
+     "Intuitive Testfallermittlung, explorativer und checklistenbasierter Test",
+     "User-Storys gemeinsam schreiben, Akzeptanzkriterien festlegen",
+     "Abnahmetestgetriebene Entwicklung (ATDD)"
+    ]
+   },
+   {
+    "title": "Management der Testaktivitäten",
+    "points": [
+     "Testkonzept, Eingangs- und Endekriterien, Schätzverfahren",
+     "Priorisierung von Testfällen, Testpyramide und Testquadranten",
+     "Projekt- und Produktrisiken analysieren und steuern",
+     "Testüberwachung, Testberichte und Testabschluss"
+    ]
+   },
+   {
+    "title": "Konfigurations- und Fehlermanagement",
+    "points": [
+     "Konfigurationsmanagement als Unterstützung für das Testen",
+     "Ablauf des Fehlermanagements",
+     "Aufbau eines klaren Fehlerberichts"
+    ]
+   },
+   {
+    "title": "Testwerkzeuge",
+    "points": [
+     "Arten der Werkzeugunterstützung für das Testen",
+     "Nutzen und Risiken der Testautomatisierung"
+    ]
+   }
+  ],
+  "audience": "Laut Lehrplan richtet sich die Qualifikation an alle, die im Softwaretest tätig sind, etwa Tester, Testanalysten, Testmanager, Softwareentwickler und Mitglieder von Entwicklungsteams. Sie eignet sich außerdem für Personen, die ein Grundverständnis des Testens benötigen, zum Beispiel Projektmanager, Qualitätsmanager, Product Owner, Businessanalysten und IT-Leiter.",
+  "prerequisites": "Der Lehrplan und die Zertifizierungsseite des ISTQB nennen keine formalen Zugangsvoraussetzungen für den Foundation Level. Das Foundation-Zertifikat ist seinerseits Voraussetzung für die weiterführenden ISTQB-Zertifizierungen.",
+  "sources": [
+   "https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+   "https://www.gtb.de/der-certified-tester/core-module/certified-tester-40/",
+   "https://www.gtb.de/wp-content/uploads/2025/04/ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE.pdf"
+  ]
+ },
+ "exin-agile-scrum-foundation": {
+  "officialCourse": "EXIN Agile Scrum Foundation (ASF), Module nach den Exam Requirements im Preparation Guide von EXIN: englische Ausgabe 202508, deutsches Vorbereitungshandbuch Ausgabe 202509 mit denselben Prüfungsanforderungen. Prüfungsliteratur laut EXIN: Agile Scrum Handbook (3. Auflage, 2021; deutsche Ausgabe Agile Scrum Handbuch, 3. Ausgabe, 2022) und Scrum Guide 2020; EXIN empfiehlt für die Schulung 14 Kontaktstunden.",
+  "intro": "Der Kurs behandelt die fünf Themenbereiche der Prüfung EXIN Agile Scrum Foundation: agile Denkweise, Scrum-Praktiken, Planung und Schätzung, Überwachung von Scrum-Projekten sowie weiterführende Scrum-Konzepte. Den größten Anteil haben die Scrum-Praktiken mit Rollen, Events, Backlog und Zielen. Danach können Sie die agilen Prinzipien und das Scrum-Rahmenwerk erklären, gängige Schätzverfahren einordnen, den Arbeitsfortschritt sichtbar machen und erkennen, wie Scrum im Arbeitsumfeld angewendet wird.",
+  "modules": [
+   {
+    "title": "Agile Denkweise",
+    "points": [
+     "Agiles Denken, Vorhersagbarkeit und Flexibilität",
+     "Inhalt des Agilen Manifests",
+     "Weitere agile Methoden und Praktiken neben Scrum, etwa XP, DSDM, Crystal und Kanban"
+    ]
+   },
+   {
+    "title": "Scrum-Rollen",
+    "points": [
+     "Product Owner",
+     "Scrum Master",
+     "Developers",
+     "Warum es in Scrum keine klassische Projektleiterrolle gibt"
+    ]
+   },
+   {
+    "title": "Scrum-Events",
+    "points": [
+     "Timeboxing als Grundprinzip der Events",
+     "Sprint und Daily Scrum",
+     "Sprint Review und Sprint Retrospektive"
+    ]
+   },
+   {
+    "title": "Backlog und Ziele",
+    "points": [
+     "Product Backlog und Sprint Backlog",
+     "Gute User Storys erkennen, Einträge verfeinern und ordnen",
+     "Produktziel und Sprintziel",
+     "Definition of Done"
+    ]
+   },
+   {
+    "title": "Planung und Schätzung",
+    "points": [
+     "Sprint Planning und Festlegen der Sprintlänge",
+     "Planning Poker, Triangulation und Affinity Estimation",
+     "Schätzen in idealen Tagen, idealen Stunden oder Story Points",
+     "Velocity des Teams ermitteln"
+    ]
+   },
+   {
+    "title": "Scrum-Projekte überwachen",
+    "points": [
+     "Information Radiators und ihr Nutzen",
+     "Kanban-Boards",
+     "Erledigte Arbeit sichtbar machen, etwa mit Burn-down- und Burn-up-Charts"
+    ]
+   },
+   {
+    "title": "Weiterführende Scrum-Konzepte",
+    "points": [
+     "Scrum in großen, komplexen Projekten skalieren",
+     "Scrum mit virtuellen Teams",
+     "Vertragsarten im Scrum-Umfeld"
+    ]
+   }
+  ],
+  "audience": "Laut EXIN für Fachkräfte, die Projekte leiten oder daran mitarbeiten, vor allem aus Projektmanagement, Softwareentwicklung, IT-Service-Management und Business Management. EXIN empfiehlt die Zertifizierung vor dem Start eines Scrum-Projekts.",
+  "prerequisites": "EXIN nennt keine Zugangsvoraussetzungen. Für das Zertifikat ist allein das Bestehen der Prüfung EXIN Agile Scrum Foundation erforderlich; eine Schulung ist nicht vorgeschrieben.",
+  "sources": [
+   "https://www.exin.com/agile-devops-lean/exin-agile-scrum/exin-agile-scrum-foundation/",
+   "https://dam.exin.com/api/&request=asset.permadownload&id=133&type=this&token=0287aedc2662529d63e52599cc933d40",
+   "https://dam.exin.com/api/&request=asset.permadownload&id=206&type=this&token=ec0e31febc885690b55eefcd125e732b"
+  ]
+ },
+ "prince2-7-practitioner": {
+  "officialCourse": "PRINCE2 Project Management Practitioner (Version 7) von PeopleCert, kurz PRINCE2 7 Practitioner. Kein offizieller Modulplan ausgewertet; die Module folgen den von PeopleCert auf der Zertifizierungsseite genannten Lerninhalten.",
+  "intro": "Der Kurs vertieft die Methode PRINCE2 in der Version 7 auf Practitioner-Niveau. Im Mittelpunkt steht die Anwendung: Sie arbeiten mit den sieben Prinzipien, den sieben Praktiken und den sieben Prozessen und passen die Methode an Größe, Umfeld und Komplexität eines Projekts an. Hinzu kommen die in Version 7 ergänzten Themen Menschen und Zusammenarbeit, Nachhaltigkeit sowie Daten- und Digitalmanagement. Danach können Sie PRINCE2 in konkreten Projektsituationen anwenden.",
+  "modules": [
+   {
+    "title": "Die sieben Prinzipien anwenden",
+    "points": [
+     "Prinzipien als Leitlinie für Entscheidungen im Projekt",
+     "Prinzipien in konkreten Projektsituationen umsetzen"
+    ]
+   },
+   {
+    "title": "Die sieben Praktiken",
+    "points": [
+     "Wiederkehrende Aspekte des Projektmanagements über den gesamten Projektverlauf",
+     "Managementansätze festlegen, etwa für Risiko, Qualität und Änderungen",
+     "Zusammenspiel von Praktiken und Prozessen"
+    ]
+   },
+   {
+    "title": "Die sieben Prozesse",
+    "points": [
+     "Schrittweises Vorgehen von der Initiierung bis zum Abschluss",
+     "Welche Praktiken in welchem Prozess zum Tragen kommen",
+     "Aktivitäten den Rollen zuordnen"
+    ]
+   },
+   {
+    "title": "Rollen und Verantwortlichkeiten",
+    "points": [
+     "Zentrale Projektrollen nach PRINCE2",
+     "Aufgaben von Projektmanager und Lenkungsebene",
+     "Verantwortung für Benutzer- und Lieferantenseite"
+    ]
+   },
+   {
+    "title": "Menschen, Zusammenarbeit und Kommunikation",
+    "points": [
+     "Der Faktor Mensch als eigenes Element in Version 7",
+     "Zusammenarbeit zwischen den Stakeholdern",
+     "Wirksame und transparente Kommunikation im Projekt"
+    ]
+   },
+   {
+    "title": "Nachhaltigkeit sowie Daten- und Digitalmanagement",
+    "points": [
+     "Projekte an Zielen zu Umwelt und sozialer Verantwortung ausrichten",
+     "Projektdaten verwalten und aktuell halten"
+    ]
+   },
+   {
+    "title": "Methode anpassen",
+    "points": [
+     "PRINCE2 auf Größe, Kontext und Komplexität des Projekts zuschneiden",
+     "Anwendung der Methode in praxisnahen Szenarien"
+    ]
+   }
+  ],
+  "audience": "Laut PeopleCert für Fachkräfte im Projektmanagement. Als passende Berufsbilder nennt PeopleCert unter anderem Projektmanager, Programmmanager, Projektkoordinatoren, Mitarbeitende im Projektsupport, Business Analysts sowie PMO-, Risiko- und Change-Manager.",
+  "prerequisites": "Verpflichtend ist laut PeopleCert eine der anerkannten Vorzertifizierungen. Dazu zählen PRINCE2 Foundation in Version 7, PRINCE2 Foundation oder Practitioner der 5. oder 6. Edition, PMP, CAPM, PPQ, PMQ sowie IPMA Level A bis D. Die vollständige, aktuelle Liste steht auf der Zertifizierungsseite von PeopleCert.",
+  "sources": [
+   "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-practitioner-3581",
+   "https://www.peoplecert.org/news-and-announcements/2023/PRINCE2%207%20-%20A%20Process%20of%20Evolution"
+  ]
+ },
+ "cisco-ccnp-enterprise-professional": {
+  "officialCourse": "Cisco CCNP Enterprise: Kernprüfung 350-401 ENCOR (Implementing Cisco Enterprise Network Core Technologies) plus eine Vertiefungsprüfung nach Wahl. Die Module folgen den Exam Topics ENCOR v1.2 von Cisco (Dokument von 2025); der zugehörige Cisco-Kurs heißt Implementing and Operating Cisco Enterprise Network Core Technologies (ENCOR).",
+  "intro": "Der Kurs orientiert sich an der Zertifizierung Cisco CCNP Enterprise und ihrer Kernprüfung 350-401 ENCOR in der Version 1.2. Behandelt werden Architektur von Unternehmensnetzen, Virtualisierung, Layer 2 und Layer 3 mit Dual Stack, Netzwerkdienste, Network Assurance, Sicherheit sowie Automatisierung. Sie lernen, Switching und Routing mit OSPF und eBGP zu konfigurieren und zu prüfen, Störungen einzugrenzen, Geräte abzusichern und Aufgaben über Schnittstellen und Skripte zu automatisieren.",
+  "modules": [
+   {
+    "title": "Architektur",
+    "points": [
+     "Designprinzipien wie 2-Tier, 3-Tier, Fabric und Cloud",
+     "Hochverfügbarkeit mit Redundanz, FHRP und SSO",
+     "Funktionsweise von Cisco Catalyst SD-WAN und Cisco SD-Access",
+     "QoS-Konfigurationen interpretieren"
+    ]
+   },
+   {
+    "title": "Virtualisierung",
+    "points": [
+     "Hypervisor Typ 1 und 2, virtuelle Maschinen und virtuelles Switching",
+     "VRF sowie GRE- und IPsec-Tunnel konfigurieren und prüfen",
+     "LISP und VXLAN als Konzepte der Netzwerkvirtualisierung"
+    ]
+   },
+   {
+    "title": "Infrastruktur: Layer 2",
+    "points": [
+     "Fehlersuche bei 802.1Q-Trunks",
+     "Fehlersuche bei statischen und dynamischen EtherChannels",
+     "RSTP und MST mit Schutzfunktionen wie Root Guard und BPDU Guard"
+    ]
+   },
+   {
+    "title": "Infrastruktur: Layer 3 und IP-Dienste",
+    "points": [
+     "EIGRP und OSPF im Vergleich, OSPFv2/v3 mit mehreren Areas",
+     "eBGP zwischen direkt verbundenen Nachbarn, Policy-based Routing",
+     "NAT/PAT, HSRP und VRRP, Zeitsynchronisation mit NTP und PTP",
+     "Multicast-Protokolle wie PIM und IGMP"
+    ]
+   },
+   {
+    "title": "Network Assurance",
+    "points": [
+     "Fehlerdiagnose mit Debugs, Ping, Traceroute, SNMP und Syslog",
+     "Flexible NetFlow, SPAN/RSPAN/ERSPAN und IP SLA",
+     "Cisco Catalyst Center für Konfiguration, Monitoring und KI-gestützte Workflows",
+     "NETCONF und RESTCONF konfigurieren und prüfen"
+    ]
+   },
+   {
+    "title": "Sicherheit",
+    "points": [
+     "Gerätezugriff mit lokaler Authentifizierung und AAA",
+     "ACLs und Control Plane Policing (CoPP)",
+     "Sicherheit von REST-APIs",
+     "Bausteine des Sicherheitsdesigns: Threat Defense, Endpoint Security, Next-Generation Firewall, TrustSec und MACsec"
+    ]
+   },
+   {
+    "title": "Automatisierung und künstliche Intelligenz",
+    "points": [
+     "Python-Skripte lesen, JSON-Dateien erstellen, Datenmodellierung mit YANG",
+     "APIs von Cisco Catalyst Center und SD-WAN Manager, REST-Antwortcodes auswerten",
+     "EEM-Applets für Konfiguration, Fehlersuche und Datenerfassung",
+     "Orchestrierungswerkzeuge mit und ohne Agent im Vergleich"
+    ]
+   },
+   {
+    "title": "Vertiefungsprüfungen im CCNP-Enterprise-Track",
+    "points": [
+     "300-410 ENARSI (Advanced Routing and Services) und 300-415 ENSDWI (Catalyst SD-WAN)",
+     "300-420 ENSLD (Netzwerkdesign) und 300-435 ENAUTO (Automatisierung)",
+     "300-440 ENCC (Secure Cloud Connectivity) und 300-445 ENNA (Network Assurance)"
+    ]
+   }
+  ],
+  "audience": "Cisco beschreibt CCNP Enterprise als Zertifizierung auf Professional-Niveau für Personen, die Unternehmensnetze konfigurieren, betreiben und Fehler darin beheben. Als Zielgruppe des ENCOR-Kurses nennt Cisco Netzwerkingenieure auf Einstiegs- bis mittlerem Niveau, Netzwerkadministratoren, Support-Techniker und Helpdesk-Mitarbeitende.",
+  "prerequisites": "Formale Voraussetzungen gibt es laut Cisco weder für die Kernprüfung noch für die Vertiefungsprüfungen. Für den ENCOR-Kurs empfiehlt Cisco Kenntnisse in der Einrichtung von Unternehmens-LANs, Grundlagen in Routing und Switching auf CCNA-Niveau sowie Grundkenntnisse in Python.",
+  "sources": [
+   "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccnp-enterprise/index.html",
+   "https://learningcontent.cisco.com/documents/marketing/exam-topics/350-401-ENCORE-v1.2.pdf",
+   "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/encor.html",
+   "https://www.cisco.com/site/us/en/learn/training-certifications/exams/encor.html"
+  ]
  }
 }
