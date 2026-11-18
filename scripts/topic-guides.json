@@ -1,0 +1,482 @@
+{
+ "thema-security": {
+  "heading": "Welcher Security-Kurs passt zu Ihnen?",
+  "intro": "Auf dieser Seite finden Sie Cybersecurity-Kurse unter anderem zu Grundlagen, Security Operations, Penetrationstests, Identität, Cloud-Sicherheit sowie Management, Audit und Risiko. Die folgende Übersicht ordnet ausgewählte Kurse in Stufen. SC-900 und ISO/IEC 27001 Foundation vermitteln Begriffe und Konzepte, für Security+ empfiehlt CompTIA bereits Vorkenntnisse und Berufserfahrung. Darauf folgen Kurse für die Arbeit im Sicherheitsbetrieb und für autorisierte Angriffstests. Für Spezialisierungen auf Microsoft Entra, Sicherheitsarchitektur oder Cloud erwarten die Hersteller Vorkenntnisse oder Berufserfahrung. CISSP, CISM, CISA und CRISC richten sich an erfahrene Fachkräfte. Für diese Zertifizierungen verlangen ISC2 und ISACA zusätzlich zur Prüfung mehrere Jahre Berufserfahrung.",
+  "steps": [
+   {
+    "label": "Einstieg",
+    "text": "Für den Einstieg in die Informationssicherheit. SC-900 ordnet die Sicherheitslösungen von Microsoft ein, ISO/IEC 27001 Foundation erklärt die Anforderungen an ein ISMS. Security+ behandelt Bedrohungen, Architektur und Sicherheitsbetrieb und richtet sich an Fachkräfte mit Erfahrung in der System- oder Sicherheitsadministration.",
+    "courses": [
+     "sc-900-security-compliance-identity-fundamentals",
+     "pecb-iso-27001-foundation",
+     "comptia-security-plus"
+    ]
+   },
+   {
+    "label": "Vertiefung",
+    "text": "Für Analysten im SOC und in der Incident Response sowie für Penetration Tester. CySA+ und SC-200 behandeln die Erkennung und Bearbeitung von Vorfällen, PenTest+ und CEH die Vorbereitung und Durchführung autorisierter Angriffstests.",
+    "courses": [
+     "comptia-cysa-plus",
+     "sc-200-security-operations-analyst-associate",
+     "comptia-pentest-plus",
+     "ec-council-certified-ethical-hacker"
+    ]
+   },
+   {
+    "label": "Spezialisierung",
+    "text": "Für Administratoren und Engineers mit Praxiserfahrung. SC-300 behandelt Identitäten und Zugriffe mit Microsoft Entra, SC-100 den Entwurf von Sicherheitsarchitekturen nach Zero-Trust-Prinzipien, CCSP die Sicherheit von Cloud-Umgebungen.",
+    "courses": [
+     "sc-300-microsoft-identity-and-access-administrator",
+     "sc-100-cybersecurity-architect-expert",
+     "isc2-ccsp"
+    ]
+   },
+   {
+    "label": "Führung, Audit und Risiko",
+    "text": "Für erfahrene Fachkräfte, die Sicherheitsprogramme verantworten, IT prüfen oder Risiken steuern. CISSP und CISM decken Governance und Sicherheitsprogramme ab, CISA das Audit von Informationssystemen, CRISC Risikobewertung und Kontrollen.",
+    "courses": [
+     "isc2-cissp",
+     "isaca-cism",
+     "isaca-cisa",
+     "isaca-crisc"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Mit welchem Kurs beginne ich, wenn ich neu in der IT-Sicherheit bin?",
+    "a": "Für ISO/IEC 27001 Foundation nennt PECB keine Voraussetzungen. SC-900 setzt allgemeine IT-Kenntnisse, ein Verständnis von Netzwerk- und Cloud-Konzepten sowie Grundwissen zu Azure und Microsoft 365 voraus. Für Security+ empfiehlt CompTIA die Zertifizierung Network+ und zwei Jahre Erfahrung als Security- oder Systemadministrator."
+   },
+   {
+    "q": "Welche Version von Security+ wird geprüft?",
+    "a": "Der Kurs ist auf die Prüfung SY0-701 (Version V7) ausgerichtet. Die englische SY0-701 endet am 11.06.2027, die Nachfolgeversion V8 (SY0-801) ist laut CompTIA seit dem 17.11.2026 verfügbar. Auf welche Version ein Termin ausgerichtet ist, klären wir vor der Anmeldung."
+   },
+   {
+    "q": "Brauche ich Berufserfahrung für CISSP, CISM, CISA oder CRISC?",
+    "a": "Für die Prüfung nicht, für die Zertifizierung ja. ISC2 verlangt für CISSP fünf Jahre Vollzeit-Berufserfahrung in mindestens zwei der acht Domänen. ISACA verlangt für CISM und CISA je fünf Jahre, für CRISC drei Jahre. Den Antrag bei ISACA stellen Sie innerhalb von fünf Jahren nach bestandener Prüfung."
+   },
+   {
+    "q": "Kann ich noch die Prüfung AZ-500 ablegen?",
+    "a": "Nein. Microsoft hat die Prüfung AZ-500 am 31.08.2026 eingestellt. Auch die Zertifizierung Azure Security Engineer Associate ist eingestellt. Als Nachfolger nennt Microsoft die Zertifizierung Cloud and AI Security Engineer Associate mit der Prüfung SC-500, verfügbar seit dem 21.07.2026. Ob der Kurs AZ-500 dafür ausreicht, klären wir vor der Anmeldung."
+   }
+  ]
+ },
+ "thema-cloud": {
+  "heading": "Welcher Cloud-Kurs passt zu Ihnen?",
+  "intro": "Auf dieser Seite finden Sie Cloud-Kurse zu Microsoft Azure und Amazon Web Services sowie herstellerneutrale Trainings. Die hier empfohlenen Kurse lassen sich in vier Stufen ordnen. Am Anfang stehen Grundlagenkurse zu Cloudmodellen, Kerndiensten und Kosten. Darauf folgt die Administration, also der laufende Betrieb von Identitäten, Speicher, Compute und Netzwerken. Danach können Sie sich auf Azure-Netzwerke oder Azure Virtual Desktop spezialisieren. Die letzte Stufe bilden Architektur und Cloud-Sicherheit. Dafür setzen Microsoft und ISC2 praktische Erfahrung voraus. Welche Stufe passt, hängt von Ihrer IT-Erfahrung und Ihrer Rolle ab. Ihre Vorkenntnisse klären wir in der Beratung vor der Anmeldung.",
+  "steps": [
+   {
+    "label": "Einstieg",
+    "text": "Für IT-Fachkräfte, die neu mit Azure arbeiten, und für IT-nahe Rollen, die Cloudmodelle, Kerndienste, das Modell der geteilten Verantwortung sowie Kosten einordnen möchten. AWS Technical Essentials enthält zusätzlich praktische Übungen mit IAM, VPC und S3.",
+    "courses": [
+     "az-900-microsoft-azure-grundlagen",
+     "aws-cloud-practitioner-essentials",
+     "aws-technical-essentials"
+    ]
+   },
+   {
+    "label": "Administration",
+    "text": "Für Administratorinnen und Administratoren, die Identitäten, Governance, Speicher, Compute und Netzwerke betreiben. AZ-104 behandelt diese Aufgaben in Azure, CompTIA Cloud+ vermittelt Betrieb, Sicherheit und Fehlerbehebung herstellerneutral.",
+    "courses": [
+     "az-104-microsoft-azure-administrator",
+     "comptia-cloud-plus"
+    ]
+   },
+   {
+    "label": "Spezialisierung",
+    "text": "Für Fachkräfte mit Azure-Erfahrung, die sich auf ein Gebiet konzentrieren: AZ-700 auf Netzwerke mit VPN, ExpressRoute und Lastverteilung, AZ-140 auf Azure Virtual Desktop mit Hostpools, FSLogix und Skalierung.",
+    "courses": [
+     "az-700-azure-network-engineer-associate",
+     "az-140-azure-virtual-desktop-specialty"
+    ]
+   },
+   {
+    "label": "Architektur und Sicherheit",
+    "text": "Für erfahrene Fachkräfte, die Cloud-Lösungen entwerfen oder absichern. AZ-305 behandelt Entwurfsentscheidungen in Azure, ISC2 CCSP die sechs Domänen der Cloud-Sicherheit von Architektur bis Compliance.",
+    "courses": [
+     "az-305-azure-solutions-architect-expert",
+     "isc2-ccsp"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Soll ich mit AZ-900 oder mit AWS Cloud Practitioner Essentials beginnen?",
+    "a": "Das hängt von der Plattform ab, mit der Sie arbeiten werden. AZ-900 vermittelt Grundlagen zu Microsoft Azure und bereitet auf die Prüfung AZ-900 vor. AWS Cloud Practitioner Essentials gibt einen eintägigen Überblick über die AWS-Cloud und bereitet auf AWS Certified Cloud Practitioner vor. Diese Prüfung bietet AWS auf Deutsch nur noch bis zum 31.12.2026 an."
+   },
+   {
+    "q": "Brauche ich AZ-104, bevor ich AZ-305 besuche?",
+    "a": "Für den Kurs AZ-305 setzt Microsoft Erfahrung mit der Bereitstellung oder Verwaltung von Azure-Ressourcen voraus. Für den Titel Azure Solutions Architect Expert verlangt Microsoft neben der Prüfung AZ-305 zusätzlich die Zertifizierung Azure Administrator Associate, auf deren Prüfung AZ-104 der Kurs AZ-104 vorbereitet."
+   },
+   {
+    "q": "Gibt es noch eine Prüfung zum Kurs AZ-500?",
+    "a": "Nein. Microsoft hat die Prüfung AZ-500 am 31.08.2026 eingestellt, auch die Zertifizierung Azure Security Engineer Associate ist eingestellt. Als Nachfolger nennt Microsoft die Prüfung SC-500. Ob der Kurs dafür ausreicht, klären wir vor der Anmeldung. Für Cloud-Sicherheit mit aktueller Prüfung kommt ISC2 CCSP infrage."
+   },
+   {
+    "q": "Welche Voraussetzungen gelten für die CCSP-Zertifizierung?",
+    "a": "ISC2 verlangt fünf Jahre Vollzeit-Berufserfahrung in der IT, davon drei Jahre in der Cybersicherheit und ein Jahr in mindestens einer der sechs CCSP-Domänen. Ohne diese Erfahrung können Sie nach bestandener Prüfung Associate of ISC2 werden und haben dann sechs Jahre Zeit, die Erfahrung nachzuweisen."
+   }
+  ]
+ },
+ "thema-ki": {
+  "heading": "Welcher KI-Kurs passt zu Ihnen?",
+  "intro": "Auf dieser Seite finden Sie Kurse zu künstlicher Intelligenz, generativer KI und Copilot. Welcher Kurs passt, hängt davon ab, ob Sie in das Thema KI einsteigen, KI-Szenarien Azure-Diensten zuordnen, GitHub Copilot in der Softwareentwicklung nutzen oder selbst KI-Anwendungen und Agenten entwickeln möchten. AI+ Foundation setzt keine KI-Vorkenntnisse voraus. Im Kurs AI-900 lernen Sie, typische KI-Szenarien passenden Azure-Diensten zuzuordnen. Die Prüfung AI-900 wurde am 30.06.2026 eingestellt. Für GitHub Copilot Fundamentals setzt Microsoft Grundkenntnisse zu GitHub voraus. AI-103 richtet sich an Softwareentwickler, die mit Python vertraut sind und Erfahrung mit APIs und SDKs haben.",
+  "steps": [
+   {
+    "label": "Einstieg",
+    "text": "Für alle, die neu in das Thema KI einsteigen. Der eintägige Kurs auf Deutsch behandelt Grundlagen des maschinellen Lernens, Prompts für GPT-Modelle, KI im Unternehmen sowie Ethik und Bias und bereitet auf die Prüfung AF-101 vor.",
+    "courses": [
+     "ai-foundation"
+    ]
+   },
+   {
+    "label": "Azure-Grundlagen",
+    "text": "Für Personen mit technischem und nichttechnischem Hintergrund, die KI-Szenarien passenden Azure-Diensten zuordnen möchten. Die Prüfung AI-900 wurde am 30.06.2026 eingestellt, Microsoft ersetzt sie durch AI-901.",
+    "courses": [
+     "ai-900-microsoft-azure-ai-fundamentals"
+    ]
+   },
+   {
+    "label": "KI in der Entwicklung",
+    "text": "Für Personen mit Programmiererfahrung und Grundkenntnissen zu GitHub. Der eintägige Kurs auf Deutsch behandelt Copilot in IDE, Kommandozeile und auf GitHub.com, den Agentenmodus, Tests und Code-Reviews. Zugehörige Prüfung ist GH-300.",
+    "courses": [
+     "github-copilot-fundamentals"
+    ]
+   },
+   {
+    "label": "Spezialisierung",
+    "text": "Für Softwareentwickler, die mit Python vertraut sind und Erfahrung mit APIs und SDKs haben. Der viertägige Kurs auf Englisch behandelt generative KI-Anwendungen und KI-Agenten mit Microsoft Foundry, MCP, RAG und Multi-Agent-Lösungen.",
+    "courses": [
+     "ai-103-develop-ai-apps-and-agents-on-azure"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Brauche ich Vorkenntnisse für einen KI-Einstieg?",
+    "a": "Für AI+ Foundation sind laut AI CERTs keine KI-Vorkenntnisse nötig. Erwartet werden ein grundlegender Umgang mit digitalen Werkzeugen und Interesse an KI-Anwendungen. Für AI-900 ist laut Microsoft keine Erfahrung in Data Science oder Softwareentwicklung erforderlich, ein Grundverständnis von Cloud-Konzepten ist hilfreich."
+   },
+   {
+    "q": "Kann ich die Prüfung AI-900 noch ablegen?",
+    "a": "Nein. Microsoft hat die Prüfung AI-900 am 30.06.2026 eingestellt und ersetzt sie durch AI-901. Die Zertifizierung Azure AI Fundamentals bleibt bestehen und wird heute über AI-901 erworben. Für AI-901 nennt Microsoft Python-Grundlagen und Vertrautheit mit Azure-Ressourcen. Ob der Kurs dafür ausreicht, klären wir vor der Anmeldung."
+   },
+   {
+    "q": "Welcher Kurs passt, wenn ich selbst KI-Agenten entwickeln möchte?",
+    "a": "AI-103 behandelt die Entwicklung von KI-Anwendungen und Agenten mit Microsoft Foundry, einschließlich MCP-Tools, Wissensquellen und Multi-Agent-Lösungen. Microsoft setzt Python-Kenntnisse, Erfahrung mit APIs und SDKs sowie Grundkenntnisse zu KI-Konzepten und Azure-Diensten voraus. Der Kurs dauert vier Tage und findet auf Englisch statt."
+   },
+   {
+    "q": "Ist GitHub Copilot Fundamentals nur für Entwickler?",
+    "a": "Nein. Microsoft richtet den Kurs an Fachleute aus KI-Entwicklung und Datenanalyse, Führungskräfte und Verantwortliche für KI-Richtlinien. Für die Lernpfade setzt Microsoft Grundkenntnisse zu GitHub voraus. Für die Prüfung GH-300 sollten Sie laut Prüfungsleitfaden Erfahrung mit mindestens einer Programmiersprache haben."
+   }
+  ]
+ },
+ "thema-data": {
+  "heading": "Welcher Datenkurs passt zu Ihnen?",
+  "intro": "Auf dieser Seite finden Sie Kurse zu Datenanalyse, Berichterstellung, Datenbanken und Datenplattformen. Für den Einstieg gibt es Grundlagenkurse zu Datenkonzepten in Azure, zu Microsoft Power Platform, zu Tableau und zu Python. Darauf bauen Kurse zur Analyse und Berichterstellung mit Power BI und Tableau sowie die herstellerneutrale Zertifizierung CompTIA Data+ auf. Wer Datenbanken betreibt oder Daten für Analysen bereitstellt, setzt mit Kursen zu Azure SQL und zum Lakehouse in Microsoft Fabric fort. Die Reihenfolge dient der Orientierung. Für einzelne Kurse empfehlen die Hersteller Vorerfahrung, etwa CompTIA für Data+ oder Tableau für Desktop II.",
+  "steps": [
+   {
+    "label": "Einstieg",
+    "text": "Für Personen am Anfang. DP-900 erklärt Datenkonzepte und Datendienste in Azure, PL-900 gibt einen Überblick über Power Platform, Tableau Desktop I führt in Tableau ein und Introduction to Python in die Programmierung mit Python.",
+    "courses": [
+     "dp-900-microsoft-azure-daten-grundlagen",
+     "pl-900-power-platform-fundamentals",
+     "tableau-desktop-i-fundamentals",
+     "introduction-to-python"
+    ]
+   },
+   {
+    "label": "Analyse und Reporting",
+    "text": "Für Fachleute, die Berichte und Dashboards erstellen. PL-300 führt in Power BI von der Datenquelle bis zum freigegebenen Bericht. Tableau Desktop II richtet sich an geübte Tableau-Anwender. CompTIA Data+ behandelt Analyse, Visualisierung und Data Governance herstellerneutral.",
+    "courses": [
+     "pl-300-power-bi-data-analyst",
+     "tableau-desktop-ii-intermediate",
+     "comptia-data-plus"
+    ]
+   },
+   {
+    "label": "Datenplattform",
+    "text": "Für Datenfachleute, die Datenbanken betreiben oder Daten für Analysen bereitstellen. DP-300 behandelt Betrieb, Sicherheit und Leistung von Azure SQL. DP-601 behandelt an einem Tag auf Englisch das Lakehouse in Microsoft Fabric.",
+    "courses": [
+     "dp-300-azure-database-administrator-associate",
+     "dp-601-implementing-a-lakehouse-with-microsoft-fabric"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Power BI oder Tableau: Welcher Kurs passt zu mir?",
+    "a": "Beide Wege führen zu Berichten und Dashboards. PL-300 behandelt Power Query, das semantische Modell, DAX und die Bereitstellung im Power BI-Dienst. Für Tableau Desktop I nennt Tableau keine Voraussetzungen. Für Desktop II empfiehlt der Hersteller mindestens drei Monate Erfahrung mit Tableau. Wählen Sie den Kurs zu dem Werkzeug, mit dem Sie arbeiten."
+   },
+   {
+    "q": "Welche Vorkenntnisse empfiehlt CompTIA für Data+?",
+    "a": "CompTIA empfiehlt 18 bis 24 Monate Erfahrung als Data Analyst oder in einer ähnlichen Rolle, mit Berührung zu Datenbanken, Analysewerkzeugen, grundlegender Statistik und Datenvisualisierung. Eine verpflichtende Voraussetzung nennt CompTIA nicht. Der Kurs ist nach den Prüfungszielen der Prüfung DA0-002 (Data+ V2) gegliedert."
+   },
+   {
+    "q": "Führen alle Datenkurse zu einer Zertifizierung?",
+    "a": "Nein. DP-601 hat keine zugeordnete Zertifizierung, und Introduction to Python ist ein eigener Kurs von New Horizons ohne Herstellerzertifizierung. DP-900, PL-900, PL-300 und DP-300 bereiten auf die gleichnamigen Microsoft-Prüfungen vor, CompTIA Data+ auf die Prüfung DA0-002. Salesforce empfiehlt Tableau Desktop I zur Vorbereitung auf die Prüfung Tableau Desktop Foundations. Deren Leitfaden nennt keine deutsche Fassung."
+   },
+   {
+    "q": "In welcher Sprache und wie lange finden die Kurse statt?",
+    "a": "Auf Deutsch finden DP-900 (1 Tag), PL-300 (3 Tage), Introduction to Python sowie Tableau Desktop I und II (je 2 Tage) statt. CompTIA Data+, DP-300 und PL-900 sind auf Deutsch oder Englisch möglich, die Dauer nennen wir auf Anfrage. DP-601 dauert 1 Tag und findet auf Englisch statt."
+   }
+  ]
+ },
+ "thema-network": {
+  "heading": "Welcher Netzwerk- oder Linux-Kurs passt zu Ihnen?",
+  "intro": "Diese Themenseite listet unter anderem Kurse zu Netzwerktechnik, Linux-Administration und Netzwerken in Azure. CompTIA A+ behandelt Hardware, Betriebssysteme und Fehlersuche, CompTIA Network+ Netzwerkkonzepte, IP-Adressierung und den Netzwerkbetrieb. Cisco CCNA und CCNP Enterprise vermitteln die Konfiguration von Switches und Routern mit Cisco-Geräten. CompTIA Linux+ ergänzt die Administration von Linux-Systemen. Für Azure deckt AZ-104 die Administration einschließlich virtueller Netzwerke ab, AZ-700 vertieft Netzwerke in Azure, und AZ-140 behandelt Azure Virtual Desktop. Wie die Kurse aufeinander aufbauen, ergibt sich aus den Empfehlungen der Hersteller zu Vorkenntnissen, die in den folgenden Stufen genannt sind.",
+  "steps": [
+   {
+    "label": "Einstieg",
+    "text": "Für den Einstieg in IT-Support und Netzwerkbetrieb. A+ behandelt Hardware, Betriebssysteme und Fehlersuche, Network+ Netzwerkkonzepte, IP-Adressierung, Switching, Routing und WLAN. CompTIA empfiehlt vor Network+ die A+-Zertifizierung und praktische Erfahrung; beides ist keine Pflicht.",
+    "courses": [
+     "comptia-a-plus",
+     "comptia-network-plus"
+    ]
+   },
+   {
+    "label": "Cisco-Netzwerke",
+    "text": "Für die Administration von Netzwerken mit Cisco-Geräten. CCNA (5 Tage) behandelt Cisco IOS, VLANs, OSPF, IP-Dienste und Automatisierung. CCNP Enterprise orientiert sich an der Kernprüfung 350-401 ENCOR; dafür empfiehlt Cisco Routing- und Switching-Kenntnisse auf CCNA-Niveau und Grundkenntnisse in Python.",
+    "courses": [
+     "cisco-ccna",
+     "cisco-ccnp-enterprise-professional"
+    ]
+   },
+   {
+    "label": "Linux-Administration",
+    "text": "Für Administratoren, die Linux-Systeme betreuen. Linux+ behandelt Systemverwaltung, Dienste, Sicherheit, Automatisierung mit Skripten und Fehlerbehebung. CompTIA empfiehlt etwa zwölf Monate Erfahrung mit Linux-Servern sowie A+, Network+, Server+ oder vergleichbare Kenntnisse.",
+    "courses": [
+     "comptia-linux-plus"
+    ]
+   },
+   {
+    "label": "Netzwerke in Azure",
+    "text": "Für Administratoren und Network Engineers, die mit Azure arbeiten. AZ-104 (4 Tage) behandelt die Azure-Administration einschließlich virtueller Netzwerke. AZ-700 vertieft Routing, VPN, ExpressRoute und Lastverteilung. AZ-140 behandelt Azure Virtual Desktop; Microsoft setzt dafür gefestigte Kenntnisse in der Azure-Administration voraus.",
+    "courses": [
+     "az-104-microsoft-azure-administrator",
+     "az-700-azure-network-engineer-associate",
+     "az-140-azure-virtual-desktop-specialty"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Brauche ich vor Cisco CCNA einen CompTIA-Kurs?",
+    "a": "Nicht zwingend. Cisco setzt für den CCNA-Kurs grundlegende PC-Kenntnisse, sicheren Umgang mit einem PC-Betriebssystem und dem Internet sowie Grundwissen über IP-Adressen voraus. Fehlen Ihnen diese Grundlagen, behandelt CompTIA A+ Hardware und Betriebssysteme, CompTIA Network+ Netzwerkkonzepte und IPv4-Subnetting."
+   },
+   {
+    "q": "Was unterscheidet CompTIA Network+ von Cisco CCNA?",
+    "a": "Network+ folgt den fünf Prüfungsdomänen der Prüfung N10-009: Netzwerkkonzepte, Einrichtung, Betrieb, Sicherheit und Fehlersuche. CCNA bereitet auf die Prüfung 200-301 vor und arbeitet mit Cisco-Geräten: Sie konfigurieren Switches und Router über die Kommandozeile von Cisco IOS."
+   },
+   {
+    "q": "Welcher Azure-Kurs passt zu Netzwerkthemen?",
+    "a": "AZ-700 behandelt IP-Adressierung, DNS, Routing, VPN, ExpressRoute, Virtual WAN, Lastverteilung und Netzwerksicherheit in Azure. Microsoft erwartet Kenntnisse in TCP/IP, DNS, VPN und Firewalls sowie für die Prüfung Erfahrung mit Compute-, Speicher- und Netzwerkressourcen in Azure. Diese Ressourcen behandelt AZ-104."
+   }
+  ]
+ },
+ "thema-pm": {
+  "heading": "Welcher Kurs zu Projekt- und Servicemanagement passt zu Ihnen?",
+  "intro": "Auf dieser Seite finden Sie Kurse zu Projektmanagement nach PRINCE2, zu agiler Arbeit mit Scrum und zum IT-Servicemanagement nach ITIL 4. Die Kurse bauen so aufeinander auf: Mit PRINCE2 7 Foundation oder EXIN Agile Scrum Foundation lernen Sie die Grundlagen einer Methode kennen. Für beide Prüfungen nennen die Anbieter keine Zugangsvoraussetzungen. PRINCE2 7 Practitioner setzt eine anerkannte Vorzertifizierung voraus, etwa die Foundation, und behandelt die Anwendung in Projektsituationen. ITIL 4 Foundation ergänzt den Weg, wenn Sie Projekte im Umfeld von IT-Services leiten oder dort Aufgaben übernehmen.",
+  "steps": [
+   {
+    "label": "Einstieg klassisch",
+    "text": "Für Projektmanager, Projektkoordinatoren, PMO-Mitarbeitende und Business Analysten. PeopleCert nennt keine Voraussetzungen. In 3 Tagen lernen Sie die sieben Prinzipien, Praktiken und Prozesse von PRINCE2 Version 7 und bereiten sich auf die Foundation-Prüfung vor.",
+    "courses": [
+     "prince2-7-foundation"
+    ]
+   },
+   {
+    "label": "Einstieg agil",
+    "text": "Für alle, die Projekte leiten oder daran mitarbeiten und vor einem Scrum-Projekt stehen. Der Kurs behandelt agile Denkweise, Scrum-Rollen, Events, Backlog, Schätzverfahren und das Sichtbarmachen des Arbeitsfortschritts.",
+    "courses": [
+     "exin-agile-scrum-foundation"
+    ]
+   },
+   {
+    "label": "Vertiefung",
+    "text": "Für Teilnehmende mit PRINCE2 7 Foundation oder einer anderen anerkannten Vorzertifizierung, etwa PMP oder IPMA Level A bis D. In 2 Tagen üben Sie, die Methode anzuwenden und an Größe, Umfeld und Komplexität eines Projekts anzupassen.",
+    "courses": [
+     "prince2-7-practitioner"
+    ]
+   },
+   {
+    "label": "IT-Servicemanagement",
+    "text": "Für IT-Projektmanager, IT Service Manager und Teamleiter in der IT. In 2 Tagen lernen Sie das Service Value System, die sieben Leitprinzipien und ausgewählte Praktiken kennen. PeopleCert plant derzeit, alle ITIL-4-Module am 31.12.2027 einzustellen.",
+    "courses": [
+     "itil-4-foundation"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Brauche ich für PRINCE2 7 Practitioner zuerst die Foundation?",
+    "a": "Nicht zwingend. Sie brauchen eine anerkannte Vorzertifizierung. Laut PeopleCert zählen dazu PRINCE2 Foundation in Version 7, Foundation oder Practitioner der 5. oder 6. Edition, PMP, CAPM, PPQ, PMQ sowie IPMA Level A bis D. Die vollständige Liste steht auf der Zertifizierungsseite von PeopleCert."
+   },
+   {
+    "q": "Soll ich mit PRINCE2 oder mit Scrum beginnen?",
+    "a": "Das richtet sich nach der Arbeitsweise in Ihren Projekten. PRINCE2 7 Foundation beschreibt eine Methode mit Prinzipien, Praktiken und Prozessen vom Projektstart bis zum Abschluss. EXIN Agile Scrum Foundation behandelt agiles Arbeiten mit Scrum-Rollen, Events und Backlog. EXIN empfiehlt diese Zertifizierung vor dem Start eines Scrum-Projekts."
+   },
+   {
+    "q": "Wie läuft die Prüfung PRINCE2 7 Foundation ab?",
+    "a": "Die Prüfung umfasst 60 Multiple-Choice-Fragen in 60 Minuten, ohne Unterlagen. Zum Bestehen sind 60 Prozent nötig. Voraussetzungen nennt PeopleCert für die Foundation nicht."
+   },
+   {
+    "q": "Was bedeutet die geplante Einstellung von ITIL 4 für die Foundation?",
+    "a": "ITIL 4 und ITIL (Version 5) laufen zeitweise parallel. PeopleCert plant derzeit, alle ITIL-4-Module am 31.12.2027 einzustellen. Wer das Zertifikat ITIL 4 Foundation besitzt, muss für höhere Module der Version 5 nicht zusätzlich Foundation (Version 5) ablegen."
+   }
+  ]
+ },
+ "thema-office": {
+  "heading": "Welcher Office- und Microsoft-365-Kurs passt zu Ihnen?",
+  "intro": "Auf dieser Seite finden Sie Kurse zu Microsoft 365 und Microsoft Power Platform. Wer eigene Geschäftslösungen mit Apps, Flows oder Agents verstehen möchte, beginnt mit PL-900. Der Kurs gibt einen Überblick über die Dienste der Power Platform. Wer Microsoft 365 verwaltet, wählt zuerst einen Arbeitsbereich: MS-700 für Microsoft Teams oder MD-102 für Endgeräte mit Intune. MS-102 behandelt danach den gesamten Mandanten mit Benutzern, Lizenzen, Identität, Sicherheit und Compliance. Microsoft richtet MS-102 an Personen, die bereits mindestens einen rollenbasierten Microsoft-365-Administratorpfad abgeschlossen haben. Die Prüfung MS-102 stellt Microsoft am 30.11.2026 ein.",
+  "steps": [
+   {
+    "label": "Einstieg",
+    "text": "Für Personen, die am Anfang mit Microsoft Power Platform stehen. Der Kurs gibt einen Überblick über Power Apps, Power Automate, Dataverse, Power Pages und Agents in Copilot Studio. Microsoft nennt für den Lernpfad keine Voraussetzungen.",
+    "courses": [
+     "pl-900-power-platform-fundamentals"
+    ]
+   },
+   {
+    "label": "Administration eines Bereichs",
+    "text": "Für Administratorinnen und Administratoren, die einen Bereich in Microsoft 365 betreuen: Microsoft Teams mit MS-700 oder Endgeräte mit Intune und Entra ID mit MD-102. MD-102 setzt Praxis in Bereitstellung, Konfiguration und Wartung von Geräten voraus.",
+    "courses": [
+     "ms-700-managing-microsoft-teams",
+     "md-102-endpoint-administrator-associate"
+    ]
+   },
+   {
+    "label": "Mandantenverwaltung",
+    "text": "Für Personen, die bereits mindestens einen Microsoft-365-Bereich administriert haben. Der Kurs behandelt Mandant, Lizenzen, Rollen, Identitätssynchronisierung, Defender XDR und Purview. Microsoft stellt die Prüfung MS-102 am 30.11.2026 ein.",
+    "courses": [
+     "ms-102-microsoft-365-administrator"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Mit welchem Kurs beginne ich ohne Vorkenntnisse?",
+    "a": "PL-900 ist als Einstieg angelegt. Microsoft nennt für den Lernpfad keine Voraussetzungen. Der Kurs erklärt, welche Dienste zu Power Platform gehören und wie Apps, Flows und Agents entstehen."
+   },
+   {
+    "q": "Kann ich direkt mit MS-102 anfangen?",
+    "a": "Microsoft richtet MS-102 an Personen, die bereits mindestens einen rollenbasierten Microsoft-365-Administratorpfad abgeschlossen haben. Erwartet werden Praxis mit den Microsoft-365-Workloads und Entra ID sowie Grundkenntnisse in Netzwerken, Active Directory, DNS und PowerShell. Wer noch keinen Bereich administriert hat, kann zuerst MS-700 oder MD-102 belegen."
+   },
+   {
+    "q": "Kann ich die Prüfung MS-102 noch ablegen?",
+    "a": "Microsoft stellt die Prüfung MS-102 am 30.11.2026 ein. Den aktuellen Stand finden Sie auf der Kursseite. Mögliche Alternativen klären wir in der Beratung."
+   },
+   {
+    "q": "Welcher Kurs passt für die Verwaltung von Microsoft Teams?",
+    "a": "MS-700 richtet sich an Personen, die die Rolle Teams-Administrator in Microsoft 365 anstreben. Behandelt werden Netzwerkplanung, Sicherheit und Compliance, Governance, Gast- und externer Zugriff, Besprechungen, Teams Phone und Fehlerbehebung. Eine verpflichtende Vorzertifizierung nennt Microsoft nicht."
+   }
+  ]
+ },
+ "thema-compliance": {
+  "heading": "Welcher Kurs zu Governance, Risiko und Compliance passt zu Ihnen?",
+  "intro": "Diese Seite bündelt Kurse zu Governance, Risiko und Compliance in der Informationssicherheit. Der Einstieg vermittelt die Begriffe und Anforderungen eines ISMS nach ISO/IEC 27001:2022 oder ordnet die Sicherheits- und Compliance-Lösungen von Microsoft ein. Danach folgen die ISACA-Kurse für IT-Audit (CISA) und IT-Risikomanagement (CRISC). Für die Steuerung von Sicherheitsprogrammen eignen sich CISM und CISSP. Wer Sicherheit und Compliance in Cloud-Umgebungen verantwortet, findet die Spezialisierung bei CCSP und SC-100. Für die Zertifizierungen von ISACA und ISC2 gelten Anforderungen an die Berufserfahrung, die Sie vor der Kurswahl prüfen sollten.",
+  "steps": [
+   {
+    "label": "Einstieg",
+    "text": "ISO/IEC 27001 Foundation (2 Tage, Deutsch) erklärt Führungskräften, Beratern und Einsteigern Begriffe und Normanforderungen eines ISMS und setzt nichts voraus. SC-900 ordnet die Sicherheits- und Compliance-Lösungen von Microsoft ein und setzt allgemeine IT-, Netzwerk- und Cloud-Kenntnisse voraus.",
+    "courses": [
+     "pecb-iso-27001-foundation",
+     "sc-900-security-compliance-identity-fundamentals"
+    ]
+   },
+   {
+    "label": "Audit und Risiko",
+    "text": "Für IT-Auditoren sowie Risiko- und Compliance-Verantwortliche: CISA behandelt die risikobasierte Planung und Durchführung von IS-Audits, CRISC die Bewertung und Behandlung von IT-Risiken. Beide Kurse dauern 4 Tage und finden auf Deutsch statt; für die Zertifizierung verlangt ISACA mindestens fünf beziehungsweise drei Jahre Berufserfahrung.",
+    "courses": [
+     "isaca-cisa",
+     "isaca-crisc"
+    ]
+   },
+   {
+    "label": "Führung",
+    "text": "Für Fachkräfte, die Sicherheitsprogramme verantworten: CISM (4 Tage) behandelt Governance, Risikomanagement, Sicherheitsprogramm und Incident Management nach dem seit November 2026 geltenden Prüfungsrahmen. CISSP (5 Tage) deckt acht Domänen über Technik, Prozesse und Organisation ab.",
+    "courses": [
+     "isaca-cism",
+     "isc2-cissp"
+    ]
+   },
+   {
+    "label": "Cloud-Spezialisierung",
+    "text": "Für Verantwortliche für Sicherheit und Compliance in Cloud-Umgebungen: CCSP folgt den sechs ISC2-Domänen einschließlich Recht, Risiko und Compliance, SC-100 behandelt Sicherheitsarchitekturen mit Microsoft-Technologien für erfahrene Cloud-Security-Engineers. Die Dauer beider Kurse nennen wir auf Anfrage.",
+    "courses": [
+     "isc2-ccsp",
+     "sc-100-cybersecurity-architect-expert"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Brauche ich Vorkenntnisse für den Einstieg?",
+    "a": "Für ISO/IEC 27001 Foundation nennt PECB keine Voraussetzungen, und für das Zertifikat wird keine Berufserfahrung verlangt. Für SC-900 setzt Microsoft allgemeine IT-Kenntnisse, ein Verständnis von Netzwerk- und Cloud-Konzepten sowie Grundkenntnisse zu Azure und Microsoft 365 voraus."
+   },
+   {
+    "q": "Welche Berufserfahrung verlangt ISACA für CISA, CISM und CRISC?",
+    "a": "Die Erfahrung gilt für die Zertifizierung: mindestens fünf Jahre für CISA und CISM, drei Jahre für CRISC. Bei CISA und CISM lässt sich ein Teil durch anerkannte Ersatzleistungen abdecken, bei CRISC nicht. Den Antrag stellen Sie jeweils innerhalb von fünf Jahren nach bestandener Prüfung; die CISM-Prüfung können Sie ohne Erfahrungsnachweis ablegen."
+   },
+   {
+    "q": "Worin unterscheiden sich CISM und CISSP?",
+    "a": "CISM konzentriert sich auf das Management der Informationssicherheit mit Governance, Risiko, Sicherheitsprogramm und Incidents. CISSP reicht mit acht Domänen weiter in die Technik, etwa Sicherheitsarchitektur, Netzwerksicherheit und sichere Softwareentwicklung. Ohne die geforderten fünf Jahre Erfahrung können Sie nach bestandener CISSP-Prüfung Associate of ISC2 werden."
+   },
+   {
+    "q": "In welcher Sprache finden die Kurse statt?",
+    "a": "CISA, CISM, CRISC, CISSP und ISO/IEC 27001 Foundation sind auf den Kursseiten auf Deutsch ausgewiesen. CCSP, SC-100 und SC-900 sind auf Deutsch oder Englisch möglich; die Dauer dieser drei Kurse nennen wir auf Anfrage."
+   }
+  ]
+ },
+ "thema-devops": {
+  "heading": "Welcher Kurs zu DevOps, Testing und Collaboration passt zu Ihnen?",
+  "intro": "Diese Themenseite bündelt Kurse zur Zusammenarbeit in Entwicklungsteams, zum Softwaretest, zur KI-gestützten Entwicklung und zum Betrieb einer Cloud-Plattform. Die folgende Auswahl ordnet vier dieser Kurse in eine mögliche Reihenfolge. Am Anfang stehen die Arbeit im Team mit Scrum und die Grundlagen des Testens nach ISTQB; der ISTQB-Lehrplan behandelt auch DevOps und Shift-Left. Darauf folgt der Einsatz von GitHub Copilot in der Entwicklung. Wer Anwendungen auf Azure betreibt, ergänzt dies um die Administration der Plattform mit AZ-104. Keiner der Kurse setzt einen der anderen voraus, Sie können also auch direkt bei der passenden Stufe einsteigen.",
+  "steps": [
+   {
+    "label": "Einstieg: Zusammenarbeit im Team",
+    "text": "Für Fachkräfte, die Projekte leiten oder daran mitarbeiten, etwa aus Projektmanagement oder Softwareentwicklung. Der Kurs behandelt agile Denkweise, Scrum-Rollen, Events, Backlog, Schätzverfahren und das Sichtbarmachen des Fortschritts. EXIN nennt keine Zugangsvoraussetzungen.",
+    "courses": [
+     "exin-agile-scrum-foundation"
+    ]
+   },
+   {
+    "label": "Einstieg: Qualität und Test",
+    "text": "Für Tester, Entwickler, Product Owner und Projektmanager. Der dreitägige Kurs folgt dem ISTQB-Lehrplan 4.0 und behandelt Testverfahren, Reviews, Testmanagement, das Testen in agilen Modellen und DevOps sowie Nutzen und Risiken der Testautomatisierung.",
+    "courses": [
+     "istqb-certified-tester-foundation"
+    ]
+   },
+   {
+    "label": "Vertiefung: KI in der Entwicklung",
+    "text": "Für alle, die GitHub Copilot in IDE, Kommandozeile und auf GitHub.com einsetzen möchten. Der eintägige Kurs bereitet auf die Prüfung GH-300 vor. Erwartet werden Grundkenntnisse zu GitHub und Erfahrung mit mindestens einer Programmiersprache.",
+    "courses": [
+     "github-copilot-fundamentals"
+    ]
+   },
+   {
+    "label": "Spezialisierung: Plattformbetrieb",
+    "text": "Für Administratorinnen und Administratoren, die Azure-Umgebungen betreiben. Der viertägige Kurs bereitet auf die Prüfung AZ-104 vor und behandelt unter anderem Bereitstellung mit ARM-Vorlagen und Bicep, Container, App Service und Überwachung.",
+    "courses": [
+     "az-104-microsoft-azure-administrator"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Welcher Kurs eignet sich ohne Vorkenntnisse?",
+    "a": "Für EXIN Agile Scrum Foundation und ISTQB Certified Tester Foundation Level nennen EXIN und ISTQB keine formalen Zugangsvoraussetzungen. Beide eignen sich daher als Einstieg, je nachdem, ob Ihr Schwerpunkt auf der Zusammenarbeit im Team oder auf dem Softwaretest liegt."
+   },
+   {
+    "q": "Behandelt der ISTQB-Kurs auch DevOps?",
+    "a": "Ja. Der Lehrplan Foundation Level 4.0 behandelt im Modul zum Softwareentwicklungslebenszyklus Test-First-Ansätze, DevOps und Shift-Left sowie Teststufen und Regressionstests. Außerdem geht er auf Nutzen und Risiken der Testautomatisierung ein."
+   },
+   {
+    "q": "Was brauche ich für den Kurs GitHub Copilot Fundamentals?",
+    "a": "Für die zugehörigen Lernpfade setzt Microsoft Grundkenntnisse zu GitHub voraus. Laut Prüfungsleitfaden GH-300 sollten Sie außerdem Erfahrung mit mindestens einer Programmiersprache haben. Der Kurs dauert einen Tag und findet auf Deutsch statt."
+   },
+   {
+    "q": "Warum steht AZ-104 auf einer DevOps-Seite?",
+    "a": "Der Kurs behandelt die Bereitstellung über Vorlagen, Azure CLI und PowerShell, Container, App Service sowie Überwachung und Wiederherstellung. Damit passt er für Teams, die ihre Anwendungen auf Azure selbst betreiben. Microsoft erwartet Grundwissen zu Netzwerken, Virtualisierung, Active Directory sowie Sicherung und Notfallwiederherstellung."
+   }
+  ]
+ }
+}

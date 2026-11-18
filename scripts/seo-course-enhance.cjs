@@ -3,6 +3,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const {CITY_FILES, enhanceCity} = require('./seo-city-pages.cjs');
+const {TOPIC_FILES, enhanceTopic} = require('./seo-topic-pages.cjs');
 const COPY_TABLE = require('./course-copy-table.json');
 // Non-Microsoft exam status, checked against the vendors on 2026-11-10.
 const VENDOR_STATUS = require('./vendor-status.json');
@@ -562,6 +563,7 @@ for (const name of fs.readdirSync('kurse').filter((f) => f.endsWith('.html'))) {
 apply('index.html', enhanceHome);
 apply('kursangebote.html', enhanceCatalog);
 for (const name of CITY_FILES) apply(name, (html) => enhanceCity(html, name, today));
+for (const name of TOPIC_FILES) apply(name, (html) => enhanceTopic(html, name.split('/').pop()));
 
 if (changed.length) {
   apply('sitemap.xml', (xml) => changed.reduce((acc, file) => {
