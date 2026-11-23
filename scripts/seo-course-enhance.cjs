@@ -9,6 +9,7 @@ const COPY_TABLE = require('./course-copy-table.json');
 const VENDOR_STATUS = require('./vendor-status.json');
 // Only these course pages stay indexable; see the note in the file.
 const INDEXABLE = new Set(require('./index-policy.json').indexable);
+const NOINDEX_PAGES = require('./index-policy.json').noindexPages || [];
 const ROBOTS_INDEX = 'index,follow,max-image-preview:large';
 const ROBOTS_NOINDEX = 'noindex,follow';
 // Course-specific content from official vendor outlines, written in our own words (2026-11-17).
@@ -564,6 +565,8 @@ apply('index.html', enhanceHome);
 apply('kursangebote.html', enhanceCatalog);
 for (const name of CITY_FILES) apply(name, (html) => enhanceCity(html, name, today));
 for (const name of TOPIC_FILES) apply(name, (html) => enhanceTopic(html, name.split('/').pop()));
+// Thin non-course pages stay reachable for visitors but out of the index and the sitemap.
+for (const name of NOINDEX_PAGES) apply(name, (html) => html.replace(/<meta name="robots" content="[^"]*">/, `<meta name="robots" content="${ROBOTS_NOINDEX}">`));
 
 if (changed.length) {
   apply('sitemap.xml', (xml) => changed.reduce((acc, file) => {
@@ -575,6 +578,10 @@ if (changed.length) {
 }
 // Noindexed course pages do not belong in the sitemap; the renderer may add them back.
 apply('sitemap.xml', (xml) => xml.replace(/\s*<url><loc>https:\/\/nh-it-training\.de\/kurse\/([^<]+)\.html<\/loc>[\s\S]*?<\/url>/g, (block, slug) => (INDEXABLE.has(decodeURI(slug)) ? block : '')));
+apply('sitemap.xml', (xml) => NOINDEX_PAGES.reduce((acc, name) => {
+  const loc = SITE + encodeURI(name);
+  return acc.split('\n').filter((line) => !line.includes(`<loc>${loc}</loc>`)).join('\n');
+}, xml));
 // Course pages newly added to the index policy enter the sitemap in alphabetical order.
 apply('sitemap.xml', (xml) => {
   let out = xml;

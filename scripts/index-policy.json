@@ -50,5 +50,22 @@
   "sc-900-security-compliance-identity-fundamentals",
   "tableau-desktop-i-fundamentals",
   "tableau-desktop-ii-intermediate"
+ ],
+ "noindexPagesNote": "Non-course pages kept out of the index: thin brand pages without own indexable courses, the search tool and a duplicate of unternehmen.html. Decided 2026-11-23. Remove an entry once the page has its own content.",
+ "noindexPages": [
+  "trainings/advanced-search.html",
+  "trainings/unternehmen.html",
+  "trainings/brand-adobe.html",
+  "trainings/brand-certnexus.html",
+  "trainings/brand-chatgpt.html",
+  "trainings/brand-citrix.html",
+  "trainings/brand-devops.html",
+  "trainings/brand-fortinet.html",
+  "trainings/brand-jira.html",
+  "trainings/brand-linux.html",
+  "trainings/brand-opexa.html",
+  "trainings/brand-pmi.html",
+  "trainings/brand-professional-development.html",
+  "trainings/brand-vmware.html"
  ]
 }

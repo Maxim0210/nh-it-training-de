@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://nh-it-training.de/agb.html</loc><lastmod>2026-08-25</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/blog.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/blog.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/azure-administrator-az-104-muenchen.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/azure-grundlagen-az-900-online.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/bildungsgutschein-it-weiterbildung-muenchen.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
@@ -20,18 +20,18 @@
   <url><loc>https://nh-it-training.de/blog/python-lernen-online.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/blog/qcg-foerderung-it-weiterbildung-unternehmen.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/datenschutz.html</loc><lastmod>2026-08-25</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/f%C3%B6rderung.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/f%C3%B6rderung.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/impressum.html</loc><lastmod>2026-08-25</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/</loc><lastmod>2026-11-11</lastmod><priority>1.0</priority></url>
-  <url><loc>https://nh-it-training.de/it-weiterbildung-online-m%C3%BCnchen.html</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://nh-it-training.de/it-weiterbildung-online-n%C3%BCrnberg.html</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://nh-it-training.de/it-weiterbildung-online-stuttgart.html</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://nh-it-training.de/it-weiterbildung-online-m%C3%BCnchen.html</loc><lastmod>2026-11-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://nh-it-training.de/it-weiterbildung-online-n%C3%BCrnberg.html</loc><lastmod>2026-11-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://nh-it-training.de/it-weiterbildung-online-stuttgart.html</loc><lastmod>2026-11-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://nh-it-training.de/kontakt.html</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-103-develop-ai-apps-and-agents-on-azure.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-900-microsoft-azure-ai-fundamentals.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ai-foundation.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/aws-cloud-practitioner-essentials.html</loc><lastmod>2026-11-10</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/az-104-microsoft-azure-administrator.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/az-104-microsoft-azure-administrator.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/az-305-azure-solutions-architect-expert.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/az-500-azure-security-engineer-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/az-900-microsoft-azure-grundlagen.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
@@ -51,9 +51,9 @@
   <url><loc>https://nh-it-training.de/kurse/md-102-endpoint-administrator-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/ms-102-microsoft-365-administrator.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/pl-300-power-bi-data-analyst.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/prince2-7-foundation.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/prince2-7-foundation.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/sc-200-security-operations-analyst-associate.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/sc-300-microsoft-identity-and-access-administrator.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/sc-300-microsoft-identity-and-access-administrator.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/sc-900-security-compliance-identity-fundamentals.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/tableau-desktop-i-fundamentals.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurskatalog.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
@@ -69,54 +69,40 @@
   <url><loc>https://nh-it-training.de/qcg-prozess.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/standorte.html</loc><lastmod>2026-11-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://nh-it-training.de/trainings.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/advanced-search.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/arbeitnehmer.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/arbeitsuchende.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-adobe.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/trainings/arbeitsuchende.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-ai-certs.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-aws.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-certnexus.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-chatgpt.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-cisco.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-citrix.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-comptia.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-devops.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-ec-council.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-exin.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-fortinet.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-github.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-isaca.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-isc2.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-istqb.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-itil.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-jira.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-linux.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-microsoft.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-opexa.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-pecb.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-pmi.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-prince2.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-professional-development.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-python.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brand-tableau.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/brand-vmware.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/brands.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/thema-cloud.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/thema-compliance.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/thema-data.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/thema-devops.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/thema-ki.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/trainings/thema-ki.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/thema-network.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/thema-office.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/thema-pm.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/thema-security.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/trainings/topics.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/trainings/unternehmen.html</loc><lastmod>2026-11-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/unternehmen.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/unternehmen.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/weiterbildungs-kompass.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
 <url><loc>https://nh-it-training.de/kursangebote.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/aws-technical-essentials.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
-  <url><loc>https://nh-it-training.de/kurse/az-140-azure-virtual-desktop-specialty.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/kurse/az-140-azure-virtual-desktop-specialty.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/az-700-azure-network-engineer-associate.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/cisco-ccnp-enterprise-professional.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/comptia-cloud-plus.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
@@ -135,4 +121,7 @@
   <url><loc>https://nh-it-training.de/kurse/prince2-7-practitioner.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/sc-100-cybersecurity-architect-expert.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://nh-it-training.de/kurse/tableau-desktop-ii-intermediate.html</loc><lastmod>2026-11-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/blog/it-weiterbildung-quereinsteiger.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/blog/ki-weiterbildung-foerderung.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://nh-it-training.de/blog/ki-schulungspflicht-unternehmen.html</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
 </urlset>
