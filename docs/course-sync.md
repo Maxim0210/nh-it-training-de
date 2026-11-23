@@ -48,3 +48,7 @@ Named by the owner on 2026-11-04. Funding for jobseekers: one contact per city, 
 ## Index policy and course content
 
 Decided 2026-11-17: Search Console showed 1 indexed page, and 214 of 243 course pages had under 20 % unique text. Only the course pages in `scripts/index-policy.json` stay indexable; all others get `noindex,follow` and leave the sitemap. `scripts/course-content.json` holds course-specific agendas, audience and prerequisites for those pages, written in our own words from the linked vendor outlines. Add a page to the policy only after it has such content.
+
+Decided 2026-11-23: `noindexPages` in the same file lists non-course pages that stay reachable but out of the index and the sitemap (brand pages without own indexable courses, the search tool, the duplicate company page). The enhancer applies it on every run.
+
+Owner rule, 2026-11-23: the site advertises only the own locations München, Nürnberg and Stuttgart. No wording such as "bundesweit" or "aus ganz Deutschland", no Germany-wide landing page.
