@@ -52,3 +52,7 @@ Decided 2026-11-17: Search Console showed 1 indexed page, and 214 of 243 course 
 Decided 2026-11-23: `noindexPages` in the same file lists non-course pages that stay reachable but out of the index and the sitemap (brand pages without own indexable courses, the search tool, the duplicate company page). The enhancer applies it on every run.
 
 Owner rule, 2026-11-23: the site advertises only the own locations München, Nürnberg and Stuttgart. No wording such as "bundesweit" or "aus ganz Deutschland", no Germany-wide landing page.
+
+## Exam facts and titles
+
+Decided 2026-11-24: the indexable course pages show a "Prüfung und Kosten" block from `scripts/exam-facts.json`, rendered by `scripts/seo-exam-facts.cjs` in the enhancer. Every row comes from the linked vendor page; rows a source does not support stay out. Microsoft fees come from `https://learn.microsoft.com/en-us/credentials/exam-pricing.json` (Germany). Recheck about once a quarter and update `asOf`. MS-102 has no block (owner rule: only the end date). Indexable course titles carry "Schulung" within 60 characters; long names have overrides in `TITLE_OVERRIDES`.
