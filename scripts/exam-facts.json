@@ -1,0 +1,1684 @@
+{
+ "asOf": "24.11.2026",
+ "courses": {
+  "ai-103-develop-ai-apps-and-agents-on-azure": {
+   "certification": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+   "exams": [
+    {
+     "code": "AI-103",
+     "name": "Develop AI Apps and Agents on Azure",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "120 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/azure-ai-apps-and-agents-developer-associate/"
+    }
+   ],
+   "renewal": "",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "ai-900-microsoft-azure-ai-fundamentals": {
+   "certification": "Microsoft Certified: Azure AI Fundamentals",
+   "exams": [
+    {
+     "code": "AI-901",
+     "name": "Microsoft Azure KI-Grundlagen",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "76 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "45 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/exams/ai-901/"
+    }
+   ],
+   "renewal": "",
+   "note": "AI-900 wurde am 30.06.2026 eingestellt; die Zertifizierung wird heute über AI-901 erworben.",
+   "extraSources": [
+    {
+     "label": "Microsoft: AI-900",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exams/ai-900/"
+    },
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "ai-foundation": {
+   "certification": "AI+ Foundation",
+   "exams": [
+    {
+     "code": "AF-101",
+     "name": "AI+ Foundation",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "50 Fragen"
+      ],
+      [
+       "Bestehensgrenze",
+       "70 %"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Spanisch)"
+      ],
+      [
+       "Durchführung",
+       "Online beaufsichtigte Prüfung"
+      ]
+     ],
+     "source": "https://store.aicerts.ai/certifications/essentials/ai-foundation/"
+    }
+   ],
+   "renewal": ""
+  },
+  "aws-cloud-practitioner-essentials": {
+   "certification": "AWS Certified Cloud Practitioner",
+   "exams": [
+    {
+     "code": "CLF-C02",
+     "name": "AWS Certified Cloud Practitioner",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "100 USD bzw. 85 EUR (ggf. zzgl. Steuern) laut AWS, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "65"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "Pearson VUE: Testcenter oder online beaufsichtigt"
+      ]
+     ],
+     "source": "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+    }
+   ],
+   "renewal": "",
+   "extraSources": [
+    {
+     "label": "AWS: Prüfungspreise",
+     "url": "https://aws.amazon.com/certification/policies/before-testing/"
+    }
+   ]
+  },
+  "az-104-microsoft-azure-administrator": {
+   "certification": "Microsoft Certified: Azure Administrator Associate",
+   "exams": [
+    {
+     "code": "AZ-104",
+     "name": "Microsoft Azure Administrator",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/azure-administrator/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "az-140-azure-virtual-desktop-specialty": {
+   "certification": "Microsoft Certified: Azure Virtual Desktop Specialty",
+   "exams": [
+    {
+     "code": "AZ-140",
+     "name": "Configuring and Operating Microsoft Azure Virtual Desktop",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/azure-virtual-desktop-specialty/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "az-305-azure-solutions-architect-expert": {
+   "certification": "Microsoft Certified: Azure Solutions Architect Expert",
+   "exams": [
+    {
+     "code": "AZ-305",
+     "name": "Entwerfen von Microsoft Azure Infrastrukturlösungen",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/exams/az-305/"
+    }
+   ],
+   "renewal": "",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "az-700-azure-network-engineer-associate": {
+   "certification": "Microsoft Certified: Azure Network Engineer Associate",
+   "exams": [
+    {
+     "code": "AZ-700",
+     "name": "Designing and Implementing Microsoft Azure Networking Solutions",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/azure-network-engineer-associate/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "az-900-microsoft-azure-grundlagen": {
+   "certification": "Microsoft Certified: Azure Fundamentals",
+   "exams": [
+    {
+     "code": "AZ-900",
+     "name": "Microsoft Azure Fundamentals",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "76 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "45 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/azure-fundamentals/"
+    }
+   ],
+   "renewal": "",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "cisco-ccna": {
+   "certification": "Cisco Certified Network Associate",
+   "exams": [
+    {
+     "code": "200-301",
+     "name": "Cisco CCNA",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "US$ 300 laut Hersteller, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "120 Minuten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Japanisch)"
+      ]
+     ],
+     "source": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html"
+    }
+   ],
+   "renewal": ""
+  },
+  "cisco-ccnp-enterprise-professional": {
+   "certification": "Cisco Certified Network Professional (CCNP) Enterprise",
+   "exams": [
+    {
+     "code": "350-401 ENCOR",
+     "name": "Implementing and Operating Cisco Enterprise Network Core Technologies",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "US$ 400 laut Hersteller, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "120 Minuten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Japanisch)"
+      ]
+     ],
+     "source": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/encor.html"
+    }
+   ],
+   "renewal": ""
+  },
+  "comptia-a-plus": {
+   "certification": "CompTIA A+",
+   "exams": [
+    {
+     "code": "220-1201",
+     "name": "CompTIA A+ Core 1",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 90"
+      ],
+      [
+       "Bestehensgrenze",
+       "675 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/a/core-1-v15/"
+    },
+    {
+     "code": "220-1202",
+     "name": "CompTIA A+ Core 2",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 90"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/a/core-2-v15/"
+    }
+   ],
+   "renewal": ""
+  },
+  "comptia-cloud-plus": {
+   "certification": "CompTIA Cloud+",
+   "exams": [
+    {
+     "code": "CV0-004",
+     "name": "CompTIA Cloud+",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 90"
+      ],
+      [
+       "Bestehensgrenze",
+       "750 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Japanisch)"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/cloud/"
+    }
+   ],
+   "renewal": ""
+  },
+  "comptia-cysa-plus": {
+   "certification": "CompTIA Cybersecurity Analyst (CySA+) V4",
+   "exams": [
+    {
+     "code": "CS0-004",
+     "name": "CompTIA CySA+ V4",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "165 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 85"
+      ],
+      [
+       "Bestehensgrenze",
+       "750 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch)"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/v4/"
+    }
+   ],
+   "renewal": ""
+  },
+  "comptia-data-plus": {
+   "certification": "CompTIA Data+",
+   "exams": [
+    {
+     "code": "DA0-002",
+     "name": "CompTIA Data+",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 90"
+      ],
+      [
+       "Bestehensgrenze",
+       "675 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Japanisch)"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/data/"
+    }
+   ],
+   "renewal": ""
+  },
+  "comptia-linux-plus": {
+   "certification": "CompTIA Linux+",
+   "exams": [
+    {
+     "code": "XK0-006",
+     "name": "CompTIA Linux+",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 90"
+      ],
+      [
+       "Bestehensgrenze",
+       "720 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch)"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/linux/"
+    }
+   ],
+   "renewal": ""
+  },
+  "comptia-network-plus": {
+   "certification": "CompTIA Network+",
+   "exams": [
+    {
+     "code": "N10-009",
+     "name": "CompTIA Network+",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 90"
+      ],
+      [
+       "Bestehensgrenze",
+       "720 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/network/"
+    }
+   ],
+   "renewal": ""
+  },
+  "comptia-pentest-plus": {
+   "certification": "CompTIA PenTest+",
+   "exams": [
+    {
+     "code": "PT0-003",
+     "name": "CompTIA PenTest+",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "165 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 90"
+      ],
+      [
+       "Bestehensgrenze",
+       "750 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Französisch, Japanisch, Portugiesisch)"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/pentest/"
+    }
+   ],
+   "renewal": ""
+  },
+  "comptia-security-plus": {
+   "certification": "CompTIA Security+",
+   "exams": [
+    {
+     "code": "SY0-701",
+     "name": "CompTIA Security+ V7",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 90"
+      ],
+      [
+       "Bestehensgrenze",
+       "750 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Japanisch, Portugiesisch, Spanisch, Thai)"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/security/v7/"
+    },
+    {
+     "code": "SY0-801",
+     "name": "CompTIA Security+ V8",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "90 Minuten"
+      ],
+      [
+       "Fragen",
+       "maximal 90"
+      ],
+      [
+       "Bestehensgrenze",
+       "750 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch)"
+      ]
+     ],
+     "source": "https://www.comptia.org/en-us/certifications/security/v8/"
+    }
+   ],
+   "renewal": ""
+  },
+  "dp-300-azure-database-administrator-associate": {
+   "certification": "Microsoft Certified: Azure Database Administrator Associate",
+   "exams": [
+    {
+     "code": "DP-300",
+     "name": "Administering Microsoft Azure SQL Solutions",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/azure-database-administrator-associate/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "dp-900-microsoft-azure-daten-grundlagen": {
+   "certification": "Microsoft Certified: Azure Data Fundamentals",
+   "exams": [
+    {
+     "code": "DP-900",
+     "name": "Microsoft Azure Data Fundamentals",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "76 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "45 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/azure-data-fundamentals/"
+    }
+   ],
+   "renewal": "",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "ec-council-certified-ethical-hacker": {
+   "certification": "EC-Council Certified Ethical Hacker",
+   "exams": [
+    {
+     "code": "312-50",
+     "name": "Certified Ethical Hacker Exam",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "4 Stunden"
+      ],
+      [
+       "Fragen",
+       "125"
+      ],
+      [
+       "Bestehensgrenze",
+       "Je nach Prüfungsform liegt die Bestehensgrenze zwischen 60 % und 85 %"
+      ],
+      [
+       "Durchführung",
+       "ECC Exam Centre und Pearson-VUE-Testcenter"
+      ]
+     ],
+     "source": "https://cert.eccouncil.org/certified-ethical-hacker.html"
+    }
+   ],
+   "renewal": ""
+  },
+  "exin-agile-scrum-foundation": {
+   "certification": "EXIN Agile Scrum Foundation",
+   "exams": [
+    {
+     "code": "ASF",
+     "name": "EXIN Agile Scrum Foundation",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "60 Minuten"
+      ],
+      [
+       "Fragen",
+       "40 Multiple-Choice-Fragen"
+      ],
+      [
+       "Bestehensgrenze",
+       "65 %"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ]
+     ],
+     "source": "https://www.exin.com/agile-devops-lean/exin-agile-scrum/exin-agile-scrum-foundation/"
+    }
+   ],
+   "renewal": ""
+  },
+  "github-copilot-fundamentals": {
+   "certification": "GitHub Copilot",
+   "exams": [
+    {
+     "code": "GH-300",
+     "name": "GitHub Copilot",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 900 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Spanisch, Portugiesisch)"
+      ],
+      [
+       "Durchführung",
+       "Beaufsichtigte Prüfung"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/github-copilot/"
+    }
+   ],
+   "renewal": ""
+  },
+  "isaca-cisa": {
+   "certification": "ISACA CISA – Certified Information Systems Auditor",
+   "exams": [
+    {
+     "code": "CISA",
+     "name": "CISA Exam",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "US$ 760 (Nicht-Mitglied) / US$ 575 (Mitglied) laut Hersteller, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "4 Stunden"
+      ],
+      [
+       "Fragen",
+       "150 Multiple-Choice-Fragen"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "Computerbasiert in autorisierten PSI-Testcentern weltweit oder als online beaufsichtigte Fernprüfung"
+      ]
+     ],
+     "source": "https://www.isaca.org/credentialing/cisa/cisa-exam"
+    }
+   ],
+   "renewal": ""
+  },
+  "isaca-cism": {
+   "certification": "ISACA CISM – Certified Information Security Manager",
+   "exams": [
+    {
+     "code": "CISM",
+     "name": "CISM Exam",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "US$ 760 (Nicht-Mitglied) / US$ 575 (Mitglied) laut Hersteller, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "4 Stunden"
+      ],
+      [
+       "Fragen",
+       "150 Multiple-Choice-Fragen"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "Computerbasiert in autorisierten PSI-Testcentern weltweit oder als online beaufsichtigte Fernprüfung"
+      ]
+     ],
+     "source": "https://www.isaca.org/credentialing/cism/cism-exam"
+    }
+   ],
+   "renewal": ""
+  },
+  "isaca-crisc": {
+   "certification": "ISACA CRISC – Certified in Risk and Information Systems Control",
+   "exams": [
+    {
+     "code": "CRISC",
+     "name": "CRISC Exam",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "US$ 760 (Nicht-Mitglied) / US$ 575 (Mitglied) laut Hersteller, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "4 Stunden"
+      ],
+      [
+       "Fragen",
+       "150 Multiple-Choice-Fragen"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Spanisch, Japanisch)"
+      ],
+      [
+       "Durchführung",
+       "Computerbasiert in autorisierten PSI-Testcentern weltweit oder als online beaufsichtigte Fernprüfung"
+      ]
+     ],
+     "source": "https://www.isaca.org/credentialing/crisc"
+    }
+   ],
+   "renewal": ""
+  },
+  "isc2-ccsp": {
+   "certification": "ISC2 CCSP – Certified Cloud Security Professional",
+   "exams": [
+    {
+     "code": "CCSP",
+     "name": "CCSP Certification Exam",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "575,04 € (Region EMEA, zzgl. Steuern) laut ISC2, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "3 Stunden"
+      ],
+      [
+       "Fragen",
+       "100–150"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "Pearson-Testcenter"
+      ]
+     ],
+     "source": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline"
+    }
+   ],
+   "renewal": "",
+   "extraSources": [
+    {
+     "label": "ISC2: Prüfungspreise",
+     "url": "https://www.isc2.org/register-for-exam/isc2-exam-pricing"
+    }
+   ]
+  },
+  "isc2-cissp": {
+   "certification": "ISC2 CISSP – Certified Information Systems Security Professional",
+   "exams": [
+    {
+     "code": "CISSP",
+     "name": "CISSP Certification Exam",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "719,04 € (Region EMEA, zzgl. Steuern) laut ISC2, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "3 Stunden"
+      ],
+      [
+       "Fragen",
+       "100–150"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "Pearson-Testcenter"
+      ]
+     ],
+     "source": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline"
+    }
+   ],
+   "renewal": "",
+   "extraSources": [
+    {
+     "label": "ISC2: Prüfungspreise",
+     "url": "https://www.isc2.org/register-for-exam/isc2-exam-pricing"
+    }
+   ]
+  },
+  "istqb-certified-tester-foundation": {
+   "certification": "ISTQB Certified Tester Foundation Level (CTFL) v4.0",
+   "exams": [
+    {
+     "code": "CTFL v4.0",
+     "name": "ISTQB Certified Tester Foundation Level",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "nennt der Hersteller bei der Buchung; nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "60 Minuten"
+      ],
+      [
+       "Fragen",
+       "40 Fragen, 40 Punkte insgesamt"
+      ],
+      [
+       "Bestehensgrenze",
+       "26 von 40 Punkten"
+      ]
+     ],
+     "source": "https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/"
+    }
+   ],
+   "renewal": ""
+  },
+  "itil-4-foundation": {
+   "certification": "ITIL 4 Foundation",
+   "exams": [
+    {
+     "code": "ITIL 4 Foundation",
+     "name": "ITIL 4 Foundation Exam",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "im Kurs enthalten"
+      ],
+      [
+       "Dauer",
+       "60 Minuten"
+      ],
+      [
+       "Fragen",
+       "40 Multiple-Choice-Fragen"
+      ],
+      [
+       "Bestehensgrenze",
+       "mindestens 65 %"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ]
+     ],
+     "source": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565"
+    }
+   ],
+   "renewal": "Laut PeopleCert ist die Zertifizierung alle drei Jahre zu erneuern, etwa mit 60 CPD-Punkten."
+  },
+  "md-102-endpoint-administrator-associate": {
+   "certification": "Microsoft 365 Certified: Endpoint Administrator Associate",
+   "exams": [
+    {
+     "code": "MD-102",
+     "name": "Endpoint Administrator",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/exams/md-102/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "ms-700-managing-microsoft-teams": {
+   "certification": "Microsoft 365 Certified: Teams Administrator Associate",
+   "exams": [
+    {
+     "code": "MS-700",
+     "name": "Managing Microsoft Teams",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/m365-teams-administrator-associate/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "pecb-iso-27001-foundation": {
+   "certification": "PECB Certificate Holder in ISO/IEC 27001:2022 Foundation",
+   "exams": [
+    {
+     "code": "ISO/IEC 27001:2022 Foundation",
+     "name": "PECB ISO/IEC 27001:2022 Foundation Exam",
+     "rows": [
+      [
+       "Fragen",
+       "40 Multiple-Choice-Fragen"
+      ],
+      [
+       "Bestehensgrenze",
+       "70 %"
+      ],
+      [
+       "Durchführung",
+       "online mit Fernaufsicht über die PECB Exams App oder als Papierprüfung über den Schulungspartner"
+      ]
+     ],
+     "source": "https://pecb.com/pdf/candidate-handbooks/pecb-candidate-handbook-iso-27001-2022-foundation.pdf"
+    }
+   ],
+   "renewal": ""
+  },
+  "pl-300-power-bi-data-analyst": {
+   "certification": "Microsoft Certified: Power BI Data Analyst Associate",
+   "exams": [
+    {
+     "code": "PL-300",
+     "name": "Microsoft Power BI Data Analyst",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/data-analyst-associate/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "pl-900-power-platform-fundamentals": {
+   "certification": "Microsoft Certified: Power Platform Fundamentals",
+   "exams": [
+    {
+     "code": "PL-900",
+     "name": "Microsoft Power Platform Fundamentals",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "76 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "45 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/power-platform-fundamentals/"
+    }
+   ],
+   "renewal": "",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "prince2-7-foundation": {
+   "certification": "PRINCE2 Project Management Foundation, Version 7",
+   "exams": [
+    {
+     "code": "PRINCE2 7 Foundation",
+     "name": "PRINCE2 Project Management Foundation",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "im Kurs enthalten"
+      ],
+      [
+       "Dauer",
+       "60 Minuten"
+      ],
+      [
+       "Fragen",
+       "60 Multiple-Choice-Fragen"
+      ],
+      [
+       "Bestehensgrenze",
+       "mindestens 60 %"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ]
+     ],
+     "source": "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579"
+    }
+   ],
+   "renewal": "Laut PeopleCert ist die Zertifizierung alle drei Jahre zu erneuern, etwa mit 60 CPD-Punkten."
+  },
+  "prince2-7-practitioner": {
+   "certification": "PRINCE2 Project Management Practitioner, Version 7",
+   "exams": [
+    {
+     "code": "PRINCE2 7 Practitioner",
+     "name": "PRINCE2 Project Management Practitioner",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "im Kurs enthalten"
+      ],
+      [
+       "Dauer",
+       "150 Minuten"
+      ],
+      [
+       "Fragen",
+       "56 Fragen und Unterfragen, insgesamt 70 Punkte"
+      ],
+      [
+       "Bestehensgrenze",
+       "mindestens 60 %"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ]
+     ],
+     "source": "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-practitioner-3581"
+    }
+   ],
+   "renewal": ""
+  },
+  "sc-100-cybersecurity-architect-expert": {
+   "certification": "Microsoft Certified: Cybersecurity Architect Expert",
+   "exams": [
+    {
+     "code": "SC-100",
+     "name": "Microsoft Cybersicherheitsarchitekt",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/exams/sc-100/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "sc-200-security-operations-analyst-associate": {
+   "certification": "Microsoft Certified: Security Operations Analyst Associate",
+   "exams": [
+    {
+     "code": "SC-200",
+     "name": "Microsoft Security Operations Analyst",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/security-operations-analyst/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "sc-300-microsoft-identity-and-access-administrator": {
+   "certification": "Microsoft Certified: Identity and Access Administrator Associate",
+   "exams": [
+    {
+     "code": "SC-300",
+     "name": "Microsoft Identity and Access Administrator",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "126 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "100 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/identity-and-access-administrator/"
+    }
+   ],
+   "renewal": "Die Zertifizierung gilt ein Jahr und lässt sich kostenlos per Online-Assessment auf Microsoft Learn verlängern.",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "sc-900-security-compliance-identity-fundamentals": {
+   "certification": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+   "exams": [
+    {
+     "code": "SC-900",
+     "name": "Microsoft Security, Compliance, and Identity Fundamentals",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "76 € (Preis für Deutschland laut Microsoft, ohne eventuell fällige Steuern), nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "45 Minuten"
+      ],
+      [
+       "Bestehensgrenze",
+       "700 von 1.000 Punkten"
+      ],
+      [
+       "Prüfungssprache",
+       "auch auf Deutsch"
+      ],
+      [
+       "Durchführung",
+       "beaufsichtigt über Pearson VUE, online oder im Testcenter"
+      ]
+     ],
+     "source": "https://learn.microsoft.com/de-de/credentials/certifications/security-compliance-and-identity-fundamentals/"
+    }
+   ],
+   "renewal": "",
+   "extraSources": [
+    {
+     "label": "Microsoft: Prüfungsdauer",
+     "url": "https://learn.microsoft.com/de-de/credentials/support/exam-duration-exam-experience"
+    },
+    {
+     "label": "Microsoft: Bewertung",
+     "url": "https://learn.microsoft.com/de-de/credentials/certifications/exam-scoring-reports"
+    }
+   ]
+  },
+  "tableau-desktop-i-fundamentals": {
+   "certification": "Salesforce Certified Tableau Desktop Foundations",
+   "exams": [
+    {
+     "code": "",
+     "name": "Salesforce Certified Tableau Desktop Foundations",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "US$ 75 laut Hersteller, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "70 Minuten"
+      ],
+      [
+       "Fragen",
+       "40 Multiple-Choice/Multiple-Select-Fragen plus bis zu 5 ungewertete Fragen"
+      ],
+      [
+       "Bestehensgrenze",
+       "Englische Version 48 %, japanische Version 55 %"
+      ],
+      [
+       "Prüfungssprache",
+       "nicht auf Deutsch (Englisch, Japanisch)"
+      ],
+      [
+       "Durchführung",
+       "Beaufsichtigte Prüfung im Testcenter oder online"
+      ]
+     ],
+     "source": "https://help.salesforce.com/s/articleView?id=005298988&language=en_US&type=1"
+    }
+   ],
+   "renewal": ""
+  },
+  "tableau-desktop-ii-intermediate": {
+   "certification": "Salesforce Certified Tableau Data Analyst",
+   "exams": [
+    {
+     "code": "",
+     "name": "Salesforce Certified Tableau Data Analyst",
+     "rows": [
+      [
+       "Prüfungsgebühr",
+       "US$ 200, Wiederholung US$ 100 (zzgl. Steuern) laut Hersteller, nicht im Kurspreis enthalten"
+      ],
+      [
+       "Dauer",
+       "105 Minuten"
+      ],
+      [
+       "Fragen",
+       "60 Multiple-Choice/Multiple-Select-Fragen plus bis zu 5 ungewertete Fragen"
+      ],
+      [
+       "Bestehensgrenze",
+       "65 %"
+      ],
+      [
+       "Durchführung",
+       "Beaufsichtigte Prüfung im Testcenter oder online"
+      ]
+     ],
+     "source": "https://help.salesforce.com/s/articleView?id=005298984&language=en_US&type=1"
+    }
+   ],
+   "renewal": ""
+  }
+ }
+}

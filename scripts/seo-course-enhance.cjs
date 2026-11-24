@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {CITY_FILES, enhanceCity} = require('./seo-city-pages.cjs');
 const {TOPIC_FILES, enhanceTopic} = require('./seo-topic-pages.cjs');
+const {applyExamFacts} = require('./seo-exam-facts.cjs');
 const COPY_TABLE = require('./course-copy-table.json');
 // Non-Microsoft exam status, checked against the vendors on 2026-11-10.
 const VENDOR_STATUS = require('./vendor-status.json');
@@ -512,6 +513,7 @@ function enhanceCourse(html, file) {
   out = examBox(out, title, file);
   out = approvedCourse(out);
   out = applyContent(out, file);
+  out = applyExamFacts(out, file);
   const robots = INDEXABLE.has(file.replace(/\.html$/, '')) ? ROBOTS_INDEX : ROBOTS_NOINDEX;
   out = out.replace(/<meta name="robots" content="[^"]*">/, `<meta name="robots" content="${robots}">`);
   if (INDEXABLE.has(file.replace(/\.html$/, ''))) out = schulungTitle(out, file);
