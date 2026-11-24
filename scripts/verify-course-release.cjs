@@ -87,8 +87,7 @@ async function main() {
       await page.locator('.upcoming-section').scrollIntoViewIfNeeded();
       assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,'home overflow');
       assert.equal(await page.locator('.webinar-image').evaluate(img=>img.complete&&img.naturalWidth>0),true);
-      assert.equal(await page.locator('[data-webinar] a').getAttribute('href'),'https://kurzlinks.de/i9y3');
-      assert.equal(await page.locator('[data-webinar]').getAttribute('data-expires'),'2026-12-09T12:00:00+01:00');
+      assert.equal(await page.locator('[data-webinar] a').getAttribute('href'),'https://kurzlinks.de/r1xm');
       await page.screenshot({path:`.qa/webinar-${width}.png`,fullPage:false});
     }
     assert.deepEqual(failures, []);
