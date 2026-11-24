@@ -514,7 +514,29 @@ function enhanceCourse(html, file) {
   out = applyContent(out, file);
   const robots = INDEXABLE.has(file.replace(/\.html$/, '')) ? ROBOTS_INDEX : ROBOTS_NOINDEX;
   out = out.replace(/<meta name="robots" content="[^"]*">/, `<meta name="robots" content="${robots}">`);
+  if (INDEXABLE.has(file.replace(/\.html$/, ''))) out = schulungTitle(out, file);
   return updateSchema(trimMeta(out), page, file);
+}
+
+// People search for "<code> Schulung" (Keyword Planner, 2026-11-18), so indexable course titles
+// carry the word, kept within 60 characters. Titles that already say "Schulung" stay unchanged.
+const TITLE_FIXES = [[/\bSCRUM\b/g, 'Scrum'], [/ Certification\b/, '']];
+const TITLE_OVERRIDES = {
+  'dp-601-implementing-a-lakehouse-with-microsoft-fabric.html': 'DP-601 Schulung: Lakehouse mit Microsoft Fabric',
+  'sc-900-security-compliance-identity-fundamentals.html': 'SC-900 Schulung: Security, Compliance, Identity',
+  'isaca-crisc.html': 'ISACA CRISC Schulung online | New Horizons',
+  'isc2-cissp.html': 'ISC2 CISSP Schulung online | New Horizons',
+};
+function schulungTitle(html, file) {
+  if (TITLE_OVERRIDES[file]) return html.replace(/<title>[^<]*<\/title>/, `<title>${TITLE_OVERRIDES[file]}</title>`);
+  html = html.replace(/(<title>[^<]*) mit Examen Schulung/, '$1 Schulung mit Examen');
+  const current = html.match(/<title>([^<]*)<\/title>/)?.[1];
+  if (!current || current.includes('Schulung')) return html;
+  let base = current.replace(/ \| New Horizons$/, '').replace(/ online$/, '');
+  for (const [from, to] of TITLE_FIXES) base = base.replace(from, to);
+  const options = [`${base} Schulung online | New Horizons`, `${base} Schulung | New Horizons`, `${base} Schulung online`, `${base} Schulung`];
+  const title = options.find((t) => t.replace(/&amp;/g, '&').length <= 60);
+  return title ? html.replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`) : html;
 }
 
 function enhanceHome(html) {
