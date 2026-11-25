@@ -15,13 +15,16 @@ function courseTitle(slug) {
 }
 
 function guideBlock(g) {
-  const steps = g.steps.map((s) => `<article><span>${esc(s.label)}</span><p>${esc(s.text)}</p><p>${s.courses.map((c) => `<a href="../kurse/${c}.html">${esc(courseTitle(c))}</a>`).join(', ')}</p></article>`).join('');
+  const steps = g.steps.map((s) => `<article><span>${esc(s.label)}</span><p>${esc(s.text)}</p>${s.courses.length ? `<p>${s.courses.map((c) => `<a href="../kurse/${c}.html">${esc(courseTitle(c))}</a>`).join(', ')}</p>` : ''}</article>`).join('');
   const faq = g.faq.map((f, i) => `<details${i ? '' : ' open'}><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('');
+  const sources = (g.sources || []).length
+    ? `\n  <p>Quellen: ${g.sources.map((s) => `<a href="${esc(s.url)}" rel="noopener">${esc(s.label)}</a>`).join(', ')}.</p>`
+    : '';
   return `<!-- topic-guide-start -->
 <section class="detail-block">
   <h2>${esc(g.heading)}</h2>
   <p>${esc(g.intro)}</p>
-  <div class="detail-info-grid">${steps}</div>
+  <div class="detail-info-grid">${steps}</div>${sources}
 </section>
 <section class="detail-block seo-course-faq">
   <p class="eyebrow dark">FAQ</p>

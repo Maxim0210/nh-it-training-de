@@ -51,7 +51,7 @@
   "tableau-desktop-i-fundamentals",
   "tableau-desktop-ii-intermediate"
  ],
- "noindexPagesNote": "Non-course pages kept out of the index: thin brand pages without own indexable courses, the search tool and a duplicate of unternehmen.html. Decided 2026-11-23. Remove an entry once the page has its own content.",
+ "noindexPagesNote": "Non-course pages kept out of the index: thin brand pages without own indexable courses, the search tool and a duplicate of unternehmen.html. Decided 2026-11-23. Remove an entry once the page has its own content. 2026-11-25: five thin guides that repeat the learning-path pages or describe the MS-102 end date.",
  "noindexPages": [
   "trainings/advanced-search.html",
   "trainings/unternehmen.html",
@@ -66,6 +66,11 @@
   "trainings/brand-opexa.html",
   "trainings/brand-pmi.html",
   "trainings/brand-professional-development.html",
-  "trainings/brand-vmware.html"
+  "trainings/brand-vmware.html",
+  "blog/cybersecurity-weiterbildung-muenchen.html",
+  "blog/cybersecurity-lernpfad-vom-einstieg-zur-analyse-rolle.html",
+  "blog/microsoft-azure-lernpfad-von-az-900-zu-az-104.html",
+  "blog/data-analytics-weiterbildung-power-bi-python-azure-daten.html",
+  "blog/ms-102-microsoft-365-administrator-online.html"
  ]
 }

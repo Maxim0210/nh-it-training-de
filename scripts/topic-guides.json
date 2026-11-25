@@ -478,5 +478,701 @@
     "a": "Der Kurs behandelt die Bereitstellung über Vorlagen, Azure CLI und PowerShell, Container, App Service sowie Überwachung und Wiederherstellung. Damit passt er für Teams, die ihre Anwendungen auf Azure selbst betreiben. Microsoft erwartet Grundwissen zu Netzwerken, Virtualisierung, Active Directory sowie Sicherung und Notfallwiederherstellung."
    }
   ]
+ },
+ "brand-isc2": {
+  "heading": "Welche ISC2-Schulung passt?",
+  "intro": "ISC2 ist ein Berufsverband für Fachkräfte der Cybersicherheit mit Sitz in Alexandria, Virginia (USA). Nach eigener Angabe hat er mehr als 270.000 zertifizierte Mitglieder. ISC2 vergibt Zertifizierungen, die Fachwissen und Berufserfahrung in der Informationssicherheit nachweisen. Auf seinen Seiten zu CISSP und CCSP nennt ISC2 für beide eine Akkreditierung durch ANAB nach der Norm ISO/IEC 17024. Weil ISC2 neben der bestandenen Prüfung mehrere Jahre einschlägige Berufserfahrung verlangt, richten sich CISSP und CCSP an erfahrene Fachkräfte. Für den Einstieg ohne Berufserfahrung bietet ISC2 Certified in Cybersecurity (CC) an. Die folgenden Stufen helfen Ihnen, den passenden Kurs nach Ihrer Rolle und Erfahrung zu wählen.",
+  "steps": [
+   {
+    "label": "Einstieg ohne Security-Erfahrung",
+    "text": "Wenn Sie aus der IT kommen, die Branche wechseln oder gerade erst in die Informationssicherheit einsteigen, kommt Certified in Cybersecurity (CC) in Frage. ISC2 verlangt dafür keine Berufserfahrung. Ob ein CC-Kurs zu Ihrem Ziel passt und welche Durchführung möglich ist, klären wir mit Ihnen in der Beratung über die Kontaktseite. Mit einigen Jahren Berufserfahrung führt der Weg weiter zu CISSP oder CCSP.",
+    "courses": []
+   },
+   {
+    "label": "Security-Verantwortung mit Berufserfahrung: CISSP",
+    "text": "Der CISSP richtet sich an Fachkräfte, die Sicherheitsprogramme planen, umsetzen oder verantworten. Der Kurs dauert 5 Tage und findet auf Deutsch als Online Live Training statt. Er behandelt die acht Domänen des Prüfungsrahmens, von Risikomanagement über Identitäts- und Zugriffsmanagement bis zur sicheren Softwareentwicklung. Für die Zertifizierung fordert ISC2 mindestens fünf Jahre Berufserfahrung in mindestens zwei dieser Domänen.",
+    "courses": [
+     "isc2-cissp"
+    ]
+   },
+   {
+    "label": "Sicherheit in der Cloud: CCSP",
+    "text": "Der CCSP passt zu Cloud-Architekten, Cloud Engineers, Administratoren, Security-Analysten und Auditoren für Cloud-Dienste. Der Kurs folgt den sechs Domänen des seit August 2026 geltenden Prüfungsrahmens, darunter Datensicherheit, Anwendungssicherheit sowie Recht, Risiko und Compliance. Er findet auf Deutsch oder Englisch statt, als Online Live Training, Connected Classroom oder Firmenseminar; die Dauer nennen wir auf Anfrage. Eine aktive CISSP-Zertifizierung erfüllt die Erfahrungsanforderung des CCSP vollständig.",
+    "courses": [
+     "isc2-ccsp"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wie läuft die Prüfung für CISSP und CCSP ab?",
+    "a": "Beide Prüfungen legen Sie im Pearson-Testcenter ab, auch auf Deutsch. Sie dauern laut ISC2 jeweils 3 Stunden mit 100 bis 150 Fragen; bestanden ist ab 700 von 1.000 Punkten. Die Prüfungsgebühr nennt ISC2 für die Region EMEA mit 719,04 € (CISSP) und 575,04 € (CCSP), jeweils zuzüglich Steuern. Sie ist nicht im Kurspreis enthalten. Maßgeblich ist der Preis bei der Buchung."
+   },
+   {
+    "q": "Welche Voraussetzungen verlangt ISC2?",
+    "a": "Für den CISSP verlangt ISC2 fünf Jahre Vollzeit-Berufserfahrung in mindestens zwei der acht Domänen. Für den CCSP sind es fünf Jahre in der IT, davon drei in der Cybersicherheit und eines in mindestens einer CCSP-Domäne; eine aktive CISSP-Zertifizierung ersetzt diese Anforderung vollständig. Ein einschlägiger Studienabschluss oder eine anerkannte Zertifizierung, beim CCSP das CCSK-Zertifikat der CSA, kann insgesamt höchstens ein Jahr ersetzen. Ohne ausreichende Erfahrung werden Sie nach bestandener Prüfung zunächst Associate of ISC2 und haben sechs Jahre Zeit für den Nachweis."
+   },
+   {
+    "q": "Wie lange ist ein ISC2-Zertifikat gültig?",
+    "a": "ISC2-Zertifizierungen laufen in einem Zyklus von drei Jahren. In dieser Zeit weisen Sie Weiterbildung in Form von CPE-Punkten nach: 120 für den CISSP und 90 für den CCSP. Außerdem zahlen Zertifizierte und Associates jedes Jahr zum Jahrestag ihrer Zertifizierung eine Gebühr zur Aufrechterhaltung, die Annual Maintenance Fee (AMF). Wer die Punkte nicht rechtzeitig einreicht, wird nach einer Frist von 90 Tagen suspendiert."
+   },
+   {
+    "q": "Kann ich eine ISC2-Schulung mit Bildungsgutschein besuchen?",
+    "a": "Alle Kurse auf dieser Website sind für den Bildungsgutschein zugelassen. Ob Sie einen Bildungsgutschein erhalten, entscheidet Ihre Agentur für Arbeit oder Ihr Jobcenter. Bringen Sie zum Beratungsgespräch am besten die Kursseite mit. Für Beschäftigte kann das Qualifizierungschancengesetz eine Förderung über den Arbeitgeber ermöglichen; das prüfen wir gern mit Ihnen."
+   }
+  ],
+  "sources": [
+   {
+    "label": "ISC2: Über ISC2",
+    "url": "https://www.isc2.org/about"
+   },
+   {
+    "label": "ISC2: CISSP (inkl. ANAB-Akkreditierung nach ISO/IEC 17024)",
+    "url": "https://www.isc2.org/certifications/cissp"
+   },
+   {
+    "label": "ISC2: CISSP Exam Outline",
+    "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline"
+   },
+   {
+    "label": "ISC2: CCSP (inkl. ANAB-Akkreditierung nach ISO/IEC 17024)",
+    "url": "https://www.isc2.org/certifications/ccsp"
+   },
+   {
+    "label": "ISC2: CCSP Exam Outline",
+    "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline"
+   },
+   {
+    "label": "ISC2: Certified in Cybersecurity",
+    "url": "https://www.isc2.org/certifications/cc"
+   },
+   {
+    "label": "ISC2: Prüfungspreise",
+    "url": "https://www.isc2.org/register-for-exam/isc2-exam-pricing"
+   },
+   {
+    "label": "ISC2: Member Policies (CPE)",
+    "url": "https://www.isc2.org/policies-procedures/member-policies"
+   },
+   {
+    "label": "ISC2: Annual Maintenance Fees",
+    "url": "https://www.isc2.org/policies-procedures/amfs-overview"
+   }
+  ]
+ },
+ "brand-pecb": {
+  "heading": "Welche PECB-Schulung passt?",
+  "intro": "Das hängt von Ihrem Ziel ab. Wenn Sie die Norm verstehen wollen, wählen Sie ISO/IEC 27001 Foundation. Wenn Sie ein ISMS einführen sollen, passt ISO/IEC 27001 Lead Implementer. Für die Prüfung eines ISMS ist es ISO/IEC 27001 Lead Auditor. Bei New Horizons München finden alle drei Kurse als Live-Online-Training auf Deutsch statt.\n\nPECB (Professional Evaluation and Certification Board) zertifiziert Fachkräfte für Informationssicherheit, Datenschutz und verwandte Managementnormen. Die Personenzertifizierungen sind nach ISO/IEC 17024 akkreditiert, unter anderem durch IAS, UKAS und COFRAC.\n\nPECB vergibt zwei Arten von Nachweisen. „Certified“ steht für eine Personenzertifizierung, zum Beispiel als Lead Implementer oder Lead Auditor. „Certificate Holder“ heißt, dass Sie ein Zertifikatsprogramm wie die Foundation abgeschlossen haben. Das belegt geprüftes Wissen, ist aber keine Berufszulassung.",
+  "steps": [
+   {
+    "label": "Grundlagen der Norm verstehen",
+    "text": "Sie arbeiten mit Informationssicherheit oder sollen bei einem ISMS mitarbeiten? Dann beginnen Sie mit ISO/IEC 27001 Foundation. Der Kurs dauert 2 Tage. Er behandelt Begriffe, Prinzipien und die Anforderungen der Norm in der Ausgabe 2022. PECB nennt dafür keine Voraussetzungen. Die Prüfung ist nicht im Kurspreis enthalten.",
+    "courses": [
+     "pecb-iso-27001-foundation"
+    ]
+   },
+   {
+    "label": "Ein ISMS einführen und steuern",
+    "text": "Wenn Sie ein Informationssicherheits-Managementsystem im Unternehmen aufbauen sollen, ist ISO/IEC 27001 Lead Implementer der nächste Schritt. Der Kurs dauert 5 Tage. Sie lernen, wie Sie ein ISMS planen, einführen und steuern und die Anforderungen von ISO/IEC 27001 praktisch umsetzen. Ist die Norm für Sie noch neu, bereitet die Foundation Sie darauf vor.",
+    "courses": []
+   },
+   {
+    "label": "Ein ISMS auditieren",
+    "text": "Sie prüfen Managementsysteme intern oder für Kunden? Dann passt ISO/IEC 27001 Lead Auditor. Der Kurs dauert 5 Tage. Er behandelt, wie Sie Audits nach ISO/IEC 27001 planen, durchführen, dokumentieren und bewerten. Mit den Grundlagen aus der Foundation fällt Ihnen auch dieser Kurs leichter.",
+    "courses": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wie läuft die Prüfung zur ISO/IEC 27001 Foundation ab?",
+    "a": "Die Prüfung hat 40 Multiple-Choice-Fragen. Zum Bestehen brauchen Sie 70 Prozent. Sie können die Prüfung online mit Fernaufsicht über die PECB Exams App ablegen oder auf Papier beim Schulungspartner. Die Prüfung ist nicht im Kurspreis enthalten."
+   },
+   {
+    "q": "Welche Voraussetzungen gibt es?",
+    "a": "Für die Foundation nennt PECB keine Voraussetzungen. Für das Zertifikat besuchen Sie den Kurs, bestehen die Prüfung und unterschreiben den PECB Code of Ethics. Für Lead Implementer und Lead Auditor gelten eigene Anforderungen. PECB veröffentlicht sie für jede Stufe."
+   },
+   {
+    "q": "Wie lange ist ein PECB-Zertifikat gültig?",
+    "a": "Laut PECB muss der Foundation-Nachweis nicht verlängert werden. Personenzertifizierungen wie Lead Implementer oder Lead Auditor gelten drei Jahre. Zur Verlängerung verlangt PECB Nachweise über Weiterbildung und eine Gebühr für jeden Dreijahreszeitraum."
+   },
+   {
+    "q": "Kann ich die PECB-Schulung fördern lassen?",
+    "a": "Die Kurse sind für den Bildungsgutschein zugelassen. Ob Sie einen bekommen, entscheidet die Agentur für Arbeit bzw. das Jobcenter. Für Beschäftigte kann eine Förderung nach dem Qualifizierungschancengesetz infrage kommen. Das prüfen wir mit Ihnen vor der Anmeldung."
+   }
+  ],
+  "sources": [
+   {
+    "label": "PECB: Über PECB und Akkreditierungen",
+    "url": "https://pecb.com/en/about"
+   },
+   {
+    "label": "PECB: Aufrechterhaltung von Zertifizierungen",
+    "url": "https://pecb.com/en/certification-maintenance"
+   },
+   {
+    "label": "PECB Candidate Handbook ISO/IEC 27001:2022 Foundation",
+    "url": "https://pecb.com/pdf/candidate-handbooks/pecb-candidate-handbook-iso-27001-2022-foundation.pdf"
+   }
+  ]
+ },
+ "brand-github": {
+  "heading": "Welche GitHub-Schulung passt?",
+  "intro": "Welcher Kurs passt, hängt von Ihrer Aufgabe ab. Wenn Sie Code mit KI-Unterstützung schreiben oder Copilot im Team einführen, ist GitHub Copilot Fundamentals der passende Einstieg. Für CI/CD-Workflows gibt es GitHub Actions and DevOps, für die Verwaltung von Organisationen, Repositories und Rechten GitHub Administration. Bei New Horizons lernen Sie im Live-Online-Training mit Trainer. Für Kunden aus München, Nürnberg und Stuttgart stehen zusätzlich Schulungsräume zur Verfügung. Die Zertifikate gibt GitHub selbst heraus, und zwar für Foundations, Actions, Advanced Security, Administration und Copilot. Jedes Zertifikat belegt Kenntnisse in einem bestimmten Bereich der Plattform. Die Prüfungen sind bei Microsoft Learn aufgeführt und werden dort über Pearson VUE gebucht.",
+  "steps": [
+   {
+    "label": "Mit Copilot entwickeln",
+    "text": "Sie schreiben Code und möchten GitHub Copilot im Alltag nutzen. GitHub Copilot Fundamentals dauert einen Tag und findet auf Deutsch als Online Live Training statt. Behandelt werden Inline-Vorschläge, Copilot Chat, Agentenmodus, Copilot CLI, Prompt Engineering, Tests und Code-Reviews sowie Datenschutz und Richtlinien. Grundkenntnisse in GitHub und einer Programmiersprache sollten Sie mitbringen.",
+    "courses": [
+     "github-copilot-fundamentals"
+    ]
+   },
+   {
+    "label": "Copilot im Unternehmen einführen",
+    "text": "Sie verantworten den KI-Einsatz im Team oder legen Richtlinien fest. Der Copilot-Kurs zeigt auch die Unterschiede der Pläne für Einzelpersonen, Business und Enterprise, Inhaltsausschlüsse, Filter für öffentlichen Code und Richtlinien auf Organisationsebene. So können Sie die Einführung in Ihrer Organisation vorbereiten und Risiken generativer KI einordnen.",
+    "courses": [
+     "github-copilot-fundamentals"
+    ]
+   },
+   {
+    "label": "Workflows automatisieren oder GitHub verwalten",
+    "text": "Sie bauen CI/CD-Pipelines oder betreuen Organisationen, Repositories und Rechte. Dafür gibt es die zweitägigen Kurse GitHub Actions and DevOps sowie GitHub Administration, beide auf Deutsch als Online Live Training. Welcher Kurs zu Ihrer Rolle passt und wann ein Termin möglich ist, klären Sie mit dem Vertrieb.",
+    "courses": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Welche Prüfung gehört zum Copilot-Kurs?",
+    "a": "GitHub Copilot Fundamentals bereitet auf die Zertifizierung GitHub Copilot mit der Prüfung GH-300 vor. Sie dauert 100 Minuten, wird beaufsichtigt durchgeführt und ist bestanden ab 700 von 900 Punkten. Die Prüfung wird nicht auf Deutsch angeboten, aber zum Beispiel auf Englisch. Die Gebühr nennt der Hersteller bei der Buchung über Pearson VUE. Sie ist nicht im Kurspreis enthalten."
+   },
+   {
+    "q": "Welche Voraussetzungen brauche ich?",
+    "a": "Für die Copilot-Lernpfade setzt Microsoft Grundkenntnisse zu GitHub voraus. Laut Prüfungsbeschreibung GH-300 sollten Sie außerdem Erfahrung mit mindestens einer Programmiersprache haben. Ob Ihr Vorwissen reicht, besprechen wir vor der Anmeldung mit Ihnen."
+   },
+   {
+    "q": "Wie lange ist ein GitHub-Zertifikat gültig?",
+    "a": "GitHub-Zertifikate sind laut Hersteller zwei Jahre gültig. GitHub stellt die Verlängerung auf das Rezertifizierungsverfahren von Microsoft um, damit Zertifikate ohne komplette Wiederholungsprüfung aktiv bleiben können. Den aktuellen Stand finden Sie auf den Zertifizierungsseiten bei Microsoft Learn."
+   },
+   {
+    "q": "Kann ich eine GitHub-Schulung fördern lassen?",
+    "a": "Die Kurse auf dieser Seite sind für den Bildungsgutschein zugelassen. Ob Sie einen Gutschein erhalten, entscheidet die Agentur für Arbeit bzw. das Jobcenter. Für Beschäftigte kann das Qualifizierungschancengesetz infrage kommen. Welche Förderung passt, klären wir mit Ihnen vor der Anmeldung."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Microsoft Learn: Zertifizierung GitHub Copilot (GH-300)",
+    "url": "https://learn.microsoft.com/de-de/credentials/certifications/github-copilot/"
+   },
+   {
+    "label": "Microsoft Learn: Zertifizierung GitHub Actions (GH-200)",
+    "url": "https://learn.microsoft.com/de-de/credentials/certifications/github-actions/"
+   },
+   {
+    "label": "GitHub Docs: Liste der GitHub-Zertifikate",
+    "url": "https://docs.github.com/en/get-started/showcase-your-expertise-with-github-certifications/about-github-certifications"
+   }
+  ]
+ },
+ "brand-isaca": {
+  "heading": "Welche ISACA-Schulung passt zu Ihrer Rolle?",
+  "intro": "ISACA ist ein internationaler Berufsverband für IT-Governance, IT-Prüfung, Risikomanagement und Informationssicherheit. Der Verband wurde 1969 formell gegründet, gibt das Governance-Rahmenwerk COBIT heraus und vergibt eigene Zertifizierungen. Seine Zertifikate richten sich an Fachleute mit Berufserfahrung: Wer sie führt, hat eine Prüfung bestanden und nachgewiesen, dass er die Aufgaben in der Praxis ausgeübt hat. Die drei Kurse auf dieser Seite bereiten auf CISA, CISM und CRISC vor. Jeder dauert 4 Tage, findet als Live-Online-Training mit Trainer auf Deutsch statt und enthält das Examen nicht. Welcher Kurs passt, hängt von Ihrer Aufgabe ab: Prüfen Sie IT-Systeme, leiten Sie die Informationssicherheit oder steuern Sie IT-Risiken? Die folgenden Schritte ordnen die Kurse diesen Rollen zu.",
+  "steps": [
+   {
+    "label": "Rolle klären: Prüfen, Leiten oder Steuern",
+    "text": "Die drei ISACA-Zertifikate bauen nicht aufeinander auf. Jedes steht für eine eigene Rolle. Wählen Sie nach Ihrer heutigen oder angestrebten Aufgabe. Prüfen Sie außerdem vorab, ob Sie die geforderte Berufserfahrung mitbringen, denn ISACA vergibt das Zertifikat erst nach deren Nachweis.",
+    "courses": []
+   },
+   {
+    "label": "IT-Revision und Audit: CISA",
+    "text": "Der CISA-Kurs passt zu Ihnen, wenn Sie Informationssysteme, Kontrollen und IT-Prozesse prüfen, etwa in der internen Revision, bei Wirtschaftsprüfern oder in der IT-Compliance. Im Kurs geht es um IT-Audit, Kontrollen und Governance von Informationssystemen. Der Kurs dauert 4 Tage, das Examen ist nicht im Kurspreis enthalten.",
+    "courses": [
+     "isaca-cisa"
+    ]
+   },
+   {
+    "label": "Leitung der Informationssicherheit: CISM",
+    "text": "CISM richtet sich an Personen, die ein Sicherheitsprogramm verantworten, zum Beispiel als Informationssicherheitsbeauftragte oder Security-Manager. Im Mittelpunkt stehen Informationssicherheitsmanagement, Governance, Risiko und die Steuerung von Security-Programmen. Der Kurs dauert 4 Tage, das Examen ist nicht im Kurspreis enthalten.",
+    "courses": [
+     "isaca-cism"
+    ]
+   },
+   {
+    "label": "IT-Risiken und Kontrollen steuern: CRISC",
+    "text": "CRISC passt, wenn Sie IT-Risiken erkennen, bewerten und mit Kontrollen behandeln, etwa im Risikomanagement oder an der Schnittstelle zwischen IT und Fachbereich. Beachten Sie: Der Kurs findet auf Deutsch statt, die CRISC-Prüfung wird laut ISACA aber nicht auf Deutsch angeboten. Das Examen ist nicht im Kurspreis enthalten.",
+    "courses": [
+     "isaca-crisc"
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wie läuft die ISACA-Prüfung ab und was kostet sie?",
+    "a": "Die Prüfungen zu CISA, CISM und CRISC bestehen jeweils aus 150 Multiple-Choice-Fragen. Sie legen sie computerbasiert in einem PSI-Testcenter oder als beaufsichtigte Online-Prüfung ab. Die Gebühr beträgt laut ISACA 760 US-Dollar für Nicht-Mitglieder und 575 US-Dollar für Mitglieder. Für den Zertifizierungsantrag kommt eine Bearbeitungsgebühr von 50 US-Dollar hinzu. Beides ist nicht im Kurspreis enthalten. CISA und CISM können Sie auf Deutsch ablegen, CRISC nicht."
+   },
+   {
+    "q": "Welche Voraussetzungen gelten für die Zertifizierung?",
+    "a": "Für die Prüfung selbst brauchen Sie keinen Nachweis. Das Zertifikat erhalten Sie aber erst, wenn Sie bei ISACA Berufserfahrung im jeweiligen Fachgebiet belegen: für CISA und CISM fünf Jahre, für CRISC drei Jahre. Bei CISM muss die Erfahrung mindestens drei der vier Prüfungsdomänen abdecken, bei CRISC mindestens zwei. Die Erfahrung muss in den zehn Jahren vor dem Antrag liegen. Den Antrag stellen Sie innerhalb von fünf Jahren nach der bestandenen Prüfung. Ob Ausbildungen angerechnet werden, regelt ISACA auf der jeweiligen Zertifizierungsseite."
+   },
+   {
+    "q": "Wie lange bleibt ein ISACA-Zertifikat gültig?",
+    "a": "Das Zertifikat bleibt gültig, solange Sie die Anforderungen an die Weiterbildung erfüllen. ISACA verlangt mindestens 20 Weiterbildungsstunden (CPE) pro Jahr und 120 Stunden in einem Zeitraum von drei Jahren. Hinzu kommt eine jährliche Gebühr zur Aufrechterhaltung, bei CISA 45 US-Dollar für Mitglieder und 85 US-Dollar für Nicht-Mitglieder. Ab dem 01.01.2027 gilt eine neue CPE-Richtlinie: Die 120 Stunden in drei Jahren bleiben, mindestens 90 davon müssen aber zu den Prüfungsinhalten des Zertifikats passen. Werden die Anforderungen nicht erfüllt, entzieht ISACA das Zertifikat."
+   },
+   {
+    "q": "Kann ich eine ISACA-Schulung fördern lassen?",
+    "a": "Alle Kurse auf dieser Website sind für den Bildungsgutschein zugelassen. Ob Sie einen Gutschein erhalten, entscheidet die Agentur für Arbeit bzw. das Jobcenter. Unternehmen können je nach Fall Zuschüsse über das Qualifizierungschancengesetz prüfen. Ansprechpartner für Arbeitsuchende gibt es in München, Nürnberg und Stuttgart. Details finden Sie auf der Seite zur Förderung."
+   }
+  ],
+  "sources": [
+   {
+    "label": "ISACA: CISA Exam",
+    "url": "https://www.isaca.org/credentialing/cisa/cisa-exam"
+   },
+   {
+    "label": "ISACA: CISA Exam Content Outline",
+    "url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline"
+   },
+   {
+    "label": "ISACA: CISM Exam",
+    "url": "https://www.isaca.org/credentialing/cism/cism-exam"
+   },
+   {
+    "label": "ISACA: CRISC",
+    "url": "https://www.isaca.org/credentialing/crisc"
+   },
+   {
+    "label": "ISACA: CISA-Zertifizierung beantragen",
+    "url": "https://www.isaca.org/credentialing/cisa/get-cisa-certified"
+   },
+   {
+    "label": "ISACA: CISM-Zertifizierung beantragen",
+    "url": "https://www.isaca.org/credentialing/cism/get-cism-certified"
+   },
+   {
+    "label": "ISACA: CRISC-Zertifizierung beantragen",
+    "url": "https://www.isaca.org/credentialing/crisc/get-crisc-certified"
+   },
+   {
+    "label": "ISACA: CISA-Zertifizierung aufrechterhalten",
+    "url": "https://www.isaca.org/credentialing/cisa/maintain-cisa-certification"
+   },
+   {
+    "label": "ISACA: CPE-Richtlinie ab 2027",
+    "url": "https://www.isaca.org/credentialing/cpe-2027"
+   },
+   {
+    "label": "ISACA: Geschichte",
+    "url": "https://www.isaca.org/about-us/history"
+   }
+  ]
+ },
+ "brand-istqb": {
+  "heading": "Welche ISTQB-Schulung passt?",
+  "intro": "Für die meisten Einsteiger ist der Foundation Level der richtige Start. Er ist die Grundlage für viele weiterführende ISTQB-Zertifikate, und seit dem Lehrplan 4.0 gehören auch agile Grundlagen dazu. Alle drei Kurse unten finden auf Deutsch als Live-Online-Training mit Trainer statt. Wenn Sie das Foundation-Zertifikat schon haben, können Sie mit Testautomatisierung weitermachen. Der Kurs Agile Tester bereitet auf eine Zertifizierung vor, die das ISTQB einstellt. Die Prüfungsgebühr ist bei keinem dieser Kurse im Kurspreis enthalten. Ein ISTQB-Zertifikat zeigt, dass Sie Begriffe, Methoden und Abläufe des Softwaretests nach einem international einheitlichen Lehrplan kennen.",
+  "steps": [
+   {
+    "label": "Einstieg: Certified Tester Foundation Level",
+    "text": "Der Foundation Level vermittelt Testprozess, Testentwurf, Reviews, Risikobetrachtung und Fehlerberichte nach Lehrplan 4.0. Er richtet sich an Tester, Entwickler und an alle, die Grundwissen zum Testen brauchen, etwa Projektleiter oder Product Owner. Der Kurs dauert 3 Tage und bereitet auf die Prüfung CTFL v4.0 vor.",
+    "courses": [
+     "istqb-certified-tester-foundation"
+    ]
+   },
+   {
+    "label": "Testen in agilen Teams: Agile Tester",
+    "text": "Der Kurs Agile Tester behandelt Rollen, Methoden und Kommunikation beim Testen in agilen Teams. Er dauert 2 Tage. Das ISTQB stellt die Zertifizierung Foundation Level Agile Tester ein. Prüfungen und Wiederholungen sind auf Deutsch noch bis 6. November 2027 möglich, auf Englisch bis 6. Mai 2027. Agile Grundlagen enthält inzwischen auch der Foundation Level v4.0, vertiefte Inhalte die Advanced-Stufe CTAL-AT v2.0.",
+    "courses": []
+   },
+   {
+    "label": "Testautomatisierung: Test Automation Engineer",
+    "text": "Der Kurs Test Automation Engineer behandelt die Strategie für Testautomatisierung, Frameworks und deren Wartbarkeit sowie die technische Umsetzung. Er dauert 3 Tage. Seit Dezember 2025 prüft das ISTQB auf Deutsch nur noch nach dem Lehrplan CTAL-TAE v2.0. Für diese Prüfung verlangt das ISTQB ein Foundation-Level-Zertifikat und praktische Erfahrung. Planen Sie die Grundlagenschulung deshalb als ersten Schritt ein.",
+    "courses": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wie läuft die Prüfung zum ISTQB Foundation Level ab?",
+    "a": "Die Prüfung CTFL v4.0 dauert 60 Minuten und hat 40 Fragen. Zum Bestehen brauchen Sie 26 von 40 Punkten. Wer nicht in seiner Muttersprache geprüft wird, erhält laut ISTQB 25 Prozent mehr Zeit. Abgenommen wird die Prüfung von Prüfungsanbietern. Die Gebühr legen diese Anbieter und die nationalen Mitgliedsorganisationen fest, deshalb nennt das ISTQB keinen einheitlichen Preis. Die Prüfung ist nicht im Kurspreis enthalten."
+   },
+   {
+    "q": "Welche Voraussetzungen brauche ich für den Foundation Level?",
+    "a": "Weder der Lehrplan noch die Zertifizierungsseite des ISTQB nennen formale Zugangsvoraussetzungen für den Foundation Level. Viele weiterführende ISTQB-Zertifizierungen setzen dagegen das Foundation-Zertifikat voraus, etwa Test Automation Engineering (CTAL-TAE) auf der Advanced-Stufe. Dort verlangt das ISTQB zusätzlich praktische Erfahrung."
+   },
+   {
+    "q": "Was ist das ISTQB?",
+    "a": "Das International Software Testing Qualifications Board (ISTQB) wurde 1998 gegründet. Es ist ein unabhängiger, gemeinnütziger Verband und betreibt das Zertifizierungsprogramm Certified Tester. Nationale Mitgliedsorganisationen übersetzen die Lehrpläne, akkreditieren Schulungsanbieter und organisieren Prüfungen. Den deutschsprachigen Lehrplan zum Foundation Level geben das German Testing Board, das Austrian Testing Board und das Swiss Testing Board heraus."
+   },
+   {
+    "q": "Wie lange ist ein ISTQB-Zertifikat gültig?",
+    "a": "Auf den Zertifizierungsseiten, die wir am 25.11.2026 geprüft haben, nennt das ISTQB weder eine Ablauffrist noch eine Pflicht zur Rezertifizierung. Wenn Ihr Arbeitgeber oder Auftraggeber einen bestimmten Nachweis verlangt, fragen Sie vor der Prüfung beim Prüfungsanbieter nach den aktuellen Bedingungen."
+   },
+   {
+    "q": "Kann ich eine ISTQB-Schulung mit Bildungsgutschein besuchen?",
+    "a": "Die ISTQB-Kurse auf dieser Seite sind für den Bildungsgutschein zugelassen. Ob Sie einen Bildungsgutschein erhalten, entscheidet die Agentur für Arbeit bzw. das Jobcenter. Für Beschäftigte kann auch eine Förderung über das Qualifizierungschancengesetz infrage kommen. Diese Fragen klären wir mit Ihnen vor der Anmeldung."
+   }
+  ],
+  "sources": [
+   {
+    "label": "ISTQB: Who we are",
+    "url": "https://www.istqb.org/about-us/who-we-are/"
+   },
+   {
+    "label": "ISTQB: Certified Tester Foundation Level (CTFL) v4.0",
+    "url": "https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/"
+   },
+   {
+    "label": "German Testing Board: Lehrplan Certified Tester Foundation Level V4.0.2 (PDF)",
+    "url": "https://www.gtb.de/wp-content/uploads/2025/04/ISTQB_CTFL_Lehrplan-2025_V4.0.2_DE.pdf"
+   },
+   {
+    "label": "ISTQB: Certified Tester Foundation Level Agile Tester (CTFL-AT)",
+    "url": "https://istqb.org/certifications/certified-tester-foundation-level-agile-tester-ctfl-at/"
+   },
+   {
+    "label": "ISTQB: Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE) v2.0",
+    "url": "https://www.istqb.org/certifications/certified-tester-advanced-level-test-automation-engineering-ctal-tae-v2-0/"
+   },
+   {
+    "label": "ISTQB: Neue Lehrpläne für Testautomatisierung",
+    "url": "https://istqb.org/istqb-has-released-two-new-syllabi-for-test-automation/"
+   },
+   {
+    "label": "ISTQB: Zertifizierungen im Überblick",
+    "url": "https://www.istqb.org/certifications/"
+   }
+  ]
+ },
+ "brand-tableau": {
+  "heading": "Welche Tableau-Schulung passt?",
+  "intro": "Tableau ist eine Software zur Visualisierung und Analyse von Daten und gehört zu Salesforce. Die offiziellen Kurse stammen aus der Trailhead Academy von Salesforce, und Salesforce vergibt auch die Zertifikate. Ein Zertifikat erhalten Sie nach einer beaufsichtigten Prüfung. Für Einsteiger gibt es die Prüfung Salesforce Certified Tableau Desktop Foundations, für geübte Anwender die Prüfung Salesforce Certified Tableau Data Analyst. Zur Vorbereitung auf Desktop Foundations empfiehlt Salesforce den Kurs Desktop I. Desktop II ist einer von mehreren Kursen, die Salesforce für Data Analyst nennt. Für diese Prüfung brauchen Sie zusätzlich Praxis mit weiteren Tableau-Produkten. Beide Kurse dauern 2 Tage und laufen auf Deutsch als Live-Online-Training mit Trainer. Die Prüfung buchen Sie separat; sie ist nicht im Kurspreis enthalten. Welcher Einstieg zu Ihrem Vorwissen passt, klären wir vor der Anmeldung mit Ihnen.",
+  "steps": [
+   {
+    "label": "Einstieg: Tableau Desktop I",
+    "text": "Sie arbeiten noch nicht mit Tableau oder nur gelegentlich. Desktop I zeigt, wie Sie Daten anbinden, Ansichten von der Kreuztabelle bis zur Karte bauen und erste Dashboards erstellen. Salesforce nennt für den Kurs keine Voraussetzungen und empfiehlt ihn zur Vorbereitung auf die Prüfung Tableau Desktop Foundations.",
+    "courses": [
+     "tableau-desktop-i-fundamentals"
+    ]
+   },
+   {
+    "label": "Vertiefung: Tableau Desktop II",
+    "text": "Sie nutzen Tableau seit einigen Monaten und möchten komplexere Fragen beantworten. Desktop II behandelt Joins, Unions und Beziehungen, Extrakte, berechnete Felder, LOD-Ausdrücke, Tabellenberechnungen, Parameter und interaktive Dashboards. Der Hersteller empfiehlt mindestens drei Monate Praxis. Salesforce nennt den Kurs als eine Vorbereitung auf Tableau Data Analyst. Für die Prüfung selbst empfiehlt Salesforce mindestens sechs Monate Praxis mit Tableau Desktop, Tableau Prep und Tableau Server oder Cloud.",
+    "courses": [
+     "tableau-desktop-ii-intermediate"
+    ]
+   },
+   {
+    "label": "Betrieb: Tableau Server",
+    "text": "Sie verantworten eine Tableau-Server-Umgebung im Unternehmen. Dafür gibt es den Kurs Tableau Server Administration mit Benutzerverwaltung, Bereitstellung von Inhalten und Betrieb. Er dauert ebenfalls 2 Tage auf Deutsch. Ob er zu Ihren Aufgaben passt und welche Vorkenntnisse sinnvoll sind, besprechen wir in der Beratung.",
+    "courses": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wie laufen die Tableau-Prüfungen ab?",
+    "a": "Beide Prüfungen sind beaufsichtigt und finden im Testcenter oder online statt. Tableau Desktop Foundations hat 40 gewertete Fragen in 70 Minuten. Die Gebühr beträgt laut Salesforce 75 US-Dollar zuzüglich Steuern, eine Wiederholung ist kostenlos. Eine deutsche Fassung dieser Prüfung nennt Salesforce nicht. Tableau Data Analyst hat 60 gewertete Fragen in 105 Minuten, die Bestehensgrenze liegt bei 65 Prozent. Die Gebühr beträgt 200 US-Dollar, eine Wiederholung 100 US-Dollar, jeweils zuzüglich Steuern. Die Prüfungsgebühren sind nicht im Kurspreis enthalten."
+   },
+   {
+    "q": "Welche Voraussetzungen brauche ich?",
+    "a": "Für Desktop I und die Prüfung Desktop Foundations nennt Salesforce keine Voraussetzungen. Für Desktop II empfiehlt der Hersteller mindestens drei Monate Erfahrung mit Tableau. Sie sollten Daten verbinden, Felder auf Container und die Markierungskarte ziehen, filtern, sortieren und ein Dashboard bauen können. Verpflichtend ist das nicht. Für die Prüfung Tableau Data Analyst gibt es ebenfalls keine Pflichtvoraussetzung; Salesforce empfiehlt aber mindestens sechs Monate Praxis mit Tableau Desktop, Tableau Prep und Tableau Server oder Cloud."
+   },
+   {
+    "q": "Wie lange gilt ein Tableau-Zertifikat?",
+    "a": "Für Tableau Desktop Foundations nennt der Prüfungsleitfaden von Salesforce derzeit keine Pflicht zur Auffrischung. Für Tableau Data Analyst verlangt Salesforce einmal im Jahr ein Wartungsmodul auf Trailhead. Wer die Frist verpasst, verliert die Zertifizierung. Maßgeblich ist der aktuelle Leitfaden von Salesforce, den Sie vor der Prüfungsbuchung lesen sollten."
+   },
+   {
+    "q": "Kann ich die Tableau-Schulung fördern lassen?",
+    "a": "Die Tableau-Kurse sind für den Bildungsgutschein zugelassen. Ob Sie einen Bildungsgutschein erhalten, entscheidet die Agentur für Arbeit bzw. das Jobcenter. Für Beschäftigte kann das Qualifizierungschancengesetz infrage kommen. Wir klären die passende Förderung vor der Anmeldung mit Ihnen."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Salesforce: Prüfungsleitfaden Tableau Desktop Foundations",
+    "url": "https://help.salesforce.com/s/articleView?id=005298988&language=en_US&type=1"
+   },
+   {
+    "label": "Salesforce: Prüfungsleitfaden Tableau Data Analyst",
+    "url": "https://help.salesforce.com/s/articleView?id=005298984&language=en_US&type=1"
+   },
+   {
+    "label": "Trailhead Academy: Tableau Desktop Fundamentals",
+    "url": "https://trailheadacademy.salesforce.com/classes/TTD101-Tableau-Desktop-Fundamentals"
+   },
+   {
+    "label": "Trailhead Academy: Tableau Desktop Intermediate",
+    "url": "https://trailheadacademy.salesforce.com/classes/TTD201-Tableau-Desktop-Intermediate"
+   }
+  ]
+ },
+ "brand-itil": {
+  "heading": "Welche ITIL (PeopleCert)-Schulung passt?",
+  "intro": "ITIL ist ein Rahmenwerk für IT Service Management. Es beschreibt, wie IT-Abteilungen Services planen, bereitstellen und verbessern, etwa über das Service Value System und Praktiken wie Incident Management oder Change Enablement. Rechteinhaber und Zertifizierungsstelle ist PeopleCert. PeopleCert entwickelt die ITIL-Prüfungen und stellt die Zertifikate aus. Ein ITIL-4-Zertifikat zeigt, dass Sie die Begriffe und Zusammenhänge des Rahmenwerks kennen und in einer Prüfung nachgewiesen haben. Unser Einstiegskurs ist ITIL 4 Foundation. Darauf bauen die Stufen Managing Professional und Strategic Leader auf. PeopleCert bietet inzwischen auch ITIL Version 5 an und plant derzeit, alle ITIL-4-Module am 31.12.2027 einzustellen. Termin, Durchführung und Standort München, Nürnberg oder Stuttgart klären Sie mit unserem Vertrieb.",
+  "steps": [
+   {
+    "label": "Einstieg: ITIL 4 Foundation",
+    "text": "Für alle, die in IT-Support, Service Desk, Betrieb oder IT-Koordination arbeiten oder dorthin wechseln möchten. Der Kurs dauert 2 Tage, findet auf Deutsch statt und behandelt Grundbegriffe des Servicemanagements, die vier Dimensionen und das Service Value System. Das Examen ist im Kurs enthalten.",
+    "courses": [
+     "itil-4-foundation"
+    ]
+   },
+   {
+    "label": "Vertiefung: Managing Professional",
+    "text": "Für Fachkräfte, die Services operativ verantworten, Teams steuern oder Abläufe verbessern. Die Module behandeln Wertströme, Practices und Service-Optimierung. Welche Zertifikate und Trainings PeopleCert für die Module voraussetzt, prüfen wir mit Ihnen vor der Buchung. Termin, Sprache und Format klären Sie mit unserem Vertrieb.",
+    "courses": []
+   },
+   {
+    "label": "Steuerung: Strategic Leader",
+    "text": "Für Führungskräfte und IT-Leitungen, die Service Management mit Geschäftszielen verbinden und digitale Organisationen steuern. Ob diese Stufe oder ein Wechsel zu ITIL Version 5 besser zu Ihrer Rolle passt, besprechen Sie am besten vor der Buchung mit uns.",
+    "courses": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wie läuft die Prüfung zu ITIL 4 Foundation ab?",
+    "a": "Laut PeopleCert dauert die Prüfung 60 Minuten und umfasst 40 Multiple-Choice-Fragen. Zum Bestehen brauchen Sie mindestens 65 Prozent. Die Prüfung ist auch auf Deutsch verfügbar. Bei unserem Kurs ITIL 4 Foundation mit Examen ist die Prüfungsgebühr im Kurspreis enthalten."
+   },
+   {
+    "q": "Welche Voraussetzungen brauche ich?",
+    "a": "PeopleCert nennt für ITIL 4 Foundation keine Voraussetzungen. Erfahrung in IT-Betrieb oder Support hilft, die Beispiele einzuordnen. Für die Stufen Managing Professional und Strategic Leader gelten eigene Vorgaben von PeopleCert. Diese prüfen wir vor der Buchung mit Ihnen."
+   },
+   {
+    "q": "Wie lange ist das ITIL-4-Zertifikat gültig?",
+    "a": "Laut PeopleCert ist die Zertifizierung alle drei Jahre zu erneuern, etwa mit 60 CPD-Punkten über die Mitgliedschaft PeopleCert Plus oder mit einer weiteren Prüfung derselben Produktreihe. Die aktuellen Regeln finden Sie bei PeopleCert."
+   },
+   {
+    "q": "Kann ich die ITIL-Schulung mit Bildungsgutschein machen?",
+    "a": "Die Kurse auf dieser Seite sind für den Bildungsgutschein zugelassen. Ob Sie einen Bildungsgutschein erhalten, entscheidet die Agentur für Arbeit bzw. das Jobcenter. Beschäftigte können eine Förderung über das Qualifizierungschancengesetz prüfen lassen. Wir beraten Sie vorab zu den Möglichkeiten."
+   }
+  ],
+  "sources": [
+   {
+    "label": "PeopleCert: ITIL 4 Foundation",
+    "url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565"
+   },
+   {
+    "label": "PeopleCert: FAQ zu ITIL (Version 5 und Einstellung der ITIL-4-Module)",
+    "url": "https://www.peoplecert.org/help-and-support/faq-itil"
+   },
+   {
+    "label": "PeopleCert: ITIL-Zertifizierungen im Überblick",
+    "url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1"
+   }
+  ]
+ },
+ "brand-ec-council": {
+  "heading": "Welche EC-Council-Schulung passt?",
+  "intro": "EC-Council (International Council of E-Commerce Consultants) ist eine Zertifizierungsstelle für Informationssicherheit. Das bekannteste Zertifikat ist der Certified Ethical Hacker (CEH). Laut EC-Council prüft er Ethical Hacking aus herstellerneutraler Sicht. Er belegt also Wissen über Angriffsmethoden und nicht über das Produkt eines einzelnen Anbieters. Weitere Zertifikate von EC-Council behandeln die Verteidigung von Netzwerken (CND), die IT-Forensik (CHFI) und Threat Intelligence (CTIA). Unsere Kurse finden als Live-Online-Training mit Trainer statt. Beratung bekommen Sie in München, Nürnberg und Stuttgart. Die folgenden Schritte zeigen, wie Sie von den Grundlagen zum passenden Kurs kommen.",
+  "steps": [
+   {
+    "label": "Grundlagen klären",
+    "text": "Für den CEH sollten Sie Netzwerke und IT-Systeme bereits sicher kennen. Wichtig ist auch die Prüfungszulassung. EC-Council verlangt dafür ein offizielles EC-Council-Training, mindestens zwei Jahre Berufserfahrung in der Informationssicherheit oder einen älteren CEH. Fehlen Ihnen Grundlagen, klären wir in der Beratung, welcher Einstieg passt.",
+    "courses": []
+   },
+   {
+    "label": "Angriffe verstehen: CEH",
+    "text": "Der Certified Ethical Hacker richtet sich an Fachkräfte aus der Cybersicherheit und an Teams, die Systeme in autorisierten Tests prüfen. Sie lernen, wie Angreifer vorgehen, wie man Schwachstellen prüft und welche Maßnahmen sich daraus ableiten. Der Kurs dauert 5 Tage, ist auf Englisch und läuft als Online-Live-Training. Er bereitet auf die Prüfung 312-50 vor.",
+    "courses": [
+     "ec-council-certified-ethical-hacker"
+    ]
+   },
+   {
+    "label": "Verteidigen, untersuchen, auswerten",
+    "text": "Wenn Sie Netzwerke im Betrieb schützen, passt der CND. Wenn Sie nach einem Vorfall digitale Spuren sichern, passt der CHFI. Für die Auswertung von Bedrohungsinformationen gibt es den CTIA. Ob und wann einer dieser Kurse in Ihren Lernweg passt, besprechen wir in der Beratung über unsere Kontaktseite.",
+    "courses": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wie läuft die CEH-Prüfung ab?",
+    "a": "Die Prüfung 312-50 dauert 4 Stunden und hat 125 Multiple-Choice-Fragen. Die Bestehensgrenze hängt von der Prüfungsform ab und liegt zwischen 60 und 85 Prozent. Laut EC-Council legen Sie die Prüfung über das ECC Exam Centre ab, je nach Angebot auch in einem Pearson-VUE-Testcenter. Den Prüfungsweg klären wir vor der Anmeldung. Die Gebühr nennt EC-Council bei der Buchung. Sie ist nicht im Kurspreis enthalten."
+   },
+   {
+    "q": "Welche Voraussetzungen verlangt EC-Council?",
+    "a": "Für den Kurs gibt es keine formalen Voraussetzungen. Zur Prüfung lässt EC-Council auf drei Wegen zu: mit einem offiziellen EC-Council-Training, mit mindestens zwei Jahren Berufserfahrung in der Informationssicherheit oder mit einem CEH der Versionen 1 bis 7. Beim Weg über die Berufserfahrung stellen Sie einen Antrag mit einer Gebühr von 100 US-Dollar, die nicht erstattet wird. Welcher Weg für Sie gilt, klären wir vor der Anmeldung."
+   },
+   {
+    "q": "Wie lange ist ein EC-Council-Zertifikat gültig?",
+    "a": "EC-Council-Zertifikate gelten drei Jahre ab der Zertifizierung. In dieser Zeit müssen Sie 120 Weiterbildungspunkte (ECE-Credits) sammeln und jedes Jahr eine Gebühr für die Weiterbildung zahlen. Nur dann bleibt das Zertifikat gültig."
+   },
+   {
+    "q": "Kann ich den CEH-Kurs fördern lassen?",
+    "a": "Der Kurs ist für den Bildungsgutschein zugelassen. Ob Sie die Förderung bekommen, entscheidet die Agentur für Arbeit bzw. das Jobcenter im Einzelfall. Wenn Sie beschäftigt sind, kann das Qualifizierungschancengesetz in Frage kommen. Die Prüfungsgebühr ist im Kurspreis nicht enthalten."
+   }
+  ],
+  "sources": [
+   {
+    "label": "EC-Council: Certified Ethical Hacker (Prüfung 312-50, Zulassung, Prüfungsort, herstellerneutral)",
+    "url": "https://cert.eccouncil.org/certified-ethical-hacker.html"
+   },
+   {
+    "label": "EC-Council: ECE-Richtlinie (Gültigkeit und Rezertifizierung)",
+    "url": "https://cert.eccouncil.org/ece-policy.html"
+   }
+  ]
+ },
+ "brand-aws": {
+  "heading": "Welche AWS-Schulung passt?",
+  "intro": "Amazon Web Services (AWS) ist die Cloud-Plattform von Amazon. AWS vergibt seine Zertifizierungen selbst und ordnet sie in Stufen: Foundational für das Grundverständnis, darauf aufbauend Associate, Professional und Specialty für bestimmte Rollen und Fachgebiete. Ein AWS-Zertifikat belegt, dass jemand die Prüfung des Herstellers zu diesem Wissensstand bestanden hat. Der Einstieg ist der AWS Certified Cloud Practitioner (Prüfung CLF-C02). Er zeigt, dass Sie Cloud-Begriffe, die wichtigsten AWS-Dienste, Sicherheit und Preismodelle einordnen können, ohne selbst technisch zu arbeiten. Auf dieser Seite finden Sie zwei eintägige Grundlagenkurse und drei dreitägige Vertiefungen, alle auf Deutsch im Format Online Live. Welcher Kurs passt, hängt davon ab, ob Sie AWS verstehen und bewerten oder selbst damit arbeiten wollen.",
+  "steps": [
+   {
+    "label": "Überblick für Einsteiger und Entscheider",
+    "text": "Wenn Sie AWS fachlich verstehen, Kosten einschätzen oder mit IT-Teams mitreden wollen, beginnen Sie mit AWS Cloud Practitioner Essentials. Der eintägige Kurs behandelt Cloud-Modelle, globale Infrastruktur, Kerndienste, das Modell der geteilten Verantwortung sowie Preise und Support. Er bereitet auf die Prüfung AWS Certified Cloud Practitioner vor.",
+    "courses": [
+     "aws-cloud-practitioner-essentials"
+    ]
+   },
+   {
+    "label": "Technischer Einstieg in die AWS-Dienste",
+    "text": "Wer AWS selbst einrichten oder betreuen soll, wählt AWS Technical Essentials. In einem Tag arbeiten Sie in Übungen mit der AWS Management Console, IAM, einer eigenen VPC, Amazon S3 und DynamoDB. AWS empfiehlt dafür IT-Erfahrung und Grundwissen zu Servern, Netzwerken und Datenbanken; Cloud-Vorkenntnisse sind nicht nötig.",
+    "courses": [
+     "aws-technical-essentials"
+    ]
+   },
+   {
+    "label": "Vertiefung nach Rolle",
+    "text": "Nach den Grundlagen geht es je nach Aufgabe weiter: Architecting on AWS für die Planung von Architekturen, Developing on AWS für die Entwicklung von Anwendungen und Systems Operations on AWS für Betrieb, Überwachung und Automatisierung. Diese Kurse dauern jeweils drei Tage. Welcher davon passt, klären Sie am besten in der Beratung.",
+    "courses": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Welche Prüfung gehört zum Einstieg, und was kostet sie?",
+    "a": "Zum Einstieg gehört die Prüfung CLF-C02 für den AWS Certified Cloud Practitioner. Sie dauert 90 Minuten, umfasst 65 Fragen und findet über Pearson VUE im Testcenter oder online beaufsichtigt statt. Die Gebühr beträgt laut AWS 100 USD bzw. 85 EUR, gegebenenfalls zuzüglich Steuern. Sie ist nicht im Kurspreis enthalten. Auf Deutsch bietet AWS diese Prüfung nur noch bis zum 31.12.2026 an."
+   },
+   {
+    "q": "Welche Voraussetzungen brauche ich?",
+    "a": "Für AWS Cloud Practitioner Essentials empfiehlt AWS allgemeines betriebswirtschaftliches IT-Wissen und allgemeine technische IT-Kenntnisse; eine technische Rolle ist nicht nötig. Für AWS Technical Essentials empfiehlt AWS allgemeine IT-Erfahrung und Grundwissen zu Servern, Netzwerken, Datenbanken und Anwendungen. Für die dreitägigen Vertiefungen sind die Grundlagenkurse ein sinnvoller Start."
+   },
+   {
+    "q": "Wie lange ist ein AWS-Zertifikat gültig?",
+    "a": "Der AWS Certified Cloud Practitioner gilt laut AWS drei Jahre. Verlängern können Sie ihn nur, solange er noch gültig ist. Eine Erneuerung verlängert die Gültigkeit um drei Jahre, eine Aufrechterhaltung um ein Jahr. Die genauen Regeln stehen auf der Seite von AWS zur Rezertifizierung."
+   },
+   {
+    "q": "Kann ich die AWS-Kurse mit Bildungsgutschein besuchen?",
+    "a": "Alle AWS-Kurse auf dieser Seite sind für den Bildungsgutschein zugelassen. Ob Sie eine Förderung erhalten, entscheidet die Agentur für Arbeit bzw. das Jobcenter im Einzelfall. Unternehmen können je nach Situation das Qualifizierungschancengesetz nutzen. Ansprechpartner für München, Nürnberg und Stuttgart finden Sie auf der Seite für Arbeitsuchende."
+   }
+  ],
+  "sources": [
+   {
+    "label": "AWS: AWS Certified Cloud Practitioner",
+    "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+   },
+   {
+    "label": "AWS: Prüfungspreise und Richtlinien vor der Prüfung",
+    "url": "https://aws.amazon.com/certification/policies/before-testing/"
+   },
+   {
+    "label": "AWS: Rezertifizierung",
+    "url": "https://aws.amazon.com/certification/recertification/"
+   },
+   {
+    "label": "AWS: Kursbeschreibung Cloud Practitioner Essentials (PDF)",
+    "url": "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/training/approved/pdfs/classroom-training/aws-cloud-practitioner-essentials.pdf"
+   }
+  ]
+ },
+ "brand-python": {
+  "heading": "Welche Python-Schulung passt zu Ihnen?",
+  "intro": "Python ist eine freie Programmiersprache. Die Python Software Foundation, eine gemeinnützige Organisation, betreut die offizielle Python-Distribution und schützt den Namen Python. Python-Zertifikate vergibt unter anderem das OpenEDG Python Institute. Sein Einstiegszertifikat PCEP prüft Grundlagen wie Datentypen, Kontrollfluss, Listen und andere Datensammlungen, Funktionen, Fehlerbehandlung sowie Dateien und Module. Unser Kurs Introduction to Python ist ein eigener Kurs von New Horizons ohne Herstellerzertifizierung und ohne Kurscode. Er dauert zwei Tage, findet auf Deutsch statt und ist als Connected Classroom geplant. Sie lernen die Grundlagen, um Dateien zu verarbeiten, Inhalte von Webseiten auszulesen und wiederkehrende Aufgaben mit Skripten zu automatisieren. Die Prüfung ist nicht im Kurspreis enthalten. Ob und wann eine Zertifizierung für Sie sinnvoll ist, klären wir in der Beratung.",
+  "steps": [
+   {
+    "label": "Einstieg ohne Programmiererfahrung",
+    "text": "Sie haben noch nie programmiert, möchten aber Routinearbeit automatisieren? Introduction to Python beginnt mit Kommandozeile, Installation und Jupyter Notebooks. Danach folgen Datentypen, Schleifen, Funktionen, Fehlersuche und objektorientierte Programmierung. Python-Kenntnisse brauchen Sie nicht, ein grundlegendes technisches Verständnis und Interesse am Programmieren reichen.",
+    "courses": [
+     "introduction-to-python"
+    ]
+   },
+   {
+    "label": "Python im Arbeitsalltag anwenden",
+    "text": "Nach dem Kurs schreiben Sie eigene Skripte, lesen und schreiben Dateien und lesen Inhalte von Webseiten aus. Wenn Sie Python mit Reporting oder Datenanalyse verbinden möchten, finden Sie weitere Schulungen auf der Themenseite Kurse zu Data, Power BI und Python und im Data Analytics Lernpfad.",
+    "courses": []
+   },
+   {
+    "label": "Kenntnisse mit einem Zertifikat belegen",
+    "text": "Wer seine Grundlagen nachweisen möchte, kann beim Python Institute die Prüfung PCEP ablegen. Sie wird separat gebucht und ist nicht im Kurspreis enthalten. Unser Kurs ist keine offizielle Prüfungsvorbereitung des Python Institute. Ob sich das Zertifikat für Ihr Ziel lohnt, besprechen wir vorab mit Ihnen.",
+    "courses": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Gibt es zum Kurs Introduction to Python eine Prüfung?",
+    "a": "Nein. Introduction to Python ist ein eigener Kurs von New Horizons ohne Herstellerzertifizierung, eine Prüfung ist nicht im Kurspreis enthalten. Ein Herstellerzertifikat für Python-Grundlagen ist PCEP des Python Institute (Prüfung PCEP-30-03: 35 Fragen, 50 Minuten, Bestehensgrenze 70 Prozent). Die Prüfung buchen Sie separat beim Python Institute."
+   },
+   {
+    "q": "Welche Vorkenntnisse brauche ich?",
+    "a": "Python-Kenntnisse werden nicht vorausgesetzt. Sie sollten ein grundlegendes technisches Verständnis mitbringen und Interesse am Programmieren haben. Für die PCEP-Prüfung nennt das Python Institute keine formalen Voraussetzungen."
+   },
+   {
+    "q": "Wie lange ist ein Python-Zertifikat gültig?",
+    "a": "Das PCEP-Zertifikat ist laut Python Institute fünf Jahre gültig. Introduction to Python endet ohne Herstellerzertifikat."
+   },
+   {
+    "q": "Kann ich die Python-Schulung fördern lassen?",
+    "a": "Der Kurs ist für den Bildungsgutschein zugelassen. Ob Sie ihn erhalten, entscheidet die Agentur für Arbeit bzw. das Jobcenter. Für Beschäftigte kann eine Förderung nach dem Qualifizierungschancengesetz infrage kommen. Ansprechpartner für Arbeitsuchende sind in München Petra Kaufmann, in Nürnberg Sandra Stich und in Stuttgart Luka Valjan."
+   }
+  ],
+  "sources": [
+   {
+    "label": "Python Institute: PCEP – Certified Entry-Level Python Programmer",
+    "url": "https://pythoninstitute.org/pcep"
+   },
+   {
+    "label": "Python Software Foundation: Mission",
+    "url": "https://www.python.org/psf/mission/"
+   },
+   {
+    "label": "Kursseite Introduction to Python",
+    "url": "https://nh-it-training.de/kurse/introduction-to-python.html"
+   }
+  ]
+ },
+ "brand-prince2": {
+  "heading": "Welche PRINCE2-Schulung von PeopleCert passt zu Ihnen?",
+  "intro": "PRINCE2 ist eine Methode für das Projektmanagement. Sie regelt, wer in einem Projekt was entscheidet, wie ein Projekt in Phasen gesteuert wird und welche Dokumente dafür nötig sind. Rechteinhaber und Zertifizierungsstelle ist PeopleCert. PeopleCert legt die Lernziele fest, stellt die Prüfungen und vergibt die Zertifikate. Aktuell ist Version 7. Die Zertifizierung hat zwei Stufen. Foundation weist nach, dass Sie Begriffe, Prinzipien, Rollen und Abläufe der Methode kennen. Practitioner weist nach, dass Sie PRINCE2 in einem konkreten Projektszenario anwenden und an die Lage anpassen können. Bei PRINCE2 7 Foundation und PRINCE2 7 Practitioner ist das Examen im Kurs enthalten. Sie finden als Connected Classroom statt, auf Deutsch. Für Termine und Beratung erreichen Sie Max Dilewski unter 089 997 409 352.",
+  "steps": [
+   {
+    "label": "Einstieg: PRINCE2 7 Foundation",
+    "text": "Für den Einstieg in die Methode, wenn Sie in Projekten mitarbeiten oder sie steuern. PeopleCert nennt für die Foundation keine Voraussetzungen. Der Kurs dauert 3 Tage, das Examen ist im Kurs enthalten. Geprüft wird mit 60 Multiple-Choice-Fragen in 60 Minuten, ohne Unterlagen.",
+    "courses": [
+     "prince2-7-foundation"
+    ]
+   },
+   {
+    "label": "Anwendung: PRINCE2 7 Practitioner",
+    "text": "Für alle, die PRINCE2 im eigenen Projekt einsetzen und an die Lage anpassen wollen. Sie brauchen eine anerkannte Vorzertifizierung, zum Beispiel die Foundation in Version 7. Der Kurs dauert 2 Tage, das Examen ist enthalten. Die Prüfung dauert 150 Minuten und arbeitet mit einem Projektszenario.",
+    "courses": [
+     "prince2-7-practitioner"
+    ]
+   },
+   {
+    "label": "Agile Projekte: PRINCE2 Agile",
+    "text": "Arbeitet Ihr Team mit Scrum oder Kanban, verbindet PRINCE2 Agile die Steuerung von PRINCE2 mit agilen Arbeitsweisen. Dazu gibt es eigene Foundation- und Practitioner-Kurse. Ob diese Variante oder PRINCE2 7 für Ihre Projekte besser passt, klären Sie am einfachsten im Gespräch mit dem Vertrieb.",
+    "courses": []
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wie laufen die PRINCE2-7-Prüfungen ab?",
+    "a": "Die Foundation-Prüfung besteht aus 60 Multiple-Choice-Fragen in 60 Minuten, ohne Unterlagen. Die Practitioner-Prüfung dauert 150 Minuten und umfasst 56 Fragen und Unterfragen mit insgesamt 70 Punkten. Für beide gilt eine Bestehensgrenze von mindestens 60 Prozent. Beide Prüfungen gibt es auch auf Deutsch. In beiden Kursen ist die Prüfungsgebühr enthalten."
+   },
+   {
+    "q": "Welche Voraussetzungen brauche ich?",
+    "a": "Für die Foundation nennt PeopleCert keine Voraussetzungen. Für die Practitioner-Prüfung verlangt PeopleCert eine anerkannte Vorzertifizierung. Dazu zählen die PRINCE2 Foundation in Version 7, Foundation oder Practitioner der 5. oder 6. Edition, PMP, CAPM, PPQ, PMQ sowie IPMA Level A bis D. Die vollständige Liste steht auf der Zertifizierungsseite von PeopleCert."
+   },
+   {
+    "q": "Wie lange ist das Zertifikat gültig?",
+    "a": "Laut PeopleCert ist die Foundation-Zertifizierung alle drei Jahre zu erneuern, zum Beispiel mit 60 CPD-Punkten. Auch die Practitioner-Zertifizierung muss erneuert werden, ebenfalls mit 60 CPD-Punkten oder mit einer weiteren Prüfung aus derselben Produktreihe. Die genauen Fristen prüfen Sie bitte auf der Zertifizierungsseite von PeopleCert, weil sich die Bedingungen ändern können."
+   },
+   {
+    "q": "Kann ich die Schulung mit dem Bildungsgutschein machen?",
+    "a": "Die PRINCE2-Kurse auf dieser Website sind für den Bildungsgutschein zugelassen. Ob Sie einen Bildungsgutschein erhalten, entscheidet die Agentur für Arbeit bzw. das Jobcenter. Wenn Sie arbeitsuchend sind, hilft Ihnen die Ansprechperson an Ihrem Standort in München, Nürnberg oder Stuttgart bei der Vorbereitung. Für Beschäftigte kann das Qualifizierungschancengesetz in Frage kommen."
+   }
+  ],
+  "sources": [
+   {
+    "label": "PeopleCert: PRINCE2 7 Foundation",
+    "url": "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-foundation-3579"
+   },
+   {
+    "label": "PeopleCert: PRINCE2 7 Practitioner",
+    "url": "https://www.peoplecert.org/browse-certifications/project-programme-and-portfolio-management/PRINCE2-2/PRINCE2-7-practitioner-3581"
+   }
+  ]
  }
 }
